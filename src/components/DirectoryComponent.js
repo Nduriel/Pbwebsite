@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
-
+import  GalleryComponent  from'./GalleryComponent';
 
 
 
@@ -9,6 +9,7 @@ class Directory extends Component {
         return (
             <React.Fragment>
                 <Header />
+                <GalleryComponent/>
             </React.Fragment>
         );
     }

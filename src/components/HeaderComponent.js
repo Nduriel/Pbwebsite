@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Navbar, Nav, NavItem, NavLink } from 'reactstrap';
+import { Jumbotron, Container, Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 
 
 
@@ -28,10 +28,10 @@ class Header extends Component {
                             <NavLink href="#"> Home </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#">Appointments</NavLink>
+                            <NavLink href="#"> Appointments </NavLink>
                         </NavItem>
                     </Nav>
-                    <Nav navbar>
+                    <Nav className="ml-4" navbar>
                         <NavItem>
                             <a role="button" className="btn btn-link" href="tel:+17579127833"><i className="fa fa-phone fa-lg" /></a>
                         </NavItem>

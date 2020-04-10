@@ -13,9 +13,9 @@ const apic = require('../images/bookappt.jpg');
 class GalleryComponent extends Component {
     render() {
         return (
-            <div className="container mt-1" fluid style={{ padding: 25, verticalAlign: 'top' }}>
-                <div className="row">
-                    <div className="col-lg-5 col-md-8 col-sm={{offest:2}} ">
+            <div className="container mt-1" style={{ padding: 25, verticalAlign: 'top' }}>
+                <div className="row align-items-start">
+                    <div className="col-lg-5 col-md-8 col-sm={{offest:2}} align-self-start ">
                         <Carousel className="carouselborder">
                             <Carousel.Item>
                                 <img

@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap&effect=anaglyph');
-
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
 body {
   background-color: black;
   text-shadow: 4px 4px 4px #aaa;
@@ -27,22 +27,22 @@ body {
   height: 550px;
 }
 
+.carousel {
+  width: 450px;
+}
+
 .carouselborder {
   outline: 10px solid #74014d;
   margin: auto;
+  position: relative;
 }
 
 .card {
-  font: outline;
-  font-size: 20px;
-  margin: 0 auto;
-  float: none; 
-  margin-bottom: 10px; 
-  margin-top: 10px;
-  background-color: black;
-  color: white;
-  
+  font-size: large;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: 'Courgette', cursive;
+  background-image: linear-gradient(rgba(189, 10, 174, 0.815), rgba(0, 255, 170, 0.699));
 }
-
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/

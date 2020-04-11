@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import  GalleryComponent  from'./GalleryComponent';
-
+import BodyComponent from './BodyComponent';
 
 
 class Directory extends Component {
@@ -10,6 +10,7 @@ class Directory extends Component {
             <React.Fragment>
                 <Header />
                 <GalleryComponent/>
+                <BodyComponent/>
             </React.Fragment>
         );
     }

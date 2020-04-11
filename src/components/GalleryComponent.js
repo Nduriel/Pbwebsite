@@ -13,49 +13,44 @@ const apic = require('../images/bookappt.jpg');
 class GalleryComponent extends Component {
     render() {
         return (
-            <div className="container mt-1" style={{ padding: 25, verticalAlign: 'top' }}>
-                <div className="row align-items-start">
-                    <div className="col-lg-5 col-md-8 col-sm={{offest:2}} align-self-start ">
-                        <Carousel className="carouselborder">
+            <div className="container-fluid mt-1" style={{ padding: 25}}>
+                <div className="row">
+                    <div className="col-lg-5 col-md-10  col-sm-12" style={{paddingTop: "20px"}}>
+                        <Carousel fade="true" pause="hover" interval="5000" className="carouselborder">
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
+                                <img                            
                                     src={miaPic1}
                                     alt="First slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
+                                <img                            
                                     src={miaPic2}
                                     alt="Second slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
+                                <img                           
                                     src={miaPic3}
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                    className="d-block w-100"
                                     src={miaPic4}
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                    className="d-block w-100"
                                     src={miaPic5}
                                     alt="Third slide"
                                 />
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className="col-lg-7 col-md-4 col-sm-12" style={{ padding: 16 }}>
-                        <Image src={apic} rounded style={{ width: "100%" }} />
+                    <div className="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-1" style={{ padding: 16 }}>
+                        <Image src={apic} rounded style={{ width: "83%"}} />
                     </div>
                 </div>
             </div>

@@ -16,7 +16,9 @@ class Header extends Component {
                     <div className='container'>
                         <div className='row' style={{ textAlign: 'center' }}>
                             <div className='col'>
+                                Basic Fills <span className="fontdes1">30$</span>
                                 <img src={logo} height="225" width="auto" alt="logo" />
+                                Full Sets <span className="fontdes">40$</span>
                             </div>
                         </div>
                     </div>

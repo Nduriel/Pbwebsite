@@ -37,12 +37,25 @@ body {
   position: relative;
 }
 
-.card {
+.cardnmap {
   font-size: large;
   font-weight: bold;
-  color: whitesmoke;
+  color: #9df5cc;
   font-family: 'Courgette', cursive;
-  background-image: linear-gradient(rgba(189, 10, 174, 0.815), rgba(0, 255, 170, 0.699));
+  background-color: purple;
+  /* background-image: linear-gradient(rgba(189, 10, 174, 0.815), rgba(0, 255, 170, 0.699)); */
+}
+
+.accordiancard {
+  width: '45px';
+}
+
+.fontdes1 {
+  color: red;
+}
+
+.fontdes {
+color: rgb(255, 196, 0);
 }
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/

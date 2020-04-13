@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Directory from './components/DirectoryComponent';
@@ -6,7 +7,11 @@ import Directory from './components/DirectoryComponent';
 class App extends Component {
     render() {
         return (
-            <Directory/>
+            <BrowserRouter>
+                <div className="App">
+                    <Directory />
+                </div>
+            </BrowserRouter>
         );
     }
 }

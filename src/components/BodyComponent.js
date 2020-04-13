@@ -1,23 +1,62 @@
 import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
-import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
 
 const mappic = require('../images/mappic.png');
-const step1 = require('../images/step1mia.jpg');
-const step2 = require('../images/step2mia.jpg');
-const step3 = require('../images/step3mia.jpg');
-const step4 = require('../images/step4mia.jpg');
-const step5 = require('../images/step5mia.jpg');
 
+
+const miaPic1 = require('../images/miaPic5.jpg');
+const miaPic2 = require('../images/miaPic2.jpg');
+const miaPic3 = require('../images/miaPic3.jpg');
+const miaPic4 = require('../images/miaPic7.jpg');
+const miaPic5 = require('../images/miaPic8.jpg');
+const apic = require('../images/bookappt.jpg');
 
 class BodyComponent extends Component {
     render() {
         return (
-            <div className="container-fluid" style={{ paddingTop: 25, paddingLeft:"65px" }}>
+            <div className="container-fluid mt-1" style={{ paddingTop: "25px" }}>
                 <div className="row">
-                    <div className="col-lg-4">
-                        <Card className="cardnmap text-center" style={{ borderWidth: "10px", outline: "10px solid #9df5cc", width: '25rem' }}>
+                    <div className="col-lg-5 col-md-10  col-sm-12" style={{ paddingTop: "20px" }}>
+                        <Carousel fade="true" pause="hover" interval="5000" className="carouselborder">
+                            <Carousel.Item>
+                                <img
+                                    src={miaPic1}
+                                    alt="First slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    src={miaPic2}
+                                    alt="Second slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    src={miaPic3}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    src={miaPic4}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    src={miaPic5}
+                                    alt="Third slide"
+                                />
+                            </Carousel.Item>
+                        </Carousel>
+                    </div>
+                    <div className="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-1" style={{ paddingTop: "29px" }}>
+                        <Image src={apic} rounded style={{ width: "83%", height: "auto" }} />
+                    </div>
+                    <div className="col  col-sm-12" style={{ paddingTop: "100px" }}>
+                        <Card className="cardnmap text-center">
                             <Card.Header style={{ backgroundColor: "#f1069f" }}>
                                 Polished by Mia is exclusively catering to clients in the 757 area! Call or book you appointment today!
                             </Card.Header>
@@ -27,82 +66,13 @@ class BodyComponent extends Component {
                             <Card.Img variant="bottom" src={mappic} />
                         </Card>
                     </div>
-                    <div className="row">
-                        <div className="col-lg col-md-12 col-sm-12" style={{textAlign: "center", width:"500px"}}>
-                            <Accordion defaultActiveKey="0">
-                                <Card className="accordiancard">
-                                <Card.Title>How It Works</Card.Title>
-                                    <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                            Step 1
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
-                                            <Card.Img style={{ height: "250px", width: "auto" }} src={step1} />{'    '}
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                            Step 2
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="1">
-                                        <Card.Body>
-                                            <Card.Img style={{ height: "250px", width: "auto" }} src={step2} />{'    '}
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                                            Step 3
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="2">
-                                        <Card.Body>
-                                            <Card.Img style={{ height: "250px", width: "auto" }} src={step3} />{'    '}
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                                            Step 4
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="3">
-                                        <Card.Body>
-                                            <Card.Img style={{ height: "250px", width: "auto" }} src={step4} />{'    '}
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Card.Header>
-                                        <Accordion.Toggle as={Button} variant="link" eventKey="4">
-                                            Step 5
-                                        </Accordion.Toggle>
-                                    </Card.Header>
-                                    <Accordion.Collapse eventKey="4">
-                                        <Card.Body>
-                                            <Card.Img style={{ height: "250px", width: "auto" }} src={step5} />{'    '}
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                            </Accordion>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                        
-                        </div>
-                    </div>
                 </div>
             </div>
         );
     }
 }
+
+
+
 
 export default BodyComponent;

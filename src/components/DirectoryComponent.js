@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
-import  GalleryComponent  from'./GalleryComponent';
 import BodyComponent from './BodyComponent';
 
 
@@ -9,7 +8,6 @@ class Directory extends Component {
         return (
             <React.Fragment>
                 <Header />
-                <GalleryComponent/>
                 <BodyComponent/>
             </React.Fragment>
         );

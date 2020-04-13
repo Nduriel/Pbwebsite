@@ -3,16 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
 body {
   background-color: black;
-  text-shadow: 4px 4px 4px #aaa;
+  text-shadow: 2px 2px 2px #aaa; 
 }
 
 
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #680146, #60106B, #60106B,#f1069f);
-  color: white;
+  background-image: linear-gradient(to right, #680146, #60106B,#f1069f);
+  color: whitesmoke;
   display: block;
+  font-weight: bold;
+  font-family: 'Courgette', cursive;
 }
 
 .navbar {
@@ -43,19 +45,38 @@ body {
   color: #9df5cc;
   font-family: 'Courgette', cursive;
   background-color: purple;
-  /* background-image: linear-gradient(rgba(189, 10, 174, 0.815), rgba(0, 255, 170, 0.699)); */
+  border-width: 10px;
+  outline: 10px solid #9df5ccda;
+  width: 25rem;
+  margin: auto;
+}
+
+.accordian {
+background-color: black;
 }
 
 .accordiancard {
+  font-size: large;
+  font-weight: bold;
   width: '45px';
+  font-family: 'Courgette', cursive;
+  margin-left: auto;
 }
 
+.accordianback {
+  background-image: linear-gradient(to right, #680146, #60106B, #60106B,#f1069f);
+}
 .fontdes1 {
   color: red;
 }
 
 .fontdes {
 color: rgb(255, 196, 0);
+}
+
+.modalbody {
+  color: #9df5cc;
+  background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
 }
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/

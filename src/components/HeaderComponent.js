@@ -80,7 +80,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </Navbar>
-                <div className="container-fluid">
+                <div className="container">
                     <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
                         <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }} toggle={this.toggleModal}>Send me your info and I'll contact you asap!</ModalHeader>
                         <ModalBody className="modalbody">
@@ -105,7 +105,9 @@ class Header extends Component {
                                             <Input type="time" name="time" id="time" />
                                         </div>
                                     </div>
-                                    <div style={{ textAlign: "center" }}> **Date and time submitted are not guaranteed**</div>
+                                    <div style={{ textAlign: "center" }}>
+                                        **Date and time submitted are not guaranteed**<br />
+                                    **Allow 2 hours per appointment**</div>
                                 </FormGroup>
                             </Form>
                         </ModalBody>

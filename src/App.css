@@ -6,10 +6,8 @@ body {
   text-shadow: 2px 2px 2px #aaa; 
 }
 
-
 .jumbotron {
   margin: 0;
-  padding: 30px;
   background-image: linear-gradient(to right, #680146, #60106B,#f1069f);
   color: whitesmoke;
   display: block;
@@ -51,32 +49,40 @@ body {
   margin: auto;
 }
 
-.accordian {
-background-color: black;
-}
-
-.accordiancard {
-  font-size: large;
-  font-weight: bold;
-  width: '45px';
-  font-family: 'Courgette', cursive;
-  margin-left: auto;
-}
-
-.accordianback {
-  background-image: linear-gradient(to right, #680146, #60106B, #60106B,#f1069f);
-}
-.fontdes1 {
-  color: red;
-}
-
-.fontdes {
-color: rgb(255, 196, 0);
-}
-
 .modalbody {
   color: #9df5cc;
   background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
 }
 
+.heightpic {
+  height: auto;
+  width: 110%;
+}
+
+.cardprice {
+  margin-left: 25px;
+  width: 450px;
+  background-color: "black" ;
+  outline: 10px solid #9df5ccda;
+  font-family: 'Courgette', cursive;
+  font-size: 22px;
+  background-color: black;
+  color: #9df5ccda;
+}
+/* .accordian {
+background-color: black;
+} */
+
+/* .accordiancard {
+  font-size: large;
+  font-weight: bold;
+  width: '45px';
+  font-family: 'Courgette', cursive;
+  margin-left: auto;
+} */
+
+/* .accordianback {
+  background-image: linear-gradient(to right, #680146, #60106B, #60106B,#f1069f);
+} */
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
+

@@ -3,14 +3,16 @@ import {
     Jumbotron, Navbar, Nav, NavItem,
     Form, FormGroup, Label, Input,
 } from 'reactstrap';
+import Image from 'react-bootstrap/Image';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { Link } from 'react-router-dom';
+
 
 
 
 
 const logo = require('../images/pbmimg13.png');
-
+const miaPic1 = require('../images/miaPic3.jpg');
+const miaPic2 = require('../images/miaPic2.jpg')
 
 class Header extends Component {
     constructor(props) {
@@ -31,15 +33,16 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron fluid>
-                    <div className='container'>
+                    <div className='container-fluid'>
                         <div className='row' style={{ textAlign: 'center', fontSize: "22px" }}>
-                            <div className='col'>
-                                <div className="col-sm-12">
-                                    Acryllic Designs for an affordable price"<br />
-                                </div>
-                                Basic Fills <span className="fontdes1">30$</span>
-                                <img src={logo} height="225" width="auto" alt="logo" />
-                                Full Sets <span className="fontdes">40$</span>
+                            <div className='col-4'>
+                                <Image  style={{ height: "200px" }} src={miaPic2} alt="" roundedCircle />
+                            </div>
+                            <div className='col-4'>
+                                <Image style={{ height: "200px" }} src={logo} alt="" />
+                            </div>
+                            <div className="col-4">
+                                <Image style={{ height: "200px" }} src={miaPic1} alt="" roundedCircle />
                             </div>
                         </div>
                     </div>
@@ -48,18 +51,15 @@ class Header extends Component {
                     <div className="container-fluid">
                         <div className="row row-cols-1">
                             <Nav navbar>
+                                <span style={{color:"#f1069f"}}>Book a time today!</span>
                                 <NavItem className="col-4">
-                                    <Link to='/' style={{ color: "purple", fontWeight: "bold" }}> Home </Link>
-                                </NavItem>
-                                <NavItem className="col-4">
-                                    <Link to='/gallery' style={{ color: "#f1069f", fontWeight: "bold" }}> Gallery </Link>
-                                </NavItem>
-                                <NavItem className="col-4">
-                                    <Button onClick={this.toggleModal} color="white" style={{ color: "purple", fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
+                                    <Button color="primary" onClick={this.toggleModal}                                   
+                                        style={{ color: "white", fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
                                 </NavItem>
                             </Nav>
                         </div>
                         <div className="row">
+                        <span style={{color:"#f1069f"}}>For more of my art, chech here:</span>
                             <div className="col-3">
                                 <Nav navbar>
                                     <NavItem>
@@ -80,43 +80,41 @@ class Header extends Component {
                         </div>
                     </div>
                 </Navbar>
-                <div className="container">
-                    <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
-                        <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }} toggle={this.toggleModal}>Send me your info and I'll contact you asap!</ModalHeader>
-                        <ModalBody className="modalbody">
-                            <Form>
-                                <FormGroup>
-                                    <Label for="firstname">Name</Label>
-                                    <Input type="text" name="firstname" id="firstname" placeholder="First Name" /> <br />
-                                    <Input type="text" name="lastname" id="lastname" placeholder="Last Name" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="email">Contact Information</Label>
-                                    <Input type="email" name="email" id="emailaddress" placeholder="Email Address" />  <br />
-                                    <Input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number" />
-                                </FormGroup>
-                                <FormGroup>
-                                    <Label for="booking">Preferred day and time</Label><br />
-                                    <div className="row">
-                                        <div className="col-6">
-                                            <Input type="date" name="date" id="date" /><br />
-                                        </div>
-                                        <div className="col">
-                                            <Input type="time" name="time" id="time" />
-                                        </div>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
+                    <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }} toggle={this.toggleModal}>Send me your info and I'll contact you asap!</ModalHeader>
+                    <ModalBody className="modalbody">
+                        <Form>
+                            <FormGroup>
+                                <Label for="firstname">Name</Label>
+                                <Input type="text" name="firstname" id="firstname" placeholder="First Name" /> <br />
+                                <Input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="email">Contact Information</Label>
+                                <Input type="email" name="email" id="emailaddress" placeholder="Email Address" />  <br />
+                                <Input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number" />
+                            </FormGroup>
+                            <FormGroup>
+                                <Label for="booking">Preferred day and time</Label><br />
+                                <div className="row">
+                                    <div className="col-6">
+                                        <Input type="date" name="date" id="date" /><br />
                                     </div>
-                                    <div style={{ textAlign: "center" }}>
-                                        **Date and time submitted are not guaranteed**<br />
+                                    <div className="col">
+                                        <Input type="time" name="time" id="time" />
+                                    </div>
+                                </div>
+                                <div style={{ textAlign: "center" }}>
+                                    **Date and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment**</div>
-                                </FormGroup>
-                            </Form>
-                        </ModalBody>
-                        <ModalFooter style={{ backgroundColor: "#680146", borderTopColor: "purple" }}>
-                            <Button color="info" onClick={this.toggleModal}>Submit</Button>{' '}
-                            <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
-                        </ModalFooter>
-                    </Modal>
-                </div>
+                            </FormGroup>
+                        </Form>
+                    </ModalBody>
+                    <ModalFooter style={{ backgroundColor: "#680146", borderTopColor: "purple" }}>
+                        <Button color="info" onClick={this.toggleModal}>Submit</Button>{' '}
+                        <Button color="secondary" onClick={this.toggleModal}>Cancel</Button>
+                    </ModalFooter>
+                </Modal>
             </React.Fragment>
         );
     }

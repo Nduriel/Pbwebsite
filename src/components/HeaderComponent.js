@@ -59,7 +59,6 @@ class Header extends Component {
                             </Nav>
                         </div>
                         <div className="row">
-                        <span style={{color:"#f1069f"}}>For more of my art, chech here:</span>
                             <div className="col-3">
                                 <Nav navbar>
                                     <NavItem>
@@ -82,7 +81,7 @@ class Header extends Component {
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
                     <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }} toggle={this.toggleModal}>Send me your info and I'll contact you asap!</ModalHeader>
-                    <ModalBody className="modalbody">
+                    <ModalBody id="modalbody">
                         <Form>
                             <FormGroup>
                                 <Label for="firstname">Name</Label>

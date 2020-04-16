@@ -22,22 +22,21 @@ body {
   font-size: 25px;
 }
 
-.carousel-item > img {
-  width: 100%;
-  height: 550px;
-}
-
 .carousel {
-  width: 450px;
+  width: 450px; 
 }
 
-.carouselborder {
-  outline: 10px solid #74014d;
+#carouselborder {
+  /* outline: 10px solid #74014d; */
   margin: auto;
   position: relative;
+  
+  border: 10px solid;
+  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B);
+  border-image-slice: 1;
 }
 
-.cardnmap {
+#cardnmap {
   font-size: large;
   font-weight: bold;
   color: #9df5cc;
@@ -49,7 +48,7 @@ body {
   margin: auto;
 }
 
-.modalbody {
+#modalbody {
   color: #9df5cc;
   background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
 }
@@ -58,7 +57,9 @@ body {
   height: auto;
   width: 110%;
 }
-
+#cardpic{
+  height: 275px;
+}
 .cardprice {
   margin-left: 25px;
   width: 450px;

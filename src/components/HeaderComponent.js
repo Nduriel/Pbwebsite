@@ -6,13 +6,10 @@ import {
 import Image from 'react-bootstrap/Image';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-
-
-
-
 const logo = require('../images/pbmimg13.png');
 const miaPic1 = require('../images/miaPic3.jpg');
-const miaPic2 = require('../images/miaPic2.jpg')
+const miaPic2 = require('../images/miaPic2.jpg');
+
 
 class Header extends Component {
     constructor(props) {
@@ -36,13 +33,13 @@ class Header extends Component {
                     <div className='container-fluid'>
                         <div className='row' style={{ textAlign: 'center', fontSize: "22px" }}>
                             <div className='col-4'>
-                                <Image  style={{ height: "200px" }} src={miaPic2} alt="" roundedCircle />
+                                <Image  id="jpic" style={{ height: "200px" }} src={miaPic2} alt="jpic1" roundedCircle />
                             </div>
                             <div className='col-4'>
-                                <Image style={{ height: "200px" }} src={logo} alt="" />
+                                <Image style={{ height: "200px" }} src={logo} alt="logopic" />
                             </div>
                             <div className="col-4">
-                                <Image style={{ height: "200px" }} src={miaPic1} alt="" roundedCircle />
+                                <Image id="jpic" style={{ height: "200px" }} src={miaPic1} alt="jpic2" roundedCircle />
                             </div>
                         </div>
                     </div>
@@ -51,7 +48,7 @@ class Header extends Component {
                     <div className="container-fluid">
                         <div className="row row-cols-1">
                             <Nav navbar>
-                                <span style={{color:"#f1069f"}}>Book a time today!</span>
+                                <span style={{color:"#f1069f"}}>Hampton Roads Only!</span>
                                 <NavItem className="col-4">
                                     <Button color="primary" onClick={this.toggleModal}                                   
                                         style={{ color: "white", fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>

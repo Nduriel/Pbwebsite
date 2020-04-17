@@ -8,7 +8,7 @@ body {
 
 .jumbotron {
   margin: 0;
-  background-image: linear-gradient(to right, #680146, #60106B,#f1069f);
+  background-image: linear-gradient(to right, #680146, #60106B,#f1069f,#9df5cc);
   color: whitesmoke;
   display: block;
   font-weight: bold;
@@ -23,16 +23,21 @@ body {
 }
 
 .carousel {
-  width: 450px; 
+  width: 500px; 
 }
 
 #carouselborder {
-  /* outline: 10px solid #74014d; */
   margin: auto;
   position: relative;
-  
   border: 10px solid;
-  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B);
+  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
+  border-image-slice: 1;
+}
+
+#jpic {
+  border-radius: 25%;
+  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
+  border: 10px solid #f1069f;
   border-image-slice: 1;
 }
 
@@ -53,14 +58,21 @@ body {
   background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
 }
 
-.heightpic {
+#heightpic {
   height: auto;
   width: 110%;
 }
+
+
+#heightpic1 {
+  height: auto;
+  width: 100%;
+}
+
 #cardpic{
   height: 275px;
 }
-.cardprice {
+/* .cardprice {
   margin-left: 25px;
   width: 450px;
   background-color: "black" ;
@@ -69,7 +81,7 @@ body {
   font-size: 22px;
   background-color: black;
   color: #9df5ccda;
-}
+} */
 /* .accordian {
 background-color: black;
 } */

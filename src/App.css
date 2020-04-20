@@ -4,11 +4,12 @@
 body {
   background-color: black;
   text-shadow: 2px 2px 2px #aaa; 
+  background-image: url('../src/images/rocks.jpg');
 }
 
 .jumbotron {
   margin: 0;
-  background-image: linear-gradient(to right, #680146, #60106B,#f1069f,#9df5cc);
+  background-image: linear-gradient(to right,black, white, black);
   color: whitesmoke;
   display: block;
   font-weight: bold;
@@ -16,8 +17,8 @@ body {
 }
 
 .navbar {
-  background-color: #9df5cc;
-  border-color: white;
+  background-color: #610241;
+  border-bottom: 7px solid pink;
   font-family:'Dancing Script', cursive, 'font-effect-anaglyph';
   font-size: 25px;
 }
@@ -59,14 +60,20 @@ body {
 }
 
 #heightpic {
+  padding-top: 15px;
   height: auto;
-  width: 110%;
+  width: 100%;
+  border-radius: 15px, 50px;
 }
 
 
+
 #heightpic1 {
+  border-radius: 15px 15px;
+  padding-top: 15px;
   height: auto;
   width: 100%;
+ 
 }
 
 #cardpic{

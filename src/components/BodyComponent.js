@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 // const step3 = require('../images/step3mia.jpg');
 // const step4 = require('../images/step4mia.jpg');
 // const step5 = require('../images/step5mia.jpg');
-const bodypic1 = require('../images/BodCollage1.jpg');
+// const bodypic1 = require('../images/BodCollage1.jpg');
 const bookappt = require('../images/bookappt2.jpg');
 const prices = require('../images/prices2.jpg');
 

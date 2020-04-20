@@ -6,7 +6,6 @@ import {
 } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { DatePicker } from 'react-datepicker';
 
 const logo = require('../images/pbmimg13.png');
 const miaPic1 = require('../images/miaPic3.jpg');

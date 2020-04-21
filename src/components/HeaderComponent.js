@@ -79,7 +79,7 @@ class Header extends Component {
                             <Nav navbar>
                                 <span style={{ color: "pink" }}>Hampton Roads Only!</span>
                                 <NavItem className="col-4">
-                                    <Button color="primary" onClick={this.toggleModal}
+                                    <Button id="button1" onClick={this.toggleModal}
                                         style={{ color: "white", fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
                                 </NavItem>
                             </Nav>

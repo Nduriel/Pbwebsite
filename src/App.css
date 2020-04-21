@@ -10,20 +10,32 @@ body {
 
 .jumbotron {
   margin: 0;
-  background-image: linear-gradient(to right,black, white, black);
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg,black,black,grey, white, grey,black,black, black);
+  background-size: 600% 100%;
+  animation-direction: alternate;
+  animation: gradient 16s linear infinite;
   color: whitesmoke;
   display: block;
   font-weight: bold;
   font-family: 'Courgette', cursive;
 }
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
 
 .navbar {
-  background-color: #610241;
+  background-image: linear-gradient(#610241, #c40484);
   border-bottom: 7px solid pink;
   font-family:'Dancing Script', cursive, 'font-effect-anaglyph';
   font-size: 25px;
 }
 
+#button1 {
+  background-color: #9df5cc;
+}
 #jpic {
   border-radius: 25%;
   border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
@@ -35,6 +47,11 @@ body {
   font-family: 'Manrope', sans-serif;
 }
 
+.site-footer {
+  background-image: linear-gradient(#610241, #c40484);
+  padding: 20px ;
+  font-family: 'Courgette', cursive;
+}
 #modalbody {
   color: #9df5cc;
   background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
@@ -54,54 +71,14 @@ body {
   width: 100%;
 }
 
-
-.carousel-inner > .item > img {
-  width:640px;
-  height:360px;
-}
-
 #carouselborder {
   position: relative;
-  border: 20px solid;
+  border: 35px solid;
+  border-style: inset;
   border-image-source: linear-gradient(45deg, black, black , grey);
   border-image-slice: 1; 
-} 
-/* .cardprice {
-  margin-left: 25px;
-  width: 450px;
-  background-color: "black" ;
-  outline: 10px solid #9df5ccda;
-  font-family: 'Courgette', cursive;
-  font-size: 22px;
   background-color: black;
-  color: #9df5ccda;
-} */
-/* .accordian {
-background-color: black;
-} */
+} 
 
-/* #cardnmap {
-  font-size: large;
-  font-weight: bold;
-  color: #9df5cc;
-  font-family: 'Courgette', cursive;
-  background-color: purple;
-  border-width: 10px;
-  outline: 10px solid #9df5ccda;
-  width: 25rem;
-  margin: auto;
-} */
-
-/* .accordiancard {
-  font-size: large;
-  font-weight: bold;
-  width: '45px';
-  font-family: 'Courgette', cursive;
-  margin-left: auto;
-} */
-
-/* .accordianback {
-  background-image: linear-gradient(to right, #680146, #60106B, #60106B,#f1069f);
-} */
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
 

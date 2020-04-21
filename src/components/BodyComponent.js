@@ -5,19 +5,20 @@ import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 
 const capstyle = {
-    fontStyle: "italic",
+    fontStyle: "oblique",
     fontWeight: "bold",
-    color: "white"
+    color: "whitesmoke",
+    fontSize: "20px"
 }
 
 
 const longNails = require('../images/miaPic5.jpg');
 const medNails = require('../images/miaPic14.jpg');
-const shortNails = require('../images/miaPic11.jpg');
+const shortNails = require('../images/miaPic10.jpg');
 const tpic = require('../images/noticepic.jpg');
 const bookappt = require('../images/bookappt2.jpg');
 const pic1 = require('../images/miaPic1.jpg');
-const pic2 = require('../images/miaPic2.jpg');
+const pic2 = require('../images/miaPic6.jpg');
 const pic3 = require('../images/miaPic3.jpg');
 const pic4 = require('../images/miaPic4.jpg');
 const pic5 = require('../images/miaPic5.jpg');
@@ -44,7 +45,7 @@ class BodyComponent extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={pic3} alt="Third slide" fluid />
-                                <Carousel.Caption style={capstyle}>Katrina - she is awesome!!! do not hesitate to hit her up!!</Carousel.Caption>
+                                <Carousel.Caption style={capstyle}>Katrina - "she is awesome!!! do not hesitate to hit her up!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={pic4} alt="Fourth slide" fluid />
@@ -60,7 +61,7 @@ class BodyComponent extends Component {
                             <thead style={{ color: "pink", fontWeight: "bold" }}>
                                 <tr>
                                     <th><u>Type of Set</u></th>
-                                    <th style={{ textAlign: "center" }}>Short Nail</th>
+                                    <th style={{ textAlign: "center" }}>Short Nails</th>
                                     <th style={{ textAlign: "center" }}>Med Nails</th>
                                     <th style={{ textAlign: "center" }}>Longs Nails</th>
                                 </tr>
@@ -90,19 +91,19 @@ class BodyComponent extends Component {
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic<br /> Full Set</td>
-                                    <td colSpan="4"><u>Will not</u> fill color Acrylic.
+                                    <td colSpan="4" style={{ textAlign: "center" }}><u>Will not</u> fill color Acrylic.
                                     Nails need to be soaked off for an additional $ 5<br />
                                     SOAK OFF WITH FULL SET: + $7
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style={{ color: "violet", fontWeight: "bold" }}>Toe Color Change</td>
-                                    <td colSpan="4">$10 for Gel; $7 for regular</td>
+                                    <td colSpan="4" style={{ textAlign: "center" }}>$10 for Gel; $7 for regular</td>
                                 </tr>
                                 <tr>
-                                    <td>* Jewel on 2 Fingers: $4 *</td>
-                                    <td>* Full Blinged out nail: $7 *</td>
-                                    <td colSpan="2">* Encapsulated Design: $3 (2 Fingers)  *</td>
+                                    <td style={{ textAlign: "center" }}>* Jewel on 2 Fingers: $4 *</td>
+                                    <td style={{ textAlign: "center" }}>* Full Blinged out nail: $7 *</td>
+                                    <td colSpan="2" style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
                                 </tr>
                                 <tr>
                                     <td style={{ textAlign: "center" }}>
@@ -122,6 +123,15 @@ class BodyComponent extends Component {
                         </Table>
                     </Col>
                 </Row>
+                <footer className="site-footer" style={{textAlign: "center"}}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center" style={{color: "#9df5cc", fontSize:"20px"}}> <span style={{textShadow: "2px 2px 2px #aaa"}}>Feel free to email me directly :</span>
+                            <a role="button" className="btn btn-link" href="mailto:Mmnuoz214@gmail.com"><i className="fa fa-envelope-o" /> Mmnuoz214@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </Container>
         );
     }

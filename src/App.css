@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap&effect=anaglyph');
 @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
 
 body {
   background-color: black;
-  text-shadow: 2px 2px 2px #aaa; 
+  /* text-shadow: 2px 2px 2px #aaa;  */
   background-image: url('../src/images/rocks.jpg');
 }
 
@@ -23,18 +24,6 @@ body {
   font-size: 25px;
 }
 
-.carousel {
-  width: 500px; 
-}
-
-#carouselborder {
-  margin: auto;
-  position: relative;
-  border: 10px solid;
-  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
-  border-image-slice: 1;
-}
-
 #jpic {
   border-radius: 25%;
   border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
@@ -42,16 +31,8 @@ body {
   border-image-slice: 1;
 }
 
-#cardnmap {
-  font-size: large;
-  font-weight: bold;
-  color: #9df5cc;
-  font-family: 'Courgette', cursive;
-  background-color: purple;
-  border-width: 10px;
-  outline: 10px solid #9df5ccda;
-  width: 25rem;
-  margin: auto;
+#tablestyle {
+  font-family: 'Manrope', sans-serif;
 }
 
 #modalbody {
@@ -66,19 +47,25 @@ body {
   border-radius: 15px, 50px;
 }
 
-
-
 #heightpic1 {
   border-radius: 15px 15px;
   padding-top: 15px;
   height: auto;
   width: 100%;
- 
 }
 
-#cardpic{
-  height: 275px;
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
 }
+
+#carouselborder {
+  position: relative;
+  border: 20px solid;
+  border-image-source: linear-gradient(45deg, black, black , grey);
+  border-image-slice: 1; 
+} 
 /* .cardprice {
   margin-left: 25px;
   width: 450px;
@@ -91,6 +78,18 @@ body {
 } */
 /* .accordian {
 background-color: black;
+} */
+
+/* #cardnmap {
+  font-size: large;
+  font-weight: bold;
+  color: #9df5cc;
+  font-family: 'Courgette', cursive;
+  background-color: purple;
+  border-width: 10px;
+  outline: 10px solid #9df5ccda;
+  width: 25rem;
+  margin: auto;
 } */
 
 /* .accordiancard {

@@ -6,6 +6,8 @@ import {
 } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+import DatePicker from 'react-datepicker';
+
 
 const logo = require('../images/pbmimg13.png');
 const miaPic1 = require('../images/miaPic3.jpg');
@@ -30,24 +32,29 @@ class Header extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            time: '',
-            date: '',
+            startDate: new Date(),
             touched: {
                 firstName: false,
                 lastName: false,
                 phoneNum: false,
                 email: false,
-                date: false
             }
         };
+
+        this.handleChange = this.handleChange.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-
     handleSubmit(values) {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is: ' + JSON.stringify(values));
+    }
+
+    handleChange(date) {
+        this.setState({
+            startDate: date
+        })
     }
 
     toggleModal() {
@@ -79,8 +86,8 @@ class Header extends Component {
                             <Nav navbar>
                                 <span style={{ color: "pink" }}>Hampton Roads Only!</span>
                                 <NavItem className="col-4">
-                                    <Button id="button1" onClick={this.toggleModal}
-                                        style={{ color: "white", fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
+                                    <Button color="primary" onClick={this.toggleModal}
+                                        style={{ fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
                                 </NavItem>
                             </Nav>
                         </div>
@@ -207,8 +214,14 @@ class Header extends Component {
                                     <div className="row">
                                         <div className="col-6">
                                             <Label htmlFor="date" style={{ fontWeight: "bold" }}>Date Requested</Label>
-                                            <Control.select model=".date" type="date" name="date" id="date"
+                                            <DatePicker
                                                 className="form-control"
+                                                model=".startDate"
+                                                id="startDate"
+                                                selected={this.state.startDate}
+                                                onChange={this.handleChange}
+                                                name="startDate"
+                                                dateFormat="MM/dd/yyyy"
                                             />
                                         </div>
                                         <div className="col">

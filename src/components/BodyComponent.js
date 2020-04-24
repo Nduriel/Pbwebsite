@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const capstyle = {
     fontStyle: "oblique",
     fontWeight: "bold",
-    color: "whitesmoke",
+    color: "#f1069f",
     fontSize: "20px"
 }
 
@@ -22,7 +22,7 @@ const pic2 = require('../images/miaPic6.jpg');
 const pic3 = require('../images/miaPic3.jpg');
 const pic4 = require('../images/miaPic4.jpg');
 const pic5 = require('../images/miaPic5.jpg');
-const pic6 = require('../images/miaPic6.jpg');
+const pic14 = require('../images/miaPic14.jpg');
 const pic7 = require('../images/miaPic7.jpg');
 
 class BodyComponent extends Component {
@@ -51,6 +51,10 @@ class BodyComponent extends Component {
                                 <Image src={pic4} alt="Fourth slide" fluid />
                                 <Carousel.Caption style={capstyle}> Dianne - "She is absolutely amazing takes her time and makes
                                      sure you love it before you leave she’s definitely my nail tech from here on out!"</Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <Image src={pic14} alt="Fourth slide" fluid />
+                                <Carousel.Caption style={capstyle}> Karen - "She does a wonderful job"</Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
@@ -123,15 +127,6 @@ class BodyComponent extends Component {
                         </Table>
                     </Col>
                 </Row>
-                <footer className="site-footer" style={{textAlign: "center"}}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col text-center" style={{color: "#9df5cc", fontSize:"20px"}}> <span style={{textShadow: "2px 2px 2px #aaa"}}>Feel free to email me directly :</span>
-                            <a role="button" className="btn btn-link" href="mailto:Mmnuoz214@gmail.com"><i className="fa fa-envelope-o" /> Mmnuoz214@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </Container>
         );
     }

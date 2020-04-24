@@ -10,8 +10,8 @@ import DatePicker from 'react-datepicker';
 
 
 const logo = require('../images/pbmimg13.png');
-const miaPic1 = require('../images/miaPic3.jpg');
-const miaPic2 = require('../images/miaPic2.jpg');
+const miaPic11 = require('../images/miaPic11.jpg');
+const miaPic12 = require('../images/miaPic12.jpg');
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -69,13 +69,13 @@ class Header extends Component {
                     <div className='container-fluid'>
                         <div className='row' style={{ textAlign: 'center', fontSize: "22px" }}>
                             <div className='col-4'>
-                                <Image id="jpic" style={{ height: "200px" }} src={miaPic2} alt="jpic1" roundedCircle />
+                                <Image id="jpic" style={{ height: "200px" }} src={miaPic12} alt="jpic1" roundedCircle />
                             </div>
                             <div className='col-4'>
                                 <Image style={{ height: "200px" }} src={logo} alt="logopic" />
                             </div>
                             <div className="col-4">
-                                <Image id="jpic" style={{ height: "200px" }} src={miaPic1} alt="jpic2" roundedCircle />
+                                <Image id="jpic" style={{ height: "200px" }} src={miaPic11} alt="jpic2" roundedCircle />
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ class Header extends Component {
                                                 model=".startDate"
                                                 id="startDate"
                                                 selected={this.state.startDate}
-                                                onChange={this.handleChange}
+                                                onChange={this.handleChange} onDateChange={date => { this.setState({ startDate: date }) }}
                                                 name="startDate"
                                                 dateFormat="MM/dd/yyyy"
                                             />

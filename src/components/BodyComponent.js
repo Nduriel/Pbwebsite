@@ -11,7 +11,6 @@ const capstyle = {
     fontSize: "20px"
 }
 
-
 const longNails = require('../images/miaPic5.jpg');
 const medNails = require('../images/miaPic14.jpg');
 const shortNails = require('../images/miaPic10.jpg');
@@ -21,9 +20,9 @@ const pic1 = require('../images/miaPic1.jpg');
 const pic2 = require('../images/miaPic6.jpg');
 const pic3 = require('../images/miaPic3.jpg');
 const pic4 = require('../images/miaPic4.jpg');
-const pic5 = require('../images/miaPic5.jpg');
 const pic14 = require('../images/miaPic14.jpg');
 const pic7 = require('../images/miaPic7.jpg');
+const pic5 = require('../images/miaPic5.jpg');
 
 class BodyComponent extends Component {
     render() {
@@ -34,7 +33,7 @@ class BodyComponent extends Component {
                         <Image src={bookappt} fluid id="heightpic" alt="booking" style={{ borderradius: "50%" }} />
                     </Col>
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
-                        <Carousel id="carouselborder">
+                        <Carousel id="carouselborder" fade>
                             <Carousel.Item>
                                 <Image src={pic1} alt="First slide" fluid />
                                 <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>

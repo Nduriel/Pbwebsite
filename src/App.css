@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
 
+
 body {
   background-color: black;
   /* text-shadow: 2px 2px 2px #aaa;  */
@@ -33,10 +34,6 @@ body {
   font-size: 25px;
 }
 
-/* #button1 {
-  background-color: #9df5cc;
-} */
-
 #jpic {
   border-radius: 25%;
   border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
@@ -66,12 +63,12 @@ body {
   border-radius: 15px, 50px;
 }
 
-#heightpic1 {
+/* #heightpic1 {
   border-radius: 15px 15px;
   padding-top: 15px;
   height: auto;
   width: 100%;
-}
+} */
 
 #carouselborder {
   position: relative;

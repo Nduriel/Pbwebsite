@@ -7,6 +7,9 @@ import {
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
+import { registerLocale, setDefaultLocale } from  "react-datepicker";
+import es from 'date-fns/locale/es';
+registerLocale('es', es);
 
 
 const logo = require('../images/pbmimg13.png');
@@ -32,7 +35,8 @@ class Header extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            startDate: new Date(),
+            value: '',
+            reserveDate: new Date(),
             touched: {
                 firstName: false,
                 lastName: false,
@@ -48,12 +52,12 @@ class Header extends Component {
 
     handleSubmit(values) {
         console.log('Current state is: ' + JSON.stringify(values));
-        alert('Current state is: ' + JSON.stringify(values));
+        alert('Current state is:' + ' ' + JSON.stringify(values));
     }
 
     handleChange(date) {
         this.setState({
-            startDate: date
+            reserveDate: date
         })
     }
 
@@ -113,7 +117,7 @@ class Header extends Component {
                     </div>
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
-                    <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }} toggle={this.toggleModal}>Send me your info and I'll contact you asap!</ModalHeader>
+                    <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }}>Send me your info and I'll contact you asap!</ModalHeader>
                     <ModalBody id="modalbody">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <Row className="formgroup">
@@ -212,22 +216,28 @@ class Header extends Component {
                             <Row className="formgroup">
                                 <Col md={11}>
                                     <div className="row">
-                                        <div className="col-6">
-                                            <Label htmlFor="date" style={{ fontWeight: "bold" }}>Date Requested</Label>
-                                            <DatePicker
+                                        <div className="col-12">
+                                            <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Date and Time Requested</Label> <br />
+                                            <Control
                                                 className="form-control"
-                                                model=".startDate"
-                                                id="startDate"
-                                                selected={this.state.startDate}
-                                                onChange={this.handleChange} onDateChange={date => { this.setState({ startDate: date }) }}
-                                                name="startDate"
-                                                dateFormat="MM/dd/yyyy"
-                                            />
-                                        </div>
-                                        <div className="col">
-                                            <Label htmlFor="time" style={{ fontWeight: "bold" }}>Time Requested</Label>
-                                            <Control.select model=".time" name="time" id="time"
-                                                className="form-control"
+                                                model=".reserveDate"
+                                                selected={this.state.reserveDate}
+                                                onDateChange={date => { this.setState({ reserveDate: date }) }}
+                                                onChange={this.handleChange}
+                                                component={DatePicker}
+                                                name="reserveDate"
+                                                id="reserveDate"
+                                                showTimeSelect
+                                                timeFormat="HH:mm"
+                                                timeIntervals={60}
+                                                timeCaption="time"
+                                                dateFormat="MM/dd/yyyy H:mm aa"
+                                                mapProps={({ reserveDate, handleChange }) => {
+                                                    return {
+                                                        date: reserveDate,
+                                                        onDateChange: handleChange,
+                                                    };
+                                                }}
                                             />
                                         </div>
                                     </div>
@@ -236,7 +246,7 @@ class Header extends Component {
                             <br />
                             <Col md={10}>
                                 <Row className="formgroup">
-                                    <Button type="submit" color="info">Reserve</Button>{' '}
+                                    <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>{' '}
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
                                 </Row>
                             </Col>

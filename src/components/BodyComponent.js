@@ -21,8 +21,8 @@ const pic2 = require('../images/miaPic6.jpg');
 const pic3 = require('../images/miaPic3.jpg');
 const pic4 = require('../images/miaPic4.jpg');
 const pic14 = require('../images/miaPic14.jpg');
-const pic7 = require('../images/miaPic7.jpg');
-const pic5 = require('../images/miaPic5.jpg');
+// const pic7 = require('../images/miaPic7.jpg');
+// const pic5 = require('../images/miaPic5.jpg');
 
 class BodyComponent extends Component {
     render() {

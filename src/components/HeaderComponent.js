@@ -7,7 +7,7 @@ import {
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import { registerLocale, setDefaultLocale } from  "react-datepicker";
+import { registerLocale, setDefaultLocale } from "react-datepicker";
 import es from 'date-fns/locale/es';
 registerLocale('es', es);
 
@@ -35,7 +35,7 @@ class Header extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            value: '',
+            time: '',
             reserveDate: new Date(),
             touched: {
                 firstName: false,
@@ -216,8 +216,8 @@ class Header extends Component {
                             <Row className="formgroup">
                                 <Col md={11}>
                                     <div className="row">
-                                        <div className="col-12">
-                                            <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Date and Time Requested</Label> <br />
+                                        <div className="col-6">
+                                            <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Date Requested</Label> <br />
                                             <Control
                                                 className="form-control"
                                                 model=".reserveDate"
@@ -227,11 +227,7 @@ class Header extends Component {
                                                 component={DatePicker}
                                                 name="reserveDate"
                                                 id="reserveDate"
-                                                showTimeSelect
-                                                timeFormat="HH:mm"
-                                                timeIntervals={60}
-                                                timeCaption="time"
-                                                dateFormat="MM/dd/yyyy H:mm aa"
+                                                dateFormat="MM/dd/yyyy"
                                                 mapProps={({ reserveDate, handleChange }) => {
                                                     return {
                                                         date: reserveDate,
@@ -239,6 +235,17 @@ class Header extends Component {
                                                     };
                                                 }}
                                             />
+                                        </div>
+                                        <div className="col-6">
+                                            <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Time Requested</Label><br />
+                                            <Control.select model=".time" id="time" name="time" className="form-control">
+                                                <option value="3PM">3PM</option>
+                                                <option value="4PM">4PM</option>
+                                                <option value="5PM">5PM</option>
+                                                <option value="6PM">6PM</option>
+                                                <option value="7PM">7PM</option>
+                                                <option value="8PM">8PM</option>
+                                            </Control.select>
                                         </div>
                                     </div>
                                 </Col>

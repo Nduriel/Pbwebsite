@@ -7,9 +7,7 @@ import {
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import { registerLocale, setDefaultLocale } from "react-datepicker";
-import es from 'date-fns/locale/es';
-registerLocale('es', es);
+
 
 
 const logo = require('../images/pbmimg13.png');
@@ -21,6 +19,7 @@ const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+
 
 
 const spancolor = {
@@ -52,7 +51,7 @@ class Header extends Component {
 
     handleSubmit(values) {
         console.log('Current state is: ' + JSON.stringify(values));
-        alert('Current state is:' + ' ' + JSON.stringify(values));
+        alert('Current state is:' + JSON.stringify(values));
     }
 
     handleChange(date) {
@@ -99,15 +98,20 @@ class Header extends Component {
                             <div className="col-3">
                                 <Nav navbar>
                                     <NavItem>
-                                        <a role="button" className="btn btn-link" href="tel:+17579127833"><i className="fa fa-phone fa-lg" /></a>
+                                        <a role="button" className="btn btn-link" target="_blank"
+                                            rel="noreferrer noopener" href="tel:+17579127833">
+                                            <i className="fa fa-phone fa-lg" />
+                                        </a>
                                     </NavItem>
                                     <NavItem>
-                                        <a role="button" className="btn btn-link btn-instagram" aria-hidden="true" href="http://instagram.com/polished.bymia/">
+                                        <a role="button" className="btn btn-link btn-instagram" target="_blank"
+                                            rel="noreferrer noopener" aria-hidden="true" href="http://instagram.com/polished.bymia/">
                                             <i className="fa fa-instagram fa-lg" />
                                         </a>
                                     </NavItem>
                                     <NavItem>
-                                        <a role="button" className="btn btn-link btn-facebook" aria-hidden="true" href="http://facebook.com/polishedbymia/">
+                                        <a role="button" className="btn btn-link btn-facebook" target="_blank"
+                                            rel="noreferrer noopener" aria-hidden="true" href="http://facebook.com/polishedbymia/">
                                             <i className="fa fa-facebook fa-lg" />
                                         </a>
                                     </NavItem>
@@ -117,7 +121,9 @@ class Header extends Component {
                     </div>
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
-                    <ModalHeader style={{ backgroundColor: "#680146", color: "#9df5cc", borderBottomColor: "purple" }}>Send me your info and I'll contact you asap!</ModalHeader>
+                    <ModalHeader style={{ backgroundColor: "black", color: "#9df5cc", borderBottomColor: "purple" }}>
+                        Send me your info and I'll contact you asap!
+                    </ModalHeader>
                     <ModalBody id="modalbody">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <Row className="formgroup">
@@ -238,14 +244,32 @@ class Header extends Component {
                                         </div>
                                         <div className="col-6">
                                             <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Time Requested</Label><br />
-                                            <Control.select model=".time" id="time" name="time" className="form-control">
-                                                <option value="3PM">3PM</option>
-                                                <option value="4PM">4PM</option>
-                                                <option value="5PM">5PM</option>
-                                                <option value="6PM">6PM</option>
-                                                <option value="7PM">7PM</option>
-                                                <option value="8PM">8PM</option>
+                                            <Control.select model=".time"
+                                                id="time"
+                                                name="time"
+                                                className="form-control"
+                                                validators={{
+                                                    required,
+                                                    isNumber
+                                                }}>
+                                                <option value="select">Select Time</option>
+                                                <option value="3">3PM</option>
+                                                <option value="4">4PM</option>
+                                                <option value="5">5PM</option>
+                                                <option value="6">6PM</option>
+                                                <option value="7">7PM</option>
+                                                <option value="8">8PM</option>
                                             </Control.select>
+                                            <Errors
+                                                className="text-danger"
+                                                model=".time"
+                                                show="touched"
+                                                component="div"
+                                                messages={{
+                                                    required: <span style={spancolor}>'Required'</span>,
+                                                    isNumber: <span style={spancolor}>'Select an appointment timeframe'</span>,
+                                                }}
+                                            />
                                         </div>
                                     </div>
                                 </Col>
@@ -253,13 +277,13 @@ class Header extends Component {
                             <br />
                             <Col md={10}>
                                 <Row className="formgroup">
-                                    <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>{' '}
+                                    <Button type="submit" color="info" onSubmit={this.handleSubmit} onClick={this.toggleModal}>Reserve</Button>{' '}
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
                                 </Row>
                             </Col>
                         </LocalForm>
                     </ModalBody>
-                    <ModalFooter style={{ backgroundColor: "#680146", borderTopColor: "purple", color: "#9df5cc" }}>
+                    <ModalFooter style={{ backgroundColor: "black", borderTopColor: "purple", color: "#9df5cc" }}>
                         <Col>**Dates and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment**</Col>
                     </ModalFooter>

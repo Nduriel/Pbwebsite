@@ -7,6 +7,30 @@ body {
   background-color: black;
   /* text-shadow: 2px 2px 2px #aaa;  */
   background-image: url('../src/images/rocks.jpg');
+  background-position: center;
+}
+
+#carouselborder {
+  position: relative;
+  border: 35px solid;
+  border-style: inset;
+  border-image-source: linear-gradient(45deg, black, black , grey);
+  border-image-slice: 1; 
+  background-color: black;
+} 
+
+#heightpic {
+  padding-top: 15px;
+  height: auto;
+  width: 100%;
+  border-radius: 15px, 50px;
+}
+
+#jpic {
+  border-radius: 25%;
+  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
+  border: 10px solid #f1069f;
+  border-image-slice: 1;
 }
 
 .jumbotron {
@@ -27,6 +51,11 @@ body {
   100% {background-position: 100%}
 }
 
+#modalbody {
+  color: #9df5cc;
+  background-image: linear-gradient(to bottom,  #610241,#f1069f, #610241);
+}
+
 .navbar {
   background-image: linear-gradient(#610241, #c40484);
   border-bottom: 7px solid pink;
@@ -34,50 +63,21 @@ body {
   font-size: 25px;
 }
 
-#jpic {
-  border-radius: 25%;
-  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
-  border: 10px solid #f1069f;
-  border-image-slice: 1;
-}
-
 #tablestyle {
   font-family: 'Manrope', sans-serif;
+  /* border-radius: 1%; */
 }
 
 .site-footer {
   border-top: 7px solid pink;
-  background-image: linear-gradient(#610241, #c40484);
+  background-image: linear-gradient( #c40484, #610241);
   padding: 20px ;
   font-family: 'Courgette', cursive;
 }
-#modalbody {
-  color: #9df5cc;
-  background-image: linear-gradient(to bottom, #f1069f, purple, #f1069f);
-}
 
-#heightpic {
-  padding-top: 15px;
-  height: auto;
-  width: 100%;
-  border-radius: 15px, 50px;
-}
 
-/* #heightpic1 {
-  border-radius: 15px 15px;
-  padding-top: 15px;
-  height: auto;
-  width: 100%;
-} */
 
-#carouselborder {
-  position: relative;
-  border: 35px solid;
-  border-style: inset;
-  border-image-source: linear-gradient(45deg, black, black , grey);
-  border-image-slice: 1; 
-  background-color: black;
-} 
+
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
 

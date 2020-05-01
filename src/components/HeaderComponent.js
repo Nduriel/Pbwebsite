@@ -72,13 +72,16 @@ class Header extends Component {
                     <div className='container-fluid'>
                         <div className='row' style={{ textAlign: 'center', fontSize: "22px" }}>
                             <div className='col-4'>
-                                <Image id="jpic" style={{ height: "200px" }} src={miaPic12} alt="jpic1" roundedCircle />
+                                <Image id="jpic" style={{ height: "200px" }}
+                                    src={miaPic12} alt="jpic1" roundedCircle />
                             </div>
                             <div className='col-4'>
-                                <Image style={{ height: "200px" }} src={logo} alt="logopic" />
+                                <Image style={{ height: "200px" }}
+                                    src={logo} alt="logopic" />
                             </div>
                             <div className="col-4">
-                                <Image id="jpic" style={{ height: "200px" }} src={miaPic11} alt="jpic2" roundedCircle />
+                                <Image id="jpic" style={{ height: "200px" }}
+                                    src={miaPic11} alt="jpic2" roundedCircle />
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,9 @@ class Header extends Component {
                     <div className="container-fluid">
                         <div className="row row-cols-1">
                             <Nav navbar>
-                                <span style={{ color: "pink" }}>Hampton Roads Only!</span>
+                                <span style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
+                                    Hampton Roads Only!
+                                </span>
                                 <NavItem className="col-4">
                                     <Button color="primary" onClick={this.toggleModal}
                                         style={{ fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
@@ -105,13 +110,15 @@ class Header extends Component {
                                     </NavItem>
                                     <NavItem>
                                         <a role="button" className="btn btn-link btn-instagram" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true" href="http://instagram.com/polished.bymia/">
+                                            rel="noreferrer noopener" aria-hidden="true"
+                                            href="http://instagram.com/polished.bymia/">
                                             <i className="fa fa-instagram fa-lg" />
                                         </a>
                                     </NavItem>
                                     <NavItem>
                                         <a role="button" className="btn btn-link btn-facebook" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true" href="http://facebook.com/polishedbymia/">
+                                            rel="noreferrer noopener" aria-hidden="true"
+                                            href="http://facebook.com/polishedbymia/">
                                             <i className="fa fa-facebook fa-lg" />
                                         </a>
                                     </NavItem>
@@ -120,8 +127,12 @@ class Header extends Component {
                         </div>
                     </div>
                 </Navbar>
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} className={this.props.className}>
-                    <ModalHeader style={{ backgroundColor: "black", color: "#9df5cc", borderBottomColor: "purple" }}>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}
+                    className={this.props.className}>
+                    <ModalHeader style={{
+                        backgroundColor: "black", color: "#9df5cc",
+                        borderBottomColor: "purple"
+                    }}>
                         Send me your info and I'll contact you asap!
                     </ModalHeader>
                     <ModalBody id="modalbody">

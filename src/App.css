@@ -12,8 +12,9 @@ body {
 
 #carouselborder {
   position: relative;
-  border: 35px solid;
-  border-style: inset;
+  border: 45px solid;
+  border-style: outset;
+  border-radius: 5% / 5%;
   border-image-source: linear-gradient(45deg, black, black , grey);
   border-image-slice: 1; 
   background-color: black;
@@ -23,13 +24,20 @@ body {
   padding-top: 15px;
   height: auto;
   width: 100%;
-  border-radius: 15px, 50px;
+  border-radius: 2% / 2%;
+}
+
+i {
+  background: #007aff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 #jpic {
   border-radius: 25%;
-  border-image-source: linear-gradient(45deg, #680146, #f1069f, #60106B, #9df5cc);
-  border: 10px solid #f1069f;
+  background: -webkit-linear-gradient(left top, #610241 0%, #f1069f 100%);
+  padding: 10px;
   border-image-slice: 1;
 }
 
@@ -74,10 +82,6 @@ body {
   padding: 20px ;
   font-family: 'Courgette', cursive;
 }
-
-
-
-
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
 

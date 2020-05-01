@@ -30,7 +30,7 @@ class BodyComponent extends Component {
             <Container fluid>
                 <Row>
                     <Col lg={6} sm={12}>
-                        <Image src={bookappt} fluid id="heightpic" alt="bookingpic" style={{ borderradius: "50%" }} />
+                        <Image src={bookappt} fluid id="heightpic" alt="bookingpic" />
                     </Col>
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
                         <Carousel id="carouselborder" fade>
@@ -40,7 +40,7 @@ class BodyComponent extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={pic2} alt="Second slide" fluid />
-                                <Carousel.Caption style={capstyle}>Patti - "maria does a awesome nails"</Carousel.Caption>
+                                <Carousel.Caption style={capstyle}>Patti - "Maria does a awesome nails"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={pic3} alt="Third slide" fluid />

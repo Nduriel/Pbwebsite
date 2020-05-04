@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import {
     Jumbotron, Navbar, Nav, NavItem,
     Label, Button, Modal, ModalHeader,
-    ModalBody, ModalFooter, Col, Row,
+    ModalBody, ModalFooter, Col, Row, Container
 } from 'reactstrap';
+// import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 
-
+//CHECK OUT HOW TO MAKE MY NAVBAR RESPONSIVE TO VIEWPORT REACT-BOOTSTRAP DOC
 
 const logo = require('../images/pbmimg13.png');
 const miaPic11 = require('../images/miaPic11.jpg');
 const miaPic12 = require('../images/miaPic12.jpg');
-
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
@@ -69,26 +69,26 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron fluid>
-                    <div className='container-fluid'>
-                        <div className='row' style={{ textAlign: 'center', fontSize: "22px" }}>
-                            <div className='col-4'>
+                    <Container fluid>
+                        <Row style={{ textAlign: 'center', fontSize: "22px" }}>
+                            <Col xs={3} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={miaPic12} alt="jpic1" roundedCircle />
-                            </div>
-                            <div className='col-4'>
+                            </Col>
+                            <Col xs={3} md={4} lg={4}>
                                 <Image style={{ height: "200px" }}
                                     src={logo} alt="logopic" />
-                            </div>
-                            <div className="col-4">
+                            </Col>
+                            <Col xs={3} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={miaPic11} alt="jpic2" roundedCircle />
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Jumbotron>
-                <Navbar light expand="sm" sticky="top">
-                    <div className="container-fluid">
-                        <div className="row row-cols-1">
+                <Navbar collapeOnSelect light expand="sm" sticky="top">
+                    <Container fluid>
+                        <Row lg={12}>
                             <Nav navbar>
                                 <span style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
                                     Hampton Roads Only!
@@ -98,9 +98,9 @@ class Header extends Component {
                                         style={{ fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
                                 </NavItem>
                             </Nav>
-                        </div>
-                        <div className="row">
-                            <div className="col-3">
+                        </Row>
+                        <Row>
+                            <Col lg={3}>
                                 <Nav navbar>
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"
@@ -123,9 +123,9 @@ class Header extends Component {
                                         </a>
                                     </NavItem>
                                 </Nav>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}
                     className={this.props.className}>

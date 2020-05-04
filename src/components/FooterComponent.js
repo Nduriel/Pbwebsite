@@ -7,7 +7,7 @@ class FooterComponent extends Component {
             <footer className="site-footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 text-left">
+                        <div className="col-5 text-left">
                             <span style={{
                                 textShadow: "2px 2px 2px #aaa",
                                 color: "#9df5cc", fontSize: "16px"
@@ -15,8 +15,8 @@ class FooterComponent extends Component {
                                 <sub>&copy;</sub> Polished By Mia<br />Hampton Roads(757) only!
                             </span>
                         </div>
-                        <div className="col-6 text-right"
-                            style={{ color: "#9df5cc", fontSize: "18px" }}>
+                        <div className="col-7 text-right"
+                            style={{ color: "#9df5cc", fontSize: "16px" }}>
                             <span style={{ textShadow: "2px 2px 2px #aaa" }}>
                                 Questions? Send an email to:
                             </span>

@@ -12,12 +12,12 @@ body {
 
 #carouselborder {
   position: relative;
-  border: 45px solid;
-  border-style: outset;
-  border-radius: 5% / 5%;
-  border-image-source: linear-gradient(45deg, black, black , grey);
-  border-image-slice: 1; 
-  background-color: black;
+  border: 49px solid;
+  border-style: groove;
+  border-color: rgb(100, 99, 99);
+  /* border-image-source: linear-gradient(45deg, black, black , grey);
+  border-image-slice: 1;  */
+  box-shadow: 10px 5px 5px black;
 } 
 
 #heightpic {
@@ -30,7 +30,7 @@ body {
 i {
   background: #007aff;
   color: white;
-  padding: 10px;
+  padding: 11px;
   border-radius: 50%;
 }
 

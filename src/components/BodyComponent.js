@@ -59,7 +59,7 @@ class BodyComponent extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ paddingTop: "10px" }}>
+                    <Col style={{ paddingTop: "19px" }}>
                         <Table id="tablestyle" striped bordered hover variant="dark">
                             <thead style={{ color: "pink", fontWeight: "bold" }}>
                                 <tr>
@@ -94,7 +94,7 @@ class BodyComponent extends Component {
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic<br /> Full Set</td>
-                                    <td colSpan="4" style={{ textAlign: "center" }}><u>Will not</u> fill color Acrylic.
+                                    <td colSpan="4" style={{ textAlign: "center" }}><u style={{ color: "red" }}>Will not</u> fill color Acrylic.
                                     Nails need to be soaked off for an additional $ 5<br />
                                     SOAK OFF WITH FULL SET: + $7
                                     </td>

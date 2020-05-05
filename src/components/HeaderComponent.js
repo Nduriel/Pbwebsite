@@ -71,15 +71,15 @@ class Header extends Component {
                 <Jumbotron fluid>
                     <Container fluid>
                         <Row style={{ textAlign: 'center', fontSize: "22px" }}>
-                            <Col xs={3} md={4} lg={4}>
+                            <Col xs={4} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={miaPic12} alt="jpic1" roundedCircle />
                             </Col>
-                            <Col xs={3} md={4} lg={4}>
+                            <Col xs={4}md={4} lg={4}>
                                 <Image style={{ height: "200px" }}
                                     src={logo} alt="logopic" />
                             </Col>
-                            <Col xs={3} md={4} lg={4}>
+                            <Col xs={4} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={miaPic11} alt="jpic2" roundedCircle />
                             </Col>
@@ -288,7 +288,7 @@ class Header extends Component {
                             <br />
                             <Col md={10}>
                                 <Row className="formgroup">
-                                    <Button type="submit" color="info" onSubmit={this.handleSubmit} onClick={this.toggleModal}>Reserve</Button>{' '}
+                                    <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>{' '}
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
                                 </Row>
                             </Col>

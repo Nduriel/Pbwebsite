@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import {
-    Navbar, Nav, NavItem,
     Label, Button, Modal, ModalHeader,
-    ModalBody, ModalFooter, Col, Row, Container
+    ModalBody, ModalFooter, Col, Row
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
@@ -61,48 +60,7 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <JumboComponent />
-                <Navbar collapeOnSelect light expand="sm" sticky="top">
-                    <Container fluid>
-                        <Row lg={12}>
-                            <Nav navbar>
-                                <span id="goneText" style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
-                                    Hampton Roads Only!
-                                </span>
-                                <NavItem className="col-4">
-                                    <Button color="primary" onClick={this.toggleModal}
-                                        style={{ fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
-                                </NavItem>
-                            </Nav>
-                        </Row>
-                        <Row>
-                            <Col lg={3}>
-                                <Nav navbar style={{ flexDirection: "row" }}>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link" target="_blank"
-                                            rel="noreferrer noopener" href="tel:+17579127833">
-                                            <i className="fa fa-phone fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link btn-instagram" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true"
-                                            href="http://instagram.com/polished.bymia/">
-                                            <i className="fa fa-instagram fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link btn-facebook" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true"
-                                            href="http://facebook.com/polishedbymia/">
-                                            <i className="fa fa-facebook fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                </Nav>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Navbar>
+                <JumboComponent call={this.toggleModal} />
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}
                     className={this.props.className}>
                     <ModalHeader style={{

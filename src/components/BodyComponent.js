@@ -10,19 +10,20 @@ const capstyle = {
     color: "#f1069f",
     fontSize: "20px"
 }
-
-const longNails = require('../images/miaPic5.jpg');
-const medNails = require('../images/miaPic14.jpg');
-const shortNails = require('../images/miaPic10.jpg');
-const tpic = require('../images/noticepic.jpg');
-const bookappt = require('../images/bookappt2.jpg');
-const pic1 = require('../images/miaPic1.jpg');
-const pic2 = require('../images/miaPic6.jpg');
-const pic3 = require('../images/miaPic3.jpg');
-const pic4 = require('../images/miaPic4.jpg');
-const pic14 = require('../images/miaPic14.jpg');
-// const pic7 = require('../images/miaPic7.jpg');
-// const pic5 = require('../images/miaPic5.jpg');
+const galpics = {
+        longNails: require('../images/miaPic5.jpg'),
+        medNails: require('../images/miaPic14.jpg'),
+        shortNails: require('../images/miaPic10.jpg'),
+        tpic: require('../images/noticepic.jpg'),
+        bookappt: require('../images/bookappt2.jpg'),
+        pic1: require('../images/miaPic1.jpg'),
+        pic2: require('../images/miaPic6.jpg'),
+        pic3: require('../images/miaPic3.jpg'),
+        pic4: require('../images/miaPic4.jpg'),
+        pic5: require('../images/miaPic5.jpg'),
+        pic14: require('../images/miaPic14.jpg'),
+        pic7: require('../images/miaPic7.jpg'),    
+};
 
 class BodyComponent extends Component {
     render() {
@@ -30,29 +31,29 @@ class BodyComponent extends Component {
             <Container fluid>
                 <Row>
                     <Col lg={6} sm={12}>
-                        <Image src={bookappt} fluid id="heightpic" alt="bookingpic" />
+                        <Image src={galpics.bookappt} fluid id="heightpic" alt="bookingpic" />
                     </Col>
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
-                        <Carousel id="carouselborder" fade>
+                        <Carousel id="carouselborder" slide interval={4500}>
                             <Carousel.Item>
-                                <Image src={pic1} alt="First slide" fluid />
+                                <Image src={galpics.pic1} alt="First slide" fluid />
                                 <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={pic2} alt="Second slide" fluid />
+                                <Image src={galpics.pic2} alt="Second slide" fluid />
                                 <Carousel.Caption style={capstyle}>Patti - "Maria does a awesome nails"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={pic3} alt="Third slide" fluid />
+                                <Image src={galpics.pic3} alt="Third slide" fluid />
                                 <Carousel.Caption style={capstyle}>Katrina - "she is awesome!!! do not hesitate to hit her up!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={pic4} alt="Fourth slide" fluid />
+                                <Image src={galpics.pic4} alt="Fourth slide" fluid />
                                 <Carousel.Caption style={capstyle}> Dianne - "She is absolutely amazing takes her time and makes
                                      sure you love it before you leave she’s definitely my nail tech from here on out!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={pic14} alt="Fourth slide" fluid />
+                                <Image src={galpics.pic14} alt="Fourth slide" fluid />
                                 <Carousel.Caption style={capstyle}> Karen - "She does a wonderful job"</Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
@@ -110,16 +111,16 @@ class BodyComponent extends Component {
                                 </tr>
                                 <tr>
                                     <td style={{ textAlign: "center" }}>
-                                        <Image src={tpic} width="200px" thumbnail />
+                                        <Image src={galpics.tpic} width="200px" thumbnail />
                                     </td>
                                     <td style={{ textAlign: "center" }}>
-                                        <Image src={shortNails} width="180px" thumbnail fluid />
+                                        <Image src={galpics.shortNails} width="180px" thumbnail fluid />
                                     </td>
                                     <td style={{ textAlign: "center" }}>
-                                        <Image src={medNails} width="180px" thumbnail fluid />
+                                        <Image src={galpics.medNails} width="180px" thumbnail fluid />
                                     </td>
                                     <td style={{ textAlign: "center" }}>
-                                        <Image src={longNails} width="147px" thumbnail fluid />
+                                        <Image src={galpics.longNails} width="147px" thumbnail fluid />
                                     </td>
                                 </tr>
                             </tbody>

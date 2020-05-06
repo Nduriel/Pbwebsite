@@ -10,10 +10,14 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 
 //CHECK OUT HOW TO MAKE MY NAVBAR RESPONSIVE TO VIEWPORT REACT-BOOTSTRAP DOC
+const pics = {
+    logo: require('../images/pbmimg13.png'),
+    miaPic11: require('../images/miaPic11.jpg'),
+    miaPic12: require('../images/miaPic12.jpg')
+};
 
-const logo = require('../images/pbmimg13.png');
-const miaPic11 = require('../images/miaPic11.jpg');
-const miaPic12 = require('../images/miaPic12.jpg');
+
+
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
@@ -73,15 +77,15 @@ class Header extends Component {
                         <Row style={{ textAlign: 'center', fontSize: "22px" }}>
                             <Col xs={4} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
-                                    src={miaPic12} alt="jpic1" roundedCircle />
+                                    src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
-                            <Col xs={4}md={4} lg={4}>
-                                <Image style={{ height: "200px" }}
-                                    src={logo} alt="logopic" />
+                            <Col xs={4} md={4} lg={4}>
+                                <Image style={{ height: "200px", textAlign: "center" }}
+                                    src={pics.logo} alt="logopic" />
                             </Col>
                             <Col xs={4} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
-                                    src={miaPic11} alt="jpic2" roundedCircle />
+                                    src={pics.miaPic11} alt="jpic2" roundedCircle />
                             </Col>
                         </Row>
                     </Container>
@@ -90,7 +94,7 @@ class Header extends Component {
                     <Container fluid>
                         <Row lg={12}>
                             <Nav navbar>
-                                <span style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
+                                <span id="goneText" style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
                                     Hampton Roads Only!
                                 </span>
                                 <NavItem className="col-4">
@@ -101,7 +105,7 @@ class Header extends Component {
                         </Row>
                         <Row>
                             <Col lg={3}>
-                                <Nav navbar>
+                                <Nav navbar style={{flexDirection: "row"}}>
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"
                                             rel="noreferrer noopener" href="tel:+17579127833">
@@ -296,7 +300,7 @@ class Header extends Component {
                     </ModalBody>
                     <ModalFooter style={{ backgroundColor: "black", borderTopColor: "purple", color: "#9df5cc" }}>
                         <Col>**Dates and time submitted are not guaranteed**<br />
-                                    **Allow 2 hours per appointment**</Col>
+                                    **Allow 2 hours per appointment** </Col>
                     </ModalFooter>
                 </Modal>
             </React.Fragment>

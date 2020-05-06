@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import {
-    Jumbotron, Navbar, Nav, NavItem,
+    Navbar, Nav, NavItem,
     Label, Button, Modal, ModalHeader,
     ModalBody, ModalFooter, Col, Row, Container
 } from 'reactstrap';
-// import Navbar from 'react-bootstrap/Navbar';
-import Image from 'react-bootstrap/Image';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-
-//CHECK OUT HOW TO MAKE MY NAVBAR RESPONSIVE TO VIEWPORT REACT-BOOTSTRAP DOC
-const pics = {
-    logo: require('../images/pbmimg13.png'),
-    miaPic11: require('../images/miaPic11.jpg'),
-    miaPic12: require('../images/miaPic12.jpg')
-};
-
-
+import JumboComponent from './JumboComponent';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -24,11 +14,10 @@ const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-
-
 const spancolor = {
     color: "white"
 }
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -72,24 +61,7 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
-                    <Container fluid>
-                        <Row style={{ textAlign: 'center', fontSize: "22px" }}>
-                            <Col xs={4} md={4} lg={4}>
-                                <Image id="jpic" style={{ height: "200px" }}
-                                    src={pics.miaPic12} alt="jpic1" roundedCircle />
-                            </Col>
-                            <Col xs={4} md={4} lg={4}>
-                                <Image style={{ height: "200px", textAlign: "center" }}
-                                    src={pics.logo} alt="logopic" />
-                            </Col>
-                            <Col xs={4} md={4} lg={4}>
-                                <Image id="jpic" style={{ height: "200px" }}
-                                    src={pics.miaPic11} alt="jpic2" roundedCircle />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Jumbotron>
+                <JumboComponent />
                 <Navbar collapeOnSelect light expand="sm" sticky="top">
                     <Container fluid>
                         <Row lg={12}>
@@ -105,7 +77,7 @@ class Header extends Component {
                         </Row>
                         <Row>
                             <Col lg={3}>
-                                <Nav navbar style={{flexDirection: "row"}}>
+                                <Nav navbar style={{ flexDirection: "row" }}>
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"
                                             rel="noreferrer noopener" href="tel:+17579127833">

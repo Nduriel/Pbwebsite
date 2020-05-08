@@ -79,14 +79,14 @@ class Header extends Component {
                         textAlign: "center"
                     }}>
                         Send me your info and I'll contact you asap!<br />
-                        <span >{''}**Serving the Hampton <span style={{color:"red"}}>757</span> Roads**</span>
+                        <span >{''}**Serving the Hampton <span style={{ color: "red" }}>757</span> Roads**</span>
                     </ModalHeader>
                     <ModalBody id="modalbody">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <Row className="formgroup">
                                 <Col md={12}>
-                                    <Label htmlFor="firstName" 
-                                    style={{ fontWeight: "bold" }}>First Name</Label>
+                                    <Label htmlFor="firstName"
+                                        style={{ fontWeight: "bold" }}>First Name</Label>
                                     <Control.text model=".firstName"
                                         name="firstName"
                                         id="firstName"
@@ -235,8 +235,8 @@ class Header extends Component {
                                 </Col>
                             </Row>
                             <br />
-                            <Col md={{size:12, offset: 4}} >
-                                <Row className="formgroup" style={{position: "relative",textAlign: "center"}}>
+                            <Col md={{ size: 12, offset: 4 }} >
+                                <Row className="formgroup" style={{ position: "relative", textAlign: "center" }}>
                                     <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
                                 </Row>

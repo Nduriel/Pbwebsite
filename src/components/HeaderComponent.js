@@ -6,6 +6,7 @@ import {
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 import JumboComponent from './JumboComponent';
+import Instafeed from 'instafeed.js';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -58,6 +59,14 @@ class Header extends Component {
         });
     }
     render() {
+
+        let feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'polishedbymia',
+            clientId: 'polished.bymia'
+        });
+        feed.run();
+
         return (
             <React.Fragment>
                 <JumboComponent call={this.toggleModal} />
@@ -65,16 +74,22 @@ class Header extends Component {
                     className={this.props.className}>
                     <ModalHeader style={{
                         backgroundColor: "black", color: "#9df5cc",
-                        borderBottomColor: "purple"
+                        borderBottomColor: "purple",
+                        fontStyle: "italic",
+                        textAlign: "center"
                     }}>
-                        Send me your info and I'll contact you asap!
+                        Send me your info and I'll contact you asap!<br />
+                        <span >{''}**Serving the Hampton <span style={{color:"red"}}>757</span> Roads**</span>
                     </ModalHeader>
                     <ModalBody id="modalbody">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <Row className="formgroup">
-                                <Col md={10}>
-                                    <Label htmlFor="firstName" style={{ fontWeight: "bold" }}>First Name</Label>
-                                    <Control.text model=".firstName" name="firstName" id="firstName"
+                                <Col md={12}>
+                                    <Label htmlFor="firstName" 
+                                    style={{ fontWeight: "bold" }}>First Name</Label>
+                                    <Control.text model=".firstName"
+                                        name="firstName"
+                                        id="firstName"
                                         placeholder="First Name"
                                         className="form-control"
                                         validators={{
@@ -118,7 +133,7 @@ class Header extends Component {
                                 </Col>
                             </Row><br />
                             <Row className="formgroup">
-                                <Col md={10}>
+                                <Col md={12}>
                                     <Label htmlFor="email" style={{ fontWeight: "bold" }}>Email Address</Label>
                                     <Control.text model=".email" name="email" id="emailaddress"
                                         placeholder="Email"
@@ -165,7 +180,7 @@ class Header extends Component {
                             </Row>
                             <br />
                             <Row className="formgroup">
-                                <Col md={11}>
+                                <Col md={12}>
                                     <div className="row">
                                         <div className="col-6">
                                             <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>Date Requested</Label> <br />
@@ -220,15 +235,21 @@ class Header extends Component {
                                 </Col>
                             </Row>
                             <br />
-                            <Col md={10}>
-                                <Row className="formgroup">
-                                    <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>{' '}
+                            <Col md={{size:12, offset: 4}} >
+                                <Row className="formgroup" style={{position: "relative",textAlign: "center"}}>
+                                    <Button type="submit" color="info" onSubmit={this.handleSubmit}>Reserve</Button>
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
                                 </Row>
                             </Col>
                         </LocalForm>
                     </ModalBody>
-                    <ModalFooter style={{ backgroundColor: "black", borderTopColor: "purple", color: "#9df5cc" }}>
+                    <ModalFooter style={{
+                        backgroundColor: "black",
+                        borderTopColor: "purple",
+                        color: "#9df5cc",
+                        fontStyle: "italic",
+                        textAlign: "center"
+                    }}>
                         <Col>**Dates and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment** </Col>
                     </ModalFooter>

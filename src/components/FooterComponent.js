@@ -17,7 +17,7 @@ class FooterComponent extends Component {
                         </div>
                         <div className="col-7 text-right"
                             style={{ color: "#9df5cc", fontSize: "16px" }}>
-                            <span style={{ textShadow: "2px 2px 2px #aaa" }}>
+                            <span id="goneText" style={{ textShadow: "2px 2px 2px #aaa" }}>
                                 Questions? Send an email to:
                             </span>
                             <a role="button" className="btn btn-link" target="_blank"

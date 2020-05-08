@@ -18,15 +18,15 @@ class JumboComponent extends Component {
                 <Jumbotron fluid>
                     <Container fluid>
                         <Row style={{ textAlign: 'center', fontSize: "22px" }}>
-                            <Col xs={4} md={4} lg={4}>
+                            <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
-                            <Col xs={4} md={4} lg={4}>
-                                <Image style={{ height: "200px", textAlign: "center" }}
+                            <Col xs={12} md={4} lg={4}>
+                                <Image style={{ height: "200px"}}
                                     src={pics.logo} alt="logopic" />
                             </Col>
-                            <Col xs={4} md={4} lg={4}>
+                            <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic11} alt="jpic2" roundedCircle />
                             </Col>

@@ -17,8 +17,10 @@ class JumboComponent extends Component {
             <React.Fragment>
                 <Jumbotron fluid>
                     <Container fluid>
-                        <Row style={{ textAlign: 'center', fontSize: "22px"}}>
-                            <Col xs={0} md={4} lg={4}>
+                        <Row style={{ textAlign: 'center'}}>
+                            <Col><span id="headerFont">Polished By Mia</span></Col>
+                           
+                            {/* <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
@@ -29,7 +31,7 @@ class JumboComponent extends Component {
                             <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic11} alt="jpic2" roundedCircle />
-                            </Col>
+                            </Col> */}
                         </Row>
                     </Container>
                 </Jumbotron>
@@ -37,7 +39,7 @@ class JumboComponent extends Component {
                     <Container fluid>
                         <Row lg={12}>
                             <Nav navbar>
-                                <span id="goneText" style={{ color: "pink", textShadow: "1px 1px 2px black, 0 0 25px white, 0 0 5px white" }}>
+                                <span id="goneText" style={{ color: "pink",  textShadow: "2px 2px 2px #f1069f " }}>
                                     Hampton Roads Only!
                                 </span>
                                 <NavItem className="col-4">

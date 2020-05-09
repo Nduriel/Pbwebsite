@@ -8,14 +8,15 @@ const capstyle = {
     fontStyle: "oblique",
     fontWeight: "bold",
     color: "#f1069f",
-    fontSize: "20px"
+    fontSize: "20px",
+    textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black"
 }
 const galpics = {
-    longNails: require('../images/miaPic5.jpg'),
+    longNails: require('../images/miaPic16.jpg'),
     medNails: require('../images/miaPic14.jpg'),
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
-    bookappt: require('../images/bookappt2.jpg'),
+    bookappt: require('../images/bookappt1.jpg'),
     pic1: require('../images/miaPic1.jpg'),
     pic2: require('../images/miaPic6.jpg'),
     pic3: require('../images/miaPic3.jpg'),
@@ -45,12 +46,12 @@ class BodyComponent extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={galpics.pic3} alt="Third slide" fluid />
-                                <Carousel.Caption style={capstyle}>Katrina - "she is awesome!!! do not hesitate to hit her up!!"</Carousel.Caption>
+                                <Carousel.Caption style={capstyle}>Katrina - "She is awesome!!! Do not hesitate to hit her up!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={galpics.pic4} alt="Fourth slide" fluid />
-                                <Carousel.Caption style={capstyle}> Dianne - "She is absolutely amazing takes her time and makes
-                                     sure you love it before you leave she’s definitely my nail tech from here on out!"</Carousel.Caption>
+                                <Carousel.Caption style={capstyle}> Dianne - "She is absolutely amazing, takes her time and makes
+                                     sure you love it before you leave! She’s definitely my nail tech from here on out!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Image src={galpics.pic14} alt="Fourth slide" fluid />
@@ -63,65 +64,52 @@ class BodyComponent extends Component {
                     <Col style={{ paddingTop: "19px" }}>
                         <Table id="tablestyle" striped bordered hover variant="dark">
                             <thead style={{ color: "pink", fontWeight: "bold" }}>
-                                <tr>
-                                    <th><u>Type of Set</u></th>
-                                    <th style={{ textAlign: "center" }}>Short Nails</th>
-                                    <th style={{ textAlign: "center" }}>Med Nails</th>
-                                    <th style={{ textAlign: "center" }}>Longs Nails</th>
+                                <tr style={{ textAlign: "center" }}>
+                                    <th><Image src={galpics.tpic} width="150px" thumbnail /><br />Type of Set</th>
+                                    <th style={{ textAlign: "center" }}><Image src={galpics.shortNails} width="180px" thumbnail fluid /><br />Short Nails</th>
+                                    <th style={{ textAlign: "center" }}><Image src={galpics.medNails} width="180px" thumbnail fluid /><br />Med Nails </th>
+                                    <th style={{ textAlign: "center" }}><Image src={galpics.longNails} width="170px" thumbnail fluid /><br />Longs Nails</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Full Set</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Full Set:</td>
                                     <td>$ 35</td>
                                     <td>$ 45</td>
                                     <td>$ 50</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Fill</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Fill:</td>
                                     <td>$ 30</td>
                                     <td>$ 35</td>
                                     <td>$ 40</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Full Set</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Full Set:</td>
                                     <td>$ 40</td>
                                     <td colSpan="2">$ 55</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Fill</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Fill:</td>
                                     <td>$ 35</td>
                                     <td colSpan="2">$ 40</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic<br /> Full Set</td>
-                                    <td colSpan="4" style={{ textAlign: "center" }}><u style={{ color: "red" }}>Will not</u> fill color Acrylic.
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic<br /> Full Set:</td>
+                                    <td colSpan="3" style={{ textAlign: "center" }}><u style={{ color: "red" }}>Will not</u> fill color Acrylic.
                                     Nails need to be soaked off for an additional $ 5<br />
                                     SOAK OFF WITH FULL SET: + $7
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "violet", fontWeight: "bold" }}>Toe Color Change</td>
-                                    <td colSpan="4" style={{ textAlign: "center" }}>$10 for Gel; $7 for regular</td>
-                                </tr>
-                                <tr>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Add-Ons:</td>
                                     <td style={{ textAlign: "center" }}>* Jewel on 2 Fingers: $4 *</td>
                                     <td style={{ textAlign: "center" }}>* Full Blinged out nail: $7 *</td>
-                                    <td colSpan="2" style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
+                                    <td style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ textAlign: "center" }}>
-                                        <Image src={galpics.tpic} width="200px" thumbnail />
-                                    </td>
-                                    <td style={{ textAlign: "center" }}>
-                                        <Image src={galpics.shortNails} width="180px" thumbnail fluid />
-                                    </td>
-                                    <td style={{ textAlign: "center" }}>
-                                        <Image src={galpics.medNails} width="180px" thumbnail fluid />
-                                    </td>
-                                    <td style={{ textAlign: "center" }}>
-                                        <Image src={galpics.longNails} width="147px" thumbnail fluid />
-                                    </td>
+                                    <td style={{ color: "violet", fontWeight: "bold" }}>Toe Color Change:</td>
+                                    <td colSpan="4" style={{ textAlign: "center" }}>$10 for Gel; $7 for regular</td>
                                 </tr>
                             </tbody>
                         </Table>

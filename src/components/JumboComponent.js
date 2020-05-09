@@ -17,9 +17,9 @@ class JumboComponent extends Component {
             <React.Fragment>
                 <Jumbotron fluid>
                     <Container fluid>
-                        <Row style={{ textAlign: 'center', fontSize: "22px" }}>
+                        <Row style={{ textAlign: 'center', fontSize: "22px"}}>
                             <Col xs={0} md={4} lg={4}>
-                                <Image id="jpic" style={{ height: "200px" }}
+                                <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
                             <Col xs={12} md={4} lg={4}>

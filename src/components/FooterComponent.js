@@ -10,7 +10,8 @@ class FooterComponent extends Component {
                         <div className="col-5 text-left">
                             <span style={{
                                 textShadow: "2px 2px 2px #aaa",
-                                color: "#9df5cc", fontSize: "16px"
+                                color: "#9df5cc", fontSize: "16px",
+                                flexDirection: "row"
                             }}>
                                 <sub>&copy;</sub> Polished By Mia<br />Hampton Roads(757) only!
                             </span>
@@ -21,7 +22,7 @@ class FooterComponent extends Component {
                                 Questions? Send an email to:
                             </span>
                             <a role="button" className="btn btn-link" target="_blank"
-                                 rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
+                                rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
                                 <i className="fa fa-envelope-o" />
                             </a>
                         </div>

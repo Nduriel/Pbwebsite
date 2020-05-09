@@ -11,18 +11,18 @@ const capstyle = {
     fontSize: "20px"
 }
 const galpics = {
-        longNails: require('../images/miaPic5.jpg'),
-        medNails: require('../images/miaPic14.jpg'),
-        shortNails: require('../images/miaPic10.jpg'),
-        tpic: require('../images/noticepic.jpg'),
-        bookappt: require('../images/bookappt2.jpg'),
-        pic1: require('../images/miaPic1.jpg'),
-        pic2: require('../images/miaPic6.jpg'),
-        pic3: require('../images/miaPic3.jpg'),
-        pic4: require('../images/miaPic4.jpg'),
-        pic5: require('../images/miaPic5.jpg'),
-        pic14: require('../images/miaPic14.jpg'),
-        pic7: require('../images/miaPic7.jpg'),    
+    longNails: require('../images/miaPic5.jpg'),
+    medNails: require('../images/miaPic14.jpg'),
+    shortNails: require('../images/miaPic10.jpg'),
+    tpic: require('../images/noticepic.jpg'),
+    bookappt: require('../images/bookappt2.jpg'),
+    pic1: require('../images/miaPic1.jpg'),
+    pic2: require('../images/miaPic6.jpg'),
+    pic3: require('../images/miaPic3.jpg'),
+    pic4: require('../images/miaPic4.jpg'),
+    pic5: require('../images/miaPic5.jpg'),
+    pic14: require('../images/miaPic14.jpg'),
+    pic7: require('../images/miaPic7.jpg'),
 };
 
 class BodyComponent extends Component {
@@ -78,7 +78,7 @@ class BodyComponent extends Component {
                                     <td>$ 50</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "violet", fontWeight: "bold" }}>Acrylic Fill</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Fill</td>
                                     <td>$ 30</td>
                                     <td>$ 35</td>
                                     <td>$ 40</td>
@@ -89,7 +89,7 @@ class BodyComponent extends Component {
                                     <td colSpan="2">$ 55</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "violet", fontWeight: "bold" }}>Ombre Fill</td>
+                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Fill</td>
                                     <td>$ 35</td>
                                     <td colSpan="2">$ 40</td>
                                 </tr>

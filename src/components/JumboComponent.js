@@ -17,9 +17,8 @@ class JumboComponent extends Component {
             <React.Fragment>
                 <Jumbotron fluid>
                     <Container fluid>
-                        <Row style={{ textAlign: 'center'}}>
+                        <Row style={{ textAlign: 'center' }}>
                             <Col><span id="headerFont">Polished By Mia</span></Col>
-                           
                             {/* <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
@@ -37,16 +36,27 @@ class JumboComponent extends Component {
                 </Jumbotron>
                 <Navbar collapeOnSelect light expand="sm" sticky="top">
                     <Container fluid>
-                        <Row lg={12}>
-                            <Nav navbar>
-                                <span id="goneText" style={{ color: "pink",  textShadow: "2px 2px 2px #f1069f " }}>
-                                    Hampton Roads Only!
-                                </span>
-                                <NavItem className="col-4">
-                                    <Button color="primary" onClick={this.props.call}
-                                        style={{ fontWeight: "bold", fontSize: "22px" }}>Appointments</Button>
-                                </NavItem>
-                            </Nav>
+                        <Row>
+                            <Col lg={2}>
+                                <Nav navbar >
+                                    <NavItem>
+                                        <Button color="primary" onClick={this.props.call}
+                                            style={{
+                                                fontWeight: "bold",
+                                                fontSize: "20px",
+                                                fontStyle: "italic",
+                                                textShadow: "2px 2px 2px #f1069f"
+                                            }}>
+                                            Appointments</Button>
+                                    </NavItem>
+                                    <NavItem>
+                                        <a role="button" className="btn btn-link" target="_blank"
+                                            rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
+                                            <i id="socialIcon" className="fa fa-envelope-o" />
+                                        </a>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
                         </Row>
                         <Row>
                             <Col lg={3}>
@@ -54,21 +64,21 @@ class JumboComponent extends Component {
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"
                                             rel="noreferrer noopener" href="tel:+17579127833">
-                                            <i className="fa fa-phone fa-lg" />
+                                            <i id="socialIcon" className="fa fa-phone fa-lg" />
                                         </a>
                                     </NavItem>
                                     <NavItem>
                                         <a role="button" className="btn btn-link btn-instagram" target="_blank"
                                             rel="noreferrer noopener" aria-hidden="true"
                                             href="http://instagram.com/polished.bymia/">
-                                            <i className="fa fa-instagram fa-lg" />
+                                            <i id="socialIcon" className="fa fa-instagram fa-lg" />
                                         </a>
                                     </NavItem>
                                     <NavItem>
                                         <a role="button" className="btn btn-link btn-facebook" target="_blank"
                                             rel="noreferrer noopener" aria-hidden="true"
                                             href="http://facebook.com/polishedbymia/">
-                                            <i className="fa fa-facebook fa-lg" />
+                                            <i id="socialIcon" className="fa fa-facebook fa-lg" />
                                         </a>
                                     </NavItem>
                                 </Nav>

@@ -9,7 +9,9 @@ body {
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
-
+.Carousel > .Image {
+  height: auto;
+}
 #carouselborder {
   position: relative;
   border: 49px solid;
@@ -27,18 +29,13 @@ body {
   border-radius: 2% / 4%;
 }
 
-#headerFont { 
-font-family: 'Great Vibes', 'font-effect-anaglyph';
-font-size: 55px;
- text-shadow: 2px 2px 2px #f1069f;  
- color: #9df5cc;
-}
 
-i {
+#socialIcon {
   background: #007aff;
   color: white;
   padding: 11px;
   border-radius: 50%;
+  text-shadow: 2px 2px 2px #f1069f ;
 }
 
 #jpic {
@@ -66,10 +63,12 @@ i {
   background-size: 600% 100%;
   animation-direction: alternate;
   animation: gradient 16s linear infinite;
-  color: whitesmoke;
   display: block;
   font-weight: bold;
-  font-family: 'Courgette', cursive;
+  font-family: 'Great Vibes', 'font-effect-anaglyph';
+  font-size: 65px;
+  text-shadow: 2px 2px 2px #f1069f;  
+  color: #9df5cc;
 }
 @keyframes gradient {
   0% {background-position: 0%}
@@ -85,7 +84,11 @@ i {
   background-image: linear-gradient(#610241, #c40484);
   border-bottom: 7px solid #610241;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
-  font-size: 25px;
+  font-size: 20px;
+  flex-direction: row;
+  white-space: nowrap;
+  color: pink;
+  
 }
 
 #tablestyle {
@@ -100,5 +103,9 @@ i {
   font-family: 'Courgette', cursive;
 }
 
+#thumbnailPic {
+ max-width: 180px;
+ max-height: 180px;
+}
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
 

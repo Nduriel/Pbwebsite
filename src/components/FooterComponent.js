@@ -28,10 +28,9 @@ class FooterComponent extends Component {
                             </span>
                             <a role="button" className="btn btn-link" target="_blank"
                                 rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
-                                <i className="fa fa-envelope-o" />
+                                <i id="socialIcon" className="fa fa-envelope-o" />
                             </a>
                         </div>
-
                     </div>
                 </div>
             </footer>

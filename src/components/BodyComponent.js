@@ -6,11 +6,11 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 const capstyle = {
-    fontStyle: "oblique",
     fontWeight: "bold",
     color: "#9df5cc",
     fontSize: "20px",
-    textShadow: "2px 2px 2px #f1069f"
+    textShadow: "2px 2px 2px #f1069f",
+    fontFamily: "Courgette"
 }
 const galpics = {
     longNails: require('../images/miaPic15.jpg'),
@@ -31,8 +31,8 @@ class BodyComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            nextIcon: <span aria-hidden="true" className="carousel-control-next-icon" />,
-            prevIcon: <span aria-hidden="true" className="carousel-control-prev-icon" />
+            nextIcon:<span aria-hidden="true" id="galIcon" className="carousel-control-next-icon" />,
+            prevIcon: <span aria-hidden="true" id="galIcon" className="carousel-control-prev-icon" />
         }
     }
     render() {

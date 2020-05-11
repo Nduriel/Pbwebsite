@@ -37,7 +37,7 @@ class JumboComponent extends Component {
                 <Navbar collapeOnSelect light expand="sm" sticky="top">
                     <Container fluid>
                         <Row>
-                            <Col lg={6}>
+                            <Col lg={4}>
                                 <Nav navbar >
                                     <NavItem>
                                         <Button color="primary" onClick={this.props.call}
@@ -59,7 +59,19 @@ class JumboComponent extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={6} sm={2}>
+                            <Col lg={4}>
+                                <span id="goneText"
+                                    style={{
+                                        fontFamily: 'Courgette',
+                                        fontSize: "25px",
+                                        color: "#9df5cc",
+                                        textShadow: "2px 2px 2px #f1069f",
+                                    }}
+                                >Quality and Affordable Acryilics</span>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col lg={4} sm={2}>
                                 <Nav navbar style={{ flexDirection: "row" }}>
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"

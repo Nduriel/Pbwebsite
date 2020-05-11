@@ -20,6 +20,19 @@ body {
   box-shadow: 10px 5px 5px black;
 } 
 
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-color: #610241;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 2px solid #9df5cc;
+}
+
 #heightpic {
   padding-top: 15px;
   height: auto;

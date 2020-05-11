@@ -76,7 +76,8 @@ class Header extends Component {
                         backgroundColor: "black", color: "#9df5cc",
                         borderBottomColor: "purple",
                         fontStyle: "italic",
-                        textAlign: "center"
+                        textAlign: "center",
+                        textShadow: "2px 2px 2px #f1069f"
                     }}>
                         Send me your info and I'll contact you asap!<br />
                         <span >{''}**Serving the Hampton <span style={{ color: "red" }}>757</span> Roads**</span>
@@ -248,7 +249,8 @@ class Header extends Component {
                         borderTopColor: "purple",
                         color: "#9df5cc",
                         fontStyle: "italic",
-                        textAlign: "center"
+                        textAlign: "center",
+                        textShadow: "2px 2px 2px #f1069f"
                     }}>
                         <Col>**Dates and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment** </Col>

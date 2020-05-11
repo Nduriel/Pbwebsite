@@ -37,7 +37,7 @@ class JumboComponent extends Component {
                 <Navbar collapeOnSelect light expand="sm" sticky="top">
                     <Container fluid>
                         <Row>
-                            <Col lg={2}>
+                            <Col lg={6}>
                                 <Nav navbar >
                                     <NavItem>
                                         <Button color="primary" onClick={this.props.call}
@@ -49,7 +49,7 @@ class JumboComponent extends Component {
                                             }}>
                                             Appointments</Button>
                                     </NavItem>
-                                    <NavItem>
+                                    <NavItem id="goneText">
                                         <a role="button" className="btn btn-link" target="_blank"
                                             rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
                                             <i id="socialIcon" className="fa fa-envelope-o" />
@@ -59,7 +59,7 @@ class JumboComponent extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={3}>
+                            <Col lg={6} sm={2}>
                                 <Nav navbar style={{ flexDirection: "row" }}>
                                     <NavItem>
                                         <a role="button" className="btn btn-link" target="_blank"

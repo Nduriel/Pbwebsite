@@ -9,9 +9,7 @@ body {
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
-.Carousel > .Image {
-  height: auto;
-}
+
 #carouselborder {
   position: relative;
   border: 49px solid;
@@ -28,7 +26,6 @@ body {
   width: 100%;
   border-radius: 2% / 4%;
 }
-
 
 #socialIcon {
   background: #007aff;
@@ -91,10 +88,6 @@ body {
   
 }
 
-#tablestyle {
-  font-family: 'Manrope', sans-serif;
-  /* border-radius: 1%; */
-}
 
 .site-footer {
   border-top: 7px solid #610241;

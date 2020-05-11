@@ -14,7 +14,8 @@ class FooterComponent extends Component {
                             textAlign: "left"
                         }}>
                             <span >
-                                <sub>&copy;</sub> Polished By Mia<br />Hampton Roads(757) only!
+                                <sub>&copy;</sub> Polished By Mia<br />
+                                <span id="goneText">Hampton Roads(757) only!</span>
                             </span>
                         </div>
                         <div className="col-6 text-right"

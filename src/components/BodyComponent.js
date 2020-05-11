@@ -17,7 +17,7 @@ const galpics = {
     medNails: require('../images/miaPic18.jpg'),
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
-    bookappt: require('../images/BodCollage1.jpg'),
+    serveArea: require('../images/BodCollage1.jpg'),
     pic1: require('../images/miaPic5.jpg'),
     pic2: require('../images/miaPic6.jpg'),
     pic3: require('../images/miaPic3.jpg'),
@@ -25,26 +25,21 @@ const galpics = {
     pic5: require('../images/miaPic5.jpg'),
     pic22: require('../images/miaPic22.jpg'),
     pic7: require('../images/miaPic7.jpg'),
+    bookAppt: require('../images/bookappt.jpg')
 };
 
 class BodyComponent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            nextIcon:<span aria-hidden="true" id="galIcon" className="carousel-control-next-icon" />,
-            prevIcon: <span aria-hidden="true" id="galIcon" className="carousel-control-prev-icon" />
-        }
-    }
+   
     render() {
-        const { nextIcon, prevIcon } = this.state;
+        
         return (
             <Container fluid>
                 <Row>
                     <Col lg={6} sm={12}>
-                        <Image src={galpics.bookappt} fluid id="heightpic" alt="bookingpic" />
+                        <Image src={galpics.serveArea} fluid id="heightpic" alt="bookingpic" />
                     </Col>
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
-                        <Carousel id="carouselborder" nextIcon={nextIcon} prevIcon={prevIcon} slide interval={4500}>
+                        <Carousel id="carouselborder" slide interval={4500}>
                             <Carousel.Item>
                                 <Image src={galpics.pic1} alt="First slide" fluid />
                                 <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>
@@ -63,9 +58,12 @@ class BodyComponent extends Component {
                                      sure you love it before you leave! She’s definitely my nail tech from here on out!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={galpics.pic22} alt="Fourth slide" fluid />
+                                <Image src={galpics.pic22} alt="Fifth slide" fluid />
                                 <Carousel.Caption style={capstyle}> Karen - "She does a wonderful job"</Carousel.Caption>
                             </Carousel.Item>
+                            <Carousel.Item>
+                                <Image src={galpics.bookAppt} alt="Sixth slide" fluid />
+                              </Carousel.Item>
                         </Carousel>
                     </Col>
                 </Row>

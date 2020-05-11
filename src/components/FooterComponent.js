@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
 
+const footerStye = {
+    textShadow: "2px 2px 2px #f1069f",
+    color: "#9df5cc",
+    fontSize: "16px",
+    alignContent: "flex-end"
+}
 
 class FooterComponent extends Component {
     render() {
         return (
-            <footer className="site-footer">
+            <footer className="site-footer" style={footerStye}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 text-left" style={{
-                            textShadow: "2px 2px 2px #aaa",
-                            color: "#9df5cc", fontSize: "16px",
-                            flexDirection: "row",
-                            textAlign: "left"
-                        }}>
+                        <div className="col-6 text-left" >
                             <span >
                                 <sub>&copy;</sub> Polished By Mia<br />
-                                <span id="goneText">Hampton Roads(757) only!</span>
+                                <span id="">Acryilic Designs at affordable prices!</span>
                             </span>
                         </div>
-                        <div className="col-6 text-right"
-                            style={{
-                                color: "#9df5cc", fontSize: "16px",
-                                textShadow: "2px 2px 2px #aaa",
-                                flexDirection: "row-reverse"
-                            }}>
+                        <div className="col-6 text-right" style={footerStye}>
                             <span id="goneText" >
                                 Questions? Send an email to:
                             </span>

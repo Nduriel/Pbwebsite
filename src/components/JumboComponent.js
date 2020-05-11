@@ -3,13 +3,13 @@ import {
     Jumbotron, Col, Row, Container,
     Navbar, Nav, NavItem, Button
 } from 'reactstrap';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 
-const pics = {
-    logo: require('../images/pbmimg13.png'),
-    miaPic11: require('../images/miaPic11.jpg'),
-    miaPic12: require('../images/miaPic12.jpg')
-};
+// const pics = {
+//     logo: require('../images/pbmimg13.png'),
+//     miaPic11: require('../images/miaPic11.jpg'),
+//     miaPic12: require('../images/miaPic12.jpg')
+// };
 
 class JumboComponent extends Component {
     render() {
@@ -18,7 +18,7 @@ class JumboComponent extends Component {
                 <Jumbotron fluid>
                     <Container fluid>
                         <Row style={{ textAlign: 'center' }}>
-                            <Col><span id="headerFont">Polished By Mia</span></Col>
+                            <Col>Polished By Mia</Col>
                             {/* <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
@@ -63,11 +63,11 @@ class JumboComponent extends Component {
                                 <span id="goneText"
                                     style={{
                                         fontFamily: 'Courgette',
-                                        fontSize: "25px",
+                                        fontSize: "20px",
                                         color: "#9df5cc",
                                         textShadow: "2px 2px 2px #f1069f",
-                                    }}
-                                >Quality and Affordable Acryilics</span>
+                                    }}>
+                                Quality and Affordable Acryilics</span>
                             </Col>
                         </Row>
                         <Row>

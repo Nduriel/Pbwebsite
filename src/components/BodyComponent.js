@@ -18,7 +18,7 @@ const galpics = {
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
     serveArea: require('../images/BodCollage1.jpg'),
-    pic1: require('../images/miaPic5.jpg'),
+    pic1: require('../images/miaPic24.jpg'),
     pic2: require('../images/miaPic6.jpg'),
     pic3: require('../images/miaPic3.jpg'),
     pic4: require('../images/miaPic4.jpg'),

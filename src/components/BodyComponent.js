@@ -21,13 +21,13 @@ const galpics = {
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
     serveArea: require('../images/BodCollage1.jpg'),
-    pic1: require('../images/miaPic12.jpg'),
-    pic2: require('../images/miaPic6.jpg'),
-    pic3: require('../images/miaPic3.jpg'),
     pic4: require('../images/miaPic4.jpg'),
     pic5: require('../images/miaPic5.jpg'),
-    pic22: require('../images/miaPic22.jpg'),
+    pic6: require('../images/miaPic6.jpg'),
     pic7: require('../images/miaPic7.jpg'),
+    pic12: require('../images/miaPic12.jpg'),
+    pic22: require('../images/miaPic22.jpg'),
+    pic28: require('../images/miaPic28.jpg'),    
     bookAppt: require('../images/bookappt.jpg')
 };
 
@@ -44,15 +44,15 @@ class BodyComponent extends Component {
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
                         <Carousel id="carouselborder" slide interval={4500}>
                             <Carousel.Item>
-                                <Image src={galpics.pic1} alt="First slide" fluid />
+                                <Image src={galpics.pic12} alt="First slide" fluid />
                                 <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={galpics.pic2} alt="Second slide" fluid />
+                                <Image src={galpics.pic6} alt="Second slide" fluid />
                                 <Carousel.Caption style={capstyle}>Patti - "Maria does awesome nails"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image src={galpics.pic3} alt="Third slide" fluid />
+                                <Image src={galpics.pic28} alt="Third slide" fluid />
                                 <Carousel.Caption style={capstyle}>Katrina - "She is awesome!!! Do not hesitate to hit her up!!"</Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>

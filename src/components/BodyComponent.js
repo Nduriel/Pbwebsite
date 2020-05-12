@@ -4,6 +4,9 @@ import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 
+const textCenter = {
+    textAlign: "center",
+}
 
 const capstyle = {
     fontWeight: "bold",
@@ -13,12 +16,12 @@ const capstyle = {
     fontFamily: "Courgette"
 }
 const galpics = {
-    longNails: require('../images/miaPic15.jpg'),
+    longNails: require('../images/miaPic26.jpg'),
     medNails: require('../images/miaPic18.jpg'),
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
     serveArea: require('../images/BodCollage1.jpg'),
-    pic1: require('../images/miaPic24.jpg'),
+    pic1: require('../images/miaPic12.jpg'),
     pic2: require('../images/miaPic6.jpg'),
     pic3: require('../images/miaPic3.jpg'),
     pic4: require('../images/miaPic4.jpg'),
@@ -68,7 +71,7 @@ class BodyComponent extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ paddingTop: "19px" }}>
+                    <Col style={{ paddingTop: "19px"}}>
                         <Table style={{fontFamily: 'Manrope'}} size='sm'
                          responsive striped bordered hover
                           variant="dark">
@@ -87,27 +90,27 @@ class BodyComponent extends Component {
                             <tbody>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Full Set:</td>
-                                    <td>$ 35</td>
-                                    <td>$ 45</td>
-                                    <td>$ 50</td>
+                                    <td style={textCenter}>$ 35</td>
+                                    <td style={textCenter}>$ 45</td>
+                                    <td style={textCenter}>$ 50</td>
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Fill:</td>
-                                    <td>$ 30</td>
-                                    <td>$ 35</td>
-                                    <td>$ 40</td>
+                                    <td style={textCenter}>$ 30</td>
+                                    <td style={textCenter}>$ 35</td>
+                                    <td style={textCenter}>$ 40</td>
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Full Set:</td>
-                                    <td>$ 40</td>
-                                    <td>$ 55</td>
-                                    <td>$ 55</td>
+                                    <td style={textCenter}>$ 40</td>
+                                    <td style={textCenter}>$ 55</td>
+                                    <td style={textCenter}>$ 55</td>
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Fill:</td>
-                                    <td>$ 35</td>
-                                    <td>$ 40</td>
-                                    <td>$ 40</td>
+                                    <td style={textCenter}>$ 35</td>
+                                    <td style={textCenter}>$ 40</td>
+                                    <td style={textCenter}>$ 40</td>
                                 </tr>
                                 <tr>
                                     <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic Full Set:</td>

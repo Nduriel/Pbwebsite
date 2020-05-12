@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 
+
 const textCenter = {
     textAlign: "center",
 }
@@ -72,7 +73,7 @@ class BodyComponent extends Component {
                 </Row>
                 <Row>
                     <Col style={{ paddingTop: "19px"}}>
-                        <Table style={{fontFamily: 'Manrope'}} size='sm'
+                    <Table style={{fontFamily: 'Manrope'}} size='md'
                          responsive striped bordered hover
                           variant="dark">
                             <thead style={{ color: "pink", fontWeight: "bold" }}>
@@ -120,7 +121,7 @@ class BodyComponent extends Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Add-Ons:</td>
+                                    <td style={{ color: "violet", fontWeight: "bold" }}>Add-Ons:</td>
                                     <td style={{ textAlign: "center" }}>* Jewel on 2 Fingers: $4 *</td>
                                     <td style={{ textAlign: "center" }}>* Full Blinged out nail: $7 *</td>
                                     <td style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
@@ -131,7 +132,7 @@ class BodyComponent extends Component {
                                 </tr>
                             </tbody>
                         </Table>
-                    </Col>
+                     </Col>
                 </Row>
             </Container>
         );

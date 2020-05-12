@@ -6,7 +6,7 @@ import {
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 import JumboComponent from './JumboComponent';
-import Instafeed from 'instafeed.js';
+
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -59,13 +59,6 @@ class Header extends Component {
         });
     }
     render() {
-
-        let feed = new Instafeed({
-            get: 'tagged',
-            tagName: 'polishedbymia',
-            clientId: 'polished.bymia'
-        });
-        feed.run();
 
         return (
             <React.Fragment>

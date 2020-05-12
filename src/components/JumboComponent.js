@@ -3,6 +3,8 @@ import {
     Jumbotron, Col, Row, Container,
     Navbar, Nav, NavItem, Button
 } from 'reactstrap';
+
+
 // import Image from 'react-bootstrap/Image';
 
 // const pics = {
@@ -18,7 +20,7 @@ class JumboComponent extends Component {
                 <Jumbotron fluid>
                     <Container fluid>
                         <Row style={{ textAlign: 'center' }}>
-                            <Col>Polished By Mia</Col>
+                            <Col style={{fontWeight: "bolder"}}>Polished By Mia</Col>
                             {/* <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
@@ -38,6 +40,7 @@ class JumboComponent extends Component {
                     <Container fluid>
                         <Row>
                             <Col lg={4}>
+                                
                                 <Nav navbar >
                                     <NavItem>
                                         <Button color="primary" onClick={this.props.call}

@@ -14,7 +14,7 @@
     "emailjs-com": "^2.4.1",
     "font-awesome": "^4.7.0",
     "instafeed.js": "^1.4.1",
-    "jquery": "1.9.1",
+    "jquery": "3.5.0",
     "moment": "^2.24.0",
     "prop-types": "15.6.0",
     "react": "^16.12.0",

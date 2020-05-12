@@ -5,20 +5,22 @@
 
 body {
   background-color: black;
-  background-image: url('../src/images/rocks.jpg');
+  background-image: url('../src/images/butterfly\ and\ flowers.jpg');
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
+}
+.carousel img {
+  width: fit-content;
 }
 
 #carouselborder {
   position: relative;
   border: 49px solid;
   border-style: groove;
-  border-color: rgb(100, 99, 99);
-  /* border-image-source: linear-gradient(45deg, black, black , grey);
-  border-image-slice: 1;  */
+  border-color: rgb(80, 80, 80);
   box-shadow: 10px 5px 5px black;
   height: 100%;
+  box-sizing: border-box;
 } 
 
 .carousel-control-next-icon,

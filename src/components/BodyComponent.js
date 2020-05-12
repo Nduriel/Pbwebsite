@@ -43,7 +43,7 @@ class BodyComponent extends Component {
                         <Image src={galpics.serveArea} fluid id="heightpic" alt="bookingpic" />
                     </Col>
                     <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
-                        <Carousel id="carouselborder" slide interval={4500}>
+                        <Carousel fade id="carouselborder" slide interval={4500}>
                             <Carousel.Item>
                                 <Image src={galpics.pic12} alt="First slide" fluid />
                                 <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>

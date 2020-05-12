@@ -18,9 +18,8 @@ body {
   /* border-image-source: linear-gradient(45deg, black, black , grey);
   border-image-slice: 1;  */
   box-shadow: 10px 5px 5px black;
+  height: 100%;
 } 
-
-
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {

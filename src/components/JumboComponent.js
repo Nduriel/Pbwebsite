@@ -5,13 +5,13 @@ import {
 } from 'reactstrap';
 
 
-// import Image from 'react-bootstrap/Image';
+import Image from 'react-bootstrap/Image';
 
-// const pics = {
-//     logo: require('../images/pbmimg13.png'),
-//     miaPic11: require('../images/miaPic11.jpg'),
-//     miaPic12: require('../images/miaPic12.jpg')
-// };
+const pics = {
+    logo: require('../images/pbmlogo.jpg'),
+    miaPic11: require('../images/miaPic11.jpg'),
+    miaPic12: require('../images/miaPic12.jpg')
+};
 
 class JumboComponent extends Component {
     render() {
@@ -19,20 +19,20 @@ class JumboComponent extends Component {
             <React.Fragment>
                 <Jumbotron fluid>
                     <Container fluid>
-                        <Row style={{ textAlign: 'center' }}>
-                            <Col style={{fontWeight: "bolder"}}>Polished By Mia</Col>
-                            {/* <Col xs={0} md={4} lg={4}>
-                                <Image id="jpic" style={{ height: "200px", flexDirection: "row"  }}
+                        <Row style={{ textAlign: 'center', flexDirection: "row" }}>
+                            {/* <Col style={{fontWeight: "bolder"}}>Polished By Mia</Col> */}
+                            <Col xs={0} md={4} lg={4}>
+                                <Image id="jpic" style={{ height: "200px"  }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
                             <Col xs={12} md={4} lg={4}>
-                                <Image style={{ height: "200px"}}
-                                    src={pics.logo} alt="logopic" />
+                                <Image id="jpic" style={{ width: "200px", height: "250px" }}
+                                    src={pics.logo} alt="logopic" roundedCircle />
                             </Col>
                             <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic11} alt="jpic2" roundedCircle />
-                            </Col> */}
+                            </Col>
                         </Row>
                     </Container>
                 </Jumbotron>
@@ -40,7 +40,7 @@ class JumboComponent extends Component {
                     <Container fluid>
                         <Row>
                             <Col lg={4}>
-                                
+
                                 <Nav navbar >
                                     <NavItem>
                                         <Button color="primary" onClick={this.props.call}
@@ -70,7 +70,7 @@ class JumboComponent extends Component {
                                         color: "#9df5cc",
                                         textShadow: "2px 2px 2px #f1069f",
                                     }}>
-                                Quality and Affordable Acryilics</span>
+                                    Quality and Affordable Acryilics</span>
                             </Col>
                         </Row>
                         <Row>

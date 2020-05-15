@@ -16,7 +16,6 @@ class FooterComponent extends Component {
                         <div className="col-6 text-left" >
                             <span >
                                 <sub>&copy;</sub> Polished By Mia<br />
-                                <span id="">Acryilic Designs at affordable prices!</span>
                             </span>
                         </div>
                         <div className="col-6 text-right" style={footerStye}>

@@ -26,7 +26,7 @@ class JumboComponent extends Component {
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
                             <Col xs={12} md={4} lg={4}>
-                                <Image id="jpic" style={{ width: "200px", height: "250px" }}
+                                <Image id="jpic1" style={{ width: "250px", height: "270px" }}
                                     src={pics.logo} alt="logopic" roundedCircle />
                             </Col>
                             <Col xs={0} md={4} lg={4}>

@@ -22,7 +22,7 @@ class JumboComponent extends Component {
                         <Row style={{ textAlign: 'center', flexDirection: "row" }}>
                             {/* <Col style={{fontWeight: "bolder"}}>Polished By Mia</Col> */}
                             <Col xs={0} md={4} lg={4}>
-                                <Image id="jpic" style={{ height: "200px"  }}
+                                <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
                             </Col>
                             <Col xs={12} md={4} lg={4}>
@@ -36,75 +36,19 @@ class JumboComponent extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
-                <Navbar collapeOnSelect light expand="sm" sticky="top">
-                    <Container fluid>
-                        <Row>
-                            <Col lg={4}>
-
-                                <Nav navbar >
-                                    <NavItem>
-                                        <Button color="primary" onClick={this.props.call}
-                                            style={{
-                                                fontWeight: "bold",
-                                                fontSize: "20px",
-                                                fontStyle: "italic",
-                                                textShadow: "2px 2px 2px #f1069f"
-                                            }}>
-                                            Appointments</Button>
-                                    </NavItem>
-                                    <NavItem id="goneText">
-                                        <a role="button" className="btn btn-link" target="_blank"
-                                            rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
-                                            <i id="socialIcon" className="fa fa-envelope-o" />
-                                        </a>
-                                    </NavItem>
-                                </Nav>
+                <Navbar light expand="sm" sticky="top" style={{ textAlign: 'center'}}>
+                            <Col lg={12} style={{
+                                fontFamily: 'Courgette',
+                                fontSize: "20px",
+                                color: "#9df5cc",
+                                textShadow: "2px 2px 2px #f1069f",
+                            }}>
+                                Polished By Mia offers quality Acryilics. Check out more social media for more work!
                             </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={4}>
-                                <span id="goneText"
-                                    style={{
-                                        fontFamily: 'Courgette',
-                                        fontSize: "20px",
-                                        color: "#9df5cc",
-                                        textShadow: "2px 2px 2px #f1069f",
-                                    }}>
-                                    Quality and Affordable Acryilics</span>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={4} sm={2}>
-                                <Nav navbar style={{ flexDirection: "row" }}>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link" target="_blank"
-                                            rel="noreferrer noopener" href="tel:+17579127833">
-                                            <i id="socialIcon" className="fa fa-phone fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link btn-instagram" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true"
-                                            href="http://instagram.com/polished.bymia/">
-                                            <i id="socialIcon" className="fa fa-instagram fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a role="button" className="btn btn-link btn-facebook" target="_blank"
-                                            rel="noreferrer noopener" aria-hidden="true"
-                                            href="http://facebook.com/polishedbymia/">
-                                            <i id="socialIcon" className="fa fa-facebook fa-lg" />
-                                        </a>
-                                    </NavItem>
-                                </Nav>
-                            </Col>
-                        </Row>
-                    </Container>
                 </Navbar>
             </React.Fragment>
         );
     }
 }
-
 
 export default JumboComponent;

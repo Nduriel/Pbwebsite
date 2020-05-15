@@ -9,13 +9,14 @@ body {
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
-.carousel img {
-  width: fit-content;
+.carousel  {
+  width: 600px;
+  background-color: black;
 }
 
 #carouselborder {
   position: relative;
-  border: 49px solid;
+  border: 20px solid;
   border-style: groove;
   border-color: rgb(80, 80, 80);
   box-shadow: 10px 5px 5px black;
@@ -37,7 +38,7 @@ body {
 #heightpic {
   padding-top: 15px;
   height: auto;
-  width: 100%;
+  width: 600px;
   border-radius: 2% / 4%;
 }
 
@@ -74,7 +75,8 @@ body {
   width: 100%;
   height: 100%;
   background-image: url('./images/jumbopic1.jpg');
-  background-image: linear-gradient(45deg,#610241,#610241,grey, white, grey,#610241,#610241, #610241);
+  background-image: linear-gradient(45deg,black,black,black,#610241,grey,
+   white, grey,#610241,black,black, black);
   background-size: 600% 100%;
   animation-direction: alternate;
   animation: gradient 16s linear infinite;

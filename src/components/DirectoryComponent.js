@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
 import BodyComponent from './BodyComponent';
-import FooterComponent from './FooterComponent';
-;
+import JumboComponent from './JumboComponent';
+import ModalComponent from './ModalComponent';
+
 
 class Directory extends Component {
     render() {
         return (
             <React.Fragment>
-                <Header />
-                <BodyComponent/>
-                <FooterComponent/>
+                <JumboComponent />
+                <BodyComponent />
+                <ModalComponent />
             </React.Fragment>
         );
     }
 }
 
-
+//Move the modal
 export default Directory;

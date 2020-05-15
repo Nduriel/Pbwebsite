@@ -47,7 +47,7 @@ class Header extends Component {
     handleSubmit(values) {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is:' + JSON.stringify(values));
-        const { firstName, email, time, reserveDate, phoneNum }
+        const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
     handleChange(e) {

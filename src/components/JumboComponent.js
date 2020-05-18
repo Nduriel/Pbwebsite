@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {
-    Jumbotron, Col, Row, Container,
-    Navbar, Nav, NavItem, Button
-} from 'reactstrap';
+import { Jumbotron, Col, Row, Container } from 'reactstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 import Image from 'react-bootstrap/Image';
@@ -12,6 +12,13 @@ const pics = {
     miaPic11: require('../images/miaPic11.jpg'),
     miaPic12: require('../images/miaPic12.jpg')
 };
+
+const fontStyle = {
+    fontFamily: 'Courgette',
+    fontSize: "20px",
+    color: "#9df5cc",
+    textShadow: "2px 2px 2px #f1069f",
+}
 
 class JumboComponent extends Component {
     render() {
@@ -36,15 +43,44 @@ class JumboComponent extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
-                <Navbar light expand="sm" sticky="top" style={{ textAlign: 'center'}}>
-                            <Col lg={12} style={{
-                                fontFamily: 'Courgette',
-                                fontSize: "20px",
-                                color: "#9df5cc",
-                                textShadow: "2px 2px 2px #f1069f",
-                            }}>
-                                Polished By Mia offers quality Acryilics. Check out more social media for more work!
-                            </Col>
+                <Navbar light collapseOnSelect expand="md" sticky="top">
+                    <Navbar.Brand style={{
+                        color: "#9df5cc",
+                        background: "black",
+                        padding: "11px",
+                        border: "2px solid #f1069f",
+                        borderRadius: "50%"
+                    }} href="#home">PBM</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                            <NavDropdown title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1" style={{background: "black"}}>
+                                    <a role="button" className="btn btn-link" target="_blank"
+                                        rel="noreferrer noopener" href="tel:+17579127833">
+                                        <i id="socialIcon" className="fa fa-phone fa-lg" />
+                                    </a>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    <a role="button" className="btn btn-link btn-instagram" target="_blank"
+                                        rel="noreferrer noopener" aria-hidden="true"
+                                        href="http://instagram.com/polished.bymia/">
+                                        <i id="socialIcon" className="fa fa-instagram fa-lg" />
+                                    </a>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    <a role="button" className="btn btn-link btn-facebook" target="_blank"
+                                        rel="noreferrer noopener" aria-hidden="true"
+                                        href="http://facebook.com/polishedbymia/">
+                                        <i id="socialIcon" className="fa fa-facebook fa-lg" />
+                                    </a>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                        <Nav>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Navbar>
             </React.Fragment>
         );

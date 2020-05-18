@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 
 
+
 const textCenter = {
     textAlign: "center",
 }
@@ -36,11 +37,11 @@ class BodyComponent extends Component {
     render() { 
         return (
             <Container fluid>
-                <Row>
-                    <Col lg={6} sm={12}>
+                <Row >
+                    <Col lg={7} md={12} sm={12}>
                         <Image src={galpics.serveArea} fluid id="heightpic" alt="bookingpic" />
                     </Col>
-                    <Col lg={6} sm={12} style={{ paddingTop: "15px" }}>
+                    <Col lg={5} md={12} sm={12} style={{ paddingTop: "15px" }}>
                         <Carousel fade id="carouselborder" slide interval={4500}>
                             <Carousel.Item>
                                 <Image src={galpics.pic12} alt="First slide" fluid />
@@ -70,8 +71,8 @@ class BodyComponent extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ paddingTop: "19px"}}>
-                    <Table style={{fontFamily: 'Manrope'}} size='md'
+                    <Col lg={12} md={12} sm={12} style={{ paddingTop: "19px"}}>
+                    <Table id="prices" style={{fontFamily: 'Manrope'}} size='md'
                          responsive striped bordered hover
                           variant="dark">
                             <thead style={{ color: "pink", fontWeight: "bold" }}>

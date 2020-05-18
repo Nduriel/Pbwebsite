@@ -10,8 +10,9 @@ body {
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
 .carousel  {
-  width: 600px;
+  max-width: 600px;
   background-color: black;
+  min-width: fit-content;
 }
 
 #carouselborder {
@@ -47,7 +48,7 @@ body {
   background: -webkit-linear-gradient(left top, #610241 0%, #f1069f 100%);
   padding: 10px;
   border-image-slice: 1;
-}@media only screen and (max-width: 700px) {
+}@media only screen and (max-width: 800px) {
   #jpic {
     display: none;
    }
@@ -58,11 +59,7 @@ body {
   background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
   padding: 10px;
   border-image-slice: 1;
-}@media only screen and (max-width: 700px) {
-  #jpic {
-    display: none;
-   }
- }
+}
 
  @media only screen and (max-width: 700px) {
   #goneText {
@@ -98,14 +95,15 @@ body {
 }
 
 .navbar {
+  color: #9df5cc;
+  text-shadow: 2px 2px 2px #f1069f; 
   background-image: linear-gradient(#610241, #c40484);
   border-bottom: 7px solid #610241;
-  font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
+  font-family: 'Courgette', sans-serif;
   font-size: 20px;
   flex-direction: row;
-  white-space: nowrap;
-  color: pink;
-  
+  white-space: nowrap;  
+  text-shadow: 2px 2px 2px #f1069f; 
 }
 
 .site-footer {
@@ -121,6 +119,10 @@ body {
   padding: 11px;
   border-radius: 50%;
   text-shadow: 2px 2px 2px #f1069f ;
+}
+
+table {
+  width: auto;
 }
 
 #thumbnailPic {

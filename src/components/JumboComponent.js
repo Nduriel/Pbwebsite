@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Jumbotron, Col, Row, Container } from 'reactstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -13,21 +13,19 @@ const pics = {
     miaPic12: require('../images/miaPic12.jpg')
 };
 
-const fontStyle = {
-    fontFamily: 'Courgette',
-    fontSize: "20px",
-    color: "#9df5cc",
-    textShadow: "2px 2px 2px #f1069f",
-}
+// const fontStyle = {
+//     fontFamily: 'Courgette',
+//     fontSize: "20px",
+//     color: "#9df5cc",
+//     textShadow: "2px 2px 2px #f1069f",
+// }
 
-class JumboComponent extends Component {
-    render() {
-        return (
+function JumboComponent () {
+   return (
             <React.Fragment>
                 <Jumbotron fluid>
                     <Container fluid>
                         <Row style={{ textAlign: 'center', flexDirection: "row" }}>
-                            {/* <Col style={{fontWeight: "bolder"}}>Polished By Mia</Col> */}
                             <Col xs={0} md={4} lg={4}>
                                 <Image id="jpic" style={{ height: "200px" }}
                                     src={pics.miaPic12} alt="jpic1" roundedCircle />
@@ -56,20 +54,23 @@ class JumboComponent extends Component {
                         <Nav className="mr-auto">
                             <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
                             <NavDropdown title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" style={{background: "black"}}>
+                                <NavDropdown.Item href="#action/3.1"
+                                    style={{ border: "5px solid #f1069f" }}>
                                     <a role="button" className="btn btn-link" target="_blank"
                                         rel="noreferrer noopener" href="tel:+17579127833">
                                         <i id="socialIcon" className="fa fa-phone fa-lg" />
-                                    </a>
+                                    </a>  Questions?
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
+                                <NavDropdown.Item href="#action/3.2"
+                                    style={{ border: "5px solid #9df5cc" }}>
                                     <a role="button" className="btn btn-link btn-instagram" target="_blank"
                                         rel="noreferrer noopener" aria-hidden="true"
                                         href="http://instagram.com/polished.bymia/">
                                         <i id="socialIcon" className="fa fa-instagram fa-lg" />
                                     </a>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
+                                <NavDropdown.Item href="#action/3.3"
+                                    style={{ border: "5px solid #f1069f" }}>
                                     <a role="button" className="btn btn-link btn-facebook" target="_blank"
                                         rel="noreferrer noopener" aria-hidden="true"
                                         href="http://facebook.com/polishedbymia/">
@@ -85,6 +86,5 @@ class JumboComponent extends Component {
             </React.Fragment>
         );
     }
-}
 
 export default JumboComponent;

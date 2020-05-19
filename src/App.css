@@ -17,15 +17,14 @@ body {
   height: 500px;
 }
 .carousel  {
-  /* max-width: 600px; */
   background-color: black;
 }
 
 #carouselborder {
-  max-width: 700px;
+  max-width: 715px;
   width: auto;
   position: relative;
-  border: 20px solid;
+  border: 30px solid;
   border-style: groove;
   border-color: rgb(80, 80, 80);
   box-shadow: 10px 5px 5px black;
@@ -100,6 +99,10 @@ body {
   flex-direction: row;
   white-space: nowrap;  
   text-shadow: 2px 2px 2px #f1069f; 
+}
+
+#responsive-navbar-nav > div.mr-auto.navbar-nav > div > div {
+  background-image: linear-gradient( #c40484, #610241);
 }
 
 .site-footer {

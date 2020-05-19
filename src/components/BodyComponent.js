@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
 import Carousel from 'react-bootstrap/Carousel';
 
 
+const tableBody = {
+    color: "#9df5cc",
+    fontWeight: "bold",
+    textShadow: "2px 2px 2px #f1069f",
+}
 
 const textCenter = {
     textAlign: "center",
@@ -13,7 +18,7 @@ const textCenter = {
 const capstyle = {
     fontWeight: "bold",
     color: "#9df5cc",
-    fontSize: "20px",
+    fontSize: "25px",
     textShadow: "2px 2px 2px #f1069f",
     fontFamily: "Courgette"
 }
@@ -27,14 +32,13 @@ const galpics = {
     pic5: require('../images/miaPic5.jpg'),
     pic6: require('../images/miaPic6.jpg'),
     pic7: require('../images/miaPic7.jpg'),
-    pic12: require('../images/miaPic12.jpg'),
+    pic12: require('../images/miaPic11.jpg'),
     pic22: require('../images/miaPic22.jpg'),
     pic28: require('../images/miaPic28.jpg'),    
     bookAppt: require('../images/bookappt.jpg')
 };
 
-class BodyComponent extends Component {
-    render() { 
+function BodyComponent() {
         return (
             <Container fluid>
                 <Row style={{justifyContent: "center"}}>
@@ -89,44 +93,46 @@ class BodyComponent extends Component {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Full Set:</td>
+                                    <td style={tableBody}>Acrylic Full Set:</td>
                                     <td style={textCenter}>$ 35</td>
                                     <td style={textCenter}>$ 45</td>
                                     <td style={textCenter}>$ 50</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Acrylic Fill:</td>
+                                    <td style={tableBody}>Acrylic Fill:</td>
                                     <td style={textCenter}>$ 30</td>
                                     <td style={textCenter}>$ 35</td>
                                     <td style={textCenter}>$ 40</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Full Set:</td>
+                                    <td style={tableBody}>Ombre Full Set:</td>
                                     <td style={textCenter}>$ 40</td>
                                     <td style={textCenter}>$ 55</td>
                                     <td style={textCenter}>$ 55</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Ombre Fill:</td>
+                                    <td style={tableBody}>Ombre Fill:</td>
                                     <td style={textCenter}>$ 35</td>
                                     <td style={textCenter}>$ 40</td>
                                     <td style={textCenter}>$ 40</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "#9df5cc", fontWeight: "bold" }}>Color Acrylic Full Set:</td>
+                                    <td style={tableBody}>Color Acrylic Full Set:</td>
                                     <td colSpan="3" style={{ textAlign: "center" }}>
                                     **Nails need to be soaked off for an additional $ 5 (Full Set: $7)**
                                     
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "violet", fontWeight: "bold" }}>Add-Ons:</td>
+                                    <td style={{ color: "violet", fontWeight: "bold", 
+                                    textShadow: "2px 2px 2px #f1069f" }}>Add-Ons:</td>
                                     <td style={{ textAlign: "center" }}>* Jewel on 2 Fingers: $4 *</td>
                                     <td style={{ textAlign: "center" }}>* Full Blinged out nail: $7 *</td>
                                     <td style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
                                 </tr>
                                 <tr>
-                                    <td style={{ color: "violet", fontWeight: "bold" }}>Toe Color Change:</td>
+                                    <td style={{ color: "violet", fontWeight: "bold",
+                                     textShadow: "2px 2px 2px #f1069f" }}>Toe Color Change:</td>
                                     <td colSpan="3" style={{ textAlign: "center" }}>$10 for Gel; $7 for regular</td>
                                 </tr>
                             </tbody>
@@ -136,5 +142,4 @@ class BodyComponent extends Component {
             </Container>
         );
     }
-}
 export default BodyComponent;

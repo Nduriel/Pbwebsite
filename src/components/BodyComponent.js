@@ -38,7 +38,7 @@ class BodyComponent extends Component {
         return (
             <Container fluid>
                 <Row >
-                    <Col lg={7} md={12} sm={12}>
+                    <Col lg={6} md={12} sm={12}>
                         <Image src={galpics.serveArea} fluid id="heightpic" alt="bookingpic" />
                     </Col>
                     <Col lg={5} md={12} sm={12} style={{ paddingTop: "15px" }}>

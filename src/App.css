@@ -9,7 +9,6 @@ body {
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
-
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -23,7 +22,7 @@ body {
 }
 
 #carouselborder {
-  max-width: 600px;
+  max-width: 700px;
   width: auto;
   position: relative;
   border: 20px solid;
@@ -33,24 +32,10 @@ body {
   /* height: 100%; */
   box-sizing: border-box;
 } 
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  height: 50px;
-  width: 50px;
-  outline: black;
-  background-color: #610241;
-  background-size: 50%, 50%;
-  border-radius: 50%;
-  border: 2px solid #9df5cc;
-}
-
 #heightpic {
   padding-top: 15px;
-  max-width: 600px;
-  width: auto;
-  /* height: auto;
-  width: 600px; */
+  height: auto;
+  width: 100%;
   border-radius: 2% / 4%;
 }
 

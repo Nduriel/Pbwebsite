@@ -21,7 +21,7 @@ body {
 }
 
 #carouselborder {
-  max-width: 715px;
+  max-width: 750px;
   width: auto;
   position: relative;
   border: 30px solid;
@@ -32,6 +32,7 @@ body {
   box-sizing: border-box;
 } 
 #heightpic {
+  max-width: 750px;
   padding-top: 15px;
   height: auto;
   width: 100%;
@@ -103,6 +104,12 @@ body {
 
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div > div {
   background-image: linear-gradient( #c40484, #610241);
+  border-radius: 5%;
+}
+#root > div > nav > button  {
+  outline: red;
+  color: yellow;
+  background-color: #9df5cc;
 }
 
 .site-footer {

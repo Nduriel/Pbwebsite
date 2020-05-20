@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Container, Button } from 'reactstrap';
+import { Col, Row, Button } from 'reactstrap';
 
 const footerFont = {
     textShadow: "2px 2px 2px #f1069f",
@@ -13,9 +13,9 @@ class FooterComponent extends Component {
     render() {
         return (
             <footer className="site-footer" style={footerFont}>
-                <Container fluid>
+          
                     <Row>
-                        <Col lg={4} sm={4} xs="auto" style={{ paddingTop: '10px' }}
+                        <Col lg={4} sm={4} xs={5} style={{ paddingTop: '9px' }}
                             className="text-center">
                             <Button color="primary" onClick={this.props.call}
                                 size="sm"
@@ -36,9 +36,9 @@ class FooterComponent extends Component {
                                 rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
                                 <i id="socialIcon" className="fa fa-envelope-o" />
                             </a>
-                            <span id="goneText">Questions?</span>
+                            <span id="goneText" >Questions?</span>
                         </Col>
-                        <Col lg={4} sm={4} xs={1} className="text-center">
+                        <Col lg={4} sm={4} xs='auto' className="text-center">
                             <span id="goneText">Acrylic Facts:</span>
                             <a role="button" className="btn btn-link" target="_blank"
                                 rel="noopener noreferrer"
@@ -47,7 +47,7 @@ class FooterComponent extends Component {
                             </a>
                         </Col>
                     </Row>
-                </Container>
+        
             </footer>
         );
     }

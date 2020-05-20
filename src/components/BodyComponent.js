@@ -27,11 +27,11 @@ const galpics = {
 function BodyComponent() {
     return (
         <Container fluid>
-            <Row style={{ justifyContent: "center" }}>
+            <Row>
                 <Col lg={6} md={12} sm={12} xs={12}>
                     <Image src={galpics.serveArea} id="heightpic" alt="bookingpic" />
                 </Col>
-                <Col lg={6} md={12} sm={12} xs={12} style={{ paddingTop: "15px" }}>
+                <Col lg={6} md='auto' sm={12} xs={12} style={{ paddingTop: "15px" }}>
                     <Carousel fade id="carouselborder" slide interval={4500}>
                         <Carousel.Item>
                             <Image src={galpics.pic12} alt="First slide" fluid />

@@ -13,13 +13,6 @@ const pics = {
     miaPic12: require('../images/miaPic12.jpg')
 };
 
-// const fontStyle = {
-//     fontFamily: 'Courgette',
-//     fontSize: "20px",
-//     color: "#9df5cc",
-//     textShadow: "2px 2px 2px #f1069f",
-// }
-
 function JumboComponent() {
     return (
         <React.Fragment>
@@ -52,30 +45,33 @@ function JumboComponent() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                        <Nav.Item>
+                            <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                        </Nav.Item>
                         <NavDropdown title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1"
-                                style={{ border: "5px solid #f1069f" }}>
-                                <a role="button" className="btn btn-link" target="_blank"
+                            <NavDropdown.Item href="tel:+17579127833"
+                                target="_blank" rel="noreferrer noopener">
+                                {/* <a role="button" className="btn btn-link" target="_blank"
                                     rel="noreferrer noopener" href="tel:+17579127833">
-                                    <i id="socialIcon" className="fa fa-phone fa-lg" />
-                                </a>  Questions?
+                                    </a>  */}
+                                <i id="socialIcon" className="fa fa-phone fa-lg" />{' '} Questions?
                                 </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2"
-                                style={{ border: "5px solid #9df5cc" }}>
-                                <a role="button" className="btn btn-link btn-instagram" target="_blank"
+                            <NavDropdown.Item href="http://instagram.com/polished.bymia/"
+                                rel="noreferrer noopener" aria-hidden="true"
+                                target="_blank">
+                                {/* <a role="button" className="btn btn-link btn-instagram" target="_blank"
                                     rel="noreferrer noopener" aria-hidden="true"
-                                    href="http://instagram.com/polished.bymia/">
-                                    <i id="socialIcon" className="fa fa-instagram fa-lg" />
-                                </a> #polishbymia
+                                    href="http://instagram.com/polished.bymia/"></a>  */}
+                                <i id="socialIcon" className="fa fa-instagram fa-lg" />{' '}
+                                #polishbymia
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3"
-                                style={{ border: "5px solid #f1069f" }}>
-                                <a role="button" className="btn btn-link btn-facebook" target="_blank"
+                            <NavDropdown.Item href="http://facebook.com/polishedbymia/"
+                                target="_blank" rel="noreferrer noopener" aria-hidden="true">
+                                {/* <a role="button" className="btn btn-link btn-facebook" target="_blank"
                                     rel="noreferrer noopener" aria-hidden="true"
-                                    href="http://facebook.com/polishedbymia/">
-                                    <i id="socialIcon" className="fa fa-facebook fa-lg" />
-                                </a> facebook
+                                    href="http://facebook.com/polishedbymia/"></a> */}
+                                <i id="socialIcon" className="fa fa-facebook fa-lg" />{' '}
+                                 facebook
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

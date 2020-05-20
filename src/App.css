@@ -118,6 +118,18 @@ body {
   padding: 20px ;
   font-family: 'Courgette', cursive;
 }
+#responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(1) {
+  color: white;
+  text-shadow: 2px 2px 2px yellow;
+}
+#responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(2) {
+  color: white;
+  text-shadow: 2px 2px 2px red;
+}
+#responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(3) {
+  color: white;
+  text-shadow: 2px 2px 2px #007aff;
+}
 
 #socialIcon {
   background: #007aff;

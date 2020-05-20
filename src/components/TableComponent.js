@@ -18,7 +18,7 @@ const galpics = {
     shortNails: require('../images/miaPic10.jpg'),
     tpic: require('../images/noticepic.jpg'),
 }
-     
+
      function TableComponent () {
          return(
             <Table id="prices" style={{fontFamily: 'Manrope'}} size='md'

@@ -15,7 +15,7 @@ class FooterComponent extends Component {
             <footer className="site-footer" style={footerFont}>
                 <Container fluid>
                     <Row>
-                        <Col lg={4} sm={4} xs="auto" style={{ paddingTop: '6px' }}
+                        <Col lg={4} sm={4} xs="auto" style={{ paddingTop: '10px' }}
                             className="text-center">
                             <Button color="primary" onClick={this.props.call}
                                 size="sm"

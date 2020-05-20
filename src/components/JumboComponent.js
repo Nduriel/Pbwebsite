@@ -67,7 +67,7 @@ function JumboComponent() {
                                     rel="noreferrer noopener" aria-hidden="true"
                                     href="http://instagram.com/polished.bymia/">
                                     <i id="socialIcon" className="fa fa-instagram fa-lg" />
-                                </a> Instagram
+                                </a> #polishbymia
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3"
                                 style={{ border: "5px solid #f1069f" }}>

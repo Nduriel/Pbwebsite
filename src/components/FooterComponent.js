@@ -4,8 +4,9 @@ import { Col, Row, Container, Button } from 'reactstrap';
 const footerFont = {
     textShadow: "2px 2px 2px #f1069f",
     color: "#9df5cc",
-    fontSize: "20px",
-    alignContent: "flex-end"
+    fontSize: "18px",
+    flexDirection: "row",
+    whiteSpace: "nowrap"
 }
 
 class FooterComponent extends Component {
@@ -14,27 +15,30 @@ class FooterComponent extends Component {
             <footer className="site-footer" style={footerFont}>
                 <Container fluid>
                     <Row>
-                        <Col lg={4} sm={4} xs={5} style={{ paddingTop: '6px' }} className="text-center" >
+                        <Col lg={4} sm={4} xs="auto" style={{ paddingTop: '6px' }}
+                            className="text-center">
                             <Button color="primary" onClick={this.props.call}
+                                size="sm"
                                 style={{
                                     fontWeight: "bold",
-                                    fontSize: "20px",
+                                    fontSize: "18px",
                                     textShadow: "2px 2px 2px #f1069f"
                                 }}>
                                 Appointments</Button>&nbsp;
-                                <span id="goneText">Schedule Today!!!</span>
+                                <span id="goneText">Book Today!</span>{' '}
                         </Col>
-                        <Col lg={4} sm={4} xs={3} style={{
-                            borderLeft: "solid 3px", borderRight: "solid 3px",
-                            textAlign: 'center', flexDirection: "row"
-                        }}>
-                            <span id="goneText">Questions? Send an Email: </span>
+                        <Col lg={4} sm={4} xs='auto'
+                            style={{
+                                borderRight: "solid 3px",
+                                borderLeft: "solid 3px"
+                            }} className="text-center">
                             <a role="button" className="btn btn-link" target="_blank"
                                 rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
                                 <i id="socialIcon" className="fa fa-envelope-o" />
                             </a>
+                            <span id="goneText">Questions?</span>
                         </Col>
-                        <Col lg={4} sm={4} xs={3}  className="text-center">
+                        <Col lg={4} sm={4} xs={1} className="text-center">
                             <span id="goneText">Acrylic Facts:</span>
                             <a role="button" className="btn btn-link" target="_blank"
                                 rel="noopener noreferrer"

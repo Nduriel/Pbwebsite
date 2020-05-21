@@ -19,7 +19,7 @@ function JumboComponent() {
             <Jumbotron fluid>
                 <Container fluid>
                     <Row style={{ textAlign: 'center', flexDirection: "row" }}>
-                        <Col xs={0} md={4} lg={4}>
+                        <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
                             <Image id="jpic" style={{ height: "200px" }}
                                 src={pics.miaPic12} alt="jpic1" roundedCircle />
                         </Col>
@@ -27,7 +27,7 @@ function JumboComponent() {
                             <Image id="jpic1" style={{ width: "250px", height: "270px" }}
                                 src={pics.logo} alt="logopic" roundedCircle />
                         </Col>
-                        <Col xs={0} md={4} lg={4}>
+                        <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
                             <Image id="jpic" style={{ height: "200px" }}
                                 src={pics.miaPic11} alt="jpic2" roundedCircle />
                         </Col>
@@ -45,8 +45,8 @@ function JumboComponent() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Item>
-                            <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                        <Nav.Item className="glow">
+                            <Nav.Link  href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
                         </Nav.Item>
                         <NavDropdown title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
                             <NavDropdown.Item href="tel:+17579127833"

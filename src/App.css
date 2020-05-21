@@ -67,18 +67,13 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./images/jumbopic1.jpg');
   background-image: linear-gradient(45deg,black,black,black,#610241,grey,
    white, grey,#610241,black,black, black);
   background-size: 600% 100%;
   animation-direction: alternate;
   animation: gradient 16s linear infinite;
   display: block;
-  font-weight: bold;
-  font-family: 'Great Vibes', 'font-effect-anaglyph';
-  font-size: 65px;
   text-shadow: 2px 2px 2px #f1069f;  
-  color: #9df5cc;
 }
 @keyframes gradient {
   0% {background-position: 0%}
@@ -101,15 +96,37 @@ body {
   white-space: nowrap;  
   text-shadow: 2px 2px 2px #f1069f; 
 }
+#responsive-navbar-nav > div.mr-auto.navbar-nav > div.nav-item > a {
+  color: rgba(255, 255, 255, 0.856);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div > div {
-  background-image: linear-gradient( #c40484, #610241);
+  background: rgba(128, 0, 128, 0.801);
   border-radius: 5%;
 }
 #root > div > nav > button  {
-  outline: red;
-  color: yellow;
-  background-color: #9df5cc;
+  background-color: #610241;
 }
 
 .site-footer {
@@ -119,14 +136,17 @@ body {
   font-family: 'Courgette', cursive;
 }
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(1) {
+  background-image: linear-gradient( #c40484, #610241);
   color: white;
-  text-shadow: 2px 2px 2px yellow;
+  text-shadow: 2px 2px 2px lightgreen;
 }
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(2) {
+  background-image: linear-gradient( #c40484, #610241);
   color: white;
-  text-shadow: 2px 2px 2px red;
+  text-shadow: 2px 2px 2px purple;
 }
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div.show.dropdown.nav-item > div > a:nth-child(3) {
+  background-image: linear-gradient( #c40484, #610241);
   color: white;
   text-shadow: 2px 2px 2px #007aff;
 }

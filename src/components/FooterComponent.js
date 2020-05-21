@@ -18,7 +18,7 @@ class FooterComponent extends Component {
                         <Col lg={4} sm={4} xs={5} style={{ paddingTop: '9px' }}
                             className="text-center">
                             <Button color="primary" onClick={this.props.call}
-                                size="sm"
+                                size="md"
                                 style={{
                                     fontWeight: "bold",
                                     fontSize: "18px",

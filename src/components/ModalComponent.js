@@ -6,7 +6,7 @@ import {
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 import FooterComponent from './FooterComponent';
-import * as emailjs from 'emailjs-com';
+// import * as emailjs from 'emailjs-com';
 
 
 const required = val => val && val.length;
@@ -15,8 +15,25 @@ const minLength = len => val => val && (val.length >= len);
 const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-const spancolor = {
-    color: "white"
+
+const modalFont = {
+    top: {
+        backgroundColor: "black", color: "#9df5cc",
+        borderBottomColor: "purple",
+        fontStyle: "italic",
+        textAlign: "center",
+        textShadow: "2px 2px 2px #f1069f"
+    },
+    bottom: {
+        backgroundColor: "black", color: "#9df5cc",
+        borderTopColor: "purple",
+        fontStyle: "italic",
+        textAlign: "center",
+        textShadow: "2px 2px 2px #f1069f"
+    },
+    errorText: {
+        color: "white"
+    }
 }
 
 class ModalComponent extends Component {
@@ -29,6 +46,7 @@ class ModalComponent extends Component {
             phoneNum: '',
             email: '',
             time: '',
+            contactType: '',
             reserveDate: new Date(),
             touched: {
                 firstName: false,
@@ -37,32 +55,28 @@ class ModalComponent extends Component {
                 email: false,
             }
         };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.dateChange = this.dateChange.bind(this);
-        this.toggleModal = this.toggleModal.bind(this);
     }
 
-    handleSubmit(values) {
+    handleSubmit = (values) => {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is:' + JSON.stringify(values));
-        const { firstName, email, time, reserveDate, phoneNum } = this.state;
+        this.toggleModal();
+        // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
-    handleChange(e) {
+    handleChange = (event) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [event.target.name]: event.target.value
         });
     }
 
-    dateChange(date) {
+    dateChang = (date) => {
         this.setState({
             reserveDate: date
         })
     }
 
-    toggleModal() {
+    toggleModal = () => {
         this.setState({
             isModalOpen: !this.state.isModalOpen
         });
@@ -74,15 +88,8 @@ class ModalComponent extends Component {
                 <FooterComponent call={this.toggleModal} />
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}
                     className={this.props.className}>
-                    <ModalHeader style={{
-                        backgroundColor: "black", color: "#9df5cc",
-                        borderBottomColor: "purple",
-                        fontStyle: "italic",
-                        textAlign: "center",
-                        textShadow: "2px 2px 2px #f1069f"
-                    }}>
+                    <ModalHeader toggle={this.toggleModal} style={modalFont.top}>
                         Send me your info and I'll contact you asap!<br />
-                        <span >{''}**Serving the Hampton <span style={{ color: "red" }}>757</span> Roads**</span>
                     </ModalHeader>
                     {/* onSubmit={values => this.handleSubmit(values)} */}
                     <ModalBody id="modalbody">
@@ -109,12 +116,13 @@ class ModalComponent extends Component {
                                         show="touched"
                                         component="div"
                                         messages={{
-                                            required: <span style={spancolor}>'Required'</span>,
-                                            minLength: <span style={spancolor}>'Must be at least 2 characters'</span>,
+                                            required: <span style={modalFont.errorText}>'Required'</span>,
+                                            minLength: <span style={modalFont.errorText}>'Must be at least 2 characters'</span>,
                                             maxLength: 'Must be 15 characters or less'
                                         }}
                                     />
-                                    <Label htmlFor="lastName" style={{ fontWeight: "bold" }}>Last Name</Label>
+                                    <Label htmlFor="lastName"
+                                        style={{ fontWeight: "bold" }}>Last Name</Label>
                                     <Control.text model=".lastName"
                                         name="lastName"
                                         onChange={this.handleChange}
@@ -133,9 +141,9 @@ class ModalComponent extends Component {
                                         show="touched"
                                         component="div"
                                         messages={{
-                                            required: <span style={spancolor}>'Required'</span>,
-                                            minLength: <span style={spancolor}>'Must be at least 2 characters'</span>,
-                                            maxLength: <span style={spancolor}>'Must be 15 characters or less'</span>
+                                            required: <span style={modalFont.errorText}>'Required'</span>,
+                                            minLength: <span style={modalFont.errorText}>'Must be at least 2 characters'</span>,
+                                            maxLength: <span style={modalFont.errorText}>'Must be 15 characters or less'</span>
                                         }}
                                     />
                                 </Col>
@@ -160,8 +168,8 @@ class ModalComponent extends Component {
                                         show="touched"
                                         component="div"
                                         messages={{
-                                            required: <span style={spancolor}>'Required'</span>,
-                                            validEmail: <span style={spancolor}>'Invalid email address'</span>
+                                            required: <span style={modalFont.errorText}>'Required'</span>,
+                                            validEmail: <span style={modalFont.errorText}>'Invalid email address'</span>
                                         }}
                                     />
                                     <Label htmlFor="phoneNum" style={{ fontWeight: "bold" }}>Phone</Label>
@@ -184,10 +192,10 @@ class ModalComponent extends Component {
                                         show="touched"
                                         component="div"
                                         messages={{
-                                            required: <span style={spancolor}>'Required'</span>,
-                                            minLength: <span style={spancolor}>'Must be at least 10 numbers'</span>,
-                                            maxLength: <span style={spancolor}>'Must be 15 numbers or less'</span>,
-                                            isNumber: <span style={spancolor}>'Must be a number'</span>
+                                            required: <span style={modalFont.errorText}>'Required'</span>,
+                                            minLength: <span style={modalFont.errorText}>'Must be at least 10 numbers'</span>,
+                                            maxLength: <span style={modalFont.errorText}>'Must be 15 numbers or less'</span>,
+                                            isNumber: <span style={modalFont.errorText}>'Must be a number'</span>
                                         }}
                                     />
                                 </Col>
@@ -241,8 +249,8 @@ class ModalComponent extends Component {
                                                 show="touched"
                                                 component="div"
                                                 messages={{
-                                                    required: <span style={spancolor}>'Required'</span>,
-                                                    isNumber: <span style={spancolor}>'Select an appointment timeframe'</span>,
+                                                    required: <span style={modalFont.errorText}>'Required'</span>,
+                                                    isNumber: <span style={modalFont.errorText}>'Select an appointment timeframe'</span>,
                                                 }}
                                             />
                                         </div>
@@ -250,22 +258,25 @@ class ModalComponent extends Component {
                                 </Col>
                             </Row>
                             <br />
-                            <Col md={{ size: 12, offset: 4 }} >
-                                <Row className="formgroup" style={{ position: "relative", textAlign: "center" }}>
-                                    <Button type="submit" color="info">Reserve</Button>
+                            <Row className="formgroup">
+                                <Col md={6} sm={6} xs={6}>
+                                    <Button type="submit" color="info">Reserve</Button>{' '}
                                     <Button color="danger" onClick={this.toggleModal}>Cancel</Button>
-                                </Row>
-                            </Col>
+                                </Col>
+                                <Col md={6} sm={6} xs={6}>
+                                    <Control.select
+                                        model=".contactType"
+                                        name="contactType"
+                                        className="form-control">
+                                        <option>By Phone</option>
+                                        <option>By Email</option>
+                                    </Control.select>
+                                    <strong>Best way to reach you?</strong>
+                                </Col>
+                            </Row>
                         </LocalForm>
                     </ModalBody>
-                    <ModalFooter style={{
-                        backgroundColor: "black",
-                        borderTopColor: "purple",
-                        color: "#9df5cc",
-                        fontStyle: "italic",
-                        textAlign: "center",
-                        textShadow: "2px 2px 2px #f1069f"
-                    }}>
+                    <ModalFooter style={modalFont.bottom}>
                         <Col>**Dates and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment** </Col>
                     </ModalFooter>

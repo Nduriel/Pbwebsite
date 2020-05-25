@@ -3,15 +3,9 @@ import { Jumbotron, Col, Row, Container } from 'reactstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
-
+import { jumbotronPic } from './photos';
 import Image from 'react-bootstrap/Image';
 
-const pics = {
-    logo: require('../images/pbmlogo.jpg'),
-    miaPic11: require('../images/miaPic11.jpg'),
-    miaPic12: require('../images/miaPic12.jpg')
-};
 
 function JumboComponent() {
     return (
@@ -21,15 +15,15 @@ function JumboComponent() {
                     <Row style={{ textAlign: 'center', flexDirection: "row" }}>
                         <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
                             <Image id="jpic" style={{ height: "200px" }}
-                                src={pics.miaPic12} alt="jpic1" roundedCircle />
+                                src={jumbotronPic.miaPic12} alt="jpic1" roundedCircle />
                         </Col>
                         <Col xs={12} md={4} lg={4}>
                             <Image id="jpic1" style={{ width: "250px", height: "270px" }}
-                                src={pics.logo} alt="logopic" roundedCircle />
+                                src={jumbotronPic.logo} alt="logopic" roundedCircle />
                         </Col>
                         <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
                             <Image id="jpic" style={{ height: "200px" }}
-                                src={pics.miaPic11} alt="jpic2" roundedCircle />
+                                src={jumbotronPic.miaPic11} alt="jpic2" roundedCircle />
                         </Col>
                     </Row>
                 </Container>

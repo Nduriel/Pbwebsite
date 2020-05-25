@@ -1,6 +1,7 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
+import { tablePic } from './photos';
                
 const textCenter = {
     textAlign: "center",
@@ -12,13 +13,6 @@ const tableBody = {
     textShadow: "2px 2px 2px #f1069f",
 }
 
-const galpics = {
-    longNails: require('../images/miaPic26.jpg'),
-    medNails: require('../images/miaPic18.jpg'),
-    shortNails: require('../images/miaPic10.jpg'),
-    tpic: require('../images/noticepic.jpg'),
-}
-
      function TableComponent () {
          return(
             <Table id="prices" style={{fontFamily: 'Manrope'}} size='md'
@@ -26,13 +20,13 @@ const galpics = {
             variant="dark">
             <thead style={{ color: "pink", fontWeight: "bold" }}>
                 <tr style={{ textAlign: "center" }}>
-                    <th><Image id="thumbnailPic" src={galpics.tpic} thumbnail fluid/>
+                    <th><Image id="thumbnailPic" src={tablePic.tpic} thumbnail fluid/>
                     <br />Type of Set</th>
-                    <th><Image id="thumbnailPic" src={galpics.shortNails} thumbnail fluid />
+                    <th><Image id="thumbnailPic" src={tablePic.shortNails} thumbnail fluid />
                     <br />Short Nails</th>
-                    <th><Image id="thumbnailPic" src={galpics.medNails} thumbnail fluid />
+                    <th><Image id="thumbnailPic" src={tablePic.medNails} thumbnail fluid />
                     <br />Med Nails </th>
-                    <th><Image id="thumbnailPic" src={galpics.longNails} thumbnail fluid />
+                    <th><Image id="thumbnailPic" src={tablePic.longNails} thumbnail fluid />
                     <br />Longs Nails</th>
                 </tr>
             </thead>

@@ -39,6 +39,12 @@ body {
   border-radius: 2% / 4%;
 }
 
+body > div:nth-child(10) > div > 
+div.modal.fade.show > div > div >
+ div.modal-header > button > span {
+  color: #9df5cc;
+}
+
 #jpic {
   border-radius: 25%;
   background: -webkit-linear-gradient(left top, #610241 0%, #f1069f 100%);

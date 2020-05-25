@@ -268,9 +268,9 @@ class ModalComponent extends Component {
                                         model=".contactType"
                                         name="contactType"
                                         className="form-control">
+                                            <option>By Email</option>
                                         <option>By Phone</option>
-                                        <option>By Email</option>
-                                    </Control.select>
+                            </Control.select>
                                     <strong>Best way to reach you?</strong>
                                 </Col>
                             </Row>

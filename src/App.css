@@ -5,7 +5,7 @@
 
 body {
   background-color: black;
-  background-image: url('../src/images/butterfly\ and\ flowers.jpg');
+  background-image: url('../src/images/butterfly1.jpg');
   background-position: center;
   font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
@@ -137,7 +137,7 @@ div.modal.fade.show > div > div >
 
 .site-footer {
   border-top: 7px solid #610241;
-  background-image: linear-gradient( #c40484, #610241);
+  background-image: linear-gradient(black,grey,black);
   padding: 20px ;
   font-family: 'Courgette', cursive;
 }

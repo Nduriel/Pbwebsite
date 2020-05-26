@@ -9,6 +9,7 @@ const footerFont = {
     whiteSpace: "nowrap"
 }
 
+
 class FooterComponent extends Component {
     render() {
         return (
@@ -25,9 +26,9 @@ class FooterComponent extends Component {
                                 textShadow: "2px 2px 2px #f1069f"
                             }}>
                             Appointments</Button>&nbsp;
-                                <span id="goneText">Book Today!</span>{' '}
+                                <span onMouseOver="got" className="glow" id="goneText">Book Today!</span>{' '}
                     </Col>
-                    <Col lg={4} md={{size: 2}}sm={4} xs='auto'
+                    <Col lg={4} md={{size: 2}}sm={4} xs={3}
                         style={{
                             borderRight: "solid 3px",
                             borderLeft: "solid 3px"
@@ -37,8 +38,12 @@ class FooterComponent extends Component {
                             <i id="socialIcon" className="fa fa-envelope-o" />
                         </a>
                         <span id="goneText" >Questions?</span>
+                        <a role="button" className="btn btn-link" target="_blank"
+                        rel="noopener noreferrer" href="tel:+17579127833">
+                        <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
+                        </a>
                     </Col>
-                    <Col lg={4} sm={4} xs='auto' className="text-center">
+                    <Col lg={4} sm={4} xs={2} className="text-center">
                         <span id="goneText">Acrylic Facts:</span>
                         <a role="button" className="btn btn-link" target="_blank"
                             rel="noopener noreferrer"

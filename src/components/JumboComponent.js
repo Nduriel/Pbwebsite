@@ -40,32 +40,21 @@ function JumboComponent() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item className="glow">
-                            <Nav.Link  href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                            <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
                         </Nav.Item>
-                        <NavDropdown title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="tel:+17579127833"
-                                target="_blank" rel="noreferrer noopener">
-                                {/* <a role="button" className="btn btn-link" target="_blank"
-                                    rel="noreferrer noopener" href="tel:+17579127833">
-                                    </a>  */}
-                                <i id="socialIcon" className="fa fa-phone fa-lg" />{' '} Questions?
-                                </NavDropdown.Item>
+                        <NavDropdown className="glow" title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
+                            <Nav.Item className="text-center">
+                                Follow Me:
+                            </Nav.Item>
                             <NavDropdown.Item href="http://instagram.com/polished.bymia/"
-                                rel="noreferrer noopener" aria-hidden="true"
-                                target="_blank">
-                                {/* <a role="button" className="btn btn-link btn-instagram" target="_blank"
-                                    rel="noreferrer noopener" aria-hidden="true"
-                                    href="http://instagram.com/polished.bymia/"></a>  */}
-                                <i id="socialIcon" className="fa fa-instagram fa-lg" />{' '}
-                                #polishbymia
+                                target="_blank" rel="noreferrer noopener" aria-hidden="true">
+                                {/* <i id="socialIcon" className="fa fa-instagram fa-md" />{' '} */}
+                                #Instagram
                             </NavDropdown.Item>
                             <NavDropdown.Item href="http://facebook.com/polishedbymia/"
                                 target="_blank" rel="noreferrer noopener" aria-hidden="true">
-                                {/* <a role="button" className="btn btn-link btn-facebook" target="_blank"
-                                    rel="noreferrer noopener" aria-hidden="true"
-                                    href="http://facebook.com/polishedbymia/"></a> */}
-                                <i id="socialIcon" className="fa fa-facebook fa-lg" />{' '}
-                                 facebook
+                                {/* <i id="socialIcon" className="fa fa-facebook fa-md" />{' '} */}
+                                @Facebook
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

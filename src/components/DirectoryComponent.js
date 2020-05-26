@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import BodyComponent from './BodyComponent';
 import JumboComponent from './JumboComponent';
-import ModalComponent from './ModalComponent';
-
+import FooterComponent from './FooterComponent';
 
 class Directory extends Component {
     render() {
@@ -10,7 +9,7 @@ class Directory extends Component {
             <React.Fragment>
                 <JumboComponent />
                 <BodyComponent />
-                <ModalComponent />
+                <FooterComponent />
             </React.Fragment>
         );
     }

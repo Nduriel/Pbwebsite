@@ -70,7 +70,7 @@ class ModalComponent extends Component {
         });
     }
 
-    dateChang = (date) => {
+    dateChange = (date) => {
         this.setState({
             reserveDate: date
         })

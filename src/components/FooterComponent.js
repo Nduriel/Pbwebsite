@@ -92,22 +92,9 @@ class FooterComponent extends Component {
                 {/* Footer */}
                 <footer className="site-footer" style={footerFont}>
                     <Row>
-                        <Col lg={4} sm={4} xs={5} style={{ paddingTop: '9px' }}
-                            className="text-center">
-                            <Button color="primary" onClick={this.toggleModal}
-                                size="md"
-                                style={{
-                                    fontWeight: "bold",
-                                    fontSize: "18px",
-                                    textShadow: "2px 2px 2px #f1069f"
-                                }}>
-                                Appointments</Button>&nbsp;
-                                <span onMouseOver="got" className="glow" id="goneText">Book Today!</span>{' '}
-                        </Col>
                         <Col lg={4} md={{ size: 2 }} sm={4} xs='auto'
                             style={{
-                                borderRight: "solid 3px",
-                                borderLeft: "solid 3px"
+
                             }} className="text-center">
                             <a role="button" className="btn btn-link" target="_blank"
                                 rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
@@ -118,6 +105,20 @@ class FooterComponent extends Component {
                                 rel="noopener noreferrer" href="tel:+17579127833">
                                 <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
                             </a>
+                        </Col>
+                        <Col lg={4} sm={4} xs={5} style={{
+                            paddingTop: '9px', borderRight: "solid 3px", borderLeft: "solid 3px"
+                        }}
+                            className="text-center">
+                            <Button color="primary" onClick={this.toggleModal}
+                                size="lg"
+                                style={{
+                                    fontWeight: "bold",
+                                    fontSize: "18px",
+                                    textShadow: "2px 2px 2px #f1069f"
+                                }}>
+                                Appointments</Button>&nbsp;
+                                <span onMouseOver="got" className="glow" id="goneText">Book Today!</span>{' '}
                         </Col>
                         <Col lg={4} sm={4} xs={1} className="text-center">
                             <span id="goneText">Acrylic Facts:</span>

@@ -39,8 +39,7 @@ body {
     border: 30px solid;
     border-style: groove;
     border-color: rgb(80, 80, 80);
-    box-shadow: 10px 5px 5px black;
-    /* height: 100%; */
+    box-shadow: 5px 5px 10px black;
     box-sizing: border-box;
 }
 
@@ -52,7 +51,8 @@ body {
     border-radius: 2% / 4%;
 }
 
-body>div:nth-child(10)>div>div.modal.fade.show>div>div>div.modal-header>button>span {
+body>div:nth-child(10)>div>div.modal.fade.show>
+div>div>div.modal-header>button>span {
     color: #9df5cc;
 }
 
@@ -79,6 +79,12 @@ body>div:nth-child(10)>div>div.modal.fade.show>div>div>div.modal-header>button>s
 @media only screen and (max-width: 800px) {
     #goneText {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #centerText {
+        text-align: center;
     }
 }
 
@@ -154,7 +160,8 @@ body>div:nth-child(10)>div>div.modal.fade.show>div>div>div.modal-header>button>s
 }
 
 #responsive-navbar-nav>div.mr-auto.navbar-nav>div>div {
-    background: rgba(0, 0, 0, 0.445);
+    background: rgb(88, 4, 67);
+    border: 5px solid black;
 }
 
 #root>div>nav>button {

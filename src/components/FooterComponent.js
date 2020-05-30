@@ -66,11 +66,16 @@ function FooterComponent() {
         // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
+    //Because I'm using useState and functional component,
+    // I don't need to bind the method to the class.
+    //i.e. this.handleChange = this.handleChange.bind(this); That
+    //would've let me access "this" inside the function.
     function handleChange(e) {
         const value = e.target.value;
         setState({
             ...state,
             [e.target.value]: value
+            //name of the input: value of the input
         });
     }
 
@@ -89,43 +94,34 @@ function FooterComponent() {
             {/* Footer */}
             <footer className="site-footer" style={footerFont}>
                 <Row>
-                    <Col lg={4} md={{ size: 2 }} sm={4} xs='auto'
-                        style={{
-
-                        }} className="text-center">
+                    <Col lg={4} md={3} sm={3} id="goneText" className="text-center" style={{ paddingTop: "15px", borderRight: "3px double #9df5cc", }}>
+                        <span><i className="fa fa-copyright" aria-hidden="true" />PolishedByMia</span>
+                    </Col>
+                    <Col lg={4} md={5} sm={5} id="centerText">
+                        <span id="goneText" >Questions?</span>
                         <a role="button" className="btn btn-link" target="_blank"
                             rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
                             <i id="socialIcon" className="fa fa-envelope-o" />
                         </a>
-                        <span id="goneText" >Questions?</span>
-                        <a role="button" className="btn btn-link" target="_blank"
-                            rel="noopener noreferrer" href="tel:+17579127833">
-                            <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
-                        </a>
-                    </Col>
-                    <Col lg={4} sm={4} xs={5} style={{
-                        paddingTop: '9px', borderRight: "solid 3px", borderLeft: "solid 3px"
-                    }}
-                        className="text-center">
                         <Button color="primary" onClick={toggleModal}
                             size="lg"
                             style={{
                                 fontWeight: "bold",
                                 fontSize: "18px",
-                                textShadow: "2px 2px 2px #f1069f"
+                                textShadow: "2px 2px 2px #f1069f",
                             }}>
-                            Appointments</Button>&nbsp;
-                                <span onMouseOver="got" className="glow" id="goneText">
-                                    Book Today!
-                                </span>{' '}
-                    </Col>
-                    <Col lg={4} sm={4} xs={1} className="text-center">
-                        <span id="goneText">Acrylic Facts:</span>
-                        <a role="button" className="btn btn-link" target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.harpersbazaar.com/beauty/nails/a31123254/acrylic-nails-what-to-know/">
-                            <i id="socialIcon" className="fa fa-book fa-lg" />
+                            Appointments
+                        </Button>&nbsp;
+                            <a role="button" className="btn btn-link" target="_blank"
+                            rel="noopener noreferrer" href="tel:+17579127833">
+                            <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
                         </a>
+                        <span id="goneText">
+                            Book Today!
+                        </span>
+                    </Col>
+                    <Col lg={4} md={4} sm={2} id="goneText" className="text-center" style={{ paddingTop: "15px",  borderLeft: "3px double #9df5cc" }}>
+                        "Modern touch, Beautiful feel"
                     </Col>
                 </Row>
             </footer>
@@ -275,7 +271,7 @@ function FooterComponent() {
                                     <div className="col-6">
                                         <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
                                             Date Requested
-                                        </Label> 
+                                        </Label>
                                         <br />
                                         <Control
                                             className="form-control"

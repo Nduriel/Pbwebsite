@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BodyComponent from './BodyComponent';
 import JumboComponent from './JumboComponent';
-import FooterComponent from './FooterComponent';
+import ModalFooterComponent from './ModalFooterComponent';
 
-class Directory extends Component {
-    render() {
+function Directory()  {
         return (
             <>
                 <JumboComponent />
                 <BodyComponent />
-                <FooterComponent />
+                <ModalFooterComponent/>
             </>
         );
     }
-}
+
 
 //Move the modal
 export default Directory;

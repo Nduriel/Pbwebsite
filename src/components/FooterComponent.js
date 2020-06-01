@@ -59,34 +59,34 @@ function FooterComponent() {
         }
     });
 
-    function handleSubmit(values) {
+    const toggleModal = () => {
+        setModal(!isModalOpen);
+    }
+
+    const dateChange = (date) => {
+        setState({
+            reserveDate: date
+        })
+    }
+
+    const handleSubmit = (values) => {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is:' + JSON.stringify(values));
         toggleModal();
         // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
-    //Because I'm using useState and functional component,
-    // I don't need to bind the method to the class.
-    //i.e. this.handleChange = this.handleChange.bind(this); That
-    //would've let me access "this" inside the function.
-    function handleChange(e) {
+    const handleChange = (e) => {
         const value = e.target.value;
         setState({
             ...state,
             [e.target.value]: value
             //name of the input: value of the input
         });
-    }
-
-    function dateChange(date) {
-        setState({
-            reserveDate: date
-        })
-    }
-
-    function toggleModal() {
-        setModal(!isModalOpen);
+        //Because I'm using useState and functional component,
+        // I don't need to bind the method to the class.
+        //i.e. this.handleChange = this.handleChange.bind(this); That
+        //would've let me access "this" inside the function.
     }
 
     return (
@@ -120,7 +120,7 @@ function FooterComponent() {
                             Book Today!
                         </span>
                     </Col>
-                    <Col lg={4} md={4} sm={2} id="goneText" className="text-center" style={{ paddingTop: "15px",  borderLeft: "3px double #9df5cc" }}>
+                    <Col lg={4} md={4} sm={2} id="goneText" className="text-center" style={{ paddingTop: "15px", borderLeft: "3px double #9df5cc" }}>
                         "Modern touch, Beautiful feel"
                     </Col>
                 </Row>
@@ -131,7 +131,6 @@ function FooterComponent() {
                 <ModalHeader toggle={toggleModal} style={modalFont.top}>
                     Send me your info and I'll contact you asap!<br />
                 </ModalHeader>
-                {/* onSubmit={values => this.handleSubmit(values)} */}
                 <ModalBody id="modalbody">
                     <LocalForm id="reserveForm" onSubmit={values => handleSubmit(values)}>
                         <Row className="formgroup">

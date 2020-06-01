@@ -36,7 +36,7 @@ body {
     max-width: 750px;
     width: auto;
     position: relative;
-    border: 30px solid;
+    border: 15px solid;
     border-style: groove;
     border-color: rgb(80, 80, 80);
     box-shadow: 5px 5px 10px black;

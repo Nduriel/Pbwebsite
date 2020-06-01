@@ -6,11 +6,11 @@ import FooterComponent from './FooterComponent';
 class Directory extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <JumboComponent />
                 <BodyComponent />
                 <FooterComponent />
-            </React.Fragment>
+            </>
         );
     }
 }

@@ -58,9 +58,11 @@ function JumboComponent() {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Nav.Item>
-                        Acrilic Designs: Full Sets and Cleanings
-                    </Nav.Item>
+                    <Nav className="justify-content-center">
+                        <Nav.Item>
+                            Acrilic Designs: Full Sets and Cleanings
+                        </Nav.Item>
+                    </Nav>
                     <Nav>
                     </Nav>
                 </Navbar.Collapse>

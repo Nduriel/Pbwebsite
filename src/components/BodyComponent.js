@@ -22,7 +22,7 @@ function BodyComponent() {
                     <Image src={carouselPic.serveArea} id="heightpic" alt="bookingpic" />
                 </Col>
                 <Col lg={6} md='auto' sm={12} xs={12} style={{ paddingTop: "15px" }}>
-                    <Carousel fade id="carouselborder" slide interval={4500}>
+                    <Carousel fade slide interval={4500}>
                         <Carousel.Item>
                             <Image src={carouselPic.pic12} alt="First slide" fluid />
                             <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>

@@ -22,7 +22,7 @@ function FooterComponent(props) {
                     <Col lg={4} md={3} sm={3} id="goneText" className="text-center" style={{ paddingTop: "15px", borderRight: "3px double #9df5cc", }}>
                         <span><i className="fa fa-copyright" aria-hidden="true" />PolishedByMia</span>
                     </Col>
-                    <Col lg={4} md={5} sm={5} id="centerText">
+                    <Col lg={4} md={5} sm={12}>
                         <span id="goneText" >Questions?</span>
                         <a role="button" className="btn btn-link" target="_blank"
                             rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">

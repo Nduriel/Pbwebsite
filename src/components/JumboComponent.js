@@ -10,7 +10,7 @@ import Image from 'react-bootstrap/Image';
 function JumboComponent() {
     return (
         <React.Fragment>
-            <Jumbotron fluid>
+            {/* <Jumbotron fluid>
                 <Container fluid>
                     <Row style={{ textAlign: 'center', flexDirection: "row" }}>
                         <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
@@ -27,7 +27,7 @@ function JumboComponent() {
                         </Col>
                     </Row>
                 </Container>
-            </Jumbotron>
+            </Jumbotron> */}
             <Navbar light collapseOnSelect expand="md" sticky="top">
                 <Navbar.Brand style={{
                     color: "#9df5cc",

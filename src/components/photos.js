@@ -13,6 +13,7 @@ export const carouselPic = {
 
 export const jumbotronPic = {
     logo: require('../images/pbmlogo.jpg'),
+    logo2: require('../images/pbmlogo2.png'),
     miaPic11: require('../images/miaPic11.jpg'),
     miaPic12: require('../images/miaPic12.jpg')
 }

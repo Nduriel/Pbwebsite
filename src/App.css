@@ -99,21 +99,15 @@ div>div>div.modal-header>button>span {
 .jumbotron {
     margin: 0;
     width: 100%;
-    height: 100%;
-    background-image: url('./images/butterfly1.jpg');
-    /* background-image: linear-gradient(
+    /* background-image: url('./images/butterfly1.jpg'); */
+    background-image: linear-gradient(
         45deg, black, black, black, #610241,
          grey, white, grey, #610241, black,
-         black, black); */
-    /* background-size: 600% 100%; */
-    /* animation-direction: alternate;
-    animation: gradient 16s linear infinite; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+         black, black);
+    background-size: 600% 100%;
+    animation-direction: alternate;
+    animation: gradient 16s linear infinite;
     display: block;
-    text-shadow: 2px 2px 2px #f1069f;
 }
 
 @keyframes gradient {

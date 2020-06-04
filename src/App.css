@@ -16,14 +16,15 @@ body {
 
 #bodyBox {
 outline: 3px solid #f1069f;
-font-size: 22px;
+font-size: 20px;
 color: #9df5cc;
 border: 3px solid #9df5cc;
 text-shadow: 2px 2px 2px #f1069f;
 font-family: 'Courgette', sans-serif;
-border-radius: 2%;
+/* border-radius: 2%; */
 background: black;
 clear: both;
+box-shadow: 5px 5px 10px black;
 }
 
 .carousel {
@@ -75,7 +76,7 @@ div>div>div.modal-header>button>span {
     color: #9df5cc;
 }
 
-#jpic {
+/* #jpic {
     border-radius: 25%;
     background: -webkit-linear-gradient(left top, #610241 0%, #f1069f 100%);
     padding: 10px;
@@ -86,7 +87,7 @@ div>div>div.modal-header>button>span {
     #jpic {
         display: none;
     }
-}
+} */
 
 #jpic1 {
     border-radius: 25%;
@@ -101,20 +102,20 @@ div>div>div.modal-header>button>span {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     #centerText {
         text-align: center;
     }
-}
+} */
 
 .jumbotron {
     margin: 0;
     width: 100%;
     /* background-image: url('./images/butterfly1.jpg'); */
     background-image: linear-gradient(
-        45deg, black, black, black, #610241,
-         grey, white, grey, #610241, black,
-         black, black);
+        45deg, #610241, #610241, #610241, #610241,#9df5cc,
+         grey, #9df5cc, #9df5cc,grey, #610241, #610241,
+         #610241, #610241);
     background-size: 600% 100%;
     animation-direction: alternate;
     animation: gradient 16s linear infinite;
@@ -138,7 +139,7 @@ div>div>div.modal-header>button>span {
 .navbar {
     color: #9df5cc;
     text-shadow: 2px 2px 2px #f1069f;
-    background-image: linear-gradient(black, grey, black);
+    background-image: linear-gradient(black, black, black);
     border-bottom: 7px solid #7a0252;
     font-family: 'Courgette', sans-serif;
     font-size: 20px;
@@ -191,7 +192,7 @@ div>div>div.modal-header>button>span {
 
 .site-footer {
     border-top: 7px solid #610241;
-    background-image: linear-gradient(black, grey, black);
+    background-image: linear-gradient(black, black, black);
     padding: 20px;
     font-family: 'Courgette', cursive;
 }

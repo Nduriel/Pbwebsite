@@ -1,11 +1,10 @@
 import React from 'react';
-import { Jumbotron, Col, Row, Container } from 'reactstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { jumbotronPic } from './photos';
-import Image from 'react-bootstrap/Image';
-
+// // import { jumbotronPic } from './photos';
+// // import Image from 'react-bootstrap/Image';
+// import { Jumbotron, Col, Row, Container } from 'reactstrap';
 
 function JumboComponent() {
     return (

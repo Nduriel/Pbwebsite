@@ -6,16 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { carouselPic } from './photos';
 import { jumbotronPic } from './photos';
 
-const infoBox = {
-    outline: "3px solid #f1069f",
-    fontSize: "22px",
-    color: "#9df5cc",
-    border: "3px solid #9df5cc",
-    textShadow: "2px 2px 2px #f1069f",
-    fontFamily: "Courgette",
-    borderRadius: "2%",
-    background: "black"
-}
+
 const capstyle = {
     fontWeight: "bold",
     color: "#9df5cc",
@@ -24,34 +15,40 @@ const capstyle = {
     fontFamily: "Courgette"
 }
 
-function BodyComponent() {
+function BodyComponent(props) {
     return (
         <Jumbotron fluid>
             <Container fluid>
-                <Row style={{ display: "flex" }}>
-                    <Col lg={7} md={12} sm={12} xs={12} style={{ textAlign: "center", alignItems: "flex-end" }}>
-                        <div>
-
-                        </div>
-                        <br />
-                        <div style={infoBox}>
-                            <Image id="jpic1" style={{ float:"inline-start", width: "300px", height: "300px" }}
-                                src={jumbotronPic.logo2} alt="logopic" roundedCircle /><br />
+                <Row >
+                    <Col lg={6} md={12} sm={12} xs={12} style={{ textAlign: "center" }}>
+                        <div id="bodyBox">
+                        <Image id="jpic1" style={{ width: "300px", height: "300px", margin: "10px" }}
+                                src={jumbotronPic.logo2} alt="logopic" fluid roundedCircle /><br />
                             Polished By Mia <sub><i className="fa fa-copyright" aria-hidden="true"
                                 style={{ fontSize: "15px" }} /></sub>{' '}
                          is an Acrylic service that caters to clients, exclusively,
                         in the Newport News and surrounding Hampton Roads area (757).  Check out
                         the gallery here, or Facebook and Instagram for my work!
-                    </div> <br />
-                        <div style={infoBox}>
+                    </div>
+                        <br />
+                        <div id="bodyBox">
                             * By Appointment Only *. <br />
                         Due to the Coronavirus Pandemic,
-                        masks are *required* every visit. No Exceptions!
-                        <Button>Hello</Button>
-                        </div> <br />
+                        masks are *required* every visit. <br /> No Exceptions! <br />
+                            <Button color="primary" onClick={props.call}
+                                size="lg"
+                                style={{
+                                    fontWeight: "bold",
+                                    fontSize: "18px",
+                                    textShadow: "2px 2px 2px #f1069f",
+                                    margin: "10px"
+                                }}>
+                                Appointments
+                        </Button><br />
+                        </div>
 
                     </Col>
-                    <Col lg={5} md='auto' sm={12} xs={12} style={{ justifyContent: "flex-end" }}>
+                    <Col lg={{ size: 5, offset: 1 }} md='auto' sm={12} xs={12} >
                         <Carousel fade slide interval={4500}>
                             <Carousel.Item>
                                 <Image src={carouselPic.pic12} alt="First slide" fluid />

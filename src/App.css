@@ -14,6 +14,17 @@ body {
     font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
 
+#bodyBox {
+outline: 3px solid #f1069f;
+font-size: 22px;
+color: #9df5cc;
+border: 3px solid #9df5cc;
+text-shadow: 2px 2px 2px #f1069f;
+font-family: 'Courgette', sans-serif;
+border-radius: 2%;
+background: black;
+clear: both;
+}
 
 .carousel {
     border-radius: 2%;

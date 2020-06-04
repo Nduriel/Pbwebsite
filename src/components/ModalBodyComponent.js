@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import FooterComponent from './FooterComponent';
+import BodyComponent from './BodyComponent';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -34,7 +34,7 @@ const modalFont = {
     }
 }
 
-function ModalFooterComponent(props) {
+function ModalBodyComponent(props) {
     const [isModalOpen, setModal] = useState(false);
     const [state, setState] = useState({
         firstName: '',
@@ -84,7 +84,7 @@ function ModalFooterComponent(props) {
 
     return (
 <>
-        <FooterComponent call={toggleModal} />
+        <BodyComponent call={toggleModal} />
         <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
             
             <ModalHeader toggle={toggleModal} style={modalFont.top}>
@@ -318,4 +318,4 @@ function ModalFooterComponent(props) {
 
 }
 
-export default ModalFooterComponent;
+export default ModalBodyComponent;

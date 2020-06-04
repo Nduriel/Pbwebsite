@@ -1,14 +1,15 @@
 import React from 'react';
 import BodyComponent from './BodyComponent';
 import JumboComponent from './JumboComponent';
-import ModalFooterComponent from './ModalFooterComponent';
+import ModalBodyComponent from './ModalBodyComponent';
+import FooterComponent from './FooterComponent';
 
 function Directory()  {
         return (
             <>
                 <JumboComponent />
-                <BodyComponent />
-                <ModalFooterComponent/>
+                <ModalBodyComponent/>
+                <FooterComponent/>
             </>
         );
     }

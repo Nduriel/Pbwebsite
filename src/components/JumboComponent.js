@@ -2,32 +2,12 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// // import { jumbotronPic } from './photos';
-// // import Image from 'react-bootstrap/Image';
- import {ModalHeader, ModalBody,Modal, ModalFooter } from 'reactstrap';
-import TableComponent from './TableComponent';
+import { Button } from 'reactstrap';
 
-function JumboComponent() {
+
+function JumboComponent(props) {
     return (
         <>
-            {/* <Jumbotron fluid>
-                <Container fluid>
-                    <Row style={{ textAlign: 'center', flexDirection: "row" }}>
-                        <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
-                            <Image id="jpic" style={{ height: "200px" }}
-                                src={jumbotronPic.miaPic12} alt="jpic1" roundedCircle />
-                        </Col>
-                        <Col xs={12} md={4} lg={4}>
-                            <Image id="jpic1" style={{ width: "250px", height: "270px" }}
-                                src={jumbotronPic.logo} alt="logopic" roundedCircle />
-                        </Col>
-                        <Col xs={0} md={4} lg={4} style={{ paddingTop: "30px" }}>
-                            <Image id="jpic" style={{ height: "200px" }}
-                                src={jumbotronPic.miaPic11} alt="jpic2" roundedCircle />
-                        </Col>
-                    </Row>
-                </Container>
-            </Jumbotron> */}
             <Navbar light collapseOnSelect expand="md" sticky="top">
                 <Navbar.Brand style={{
                     color: "#9df5cc",
@@ -58,7 +38,19 @@ function JumboComponent() {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Nav className="justify-content-center">
+                    <Nav className="mr-auto">
+                        <Button color="primary" onClick={props.call}
+                            size="lg"
+                            style={{
+                                fontWeight: "bold",
+                                fontSize: "18px",
+                                textShadow: "2px 2px 2px #f1069f",
+                                margin: "10px"
+                            }}>
+                            Appointments
+                        </Button>
+                    </Nav>
+                    <Nav >
                         <Nav.Item>
                             Acrilic Designs: Full Sets and Cleanings
                         </Nav.Item>

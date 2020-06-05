@@ -21,24 +21,23 @@ color: #9df5cc;
 border: 3px solid #9df5cc;
 text-shadow: 2px 2px 2px #f1069f;
 font-family: 'Courgette', sans-serif;
-/* border-radius: 2%; */
 background: black;
 clear: both;
 box-shadow: 5px 5px 10px black;
 }
 
 
-  .carousel {
-    border-radius: 2%;
-    background-color: black;
-    max-width: 640px;
-    width: auto;
-    position: relative;
-    border: 15px solid;
-    border-style: groove;
-    border-color: rgb(80, 80, 80);
-    box-shadow: 5px 5px 10px black;
-    box-sizing: border-box;
+.carousel {
+border-radius: 2%;
+background-color: black;
+max-width: 640px;
+width: auto;
+position: relative;
+border: 15px solid;
+border-style: groove;
+border-color: rgb(80, 80, 80);
+box-shadow: 5px 5px 10px black;
+box-sizing: border-box;
 }
 
 /* Carousel Icons */
@@ -72,13 +71,12 @@ box-shadow: 5px 5px 10px black;
     border: 2px solid #9df5cc;
 }
 
-
-#heightpic {
-    max-width: 750px;
-    padding-top: 15px;
-    height: auto;
-    width: 100%;
-    border-radius: 2% / 4%;
+.capText {
+    font-weight: bold;
+    color: #9df5cc;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #f1069f;
+    font-family: "Courgette";
 }
 
 /* Navbar Button */
@@ -86,25 +84,12 @@ body>div:nth-child(10)>div>div.modal.fade.show>
 div>div>div.modal-header>button>span {
     color: #9df5cc;
 }
-
-/* #jpic {
+#bodydivpic {
     border-radius: 25%;
-    background: -webkit-linear-gradient(left top, #610241 0%, #f1069f 100%);
-    padding: 10px;
-    border-image-slice: 1;
-}
-
-@media only screen and (max-width: 800px) {
-    #jpic {
-        display: none;
-    }
-} */
-
-#jpic1 {
-    border-radius: 25%;
+    border: 5px solid #9df5cc;
     background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
     padding: 10px;
-    border-image-slice: 1;
+    border-image-slice: 1 fill;
 }
 
 @media only screen and (max-width: 780px) {
@@ -112,12 +97,6 @@ div>div>div.modal-header>button>span {
         display: none;
     }
 }
-
-/* @media only screen and (max-width: 1000px) {
-    #centerText {
-        text-align: center;
-    }
-} */
 
 .jumbotron {
     margin: 0;
@@ -167,15 +146,6 @@ div>div>div.modal-header>button>span {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
 }
-
-
-/* {
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-} */
 
 @keyframes glow {
     from {

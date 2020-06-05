@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import BodyComponent from './BodyComponent';
+import JumboComponent from './JumboComponent';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -34,7 +34,7 @@ const modalFont = {
     }
 }
 
-function ModalBodyComponent(props) {
+function JumbotronModal (props) {
     const [isModalOpen, setModal] = useState(false);
     const [state, setState] = useState({
         firstName: '',
@@ -84,7 +84,7 @@ function ModalBodyComponent(props) {
 
     return (
 <>
-        <BodyComponent call={toggleModal} />
+        <JumboComponent call={toggleModal} />
         <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
             
             <ModalHeader toggle={toggleModal} style={modalFont.top}>
@@ -318,4 +318,4 @@ function ModalBodyComponent(props) {
 
 }
 
-export default ModalBodyComponent;
+export default JumbotronModal;

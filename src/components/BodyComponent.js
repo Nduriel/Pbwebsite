@@ -31,7 +31,7 @@ function BodyComponent(props) {
                         </div>
                         <br />
                         <div id="bodyBox">
-                            <p style={{margin: "10px"}}>
+                            <p style={{ margin: "10px" }}>
                                 * By Appointment Only *. <br />
                         Due to the Coronavirus Pandemic,
                         masks are *required* every visit. <br /> No Exceptions! <br />
@@ -47,9 +47,9 @@ function BodyComponent(props) {
                         </Button>
                             </p>
                         </div>
-
+                        <br />
                     </Col>
-                    <Col lg={{ size: 5, offset: 1 }} md={{ size: 12, offset: 2 }} sm={12} xs={12} >
+                    <Col lg={{ size: 5, offset: 1 }} md={{ size: 12, offset: 1 }} sm={12} xs={12} >
                         <Carousel fade slide interval={4500}>
                             <Carousel.Item>
                                 <Image src={carouselPic.pic12} alt="First slide" fluid />

@@ -4,11 +4,12 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 // // import { jumbotronPic } from './photos';
 // // import Image from 'react-bootstrap/Image';
-// import { Jumbotron, Col, Row, Container } from 'reactstrap';
+ import {ModalHeader, ModalBody,Modal, ModalFooter } from 'reactstrap';
+import TableComponent from './TableComponent';
 
 function JumboComponent() {
     return (
-        <React.Fragment>
+        <>
             {/* <Jumbotron fluid>
                 <Container fluid>
                     <Row style={{ textAlign: 'center', flexDirection: "row" }}>
@@ -66,7 +67,7 @@ function JumboComponent() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </React.Fragment>
+        </>
     );
 }
 

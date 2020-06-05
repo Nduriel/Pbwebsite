@@ -27,7 +27,8 @@ clear: both;
 box-shadow: 5px 5px 10px black;
 }
 
-.carousel {
+
+  .carousel {
     border-radius: 2%;
     background-color: black;
     max-width: 640px;
@@ -53,12 +54,22 @@ box-shadow: 5px 5px 10px black;
 }
 
 /* Carousel Images */
-.carousel-inner>.item>img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
+.carousel-item > img { 
+    width: 100%; 
+    height: 600px;
+  }
+
+
+/* Carousel Icons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: #610241;
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 2px solid #9df5cc;
 }
 
 

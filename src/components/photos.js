@@ -1,15 +1,16 @@
 
-export const carouselPic = {
-    serveArea: require('../images/BodCollage1.jpg'),
-    pic4: require('../images/miaPic4.jpg'),
-    pic5: require('../images/miaPic5.jpg'),
-    pic6: require('../images/miaPic6.jpg'),
-    pic7: require('../images/miaPic7.jpg'),
-    pic12: require('../images/miaPic30.jpg'),
-    pic22: require('../images/miaPic22.jpg'),
-    pic28: require('../images/miaPic28.jpg'),
-    bookAppt: require('../images/bookappt.jpg')
-}
+
+export const carouselPic = [
+    // { serveArea: src:('../images/BodCollage1.jpg') },
+    { altText:"1", src: ('../images/miaPic4.jpg') },
+    { altText:"2", src:('../images/miaPic5.jpg') },
+    { altText:"3", src:('../images/miaPic6.jpg') },
+    { altText:"4", src:('../images/miaPic7.jpg') },
+    { altText:"5", src:('../images/miaPic30.jpg') },
+    { altText:"6", src:('../images/miaPic22.jpg') },
+    { altText:"7", src:('../images/miaPic28.jpg') },
+    { altText:"8", src:('../images/bookappt.jpg') }
+];
 
 export const jumbotronPic = {
     logo: require('../images/pbmlogo.jpg'),

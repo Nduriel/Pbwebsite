@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Row, Container, Jumbotron, Button } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
-import Carousel from 'react-bootstrap/Carousel';
-import { carouselPic } from './photos';
+// import Carousel from 'react-bootstrap/Carousel';
+import {
+    Carousel,
+    CarouselItem,
+    CarouselControl,
+    CarouselIndicators,
+    CarouselCaption
+} from 'reactstrap';
+// import { carouselPic } from './photos';
 import { jumbotronPic } from './photos';
 // import TableComponent from './TableComponent';
 
@@ -14,7 +21,49 @@ const capstyle = {
     fontFamily: "Courgette"
 }
 
+export const carouselPic = [
+    { altText: "1", src: require('../images/miaPic1.jpg') },
+    { altText: "2", src: require('../images/miaPic5.jpg') },
+    { altText: "3", src: require('../images/miaPic6.jpg') },
+    { altText: "4", src: require('../images/miaPic7.jpg') },
+    { altText: "5", src: require('../images/miaPic30.jpg') },
+    { altText: "6", src: require('../images/miaPic22.jpg') },
+    { altText: "7", src: require('../images/miaPic28.jpg') },
+    { altText: "8", src: require('../images/bookappt.jpg') }
+];
+
 function BodyComponent(props) {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [animating, setAnimating] = useState(false);
+
+    const next = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === carouselPic.length - 1 ? 0 : activeIndex + 1;
+        setActiveIndex(nextIndex);
+    }
+
+    const previous = () => {
+        if (animating) return;
+        const nextIndex = activeIndex === 0 ? carouselPic.length - 1 : activeIndex - 1;
+        setActiveIndex(nextIndex);
+    }
+
+    const goToIndex = (newIndex) => {
+        if (animating) return;
+        setActiveIndex(newIndex);
+    }
+
+    const slides = carouselPic.map((item) => {
+        return (
+            <CarouselItem 
+                onExiting={() => setAnimating(true)}
+                onExited={() => setAnimating(false)}
+                key={item.src}
+            >
+                <img id="hey" src={item.src} alt={item.altText} />
+            </CarouselItem>
+        );
+    });
     return (
         <Jumbotron fluid>
             <Container fluid>
@@ -49,32 +98,16 @@ function BodyComponent(props) {
                         </div>
                         <br />
                     </Col>
-                    <Col lg={{ size: 5, offset: 1 }} md={{ size: 12, offset: 1 }} sm={12} xs={12} >
-                        <Carousel fade slide interval={4500}>
-                            <Carousel.Item>
-                                <Image src={carouselPic.pic12} alt="First slide" fluid />
-                                <Carousel.Caption style={capstyle}>Chelley - "She is outstanding! Has patience and does a wonderful job!!"</Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image src={carouselPic.pic6} alt="Second slide" fluid />
-                                <Carousel.Caption style={capstyle}>Patti - "Maria does awesome nails"</Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image src={carouselPic.pic28} alt="Third slide" fluid />
-                                <Carousel.Caption style={capstyle}>Katrina - "She is awesome!!! Do not hesitate to hit her up!!"</Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image src={carouselPic.pic4} alt="Fourth slide" fluid />
-                                <Carousel.Caption style={capstyle}> Dianne - "She is absolutely amazing, takes her time and makes
-                                     sure you love it before you leave! She’s definitely my nail tech from here on out!"</Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image src={carouselPic.pic22} alt="Fifth slide" fluid />
-                                <Carousel.Caption style={capstyle}> Karen - "She does a wonderful job"</Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image src={carouselPic.bookAppt} alt="Sixth slide" fluid />
-                            </Carousel.Item>
+                    <Col lg={{ size: 5, offset: 1 }} md={{  offset:1 }} sm={{size:10,offset: 1}} xs={12} >
+                        <Carousel
+                            activeIndex={activeIndex}
+                            next={next}
+                            previous={previous}
+                        >
+                            <CarouselIndicators items={carouselPic} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                            {slides}
+                            <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                            <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
                         </Carousel>
                     </Col>
                 </Row>

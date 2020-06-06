@@ -1,5 +1,5 @@
 import React from 'react';
-import JumbotronModal from './JumbotronModal';
+import NavModal from './NavModal';
 import BodyComponent from './BodyComponent';
 import PriceComponent from './PriceComponent';
 import FooterComponent from './FooterComponent';
@@ -16,15 +16,13 @@ function MainComponent() {
         return (
             <PriceComponent />
         );
-    }
-
+    };
     return (
-
         <div>
-            <JumbotronModal />
+            <NavModal />
             <Switch>
                 <Route path='/home' component={HomePage} />
-                <Route path='/prices' component={Prices} />
+                <Route exact path='/prices' component={Prices} />
                 <Redirect to='/home' />
             </Switch>
             <FooterComponent />

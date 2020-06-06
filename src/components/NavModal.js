@@ -34,7 +34,7 @@ const modalFont = {
     }
 }
 
-function JumbotronModal (props) {
+function NavModal (props) {
     const [isModalOpen, setModal] = useState(false);
     const [state, setState] = useState({
         firstName: '',
@@ -318,4 +318,4 @@ function JumbotronModal (props) {
 
 }
 
-export default JumbotronModal;
+export default NavModal;

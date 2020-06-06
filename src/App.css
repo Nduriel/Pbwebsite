@@ -38,7 +38,14 @@ border-style: groove;
 border-color: rgb(80, 80, 80);
 box-shadow: 5px 5px 10px black;
 box-sizing: border-box;
+max-height: 650px;
 }
+
+/* Carousel Images */
+.carousel-item > img { 
+    width: 100%; 
+    height: auto;
+  }
 
 /* Carousel Icons */
 .carousel-control-next-icon,
@@ -52,11 +59,7 @@ box-sizing: border-box;
     border: 2px solid #9df5cc;
 }
 
-/* Carousel Images */
-.carousel-item > img { 
-    width: 100%; 
-    height: 600px;
-  }
+
 
 
 /* Carousel Icons */
@@ -173,26 +176,19 @@ div>div>div.modal-header>button>span {
 /* Dropdown Panel */
 #responsive-navbar-nav>div.mr-auto.navbar-nav>div>div {
     max-width: 50px;
-    background: rgb(88, 4, 67);
-    border: 2px solid black;
+    background:black;
+    outline: 2px solid #ff4da6;
+    border: 2px solid  black;
 }
 
-#root>div>nav>button {
-    background-color: lightgreen;
-}
 
-.site-footer {
-    border-top: 7px solid #610241;
-    background-image: linear-gradient(black, black, black);
-    padding: 20px;
-    font-family: 'Courgette', cursive;
-}
+
+
 
 #responsive-navbar-nav > div.mr-auto.navbar-nav > div.glow.show.dropdown.nav-item > div > div {
-    background-image: linear-gradient(black, grey, black);
+    background: black;
     color: white;
-    text-shadow: 2px 2px 2px lightgreen;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #responsive-navbar-nav>div.mr-auto.navbar-nav>div.show.dropdown.nav-item>div>a:nth-child(2) {
@@ -217,13 +213,22 @@ div>div>div.modal-header>button>span {
     text-shadow: 2px 2px 2px #f1069f;
 }
 
+/* <Table> */
 table {
     width: auto;
 }
+/* </Table> */
 
 #thumbnailPic {
     max-width: 180px;
     max-height: 180px;
+}
+
+.site-footer {
+    border-top: 7px solid #610241;
+    background-image: linear-gradient(black, black, black);
+    padding: 20px;
+    font-family: 'Courgette', cursive;
 }
 
 

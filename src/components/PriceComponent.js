@@ -13,9 +13,9 @@ const tableBody = {
     textShadow: "2px 2px 2px #f1069f",
 }
 
-     function TableComponent () {
+     function PriceComponent () {
          return(
-            <Table id="prices" style={{fontFamily: 'Manrope'}} size='md'
+            <Table id="prices" style={{fontFamily: 'Manrope',  marginTop: "50px", marginBottom: "50px"}} size='md'
             responsive striped bordered hover
             variant="dark">
             <thead style={{ color: "pink", fontWeight: "bold" }}>
@@ -79,6 +79,6 @@ const tableBody = {
             );
          }
                 
-export default TableComponent;
+export default PriceComponent;
 
             

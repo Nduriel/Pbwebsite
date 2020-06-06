@@ -17,7 +17,7 @@ export const carouselPic = [
     },
     {
         altText: "4",
-        src: require('../images/miaPic7.jpg'),
+        src: require('../images/miaPic20.jpg'),
         caption: `Patti - "Maria does awesome nails"`
     },
     {

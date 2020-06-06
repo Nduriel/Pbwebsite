@@ -20,7 +20,10 @@ function JumboComponent(props) {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item className="glow">
-                            <Nav.Link href="#prices" style={{ color: "#9df5cc" }}>Pricing</Nav.Link>
+                            <Nav.Link href="/home" style={{ color: "#9df5cc" }}>Home</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="glow">
+                            <Nav.Link href="/prices" style={{ color: "#9df5cc" }}>Prices</Nav.Link>
                         </Nav.Item>
                         <NavDropdown className="glow" title={<span style={{ color: "#9df5cc" }}>Social Media</span>} id="collasible-nav-dropdown">
                             <Nav.Item className="text-center">

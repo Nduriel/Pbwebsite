@@ -82,11 +82,6 @@ function BodyComponent(props) {
                         </Carousel>
                     </Col>
                 </Row>
-                {/* <Row>
-                <Col lg={12} md={12} sm={12} style={{ paddingTop: "19px" }}>
-                    <TableComponent />
-                </Col>
-            </Row> */}
             </Container>
         </Jumbotron>
     );

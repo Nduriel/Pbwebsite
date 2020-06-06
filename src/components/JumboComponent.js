@@ -38,7 +38,7 @@ function JumboComponent(props) {
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Nav className="mr-auto">
+                    <Nav className="ml-auto">
                         <Button color="primary" onClick={props.call}
                             size="lg"
                             style={{
@@ -49,11 +49,6 @@ function JumboComponent(props) {
                             }}>
                             Appointments
                         </Button>
-                    </Nav>
-                    <Nav >
-                        <Nav.Item>
-                            Acrilic Designs: Full Sets and Cleanings
-                        </Nav.Item>
                     </Nav>
                     <Nav>
                     </Nav>

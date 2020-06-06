@@ -5,12 +5,18 @@ import FooterComponent from './FooterComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 function MainComponent() {
+    const HomePage = () => {
+        return (
+            <BodyComponent/>
+        );
+    }
     return (
-        
+
         <div>
             <JumbotronModal />
             <Switch>
-            <BodyComponent />
+                <Route path='/home' component={HomePage} />
+                <Redirect to='/home' />
             </Switch>
             <FooterComponent />
         </div>

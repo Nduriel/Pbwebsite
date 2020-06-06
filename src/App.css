@@ -84,6 +84,16 @@ body>div:nth-child(10)>div>div.modal.fade.show>
 div>div>div.modal-header>button>span {
     color: #9df5cc;
 }
+
+#root > div > div > nav > button  {
+    border: 1px solid #9df5cc;
+    border-style: groove;
+    box-shadow: 2px 3px 3px gray;
+    border-radius: 6%;
+    background-color: lightgreen;
+    background-color: #f1069f;
+
+}
 #bodydivpic {
     border-radius: 25%;
     border: 5px solid #9df5cc;

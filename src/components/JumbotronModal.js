@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import JumboComponent from './JumboComponent';
+import NavBarComponent from './NavBarComponent';
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -84,7 +84,7 @@ function JumbotronModal (props) {
 
     return (
 <>
-        <JumboComponent call={toggleModal} />
+        <NavBarComponent call={toggleModal} />
         <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
             
             <ModalHeader toggle={toggleModal} style={modalFont.top}>

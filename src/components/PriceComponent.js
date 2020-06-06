@@ -2,6 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Image from 'react-bootstrap/Image';
 import { tablePic } from './photos';
+import { Breadcrumb, BreadcrumbItem} from 'reactstrap';
                
 const textCenter = {
     textAlign: "center",
@@ -13,8 +14,20 @@ const tableBody = {
     textShadow: "2px 2px 2px #f1069f",
 }
 
-     function PriceComponent () {
+     function PriceComponent (props) {
+        const Breads = (props) => {
+            return (
+              <div >
+                <Breadcrumb id="breadsdiv" tag="nav" listTag="div">
+                  <BreadcrumbItem tag="a" href="/home">Home</BreadcrumbItem>
+                  <BreadcrumbItem active >Bootstrap</BreadcrumbItem>
+                </Breadcrumb>
+              </div>
+            );
+          };
          return(
+             <>
+             <Breads/>
             <Table id="prices" style={{fontFamily: 'Manrope',  marginTop: "50px", marginBottom: "50px"}} size='md'
             responsive striped bordered hover
             variant="dark">
@@ -76,6 +89,7 @@ const tableBody = {
                 </tr>
             </tbody>
             </Table>
+            </>
             );
          }
                 

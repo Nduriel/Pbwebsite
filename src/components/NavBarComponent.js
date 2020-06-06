@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// import Navbar from 'react-bootstrap/Navbar';
-// import Nav from 'react-bootstrap/Nav';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 import {
     Button, Navbar, Nav, NavbarToggler,
     UncontrolledDropdown, DropdownToggle, Collapse,
@@ -9,7 +6,7 @@ import {
 } from 'reactstrap';
 
 
-function JumboComponent(props) {
+function NavBarComponent(props) {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     return (
@@ -33,17 +30,17 @@ function JumboComponent(props) {
                         </NavItem>
                         <UncontrolledDropdown className="glow">
                             <DropdownToggle nav caret style={{color: "#9df5cc"}}>
-                                Follow Me:
+                                Social
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu right style={{background: "#9df5cc", color: "white"}}>
                                 <DropdownItem href="http://instagram.com/polished.bymia/"
                                     target="_blank" rel="noreferrer noopener" aria-hidden="true">
-                                    {/* <i id="socialIcon" className="fa fa-instagram fa-md" />{' '} */}
+                                    <i id="socialIcon" className="fa fa-instagram fa-md" />{' '}
                                 #Instagram
                             </DropdownItem>
                                 <DropdownItem href="http://facebook.com/polishedbymia/"
                                     target="_blank" rel="noreferrer noopener" aria-hidden="true">
-                                    {/* <i id="socialIcon" className="fa fa-facebook fa-md" />{' '} */}
+                                    <i id="socialIcon" className="fa fa-facebook fa-lg" />{' '}
                                 @Facebook
                             </DropdownItem>
                             </DropdownMenu>
@@ -69,4 +66,4 @@ function JumboComponent(props) {
     );
 }
 
-export default JumboComponent;
+export default NavBarComponent;

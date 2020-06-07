@@ -55,26 +55,31 @@ const tableBody = {
                     <td style={tableBody}>Ombre Fill:</td>
                     <td style={textCenter}>$ 35</td>
                     <td style={textCenter}>$ 40</td>
-                    <td style={textCenter}>$ 40</td>
+                    <td style={textCenter}>$ 45</td>
                 </tr>
                 <tr>
-                    <td style={tableBody}>Color Acrylic Full Set:</td>
+                    <td style={tableBody}> Full Set Color Acrylic:</td>
                     <td colSpan="3" style={{ textAlign: "center" }}>
-                    **Nails need to be soaked off for an additional $ 5 (Full Set: $7)**
+                    **Nails need to be soaked for an additional $ 10**
                     
                     </td>
                 </tr>
                 <tr>
                     <td style={{ color: "violet", fontWeight: "bold", 
                     textShadow: "2px 2px 2px #f1069f" }}>Add-Ons:</td>
-                    <td style={{ textAlign: "center" }}>* Jewel on 2 Fingers: $4 *</td>
-                    <td style={{ textAlign: "center" }}>* Full Blinged out nail: $7 *</td>
-                    <td style={{ textAlign: "center" }}>* Encapsulated Design: $3 (2 Fingers)  *</td>
+                    <td style={{ textAlign: "center" }}>Jewel on 2 Fingers: $4</td>
+                    <td style={{ textAlign: "center" }}>Full Blinged out nail: $7</td>
+                    <td style={{ textAlign: "center" }}> Encapsulated Design: $3 (2 Fingers)</td>
                 </tr>
                 <tr>
                     <td style={{ color: "violet", fontWeight: "bold",
                         textShadow: "2px 2px 2px #f1069f" }}>Toe Color Change:</td>
-                    <td colSpan="3" style={{ textAlign: "center" }}>$10 for Gel; $7 for regular</td>
+                    <td colSpan="3" style={{ textAlign: "center" }}>$10 for Gel</td>
+                </tr>
+                <tr>
+                    <td style={{ color: "violet", fontWeight: "bold",
+                        textShadow: "2px 2px 2px #f1069f" }}>Extra Drilling:</td>
+                    <td colSpan="3" style={{ textAlign: "center" }}>$5 for each hand</td>
                 </tr>
             </tbody>
             </Table>

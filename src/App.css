@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Roboto&display=swap&effect=anaglyph');
+
 body {
     background-color: black;
     background-image: linear-gradient(
@@ -11,7 +12,6 @@ body {
     background-size: 600% 100%;
     animation-direction: alternate;
     animation: gradient 16s linear infinite;
-    font-family: 'Roboto', sans-serif 'font-effect-anaglyph';
 }
 
 #bodyBox {
@@ -19,7 +19,7 @@ outline: 3px solid #f1069f;
 font-size: 20px;
 color: #9df5cc;
 border: 3px solid #9df5cc;
-text-shadow: 2px 2px 2px #f1069f;
+text-shadow: 1px 1px 1px #f1069f;
 font-family: 'Courgette', sans-serif;
 background: black;
 clear: both;
@@ -64,9 +64,6 @@ max-height: 650px;
     border-radius: 50%;
     border: 2px solid #9df5cc;
 }
-
-
-
 
 /* Carousel Icons */
 .carousel-control-next-icon,

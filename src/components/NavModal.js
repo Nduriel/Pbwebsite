@@ -34,7 +34,7 @@ const modalFont = {
     }
 }
 
-function NavModal (props) {
+function NavModal() {
     const [isModalOpen, setModal] = useState(false);
     const [state, setState] = useState({
         firstName: '',
@@ -81,238 +81,242 @@ function NavModal (props) {
         //i.e. this.handleChange = this.handleChange.bind(this); That
         //would've let me access "this" inside the function.
     }
-
     return (
-<>
-        <NavBarComponent call={toggleModal} />
-        <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
-            
-            <ModalHeader toggle={toggleModal} style={modalFont.top}>
-                Send me your info and I'll contact you asap!<br />
-            </ModalHeader>
-            <ModalBody id="modalbody">
-                <LocalForm id="reserveForm" onSubmit={values => handleSubmit(values)}>
-                    <Row className="formgroup">
-                        <Col md={12}>
-                            <Label htmlFor="firstName"
-                                style={{ fontWeight: "bold" }}>First Name</Label>
-                            <Control.text model=".firstName"
-                                name="firstName"
-                                id="firstName"
-                                onChange={handleChange}
-                                placeholder="First Name"
-                                className="form-control"
-                                validators={{
-                                    required,
-                                    minLength: minLength(2),
-                                    maxLength: maxLength(15)
-                                }}
-                            />
-                            <Errors
-                                className="text-danger"
-                                model=".firstName"
-                                show="touched"
-                                component="div"
-                                messages={{
-                                    required: <span style={modalFont.errorText}>
-                                        'Required'
+        <>
+            <NavBarComponent call={toggleModal} />
+            <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
+
+                <ModalHeader toggle={toggleModal} style={modalFont.top}>
+                    Send me your info and I'll contact you asap!<br />
+                </ModalHeader>
+                <ModalBody id="modalbody">
+                    <LocalForm id="reserveForm" onSubmit={values => handleSubmit(values)}>
+                        <Row className="formgroup">
+                            <Col md={12}>
+                                <Label htmlFor="firstName"
+                                    style={{ fontWeight: "bold" }}>First Name</Label>
+                                <Control.text
+                                    model=".firstName"
+                                    name="firstName"
+                                    id="firstName"
+                                    onChange={handleChange}
+                                    placeholder="First Name"
+                                    className="form-control"
+                                    validators={{
+                                        required,
+                                        minLength: minLength(2),
+                                        maxLength: maxLength(15)
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".firstName"
+                                    show="touched"
+                                    component="div"
+                                    messages={{
+                                        required: <span style={modalFont.errorText}>
+                                            'Required'
                                             </span>,
-                                    minLength: <span style={modalFont.errorText}>
-                                        'Must be at least 2 characters'
+                                        minLength: <span style={modalFont.errorText}>
+                                            'Must be at least 2 characters'
                                             </span>,
-                                    maxLength: 'Must be 15 characters or less'
-                                }}
-                            />
-                            <Label htmlFor="lastName"
-                                style={{ fontWeight: "bold" }}>Last Name</Label>
-                            <Control.text model=".lastName"
-                                name="lastName"
-                                onChange={handleChange}
-                                id="lastName"
-                                placeholder="Last Name"
-                                className="form-control"
-                                validators={{
-                                    required,
-                                    minLength: minLength(2),
-                                    maxLength: maxLength(15)
-                                }}
-                            />
-                            <Errors
-                                className="text-danger"
-                                model=".lastName"
-                                show="touched"
-                                component="div"
-                                messages={{
-                                    required: <span style={modalFont.errorText}>
-                                        'Required'
+                                        maxLength: 'Must be 15 characters or less'
+                                    }}
+                                />
+                                <Label htmlFor="lastName"
+                                    style={{ fontWeight: "bold" }}>Last Name</Label>
+                                <Control.text
+                                    model=".lastName"
+                                    name="lastName"
+                                    onChange={handleChange}
+                                    id="lastName"
+                                    placeholder="Last Name"
+                                    className="form-control"
+                                    validators={{
+                                        required,
+                                        minLength: minLength(2),
+                                        maxLength: maxLength(15)
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".lastName"
+                                    show="touched"
+                                    component="div"
+                                    messages={{
+                                        required: <span style={modalFont.errorText}>
+                                            'Required'
                                             </span>,
-                                    minLength: <span style={modalFont.errorText}>
-                                        'Must be at least 2 characters'
+                                        minLength: <span style={modalFont.errorText}>
+                                            'Must be at least 2 characters'
                                             </span>,
-                                    maxLength: <span style={modalFont.errorText}>
-                                        'Must be 15 characters or less'
+                                        maxLength: <span style={modalFont.errorText}>
+                                            'Must be 15 characters or less'
                                             </span>
-                                }}
-                            />
-                        </Col>
-                    </Row><br />
-                    <Row className="formgroup">
-                        <Col md={12}>
-                            <Label htmlFor="email" style={{ fontWeight: "bold" }}>
-                                Email Address
+                                    }}
+                                />
+                            </Col>
+                        </Row><br />
+                        <Row className="formgroup">
+                            <Col md={12}>
+                                <Label htmlFor="email" style={{ fontWeight: "bold" }}>
+                                    Email Address
                                 </Label>
-                            <Control.text model=".email"
-                                name="email"
-                                id="emailaddress"
-                                onChange={handleChange}
-                                placeholder="Email"
-                                className="form-control"
-                                validators={{
-                                    required,
-                                    validEmail
-                                }}
-                            />
-                            <Errors
-                                className="text-danger"
-                                model=".email"
-                                show="touched"
-                                component="div"
-                                messages={{
-                                    required: <span style={modalFont.errorText}>
-                                        'Required'
+                                <Control.text
+                                    model=".email"
+                                    name="email"
+                                    id="emailaddress"
+                                    onChange={handleChange}
+                                    placeholder="Email"
+                                    className="form-control"
+                                    validators={{
+                                        required,
+                                        validEmail
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".email"
+                                    show="touched"
+                                    component="div"
+                                    messages={{
+                                        required: <span style={modalFont.errorText}>
+                                            'Required'
                                             </span>,
-                                    validEmail: <span style={modalFont.errorText}>
-                                        'Invalid email address'
+                                        validEmail: <span style={modalFont.errorText}>
+                                            'Invalid email address'
                                             </span>
-                                }}
-                            />
-                            <Label htmlFor="phoneNum" style={{ fontWeight: "bold" }}>Phone</Label>
-                            <Control.text model=".phoneNum"
-                                name="phoneNum"
-                                id="phoneNum"
-                                onChange={handleChange}
-                                placeholder="Phone number"
-                                className="form-control"
-                                validators={{
-                                    required,
-                                    minLength: minLength(10),
-                                    maxLength: maxLength(15),
-                                    isNumber
-                                }}
-                            />
-                            <Errors
-                                className="text-danger"
-                                model=".phoneNum"
-                                show="touched"
-                                component="div"
-                                messages={{
-                                    required: <span style={modalFont.errorText}>
-                                        'Required'
+                                    }}
+                                />
+                                <Label htmlFor="phoneNum" style={{ fontWeight: "bold" }}>Phone</Label>
+                                <Control.text
+                                    model=".phoneNum"
+                                    name="phoneNum"
+                                    id="phoneNum"
+                                    onChange={handleChange}
+                                    placeholder="Phone number"
+                                    className="form-control"
+                                    validators={{
+                                        required,
+                                        minLength: minLength(10),
+                                        maxLength: maxLength(15),
+                                        isNumber
+                                    }}
+                                />
+                                <Errors
+                                    className="text-danger"
+                                    model=".phoneNum"
+                                    show="touched"
+                                    component="div"
+                                    messages={{
+                                        required: <span style={modalFont.errorText}>
+                                            'Required'
                                             </span>,
-                                    minLength: <span style={modalFont.errorText}>
-                                        'Must be at least 10 numbers'
+                                        minLength: <span style={modalFont.errorText}>
+                                            'Must be at least 10 numbers'
                                             </span>,
-                                    maxLength: <span style={modalFont.errorText}>
-                                        'Must be 15 numbers or less'
+                                        maxLength: <span style={modalFont.errorText}>
+                                            'Must be 15 numbers or less'
                                             </span>,
-                                    isNumber: <span style={modalFont.errorText}>
-                                        'Must be a number'
+                                        isNumber: <span style={modalFont.errorText}>
+                                            'Must be a number'
                                             </span>
-                                }}
-                            />
-                        </Col>
-                    </Row>
-                    <br />
-                    <Row className="formgroup">
-                        <Col md={12}>
-                            <div className="row">
-                                <div className="col-6">
-                                    <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
-                                        Date Requested
+                                    }}
+                                />
+                            </Col>
+                        </Row>
+                        <br />
+                        <Row className="formgroup">
+                            <Col md={12}>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
+                                            Date Requested
                                         </Label>
-                                    <br />
-                                    <Control
-                                        className="form-control"
-                                        model=".reserveDate"
-                                        selected={state.reserveDate}
-                                        onDateChange={date => { this.setState({ reserveDate: date }) }}
-                                        onChange={dateChange}
-                                        component={DatePicker}
-                                        name="reserveDate"
-                                        id="reserveDate"
-                                        dateFormat="MM/dd/yyyy"
-                                        mapProps={({ reserveDate, dateChange }) => {
-                                            return {
-                                                date: reserveDate,
-                                                onDateChange: dateChange,
-                                            };
-                                        }}
-                                    />
-                                </div>
-                                <div className="col-6">
-                                    <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
-                                        Time Requested
+                                        <br />
+                                        <Control
+                                            className="form-control"
+                                            model=".reserveDate"
+                                            selected={state.reserveDate}
+                                            onDateChange={date => { this.setState({ reserveDate: date }) }}
+                                            onChange={dateChange}
+                                            component={DatePicker}
+                                            name="reserveDate"
+                                            id="reserveDate"
+                                            dateFormat="MM/dd/yyyy"
+                                            mapProps={({ reserveDate, dateChange }) => {
+                                                return {
+                                                    date: reserveDate,
+                                                    onDateChange: dateChange,
+                                                };
+                                            }}
+                                        />
+                                    </div>
+                                    <div className="col-6">
+                                        <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
+                                            Time Requested
                                         </Label>
-                                    <br />
-                                    <Control.select model=".time"
-                                        id="time"
-                                        name="time"
-                                        onChange={handleChange}
-                                        className="form-control"
-                                        validators={{
-                                            required,
-                                            isNumber
-                                        }}>
-                                        <option value="select">Select Time</option>
-                                        <option value="3">3PM</option>
-                                        <option value="4">4PM</option>
-                                        <option value="5">5PM</option>
-                                        <option value="6">6PM</option>
-                                        <option value="7">7PM</option>
-                                        <option value="8">8PM</option>
-                                    </Control.select>
-                                    <Errors
-                                        className="text-danger"
-                                        model=".time"
-                                        show="touched"
-                                        component="div"
-                                        messages={{
-                                            required: <span style={modalFont.errorText}>
-                                                'Required'
+                                        <br />
+                                        <Control.select
+                                            model=".time"
+                                            id="time"
+                                            name="time"
+                                            onChange={handleChange}
+                                            className="form-control"
+                                            validators={{
+                                                required,
+                                                isNumber
+                                            }}>
+                                            <option value="select">Select Time</option>
+                                            <option value="3">3PM</option>
+                                            <option value="4">4PM</option>
+                                            <option value="5">5PM</option>
+                                            <option value="6">6PM</option>
+                                            <option value="7">7PM</option>
+                                            <option value="8">8PM</option>
+                                        </Control.select>
+                                        <Errors
+                                            className="text-danger"
+                                            model=".time"
+                                            show="touched"
+                                            component="div"
+                                            messages={{
+                                                required: <span style={modalFont.errorText}>
+                                                    'Required'
                                                     </span>,
-                                            isNumber: <span style={modalFont.errorText}>
-                                                'Select an appointment timeframe'
+                                                isNumber: <span style={modalFont.errorText}>
+                                                    'Select an appointment timeframe'
                                                     </span>,
-                                        }}
-                                    />
+                                            }}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        </Col>
-                    </Row>
-                    <br />
-                    <Row className="formgroup">
-                        <Col md={6} sm={6} xs={6}>
-                            <Button type="submit" color="info">Reserve</Button>{' '}
-                            <Button color="danger" onClick={toggleModal}>Cancel</Button>
-                        </Col>
-                        <Col md={6} sm={6} xs={6}>
-                            <Control.select
-                                model=".contactType"
-                                name="contactType"
-                                className="form-control">
-                                <option>By Email</option>
-                                <option>By Phone</option>
-                            </Control.select>
-                            <strong>Best way to reach you?</strong>
-                        </Col>
-                    </Row>
-                </LocalForm>
-            </ModalBody>
-            <ModalFooter style={modalFont.bottom}>
-                <Col>**Dates and time submitted are not guaranteed**<br />
+                            </Col>
+                        </Row>
+                        <br />
+                        <Row className="formgroup">
+                            <Col md={6} sm={6} xs={6}>
+                                <Button type="submit" color="info">Reserve</Button>{' '}
+                                <Button color="danger" onClick={toggleModal}>Cancel</Button>
+                            </Col>
+                            <Col md={6} sm={6} xs={6}>
+                                <Control.select
+                                    model=".contactType"
+                                    name="contactType"
+                                    className="form-control">
+                                    <option>By Email</option>
+                                    <option>By Phone</option>
+                                </Control.select>
+                                <strong>Best way to reach you?</strong>
+                            </Col>
+                        </Row>
+                    </LocalForm>
+                </ModalBody>
+                <ModalFooter style={modalFont.bottom}>
+                    <Col>**Dates and time submitted are not guaranteed**<br />
                                     **Allow 2 hours per appointment** </Col>
-            </ModalFooter>
-        </Modal>
+                </ModalFooter>
+            </Modal>
         </>
     );
 

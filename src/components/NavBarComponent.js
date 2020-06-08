@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
     Button, Navbar, Nav, NavbarToggler,
     UncontrolledDropdown, DropdownToggle, Collapse,
-    NavLink, NavbarBrand,NavItem, DropdownItem, DropdownMenu,
+    NavLink, NavbarBrand, NavItem, DropdownItem, DropdownMenu,
 } from 'reactstrap';
 
 
@@ -29,10 +29,10 @@ function NavBarComponent(props) {
                             <NavLink className="nav-link" href="/prices" style={{ color: "#9df5cc" }}>Prices</NavLink>
                         </NavItem>
                         <UncontrolledDropdown className="glow">
-                            <DropdownToggle nav caret style={{color: "#9df5cc"}}>
+                            <DropdownToggle nav caret style={{ color: "#9df5cc" }}>
                                 Social
                             </DropdownToggle>
-                            <DropdownMenu right style={{background: "#9df5cc", color: "white"}}>
+                            <DropdownMenu right style={{ background: "#9df5cc", color: "white" }}>
                                 <DropdownItem href="http://instagram.com/polished.bymia/"
                                     target="_blank" rel="noreferrer noopener" aria-hidden="true">
                                     <i id="socialIcon" className="fa fa-instagram fa-md" />{' '}
@@ -52,8 +52,10 @@ function NavBarComponent(props) {
                             style={{
                                 fontWeight: "bold",
                                 fontSize: "18px",
+                                boxShadow: "2px 2px 2px #f1069f",
                                 textShadow: "2px 2px 2px #f1069f",
-                                margin: "10px"
+                                margin: "10px",
+                                borderRadius: "5%",
                             }}>
                             Appointments
                         </Button>

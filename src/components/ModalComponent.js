@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
-import NavBarComponent from './NavBarComponent';
+
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -34,8 +34,7 @@ const modalFont = {
     }
 }
 
-function NavModal() {
-    const [isModalOpen, setModal] = useState(false);
+function ModalComponent(props) {
     const [state, setState] = useState({
         firstName: '',
         lastName: '',
@@ -52,9 +51,7 @@ function NavModal() {
         }
     });
 
-    const toggleModal = () => {
-        setModal(!isModalOpen);
-    }
+
 
     const dateChange = (date) => {
         setState({
@@ -65,7 +62,7 @@ function NavModal() {
     const handleSubmit = (values) => {
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is:' + JSON.stringify(values));
-        toggleModal();
+        props.toggleModal();
         // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
@@ -83,10 +80,8 @@ function NavModal() {
     }
     return (
         <>
-            <NavBarComponent call={toggleModal} />
-            <Modal isOpen={isModalOpen} toggle={toggleModal} fade autoFocus>
-
-                <ModalHeader toggle={toggleModal} style={modalFont.top}>
+            <Modal isOpen={props.isModalOpen} toggle={props.toggleModal} fade autoFocus>
+                <ModalHeader toggle={props.toggleModal} style={modalFont.top}>
                     Send me your info and I'll contact you asap!<br />
                 </ModalHeader>
                 <ModalBody id="modalbody">
@@ -297,7 +292,7 @@ function NavModal() {
                         <Row className="formgroup">
                             <Col md={6} sm={6} xs={6}>
                                 <Button type="submit" color="info">Reserve</Button>{' '}
-                                <Button color="danger" onClick={toggleModal}>Cancel</Button>
+                                <Button color="danger" onClick={props.toggleModal}>Cancel</Button>
                             </Col>
                             <Col md={6} sm={6} xs={6}>
                                 <Control.select
@@ -322,4 +317,4 @@ function NavModal() {
 
 }
 
-export default NavModal;
+export default ModalComponent;

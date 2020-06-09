@@ -1,25 +1,28 @@
 import React from 'react';
-import NavModal from './NavModal';
+import NavbarComponent from './NavBarComponent';
 import BodyComponent from './BodyComponent';
 import PriceComponent from './PriceComponent';
 import FooterComponent from './FooterComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+
 function MainComponent() {
+    
     const HomePage = () => {
         return (
             <BodyComponent/>
         );
-    }
+    };
 
     const Prices = () => {
         return (
             <PriceComponent />
         );
     };
+
     return (
         <div>
-            <NavModal />
+            <NavbarComponent />
             <Switch>
                 <Route path='/home' component={HomePage} />
                 <Route exact path='/prices' component={Prices} />

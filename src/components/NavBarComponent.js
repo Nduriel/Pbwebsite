@@ -4,13 +4,24 @@ import {
     UncontrolledDropdown, DropdownToggle, Collapse,
     NavLink, NavbarBrand, NavItem, DropdownItem, DropdownMenu,
 } from 'reactstrap';
+import ModalComponent from './ModalComponent';
 
 
-function NavBarComponent(props) {
+function NavBarComponent() {
+
+    //Modal Toggler
+    const [isModalOpen, setModal] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+    const toggleModal = () => {
+        setModal(!isModalOpen);
+    };
+
+    //Navbar Toggler
     const toggle = () => setIsOpen(!isOpen);
+
     return (
         <>
+            <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
             <Navbar light collapseOnSelect expand="md" sticky="top">
                 <NavbarBrand style={{
                     color: "#9df5cc",
@@ -47,7 +58,7 @@ function NavBarComponent(props) {
                         </UncontrolledDropdown>
                     </Nav>
                     <Nav className="ml-auto">
-                        <Button color="primary" onClick={props.call}
+                        <Button color="primary" onClick={toggleModal}
                             size="lg"
                             style={{
                                 fontWeight: "bold",

@@ -7,64 +7,97 @@ const textCenter = {
     textAlign: "center",
 }
 
-const tableBody = {
+const rowTitle = {
     color: "#9df5cc",
     fontWeight: "bold",
     textShadow: "2px 2px 2px #f1069f",
 }
 
-function PriceComponent(props) {
+function PriceComponent() {
     return (
         <>
-            <div id='bodyBox' style={{ marginTop: "30px" }} className="text-center">*Prices are subject to change*</div>
-            <Table dark id="prices" style={{ fontFamily: 'Manrope', marginTop: "50px", marginBottom: "50px" }} size='md'
-                responsive striped bordered hover
-                variant="dark">
+            <div id='bodyBox'
+                style={{ marginTop: "30px" }}
+                className="text-center">
+                *Prices are subject to change*
+            </div>
+
+            <Table
+                dark
+                id="prices"
+                style={{
+                    fontFamily: 'Manrope',
+                    marginTop: "50px",
+                    marginBottom: "50px"
+                }}
+                size='md'
+                responsive striped bordered hover variant="dark"
+            >
                 <thead style={{ color: "pink", fontWeight: "bold" }}>
                     <tr style={{ textAlign: "center" }}>
-                        <th><Image id="thumbnailPic" src={tablePic.tpic} thumbnail fluid />
+                        <th>
+                            <Image
+                                id="thumbnailPic"
+                                src={tablePic.tpic}
+                                thumbnail fluid
+                            />
                             <br />Type of Set</th>
-                        <th><Image id="thumbnailPic" src={tablePic.shortNails} thumbnail fluid />
+                        <th>
+                            <Image
+                                id="thumbnailPic"
+                                src={tablePic.shortNails}
+                                thumbnail fluid
+                            />
                             <br />Short Nails</th>
-                        <th><Image id="thumbnailPic" src={tablePic.medNails} thumbnail fluid />
+                        <th>
+                            <Image id="thumbnailPic"
+                                src={tablePic.medNails}
+                                thumbnail fluid
+                            />
                             <br />Med Nails </th>
-                        <th><Image id="thumbnailPic" src={tablePic.longNails} thumbnail fluid />
+                        <th>
+                            <Image id="thumbnailPic"
+                                src={tablePic.longNails}
+                                thumbnail fluid
+                            />
                             <br />Longs Nails</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style={tableBody}>Acrylic Full Set:</td>
+                        <td style={rowTitle}>Acrylic Full Set:</td>
                         <td style={textCenter}>$ 35</td>
                         <td style={textCenter}>$ 45</td>
                         <td style={textCenter}>$ 50</td>
                     </tr>
                     <tr>
-                        <td style={tableBody}>Acrylic Fill:</td>
+                        <td style={rowTitle}>Acrylic Fill:</td>
                         <td style={textCenter}>$ 30</td>
                         <td style={textCenter}>$ 35</td>
                         <td style={textCenter}>$ 40</td>
                     </tr>
                     <tr>
-                        <td style={tableBody}>Ombre Full Set:</td>
+                        <td style={rowTitle}>Ombre Full Set:</td>
                         <td style={textCenter}>$ 40</td>
                         <td style={textCenter}>$ 55</td>
                         <td style={textCenter}>$ 55</td>
                     </tr>
                     <tr>
-                        <td style={tableBody}>Ombre Fill:</td>
+                        <td style={rowTitle}>Ombre Fill:</td>
                         <td style={textCenter}>$ 35</td>
                         <td style={textCenter}>$ 40</td>
                         <td style={textCenter}>$ 45</td>
                     </tr>
                     <tr>
-                        <td style={tableBody}>Color Acrylic Full Set:</td>
+                        <td style={rowTitle}>Color Acrylic Full Set:</td>
                         <td style={textCenter}>$ 45</td>
                         <td style={textCenter}>$ 55</td>
                         <td style={textCenter}>$ 60</td>
                     </tr>
                     <tr>
-                        <td colSpan="4" style={textCenter}>**For the best look, a Full Set is recommened. A Fill Set drilling is possible, but not recommened.**
+                        <td colSpan="4" style={textCenter}>
+                            ** While a Color Acrylic Fill Set is possible,
+                            a Full Set Color Acrylic is recommened for, best look.**
                    </td>
                     </tr>
                     <tr>
@@ -72,23 +105,38 @@ function PriceComponent(props) {
                             color: "violet", fontWeight: "bold",
                             textShadow: "2px 2px 2px #f1069f"
                         }}>Add-Ons:</td>
-                        <td style={{ textAlign: "center" }}>Jeweled: $4 (2 Fingers)<br />  Encapsulated Design: $3 (2 Fingers)</td>
-                        <td style={{ textAlign: "center" }}>Full 'Blinged' out nail: $7</td>
-                        <td style={{ textAlign: "center" }}>Nail Soak $10</td>
+                        <td style={textCenter}>
+                            Jeweled: $4 (2 Fingers)<br />
+                            Encapsulated Design: $3 (2 Fingers)
+                        </td>
+                        <td style={textCenter}>
+                            Full 'Blinged' out nail: $7
+                            </td>
+                        <td style={textCenter}>
+                            Nail Soak $10
+                        </td>
                     </tr>
                     <tr>
                         <td style={{
                             color: "violet", fontWeight: "bold",
                             textShadow: "2px 2px 2px #f1069f"
-                        }}>Toe Color Change:</td>
-                        <td colSpan="3" style={{ textAlign: "center" }}>$10 for Gel</td>
+                        }}>
+                            Toe Color Change:
+                        </td>
+                        <td colSpan="3" style={textCenter}>
+                            $10 for Gel
+                        </td>
                     </tr>
                     <tr>
                         <td style={{
                             color: "violet", fontWeight: "bold",
                             textShadow: "2px 2px 2px #f1069f"
-                        }}>Extra Drilling:</td>
-                        <td colSpan="3" style={{ textAlign: "center" }}>$5 for each hand</td>
+                        }}>
+                            Extra Drilling:
+                        </td>
+                        <td colSpan="3" style={textCenter}>
+                            $5 for each hand
+                        </td>
                     </tr>
                 </tbody>
             </Table>

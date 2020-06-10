@@ -51,8 +51,6 @@ function ModalComponent(props) {
         }
     });
 
-
-
     const dateChange = (date) => {
         setState({
             reserveDate: date

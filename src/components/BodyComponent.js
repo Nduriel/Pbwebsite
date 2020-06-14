@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Col, Row, Container, Jumbotron } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
-// import Carousel from 'react-bootstrap/Carousel';
+import { carouselPic, jumbotronPic } from './photos';
 import {
     Carousel,
     CarouselItem,
@@ -9,10 +9,10 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
-import { carouselPic } from './photos';
-import { jumbotronPic } from './photos';
 
-function BodyComponent(props) {
+
+
+function BodyComponent() {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -49,27 +49,60 @@ function BodyComponent(props) {
         <Jumbotron fluid>
             <Container fluid>
                 <Row >
-                    <Col lg={6} md={12} sm={12} xs={12} style={{ textAlign: "center" }}>
+                    <Col
+                        lg={6}
+                        md={12}
+                        sm={12}
+                        xs={12}
+                        style={{
+                            textAlign: "center"
+                        }}>
                         <div id="bodyBox">
-                            <Image id="bodydivpic" style={{ width: "300px", height: "300px", margin: "10px" }}
-                                src={jumbotronPic.logo2} alt="logopic" fluid roundedCircle /><br />
-                            <p>Polished By Mia <sub><i className="fa fa-copyright" aria-hidden="true"
-                                style={{ fontSize: "15px" }} /></sub>{' '}
-                         is an Acrylic service that caters to clients, exclusively,
-                        in the Newport News and surrounding Hampton Roads area (757).  Check out
-                        the gallery here, or Facebook and Instagram for my work!</p>
+                            <Image
+                                id="bodydivpic"
+                                style={{
+                                    width: "300px",
+                                    height: "300px",
+                                    margin: "10px"
+                                }}
+                                src={jumbotronPic.logo2}
+                                alt="logopic"
+                                fluid
+                                roundedCircle />
+                            <br />
+                            <p>
+                                Polished By Mia
+                                <sub>
+                                    <i className="fa fa-copyright"
+                                        aria-hidden="true"
+                                        style={{ fontSize: "13px" }}
+                                    />
+                                </sub>
+                                {' '}
+                                is an Acrylic service that caters to clients, exclusively,
+                                in the Newport News and surrounding Hampton Roads area (757).  Check out
+                                the gallery here, or Facebook and Instagram for my work!
+                            </p>
                         </div>
                         <br />
                         <div id="bodyBox">
-                            <p style={{ margin: "10px" }}>
-                                * By Appointment Only *. <br />
-                        Due to the Coronavirus Pandemic,
-                        masks are *required* every visit. <br /> No Exceptions! <br />
+                            <p
+                                style={{ margin: "10px" }}>
+                                * By Appointment Only *.
+                                <br />
+                                Due to the Coronavirus Pandemic,
+                                masks are *required* every visit.
+                                <br /> No Exceptions! <br />
                             </p>
                         </div>
                         <br />
                     </Col>
-                    <Col lg={{ size: 5, offset: 1 }} md={{ offset: 1 }} sm={{ size: 10, offset: 1 }} xs={12} >
+                    <Col
+                        lg={{ size: 5, offset: 1 }}
+                        md={{ offset: 1 }}
+                        sm={{ size: 10, offset: 1 }}
+                        xs={12}
+                    >
                         <Carousel
                             activeIndex={activeIndex}
                             next={next}

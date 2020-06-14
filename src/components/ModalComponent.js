@@ -78,16 +78,28 @@ function ModalComponent(props) {
     }
     return (
         <>
-            <Modal isOpen={props.isModalOpen} toggle={props.toggleModal} fade autoFocus>
-                <ModalHeader toggle={props.toggleModal} style={modalFont.top}>
+            <Modal
+                isOpen={props.isModalOpen}
+                toggle={props.toggleModal}
+                fade
+                autoFocus>
+                <ModalHeader
+                    toggle={props.toggleModal}
+                    style={modalFont.top}>
                     Send me your info and I'll contact you asap!<br />
                 </ModalHeader>
                 <ModalBody id="modalbody">
-                    <LocalForm id="reserveForm" onSubmit={values => handleSubmit(values)}>
+                    <LocalForm
+                        id="reserveForm"
+                        onSubmit={values => handleSubmit(values)}
+                    >
                         <Row className="formgroup">
                             <Col md={12}>
-                                <Label htmlFor="firstName"
-                                    style={{ fontWeight: "bold" }}>First Name</Label>
+                                <Label
+                                    htmlFor="firstName"
+                                    style={{ fontWeight: "bold" }}>
+                                    First Name
+                                </Label>
                                 <Control.text
                                     model=".firstName"
                                     name="firstName"
@@ -116,8 +128,11 @@ function ModalComponent(props) {
                                         maxLength: 'Must be 15 characters or less'
                                     }}
                                 />
-                                <Label htmlFor="lastName"
-                                    style={{ fontWeight: "bold" }}>Last Name</Label>
+                                <Label
+                                    htmlFor="lastName"
+                                    style={{ fontWeight: "bold" }}>
+                                    Last Name
+                                </Label>
                                 <Control.text
                                     model=".lastName"
                                     name="lastName"
@@ -152,7 +167,10 @@ function ModalComponent(props) {
                         </Row><br />
                         <Row className="formgroup">
                             <Col md={12}>
-                                <Label htmlFor="email" style={{ fontWeight: "bold" }}>
+                                <Label
+                                    htmlFor="email"
+                                    style={{ fontWeight: "bold" }}
+                                >
                                     Email Address
                                 </Label>
                                 <Control.text
@@ -181,7 +199,11 @@ function ModalComponent(props) {
                                             </span>
                                     }}
                                 />
-                                <Label htmlFor="phoneNum" style={{ fontWeight: "bold" }}>Phone</Label>
+                                <Label
+                                    htmlFor="phoneNum"
+                                    style={{ fontWeight: "bold" }}>
+                                    Phone
+                                </Label>
                                 <Control.text
                                     model=".phoneNum"
                                     name="phoneNum"
@@ -223,7 +245,10 @@ function ModalComponent(props) {
                             <Col md={12}>
                                 <div className="row">
                                     <div className="col-6">
-                                        <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
+                                        <Label
+                                            htmlFor="reserveDate"
+                                            style={{ fontWeight: "bold" }}
+                                        >
                                             Date Requested
                                         </Label>
                                         <br />
@@ -231,7 +256,9 @@ function ModalComponent(props) {
                                             className="form-control"
                                             model=".reserveDate"
                                             selected={state.reserveDate}
-                                            onDateChange={date => { this.setState({ reserveDate: date }) }}
+                                            onDateChange={date => {
+                                                this.setState({ reserveDate: date })
+                                            }}
                                             onChange={dateChange}
                                             component={DatePicker}
                                             name="reserveDate"
@@ -246,7 +273,10 @@ function ModalComponent(props) {
                                         />
                                     </div>
                                     <div className="col-6">
-                                        <Label htmlFor="reserveDate" style={{ fontWeight: "bold" }}>
+                                        <Label
+                                            htmlFor="reserveDate"
+                                            style={{ fontWeight: "bold" }}
+                                        >
                                             Time Requested
                                         </Label>
                                         <br />
@@ -274,12 +304,14 @@ function ModalComponent(props) {
                                             show="touched"
                                             component="div"
                                             messages={{
-                                                required: <span style={modalFont.errorText}>
-                                                    'Required'
-                                                    </span>,
-                                                isNumber: <span style={modalFont.errorText}>
-                                                    'Select an appointment timeframe'
-                                                    </span>,
+                                                required:
+                                                    <span style={modalFont.errorText}>
+                                                        'Required'
+                                                </span>,
+                                                isNumber:
+                                                    <span style={modalFont.errorText}>
+                                                        'Select an appointment timeframe'
+                                                </span>,
                                             }}
                                         />
                                     </div>
@@ -289,8 +321,12 @@ function ModalComponent(props) {
                         <br />
                         <Row className="formgroup">
                             <Col md={6} sm={6} xs={6}>
-                                <Button type="submit" color="info">Reserve</Button>{' '}
-                                <Button color="danger" onClick={props.toggleModal}>Cancel</Button>
+                                <Button type="submit" color="info">
+                                    Reserve
+                                </Button>{' '}
+                                <Button color="danger" onClick={props.toggleModal}>
+                                    Cancel
+                                </Button>
                             </Col>
                             <Col md={6} sm={6} xs={6}>
                                 <Control.select

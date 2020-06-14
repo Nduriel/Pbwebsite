@@ -33,16 +33,28 @@ function NavBarComponent() {
         background: "black",
         padding: "11px",
         border: "2px solid #f1069f",
-        borderRadius: "50%"
+        borderRadius: "50%",
     }
 
     return (
         <>
-            <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
-            <Navbar light collapseOnSelect expand="md" sticky="top">
-                <NavbarBrand style={navbarIcon} href="#home">PBM</NavbarBrand>
-                <NavbarToggler onClick={toggle} aria-controls="responsive-navbar-nav" />
-                <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
+            <ModalComponent
+                toggleModal={toggleModal}
+                isModalOpen={isModalOpen}
+            />
+            <Navbar light
+                collapseOnSelect
+                expand="md"
+                classticky="top"
+            >
+                <NavbarToggler
+                    onClick={toggle}
+                    aria-controls="responsive-navbar-nav"
+                />
+                <Collapse
+                    isOpen={isOpen}
+                    navbar id="responsive-navbar-nav"
+                >
                     <Nav className="mr-auto" navbar>
                         <NavItem className="glow">
                             <NavLink
@@ -65,7 +77,9 @@ function NavBarComponent() {
                             </NavLink>
                         </NavItem>
                         <UncontrolledDropdown className="glow">
-                            <DropdownToggle nav caret style={{ color: "#9df5cc" }}>
+                            <DropdownToggle
+                                nav caret
+                                style={{ color: "#9df5cc" }}>
                                 Social
                             </DropdownToggle>
                             <DropdownMenu right
@@ -74,7 +88,8 @@ function NavBarComponent() {
                                     background: "black",
                                     color: "white"
                                 }}>
-                                <DropdownItem href="http://instagram.com/polished.bymia/"
+                                <DropdownItem
+                                    href="http://instagram.com/polished.bymia/"
                                     style={{
                                         color: "white",
                                         background: "red"
@@ -98,6 +113,9 @@ function NavBarComponent() {
                             </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
+                            PBM
+                        </NavbarBrand>
                     </Nav>
                     <Nav className="ml-auto">
                         <Button color="primary" onClick={toggleModal}

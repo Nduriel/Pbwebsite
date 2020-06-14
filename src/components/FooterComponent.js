@@ -11,31 +11,64 @@ const footerFont = {
 }
 
 
-function FooterComponent(props) {
+function FooterComponent() {
     return (
-        <React.Fragment>
-            {/* Footer */}
+            
             <footer className="site-footer" style={footerFont}>
                 <Row>
-                    <Col lg={4} id="goneText" className="text-center" style={{ paddingTop: "15px", borderRight: "3px double #9df5cc", }}>
-                        <span><i className="fa fa-copyright" aria-hidden="true" />PolishedByMia</span>
+                    <Col lg={4} id="goneText" className="text-center"
+                        style={{
+                            paddingTop: "15px",
+                            borderRight: "3px double #9df5cc"
+                        }}
+                    >
+                        <span>
+                            <i className="fa fa-copyright"
+                                aria-hidden="true"
+                            />
+                            PolishedByMia
+                        </span>
                     </Col>
-                    <Col className='text-center' lg={4} md={12} sm={12}>
-                        <a role="button" className="btn btn-link" target="_blank"
-                            rel="noopener noreferrer" href="mailto:Mmnuoz214@gmail.com">
-                            <i id="socialIcon" className="fa fa-envelope-o" />
-                        </a><span id="goneText" >Questions? Comments?</span>
-                        <a role="button" className="btn btn-link" target="_blank"
-                            rel="noopener noreferrer" href="tel:+17579127833">
-                            <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
+                    <Col
+                        className='text-center'
+                        lg={4} md={12} sm={12}
+                    >
+                        <a role="button"
+                            className="btn btn-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="mailto:Mmnuoz214@gmail.com"
+                        >
+                            <i id="socialIcon"
+                                className="fa fa-envelope-o"
+                            />
+                        </a>
+                        <span id="goneText">
+                            Questions? Comments?
+                        </span>
+                        <a role="button"
+                            className="btn btn-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="tel:+17579127833"
+                        >
+                            <i role="button"
+                                id="socialIcon"
+                                className="fa fa-phone fa-lg"
+                            />
                         </a>
                     </Col>
-                    <Col lg={4} id="goneText" className="text-center" style={{ paddingTop: "15px", borderLeft: "3px double #9df5cc" }}>
+                    <Col
+                        className="text-center" id="goneText"
+                        lg={4}
+                        style={{
+                            paddingTop: "15px",
+                            borderLeft: "3px double #9df5cc"
+                        }}>
                         "Modern touch, Beautiful feel"
                     </Col>
                 </Row>
             </footer>
-        </React.Fragment>
     );
 }
 

@@ -26,6 +26,14 @@ clear: both;
 box-shadow: 5px 5px 10px black;
 }
 
+#bodydivpic {
+    border-radius: 25%;
+    border: 5px solid #9df5cc;
+    background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
+    padding: 10px;
+    border-image-slice: 1 fill;
+}
+
 #breadsdiv {
     border: 1px solid white;
     background-image: linear-gradient(
@@ -100,12 +108,12 @@ div>div>div.modal-header>button>span {
     background-color: #f1069f;
 
 }
-#bodydivpic {
-    border-radius: 25%;
-    border: 5px solid #9df5cc;
-    background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
-    padding: 10px;
-    border-image-slice: 1 fill;
+
+
+#dropIG {
+    color: white;
+    background: -webkit-linear-gradient(left top, #8a3ab9, #e95950, #bc2a8d,
+     #cd486b,  #4c68d7);
 }
 
 @media only screen and (max-width: 780px) {

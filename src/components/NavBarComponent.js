@@ -32,8 +32,8 @@ function NavBarComponent() {
         color: "#9df5cc",
         background: "black",
         padding: "11px",
-        border: "2px solid #f1069f",
-        borderRadius: "50%",
+        border: "3px solid #f1069f",
+        borderRadius: "50% / 50%",
     }
 
     return (
@@ -84,50 +84,49 @@ function NavBarComponent() {
                             </DropdownToggle>
                             <DropdownMenu right
                                 style={{
-                                    border: "3px solid white",
+                                    border: "3px solid purple",
                                     background: "black",
                                     color: "white"
                                 }}>
                                 <DropdownItem
+                                    // {  color: "white", background: "#bc2a8d" }
                                     href="http://instagram.com/polished.bymia/"
-                                    style={{
-                                        color: "white",
-                                        background: "red"
-                                    }}
+                                    id="dropIG"
                                     target="_blank"
                                     rel="noreferrer noopener"
                                     aria-hidden="true">
-                                    <i id="socialIcon" className="fa fa-instagram fa-md" />{' '}
+                                    <i className="fa fa-instagram fa-lg" />{' '}
                                 #Instagram
                             </DropdownItem>
-                                <DropdownItem href="http://facebook.com/polishedbymia/"
-                                    style={{
-                                        color: "white",
-                                        background: "blue"
-                                    }}
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    aria-hidden="true">
-                                    <i id="socialIcon" className="fa fa-facebook fa-lg" />{' '}
+                            <DropdownItem href="http://facebook.com/polishedbymia/"
+                                style={{
+                                    color: "white",
+                                    background: "#007aff"
+                                }}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                aria-hidden="true">
+                                <i className="fa fa-facebook fa-lg" />{' '}
                                 @Facebook
                             </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-                        <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
-                            PBM
-                        </NavbarBrand>
                     </Nav>
-                    <Nav className="ml-auto">
-                        <Button color="primary" onClick={toggleModal}
-                            size="lg"
-                            style={buttonStyle}>
-                            Appointments
+                <Nav>
+                    <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
+                        PBM
+                        </NavbarBrand></Nav>
+                <Nav className="ml-auto">
+                    <Button color="primary" onClick={toggleModal}
+                        size="lg"
+                        style={buttonStyle}>
+                        Appointments
                         </Button>
-                    </Nav>
-                    <Nav>
-                    </Nav>
+                </Nav>
+                <Nav>
+                </Nav>
                 </Collapse>
-            </Navbar>
+        </Navbar>
         </>
     );
 }

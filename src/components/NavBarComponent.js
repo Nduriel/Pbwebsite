@@ -98,35 +98,35 @@ function NavBarComponent() {
                                     <i className="fa fa-instagram fa-lg" />{' '}
                                 #Instagram
                             </DropdownItem>
-                            <DropdownItem href="http://facebook.com/polishedbymia/"
-                                style={{
-                                    color: "white",
-                                    background: "#007aff"
-                                }}
-                                target="_blank"
-                                rel="noreferrer noopener"
-                                aria-hidden="true">
-                                <i className="fa fa-facebook fa-lg" />{' '}
+                                <DropdownItem href="http://facebook.com/polishedbymia/"
+                                    style={{
+                                        color: "white",
+                                        background: "#007aff"
+                                    }}
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    aria-hidden="true">
+                                    <i className="fa fa-facebook fa-lg" />{' '}
                                 @Facebook
                             </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                <Nav>
-                    <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
-                        PBM
+                    <Nav>
+                        <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
+                            PBM
                         </NavbarBrand></Nav>
-                <Nav className="ml-auto">
-                    <Button color="primary" onClick={toggleModal}
-                        size="lg"
-                        style={buttonStyle}>
-                        Appointments
+                    <Nav className="ml-auto">
+                        <Button color="primary" onClick={toggleModal}
+                            size="lg"
+                            style={buttonStyle}>
+                            Appointments
                         </Button>
-                </Nav>
-                <Nav>
-                </Nav>
+                    </Nav>
+                    <Nav>
+                    </Nav>
                 </Collapse>
-        </Navbar>
+            </Navbar>
         </>
     );
 }

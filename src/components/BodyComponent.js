@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Col, Row, Container, Jumbotron } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import { carouselPic, jumbotronPic } from './photos';
@@ -10,7 +10,35 @@ import {
     CarouselCaption
 } from 'reactstrap';
 
+const ImageToggleOnMouseOver = ({ primaryImg, secondaryImg }) => {
 
+    const imageRef = useRef(null);
+
+    return (
+        <img
+            id="bodydivpic"
+            onMouseOver={() => {
+                imageRef.current.src = secondaryImg;
+            }}
+            onMouseOut={() => {
+                imageRef.current.src = primaryImg;
+            }}
+            src={primaryImg}
+            alt="" ref={imageRef}
+        />
+    );
+};
+
+const ImageChangeOnMouseOver = () => {
+    return (
+        <div style={{marginTop: "10px"}}>
+            <ImageToggleOnMouseOver primaryImg={jumbotronPic.logo}
+                secondaryImg={jumbotronPic.logo2}
+                alt="MainLogo"
+            />
+        </div>
+    );
+};
 
 function BodyComponent() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -58,7 +86,7 @@ function BodyComponent() {
                             textAlign: "center"
                         }}>
                         <div id="bodyBox">
-                            <Image
+                            <ImageChangeOnMouseOver
                                 id="bodydivpic"
                                 style={{
                                     width: "300px",

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Col, Row, Container, Jumbotron } from 'reactstrap';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import { carouselPic, jumbotronPic } from './photos';
 import {
     Carousel,

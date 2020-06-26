@@ -116,16 +116,21 @@ function ModalComponent(props) {
                         onSubmit={values => handleSubmit(values)}
                     >
                         <form
+                            type='file'
                             method='POST'
-                            data-netlify="true" name="reserveForm" >
-                            <input hidden name='firstName' />
-                            <input hidden name='lastName' />
-                            <input hidden name='email' />
-                            <input hidden name='phoneNum' />
-                            <input hidden name='lastName' />
-                            <input hidden name='reserveDate' />
-                            <input hidden name='time' />
-                            <input hidden name='contactType' />
+                            data-netlify="true"
+                            name="form-name"
+                            value="reserveForm"
+                            hidden
+                        >
+                            <input type="hidden" name='firstName' />
+                            <input type="hidden" name='lastName' />
+                            <input type="hidden" hdden name='email' />
+                            <input type="hidden" name='phoneNum' />
+                            <input type="hidden" name='lastName' />
+                            <input type="hidden" name='reserveDate' />
+                            <input type="hidden" name='time' />
+                            <input type="hidden" name='contactType' />
                         </form>
                         <Row className="formgroup">
                             <Col md={12}>

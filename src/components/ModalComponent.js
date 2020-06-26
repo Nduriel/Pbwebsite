@@ -69,14 +69,14 @@ function ModalComponent(props) {
         const yo = JSON.stringify(values);
 
         console.log('Current state is: ' + JSON.stringify(values));
-        alert('Current state is:' + JSON.stringify(values));
+        // alert('Current state is:' + JSON.stringify(values));
         props.toggleModal();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", yo })
+            body: encode({ "form-name": "reserveForm", yo })
         })
-            .then(() => alert(`Success! ${yo}`))
+            .then(() => console.log(`Success! ${yo}`))
             .catch(error => alert(error));
 
 
@@ -109,13 +109,23 @@ function ModalComponent(props) {
                 </ModalHeader>
                 <ModalBody id="modalbody">
                     <LocalForm
-                        data-netlify="true"
+                        type="file"
                         method='POST'
-                        name='contact'
+                        name="reserveForm"
                         netlify
                         id="reserveForm"
                         onSubmit={values => handleSubmit(values)}
                     >
+                        <form data-netlify="true" name="reserveForm" >
+                            <input hidden name='firstName' />
+                            <input hidden name='lastName' />
+                            <input hidden name='email' />
+                            <input hidden name='phoneNum' />
+                            <input hidden name='lastName' />
+                            <input hidden name='reserveDate' />
+                            <input hidden name='time' />
+                            <input hidden name='contactType' />
+                        </form>
                         <Row className="formgroup">
                             <Col md={12}>
                                 <Label

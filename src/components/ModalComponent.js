@@ -112,11 +112,12 @@ function ModalComponent(props) {
                         type="file"
                         method='POST'
                         name="reserveForm"
-                        netlify
                         id="reserveForm"
                         onSubmit={values => handleSubmit(values)}
                     >
-                        <form data-netlify="true" name="reserveForm" >
+                        <form
+                            method='POST'
+                            data-netlify="true" name="reserveForm" >
                             <input hidden name='firstName' />
                             <input hidden name='lastName' />
                             <input hidden name='email' />

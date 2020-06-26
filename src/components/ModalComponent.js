@@ -55,12 +55,31 @@ function ModalComponent(props) {
         setState({
             reserveDate: date
         })
+    };
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
     }
 
+
+
     const handleSubmit = (values) => {
+
+        const yo = JSON.stringify(values);
+
         console.log('Current state is: ' + JSON.stringify(values));
         alert('Current state is:' + JSON.stringify(values));
         props.toggleModal();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", yo })
+        })
+            .then(() => alert(`Success! ${yo}`))
+            .catch(error => alert(error));
+
+
         // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
@@ -90,6 +109,10 @@ function ModalComponent(props) {
                 </ModalHeader>
                 <ModalBody id="modalbody">
                     <LocalForm
+                        data-netlify="true"
+                        method='POST'
+                        name='contact'
+                        netlify
                         id="reserveForm"
                         onSubmit={values => handleSubmit(values)}
                     >

@@ -69,18 +69,15 @@ function ModalComponent(props) {
         const yo = JSON.stringify(values);
 
         console.log('Current state is: ' + JSON.stringify(values));
-        // alert('Current state is:' + JSON.stringify(values));
+        alert('Current state is:' + JSON.stringify(values));
         props.toggleModal();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "reserveForm", yo })
         })
-            .then(() => console.log(`Success! ${yo}`))
+            .then(() => alert(`Success! ${yo}`))
             .catch(error => alert(error));
-
-
-        // const { firstName, email, time, reserveDate, phoneNum } = this.state;
     }
 
     const handleChange = (e) => {
@@ -89,11 +86,7 @@ function ModalComponent(props) {
             ...state,
             [e.target.value]: value
             //name of the input: value of the input
-        });
-        //Because I'm using useState and functional component,
-        // I don't need to bind the method to the class.
-        //i.e. this.handleChange = this.handleChange.bind(this); That
-        //would've let me access "this" inside the function.
+        }); 
     }
     return (
         <>
@@ -109,29 +102,13 @@ function ModalComponent(props) {
                 </ModalHeader>
                 <ModalBody id="modalbody">
                     <LocalForm
-                        type="file"
+                        data-netlify="true"
                         method='POST'
-                        name="reserveForm"
+                        name='contact'
+                        
                         id="reserveForm"
                         onSubmit={values => handleSubmit(values)}
                     >
-                        <form
-                            type='file'
-                            method='POST'
-                            data-netlify="true"
-                            name="form-name"
-                            value="reserveForm"
-                            hidden
-                        >
-                            <input type="hidden" name='firstName' />
-                            <input type="hidden" name='lastName' />
-                            <input type="hidden" hdden name='email' />
-                            <input type="hidden" name='phoneNum' />
-                            <input type="hidden" name='lastName' />
-                            <input type="hidden" name='reserveDate' />
-                            <input type="hidden" name='time' />
-                            <input type="hidden" name='contactType' />
-                        </form>
                         <Row className="formgroup">
                             <Col md={12}>
                                 <Label

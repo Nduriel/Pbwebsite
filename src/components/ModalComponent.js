@@ -100,13 +100,14 @@ function ModalComponent(props) {
                 </ModalHeader>
                 <ModalBody id="modalbody">
                     <LocalForm
-                        data-netlify="true"
+                        type='file'
+                        data-netlify='true'
                         method='POST'
                         name='Contact-Form'
                         id="Contact-Form"
                         onSubmit={values => handleSubmit(values)}
                     >
-                        <input type="hidden" name="form-name" value="Contact-Form" />
+                        <input type="hidden" name="Contact-Form" value="Contact-Form" />
                         <Row className="formgroup">
                             <Col md={12}>
                                 <Label

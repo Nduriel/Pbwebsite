@@ -62,8 +62,6 @@ function ModalComponent(props) {
             .join("&");
     }
 
-
-
     const handleSubmit = (values) => {
 
         const yo = JSON.stringify(values);
@@ -86,7 +84,7 @@ function ModalComponent(props) {
             ...state,
             [e.target.value]: value
             //name of the input: value of the input
-        }); 
+        });
     }
     return (
         <>
@@ -102,13 +100,14 @@ function ModalComponent(props) {
                 </ModalHeader>
                 <ModalBody id="modalbody">
                     <LocalForm
-                        data-netlify="true"
+                        name='Contact-Form'
                         method='POST'
-                        name='contact'
-                        
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
                         id="reserveForm"
                         onSubmit={values => handleSubmit(values)}
                     >
+                        <input type="hidden" name="form-name" value="Contact-Form" />
                         <Row className="formgroup">
                             <Col md={12}>
                                 <Label
@@ -348,7 +347,10 @@ function ModalComponent(props) {
                                 <Control.select
                                     model=".contactType"
                                     name="contactType"
-                                    className="form-control">
+                                    className="form-control"
+                                    id="contactType"
+                                    onChange={handleChange}
+                                >
                                     <option>By Email</option>
                                     <option>By Phone</option>
                                 </Control.select>

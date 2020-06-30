@@ -31,8 +31,9 @@ const ImageToggleOnMouseOver = ({ primaryImg, secondaryImg }) => {
 
 const ImageChangeOnMouseOver = () => {
     return (
-        <div style={{marginTop: "10px"}}>
-            <ImageToggleOnMouseOver primaryImg={jumbotronPic.logo}
+        <div style={{ marginTop: "10px" }}>
+            <ImageToggleOnMouseOver
+                primaryImg={jumbotronPic.logo}
                 secondaryImg={jumbotronPic.logo2}
                 alt="MainLogo"
             />
@@ -113,7 +114,7 @@ function BodyComponent() {
                             </p>
                         </div>
                         <br />
-                        <div id="bodyBox">
+                        <div id="bodyBox2">
                             <p
                                 style={{ margin: "10px" }}>
                                 * By Appointment Only *.

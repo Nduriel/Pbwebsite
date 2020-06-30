@@ -9,22 +9,37 @@ outline: 3px solid #f1069f;
 font-size: 20px;
 color: #9df5cc;
 border: 3px solid #9df5cc;
-text-shadow: 1px 1px 1px #f1069f;
+text-shadow: 2px 2px 2px #f1069f;
 font-family: 'Courgette', sans-serif;
-background: black;
+background: -webkit-linear-gradient(left top, black 40%,
+ #9df5cc80, black);
+clear: both;
+box-shadow: 5px 5px 10px black;
+}
+
+#bodyBox2 {
+outline: 3px solid #f1069f;
+font-size: 20px;
+color: #9df5cc;
+border: 3px solid #9df5cc;
+text-shadow: 1px 4px 4px #f1069f;
+font-family: 'Courgette', sans-serif;
+background: -webkit-linear-gradient(left top, black 8%,
+ #9df5cc80, black 90%);
 clear: both;
 box-shadow: 5px 5px 10px black;
 }
 
 #bodydivpic {
-    border-radius: 55%;
-    border: 5px solid #9df5cc;
-    background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
-    padding: 10px;
-    border-image-slice: 1 fill;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+border-radius: 55%;
+border: 5px solid #9df5cc;
+background: -webkit-linear-gradient(left top,
+ #610241 20%, #f1069f 100%);
+padding: 10px;
+border-image-slice: 1 fill;
+width: 300px;
+height: 300px;
+margin: 10px;
 }
 
 .carousel {

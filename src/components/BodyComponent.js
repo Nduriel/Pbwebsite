@@ -47,13 +47,15 @@ function BodyComponent() {
 
     const next = () => {
         if (animating) return;
-        const nextIndex = activeIndex === carouselPic.length - 1 ? 0 : activeIndex + 1;
+        const nextIndex = activeIndex === carouselPic.length - 1 ? 0 :
+            activeIndex + 1;
         setActiveIndex(nextIndex);
     }
 
     const previous = () => {
         if (animating) return;
-        const nextIndex = activeIndex === 0 ? carouselPic.length - 1 : activeIndex - 1;
+        const nextIndex = activeIndex === 0 ? carouselPic.length - 1 :
+            activeIndex - 1;
         setActiveIndex(nextIndex);
     }
 
@@ -92,12 +94,13 @@ function BodyComponent() {
                                 style={{
                                     width: "300px",
                                     height: "300px",
-                                    margin: "10px"
+                                    margin: "10px",
                                 }}
                                 src={jumbotronPic.logo2}
                                 alt="logopic"
                                 fluid
-                                roundedCircle />
+                                roundedCircle
+                            />
                             <br />
                             <p>
                                 Polished By Mia

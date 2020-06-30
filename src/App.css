@@ -5,16 +5,16 @@
 
 
 #bodyBox {
-outline: 3px solid #f1069f;
+outline: 4px solid #f1069f;
 font-size: 20px;
 color: #9df5cc;
-border: 3px solid #9df5cc;
-text-shadow: 2px 2px 2px #f1069f;
+border: 5px solid #9df5cc;
+text-shadow: 3px 2px 3px black;
 font-family: 'Courgette', sans-serif;
-background: -webkit-linear-gradient(left top, black 40%,
- #9df5cc80, black);
+background: -webkit-linear-gradient( 
+black,#9df5cc5e 40%, black);
 clear: both;
-box-shadow: 5px 5px 10px black;
+box-shadow: 8px 8px 10px black;
 }
 
 #bodyBox2 {
@@ -22,12 +22,12 @@ outline: 3px solid #f1069f;
 font-size: 20px;
 color: #9df5cc;
 border: 3px solid #9df5cc;
-text-shadow: 1px 4px 4px #f1069f;
+text-shadow: 3px 3px 3px black;
 font-family: 'Courgette', sans-serif;
-background: -webkit-linear-gradient(left top, black 8%,
- #9df5cc80, black 90%);
+background: -webkit-linear-gradient( black 8%,
+ #9df5cc54, black 90%);
 clear: both;
-box-shadow: 5px 5px 10px black;
+box-shadow: 8px 8px 10px black;
 }
 
 #bodydivpic {

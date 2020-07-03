@@ -12,7 +12,7 @@ border: 5px solid #9df5cc;
 text-shadow: 3px 2px 3px black;
 font-family: 'Courgette', sans-serif;
 background: -webkit-linear-gradient( 
-black,#9df5cc5e 40%, black);
+    #f1069f8f,black);
 clear: both;
 box-shadow: 8px 8px 10px black;
 }
@@ -22,10 +22,9 @@ outline: 3px solid #f1069f;
 font-size: 20px;
 color: #9df5cc;
 border: 3px solid #9df5cc;
-text-shadow: 3px 3px 3px black;
+text-shadow: 3px 3px 3px #ff00a6f6;
 font-family: 'Courgette', sans-serif;
-background: -webkit-linear-gradient( black 8%,
- #9df5cc54, black 90%);
+background: black;
 clear: both;
 box-shadow: 8px 8px 10px black;
 }
@@ -112,7 +111,8 @@ div>div>div.modal-header>button>span {
 
 #dropIG {
     color: white;
-    background: -webkit-linear-gradient(left top, #8a3ab9, #e95950, #bc2a8d,
+    background: -webkit-linear-gradient(left top, 
+    #8a3ab9, #e95950, #bc2a8d,
      #cd486b,  #4c68d7);
 }
 
@@ -127,9 +127,11 @@ div>div>div.modal-header>button>span {
     width: 100%;
     /* background-image: url('./images/butterfly1.jpg'); */
     background-image: linear-gradient(
-        45deg, #610241, #610241, #610241, #610241,#9df5cc,
-         grey, #9df5cc, #9df5cc,grey, #610241, #610241,
-         #610241, #610241);
+        45deg, #610241, #610241, #610241, 
+        #610241, #610241,#9df5cc,
+        grey, #9df5cc, #9df5cc,grey,
+        #610241, #610241,#610241, #610241,
+        #610241);
     background-size: 600% 100%;
     animation-direction: alternate;
     animation: gradient 16s linear infinite;
@@ -211,7 +213,7 @@ table {
 #thumbnailPic {
     max-width: 180px;
     max-height: 180px;
-    border-radius: 55%;
+    /* border-radius: 55%; */
 }
 
 .site-footer {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import { Table, Col, Container, Row } from 'reactstrap';
 import Image from 'react-bootstrap/Image';
 import { tablePic } from './photos';
 
@@ -16,11 +16,15 @@ const rowTitle = {
 function PriceComponent() {
     return (
         <>
-            <div id='bodyBox'
-                style={{ marginTop: "30px" }}
-                className="text-center">
-                *Prices are subject to change*
-            </div>
+            <Container>
+                <Row>
+                    <Col lg={{size: 4, offset: 4}} id='bodyBox'
+                        style={{ marginTop: "30px" }}
+                    >
+                        *Prices are subject to change*
+                    </Col>
+                </Row>
+            </Container>
 
             <Table
                 dark

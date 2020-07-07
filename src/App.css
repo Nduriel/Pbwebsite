@@ -12,7 +12,7 @@ border: 5px solid #9df5cc;
 text-shadow: 3px 2px 3px black;
 font-family: 'Courgette', sans-serif;
 background: -webkit-linear-gradient( 
-    #f1069f8f,black);
+    #9df5ccd0,#f1069fb4,black);
 clear: both;
 box-shadow: 8px 8px 10px black;
 }

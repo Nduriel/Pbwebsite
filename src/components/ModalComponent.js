@@ -6,13 +6,23 @@ import {
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import DatePicker from 'react-datepicker';
 
+const nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'aros0885@gmail.com',
+        pass: 'wqqkvudujclwvnqd'
+    }
+});
+
 //  const express = require('express');
 //  const app = express();
 
 //  app.get('/', function (req, res) {
 //     res.send('hello world')
 //   });
-  
+
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
@@ -81,6 +91,20 @@ function ModalComponent(props) {
         })
             .then(() => alert(`Success! ${yo}`))
             .catch(error => alert(error));
+        var mailOptions = {
+            from: state.email,
+            to: 'aros0885@.gmail.com',
+            subject: 'Sending Email using Node.js',
+            text: 'That was easy!'
+        };
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+              console.log(error);
+            } else {
+              console.log('Email sent: ' + info.response);
+            }
+          });
     }
 
     const handleChange = (e) => {
@@ -91,7 +115,7 @@ function ModalComponent(props) {
             //name of the input: value of the input
         });
     }
-    
+
     return (
         <>
             <Modal

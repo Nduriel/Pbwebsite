@@ -13,22 +13,6 @@ import { Control, LocalForm, Errors } from "react-redux-form";
 import DatePicker from "react-datepicker";
 import { toast } from "react-toastify";
 
-var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'aros0885@gmail.com',
-    pass: 'gtmviefrudrhlhnp'
-  }
-});
-
-var mailOptions = {
-  from: 'aros0885@gmail.com',
-  to: 'aros0885@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
-};
 
 
 
@@ -93,14 +77,6 @@ function ModalComponent(props) {
 
   const handleSubmit = (values) => {
     console.log("Current state is: " + JSON.stringify(values));
-
-    transporter.sendMail(mailOptions, function(error, info){
-      if (error) {
-        console.log(error);
-      } else {
-        console.log('Email sent: ' + info.response);
-      }
-    });
 
     // const yo = JSON.stringify(values);
     // fetch("/", {

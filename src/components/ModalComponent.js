@@ -12,9 +12,7 @@ import {
 import { Control, LocalForm, Errors } from "react-redux-form";
 import DatePicker from "react-datepicker";
 import { toast } from "react-toastify";
-
-
-
+import * as emailjs from "emailjs-com";
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -67,25 +65,24 @@ function ModalComponent(props) {
       reserveDate: date,
     });
   };
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // };
 
   const handleSubmit = (values) => {
     console.log("Current state is: " + JSON.stringify(values));
+    
 
-    // const yo = JSON.stringify(values);
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "reserveForm", yo }),
-    // })
-    //   .then(() => alert(`Success! ${yo}`))
-    //   .catch((error) => alert(error));
+    let templateParams = {
+      from_name: state.email,
+      to_name: '<YOUR_EMAIL_ID>',
+      subject: "Potential Client",
+      message_html: state.firstName,
+     }
+
+     emailjs.send(
+      'pmbtest',
+      'contact_form',
+       templateParams,
+      'user_9GjxpWZZ0F6izgIeY4tSQ'
+     )
 
     toast.success(
       `Thankyou ${values.firstName}! I will get back to you as soon as possible!`
@@ -94,11 +91,7 @@ function ModalComponent(props) {
   };
 
   const handleChange = ({ target }) => {
-    //const target = event.target *shorter syntax*
-
     setState({ ...state, [target.value]: target.value });
-    //the [] indicate "Computed Property" in this case, not array.
-    //Allows us to set a property, based on a variable.
   };
 
   return (
@@ -118,11 +111,12 @@ function ModalComponent(props) {
             type="file"
             data-netlify="true"
             method="POST"
-            name="Contact-Form"
-            id="Contact-Form"
+            name="contact-form"
+            className="contact-form"
+            id="contact-form"
             onSubmit={(values) => handleSubmit(values)}
           >
-            <input type="hidden" name="Contact-Form" value="Contact-Form" />
+            {/* <input type="hidden" name="contact-form" value="contact-form" /> */}
             <Row className="formgroup">
               <Col md={12}>
                 <Label htmlFor="firstName" style={{ fontWeight: "bold" }}>

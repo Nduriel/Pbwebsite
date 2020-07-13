@@ -50,7 +50,7 @@ function ModalComponent(props) {
     phoneNum: "",
     email: "",
     time: "",
-    contactType: "",
+    contactType: "By Email",
     reserveDate: new Date(),
     touched: {
       firstName: false,
@@ -60,29 +60,30 @@ function ModalComponent(props) {
     },
   });
 
-  const dateChange = (date) => {
-    setState({
-      reserveDate: date,
-    });
-  };
-
   const handleSubmit = (values) => {
     console.log("Current state is: " + JSON.stringify(values));
-    
 
     let templateParams = {
-      from_name: state.email,
-      to_name: '<YOUR_EMAIL_ID>',
-      subject: "Potential Client",
-      message_html: state.firstName,
-     }
+      from_name: values.email,
+      to_name: "Polished By Mia",
+      subject: "Test Reservation",
+      message_html: JSON.stringify(values),
+      name: `${values.firstName} ${values.lastName}`,
+      firstName: values.firstName,
+      lastName: values.lastName,
+      time: values.time,
+      date: values.reserveDate,
+      phoneNum: values.phoneNum,
+      email: values.email,
+      contactType: values.contactType,
+    };
 
-     emailjs.send(
-      'pmbtest',
-      'contact_form',
-       templateParams,
-      'user_9GjxpWZZ0F6izgIeY4tSQ'
-     )
+    emailjs.send(
+      "smtp_server", //Service ID
+      "contact_form",
+      templateParams,
+      "user_9GjxpWZZ0F6izgIeY4tSQ" //User Id
+    );
 
     toast.success(
       `Thankyou ${values.firstName}! I will get back to you as soon as possible!`
@@ -92,6 +93,12 @@ function ModalComponent(props) {
 
   const handleChange = ({ target }) => {
     setState({ ...state, [target.value]: target.value });
+  };
+
+  const dateChange = (date) => {
+    setState({
+      reserveDate: date,
+    });
   };
 
   return (
@@ -283,14 +290,12 @@ function ModalComponent(props) {
                       className="form-control"
                       model=".reserveDate"
                       selected={state.reserveDate}
-                      onDateChange={(date) => {
-                        this.setState({ reserveDate: date });
-                      }}
                       onChange={dateChange}
+                      minDate={new Date()}
                       component={DatePicker}
                       name="reserveDate"
                       id="reserveDate"
-                      dateFormat="MM/dd/yyyy"
+                      dateFormat="MMMM d, yyyy"
                       mapProps={({ reserveDate, dateChange }) => {
                         return {
                           date: reserveDate,
@@ -361,8 +366,8 @@ function ModalComponent(props) {
                   id="contactType"
                   onChange={handleChange}
                 >
-                  <option>By Email</option>
-                  <option>By Phone</option>
+                  <option value="By Email">By Email</option>
+                  <option value="By Phone">By Phone</option>
                 </Control.select>
                 <strong>Best way to reach you?</strong>
               </Col>

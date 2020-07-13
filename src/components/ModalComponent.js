@@ -295,7 +295,7 @@ function ModalComponent(props) {
                       component={DatePicker}
                       name="reserveDate"
                       id="reserveDate"
-                      dateFormat="MMMM d, yyyy"
+                      dateFormat="MM/dd/yyyy"
                       mapProps={({ reserveDate, dateChange }) => {
                         return {
                           date: reserveDate,

@@ -45,6 +45,7 @@ function NavBarComponent() {
 
   const activeStyle = {
     color: "white",
+    textShadow: "5px 5px 5px blue",
   };
 
   return (

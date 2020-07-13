@@ -11,23 +11,26 @@ import {
 } from "reactstrap";
 import { Control, LocalForm, Errors } from "react-redux-form";
 import DatePicker from "react-datepicker";
+import { toast } from "react-toastify";
 
-const nodemailer = require("nodemailer");
+var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-  service: "gmail",
+  service: 'gmail',
   auth: {
-    user: "aros0885@gmail.com",
-    pass: "wqqkvudujclwvnqd",
-  },
+    user: 'aros0885@gmail.com',
+    pass: 'gtmviefrudrhlhnp'
+  }
 });
 
-//  const express = require('express');
-//  const app = express();
+var mailOptions = {
+  from: 'aros0885@gmail.com',
+  to: 'aros0885@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
 
-//  app.get('/', function (req, res) {
-//     res.send('hello world')
-//   });
+
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -80,49 +83,46 @@ function ModalComponent(props) {
       reserveDate: date,
     });
   };
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // };
 
   const handleSubmit = (values) => {
-    const yo = JSON.stringify(values);
-
     console.log("Current state is: " + JSON.stringify(values));
-    alert("Current state is:" + JSON.stringify(values));
-    props.toggleModal();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "reserveForm", yo }),
-    })
-      .then(() => alert(`Success! ${yo}`))
-      .catch((error) => alert(error));
-    var mailOptions = {
-      from: state.email,
-      to: "aros0885@.gmail.com",
-      subject: "Sending Email using Node.js",
-      text: "That was easy!",
-    };
 
-    transporter.sendMail(mailOptions, function (error, info) {
+    transporter.sendMail(mailOptions, function(error, info){
       if (error) {
         console.log(error);
       } else {
-        console.log("Email sent: " + info.response);
+        console.log('Email sent: ' + info.response);
       }
     });
+
+    // const yo = JSON.stringify(values);
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "reserveForm", yo }),
+    // })
+    //   .then(() => alert(`Success! ${yo}`))
+    //   .catch((error) => alert(error));
+
+    toast.success(
+      `Thankyou ${values.firstName}! I will get back to you as soon as possible!`
+    );
+    props.toggleModal();
   };
 
-  const handleChange = (e) => {
-    const updatedForm = {
-      ...state,
-      [e.target.value]: e.target.value,
-    };
-    setState(updatedForm);
+  const handleChange = ({ target }) => {
+    //const target = event.target *shorter syntax*
+
+    setState({ ...state, [target.value]: target.value });
+    //the [] indicate "Computed Property" in this case, not array.
+    //Allows us to set a property, based on a variable.
   };
 
   return (

@@ -3,12 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 
 .infoBox {
-  color: white;
+  color: #c9f7e1d0;
+  font-weight: bold;
   font-size: 20px;
   border: 7px solid black;
   border-style: groove;
   box-shadow: 10px 10px 10px rgb(24, 23, 23);
   font-family: "Arima Madurai", cursive;
+  text-shadow: 3px 3px 5px #f1069fb4;
 }
 
 #bodyBox {
@@ -17,7 +19,6 @@
 }
 
 #bodyBox2 {
-  text-shadow: 5px 5px 5px #f1069fb4;
   background: -webkit-linear-gradient(
     rgb(39, 11, 39) 5%,
     #88075bb4 70%,

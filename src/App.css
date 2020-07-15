@@ -1,228 +1,270 @@
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap&effect=anaglyph');
-@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Roboto&display=swap&effect=anaglyph');
+@import url("https://fonts.googleapis.com/css?family=Courgette|Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 
+.infoBox {
+  color: white;
+  font-size: 20px;
+  border: 7px solid black;
+  border-style: groove;
+  box-shadow: 10px 10px 10px rgb(24, 23, 23);
+  font-family: "Arima Madurai", cursive;
+}
 
 #bodyBox {
-outline: 4px solid #f1069f;
-font-size: 20px;
-color: #9df5cc;
-border: 5px solid #9df5cc;
-text-shadow: 3px 2px 3px black;
-font-family: 'Courgette', sans-serif;
-background: -webkit-linear-gradient( 
-    #9df5ccd0,#f1069fb4,black);
-clear: both;
-box-shadow: 8px 8px 10px black;
+  background: -webkit-linear-gradient(#9df5ccd0 1%, #88075bc2, rgb(39, 11, 39));
+  box-shadow: 10px 10px 10px rgb(24, 23, 23);
 }
 
 #bodyBox2 {
-outline: 3px solid #f1069f;
-font-size: 20px;
-color: #9df5cc;
-border: 3px solid #9df5cc;
-text-shadow: 3px 3px 3px #ff00a6f6;
-font-family: 'Courgette', sans-serif;
-background: black;
-clear: both;
-box-shadow: 8px 8px 10px black;
+  text-shadow: 5px 5px 5px #f1069fb4;
+  background: -webkit-linear-gradient(
+    rgb(39, 11, 39) 5%,
+    #88075bb4 70%,
+    #9df5ccd0
+  );
+}
+
+#bodyBox3 {
+  background: -webkit-linear-gradient(black 10%, #f1069fb4, #9df5ccd0);
+  font-size: 20px;
 }
 
 #bodydivpic {
-border-radius: 55%;
-border: 5px solid #9df5cc;
-background: -webkit-linear-gradient(left top,
- #610241 20%, #f1069f 100%);
-padding: 10px;
-border-image-slice: 1 fill;
-width: 300px;
-height: 300px;
-margin: 10px;
+  border-radius: 55%;
+  border: 5px solid #9df5cc;
+  background: -webkit-linear-gradient(left top, #610241 20%, #f1069f 100%);
+  padding: 10px;
+  border-image-slice: 1 fill;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
 }
 
 .carousel {
-border-radius: 2%;
-background-color: black;
-max-width: 640px;
-width: auto;
-position: relative;
-border: 15px solid;
-border-style: groove;
-border-color: rgb(80, 80, 80);
-box-shadow: 5px 5px 10px black;
-box-sizing: border-box;
-max-height: 650px;
+  border-radius: 2%;
+  background-color: black;
+  max-width: 640px;
+  width: auto;
+  position: relative;
+  border: 15px solid;
+  border-style: groove;
+  border-color: rgb(80, 80, 80);
+  box-shadow: 5px 5px 10px black;
+  box-sizing: border-box;
+  max-height: 650px;
 }
 
 /* Carousel Images */
-.carousel-item > img { 
-    width: 100%; 
-    height: auto;
-  }
-
-/* Carousel Icons */
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    height: 50px;
-    width: 50px;
-    outline: black;
-    background-color: #610241;
-    background-size: 50%, 50%;
-    border-radius: 50%;
-    border: 2px solid #9df5cc;
+.carousel-item > img {
+  width: 100%;
+  height: auto;
 }
 
 /* Carousel Icons */
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    height: 50px;
-    width: 50px;
-    outline: black;
-    background-color: #610241;
-    background-size: 50%, 50%;
-    border-radius: 50%;
-    border: 2px solid #9df5cc;
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-color: #610241;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 2px solid #9df5cc;
+}
+
+/* Carousel Icons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-color: #610241;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 2px solid #9df5cc;
 }
 
 .capText {
-    font-weight: bold;
-    color: #9df5cc;
-    font-size: 18px;
-    text-shadow: 2px 2px 2px #f1069f;
-    font-family: "Courgette";
+  font-weight: bold;
+  color: #9df5cc;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #f1069f;
 }
 
 /* Navbar Button */
-body>div:nth-child(10)>div>div.modal.fade.show>
-div>div>div.modal-header>button>span {
-    color: #9df5cc;
+body
+  > div:nth-child(10)
+  > div
+  > div.modal.fade.show
+  > div
+  > div
+  > div.modal-header
+  > button
+  > span {
+  color: #9df5cc;
 }
 
-#root > div > div > nav > button  {
-    border: 1px solid #9df5cc;
-    border-style: groove;
-    box-shadow: 2px 3px 3px gray;
-    border-radius: 6%;
-    background-color: lightgreen;
-    background-color: #f1069f;
-
+#root > div > div > nav > button {
+  border: 1px solid #9df5cc;
+  border-style: groove;
+  box-shadow: 2px 3px 3px gray;
+  border-radius: 6%;
+  background-color: lightgreen;
+  background-color: #f1069f;
 }
 
 #dropIG {
-    color: white;
-    background: -webkit-linear-gradient(left top, 
-    #8a3ab9, #e95950, #bc2a8d,
-     #cd486b,  #4c68d7);
+  color: white;
+  background: -webkit-linear-gradient(
+    left top,
+    #8a3ab9,
+    #e95950,
+    #bc2a8d,
+    #cd486b,
+    #4c68d7
+  );
 }
 
 @media only screen and (max-width: 780px) {
-    #goneText {
-        display: none;
-    }
+  #goneText {
+    display: none;
+  }
 }
 
 .jumbotron {
-    margin: 0;
-    width: 100%;
-    /* background-image: url('./images/butterfly1.jpg'); */
-    background-image: linear-gradient(
-        45deg, #610241, #610241, #610241, 
-        #610241, #610241,#9df5cc,
-        grey, #9df5cc, #9df5cc,grey,
-        #610241, #610241,#610241, #610241,
-        #610241);
-    background-size: 600% 100%;
-    animation-direction: alternate;
-    animation: gradient 16s linear infinite;
-    display: block;
+  margin: 0;
+  width: 100%;
+  /* background-image: url('./images/butterfly1.jpg'); */
+  background-image: linear-gradient(
+    45deg,
+    #3d0129,
+    #3d0129,
+    #3d0129,
+    #3d0129,
+    #3d0129,
+    #9df5cc,
+    grey,
+    #9df5cc,
+    #9df5cc,
+    grey,
+    #3d0129,
+    #3d0129,
+    #3d0129,
+    #3d0129
+  );
+  background-size: 600% 100%;
+  animation-direction: alternate;
+  animation: gradient 16s linear infinite;
+  display: block;
 }
 body {
-    background-color: black;
-    background-image: linear-gradient(
-        45deg, #610241, #610241, #610241, #610241,#9df5cc,
-         grey, #9df5cc, #9df5cc,grey, #610241, #610241,
-         #610241, #610241);
-    background-size: 600% 100%;
-    animation-direction: alternate;
-    animation: gradient 16s linear infinite;
+  background-color: black;
+  background-image: linear-gradient(
+    45deg,
+    #610241,
+    #610241,
+    #610241,
+    #610241,
+    #9df5cc,
+    grey,
+    #9df5cc,
+    #9df5cc,
+    grey,
+    #610241,
+    #610241,
+    #610241,
+    #610241
+  );
+  background-size: 600% 100%;
+  animation-direction: alternate;
+  animation: gradient 16s linear infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0%
-    }
-    100% {
-        background-position: 100%
-    }
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 #modalbody {
-    color: #9df5cc;
-    background-image: linear-gradient(to bottom, #610241, #f1069f, #610241);
+  color: #9df5cc;
+  background-image: linear-gradient(to bottom, #610241, #f1069f, #610241);
 }
 
 .navbar {
-    color: #9df5cc;
-    text-shadow: 2px 2px 2px #f1069f;
-    background-image: linear-gradient(black, black, black);
-    border-bottom: 7px solid #7a0252;
-    font-family: 'Courgette', sans-serif;
-    font-size: 20px;
-    flex-direction: row;
-    white-space: nowrap;
-    text-shadow: 2px 2px 2px #f1069f;
+  color: #9df5cc;
+  text-shadow: 2px 2px 2px #f1069f;
+  background-image: linear-gradient(black, black, black);
+  border-bottom: 7px solid #7a0252;
+  font-family: "Courgette", sans-serif;
+  font-size: 20px;
+  flex-direction: row;
+  white-space: nowrap;
+  text-shadow: 2px 2px 2px #f1069f;
 }
 
 /* Hover Glow */
 .glow :hover {
-    color: rgba(255, 255, 255, 0.856);
-    /* text-align: center; */
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+  color: rgba(255, 255, 255, 0.856);
+  /* text-align: center; */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff,
-         0 0 30px #e60073, 0 0 40px #e60073,
-          0 0 50px #e60073,   0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6,
-         0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6,
-          0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 #socialIcon {
-    background: #007aff;
-    color: white;
-    padding: 11px;
-    border-radius: 50%;
-    text-shadow: 2px 2px 2px #f1069f;
+  background: #007aff;
+  color: white;
+  padding: 11px;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px #f1069f;
 }
 
 /* <Table> */
 table {
-    width: auto;
+  width: auto;
 }
 /* </Table> */
 
 #thumbnailPic {
-    max-width: 180px;
-    max-height: 180px;
-    /* border-radius: 55%; */
+  max-width: 180px;
+  max-height: 180px;
+  /* border-radius: 55%; */
 }
 
 .site-footer {
-    border-top: 7px solid #610241;
-    background-image: linear-gradient(black, black, black);
-    padding: 20px;
-    font-family: 'Courgette', cursive;
+  border-top: 7px solid #610241;
+  background-image: linear-gradient(black, black, black);
+  padding: 20px;
+  font-family: "Courgette", cursive;
 }
 
-
-
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
+/* https://api.instagram.com/oauth/authorize
+  ?client_id=2662938407255430
+  &redirect_uri=https://pbmacrylics.netlify.app/home
+  &scope=user_profile,user_media
+  &response_type=code */
+
+/* "access_token": "IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr", 
+  "user_id": 17841401808795861 */
+/* 
+  curl -X GET \
+  'https://graph.instagram.com/17841401808795861?fields=id,username&access_token=IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr' */
+
+/* https://instagram.com/oauth/authorize/?client_id=291811261930071&redirect_uri=http://instafeedjs.com&response_type=token */

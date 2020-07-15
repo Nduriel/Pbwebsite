@@ -1,6 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+import Image from 'react-bootstrap/Image'
 import { Col, Row, Container, Jumbotron } from "reactstrap";
-// import Image from 'react-bootstrap/Image';
 import { carouselPic, jumbotronPic } from "./photos";
 import {
   Carousel,
@@ -10,36 +10,36 @@ import {
   CarouselCaption,
 } from "reactstrap";
 
-const ImageToggleOnMouseOver = ({ primaryImg, secondaryImg }) => {
-  const imageRef = useRef(null);
+// const ImageToggleOnMouseOver = ({ primaryImg, secondaryImg }) => {
+//   const imageRef = useRef(null);
 
-  return (
-    <img
-      id="bodydivpic"
-      onMouseOver={() => {
-        imageRef.current.src = secondaryImg;
-      }}
-      onMouseOut={() => {
-        imageRef.current.src = primaryImg;
-      }}
-      src={primaryImg}
-      alt=""
-      ref={imageRef}
-    />
-  );
-};
+//   return (
+//     <img
+//       id="bodydivpic"
+//       onMouseOver={() => {
+//         imageRef.current.src = secondaryImg;
+//       }}
+//       onMouseOut={() => {
+//         imageRef.current.src = primaryImg;
+//       }}
+//       src={primaryImg}
+//       alt=""
+//       ref={imageRef}
+//     />
+//   );
+// };
 
-const ImageChangeOnMouseOver = () => {
-  return (
-    <div style={{ marginTop: "10px" }}>
-      <ImageToggleOnMouseOver
-        primaryImg={jumbotronPic.logo}
-        secondaryImg={jumbotronPic.logo2}
-        alt="MainLogo"
-      />
-    </div>
-  );
-};
+// const ImageChangeOnMouseOver = () => {
+//   return (
+//     <div style={{ marginTop: "10px" }}>
+//       <ImageToggleOnMouseOver
+//         primaryImg={jumbotronPic.logo}
+//         secondaryImg={jumbotronPic.logo2}
+//         alt="MainLogo"
+//       />
+//     </div>
+//   );
+// };
 
 function BodyComponent() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -77,7 +77,7 @@ function BodyComponent() {
     );
   });
   return (
-    <Jumbotron fluid>
+    <Jumbotron fluid id="homepage">
       <Container fluid>
         <Row>
           <Col
@@ -89,15 +89,15 @@ function BodyComponent() {
               textAlign: "center",
             }}
           >
-            <div id="bodyBox">
-              <ImageChangeOnMouseOver
+            <div id="bodyBox" className='infoBox'>
+              <Image
                 id="bodydivpic"
                 style={{
                   width: "300px",
                   height: "300px",
                   margin: "10px",
                 }}
-                src={jumbotronPic.logo2}
+                src={jumbotronPic.logo}
                 alt="logopic"
                 fluid
                 roundedCircle
@@ -118,7 +118,7 @@ function BodyComponent() {
               </p>
             </div>
             <br />
-            <div id="bodyBox2">
+            <div id="bodyBox2" className='infoBox'>
               <p style={{ margin: "10px" }}>
                 * By Appointment Only *.
                 <br />

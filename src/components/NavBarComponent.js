@@ -45,7 +45,7 @@ function NavBarComponent() {
 
   const activeStyle = {
     color: "white",
-    textShadow: "5px 5px 5px blue",
+    textShadow: "1px 5px 5px pink",
   };
 
   return (

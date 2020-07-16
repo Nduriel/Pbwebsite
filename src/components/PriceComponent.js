@@ -3,16 +3,6 @@ import { Table, Col, Container, Row } from "reactstrap";
 import Image from "react-bootstrap/Image";
 import { tablePic } from "./photos";
 
-const textCenter = {
-  textAlign: "center",
-};
-
-const rowTitle = {
-  color: "#9df5cc",
-  fontWeight: "bold",
-  textShadow: "2px 2px 2px #f1069f",
-};
-
 function PriceComponent() {
   return (
     <>
@@ -20,7 +10,6 @@ function PriceComponent() {
         dark
         id="prices"
         style={{
-          fontFamily: "Manrope",
           marginTop: "50px",
           marginBottom: "20px",
         }}
@@ -72,37 +61,37 @@ function PriceComponent() {
         </thead>
         <tbody>
           <tr>
-            <td style={rowTitle}>Acrylic Full Set:</td>
-            <td style={textCenter}>$ 35</td>
-            <td style={textCenter}>$ 45</td>
-            <td style={textCenter}>$ 50</td>
+            <td id="rowTitle">Acrylic Full Set:</td>
+            <td id="tableD">$ 35</td>
+            <td id="tableD">$ 45</td>
+            <td id="tableD">$ 50</td>
           </tr>
           <tr>
-            <td style={rowTitle}>Acrylic Fill:</td>
-            <td style={textCenter}>$ 30</td>
-            <td style={textCenter}>$ 35</td>
-            <td style={textCenter}>$ 40</td>
+            <td id="rowTitle">Acrylic Fill:</td>
+            <td id="tableD">$ 30</td>
+            <td id="tableD">$ 35</td>
+            <td id="tableD">$ 40</td>
           </tr>
           <tr>
-            <td style={rowTitle}>Ombre Full Set:</td>
-            <td style={textCenter}>$ 40</td>
-            <td style={textCenter}>$ 55</td>
-            <td style={textCenter}>$ 55</td>
+            <td id="rowTitle">Ombre Full Set:</td>
+            <td id="tableD">$ 40</td>
+            <td id="tableD">$ 55</td>
+            <td id="tableD">$ 55</td>
           </tr>
           <tr>
-            <td style={rowTitle}>Ombre Fill:</td>
-            <td style={textCenter}>$ 35</td>
-            <td style={textCenter}>$ 40</td>
-            <td style={textCenter}>$ 45</td>
+            <td id="rowTitle">Ombre Fill:</td>
+            <td id="tableD">$ 35</td>
+            <td id="tableD">$ 40</td>
+            <td id="tableD">$ 45</td>
           </tr>
           <tr>
-            <td style={rowTitle}>Color Acrylic Full Set:</td>
-            <td style={textCenter}>$ 45</td>
-            <td style={textCenter}>$ 55</td>
-            <td style={textCenter}>$ 60</td>
+            <td id="rowTitle">Color Acrylic Full Set:</td>
+            <td id="tableD">$ 45</td>
+            <td id="tableD">$ 55</td>
+            <td id="tableD">$ 60</td>
           </tr>
           <tr>
-            <td colSpan="4" style={textCenter}>
+            <td colSpan="4" id="tableD">
               ** While a Color Acrylic Fill Set is possible, a Full Set Color
               Acrylic is recommened for, best look.**
             </td>
@@ -117,13 +106,13 @@ function PriceComponent() {
             >
               Add-Ons:
             </td>
-            <td style={textCenter}>
+            <td id="tableD">
               Jeweled: $4 (2 Fingers)
               <br />
               Encapsulated Design: $3 (2 Fingers)
             </td>
-            <td style={textCenter}>Full 'Blinged' out nail: $7</td>
-            <td style={textCenter}>Nail Soak $10</td>
+            <td id="tableD">Full 'Blinged' out nail: $7</td>
+            <td id="tableD">Nail Soak $10</td>
           </tr>
           <tr>
             <td
@@ -135,7 +124,7 @@ function PriceComponent() {
             >
               Toe Color Change:
             </td>
-            <td colSpan="3" style={textCenter}>
+            <td colSpan="3" id="tableD">
               $10 for Gel
             </td>
           </tr>
@@ -149,15 +138,15 @@ function PriceComponent() {
             >
               Extra Drilling:
             </td>
-            <td colSpan="3" style={textCenter}>
+            <td colSpan="3" id="tableD">
               $5 for each hand
             </td>
           </tr>
         </tbody>
       </Table>
-      <Container fluid className='text-center' style={{marginBottom: '20px'}}>
+      <Container fluid className="text-center" style={{ marginBottom: "20px" }}>
         <Row style={{ justifyContent: "center" }}>
-          <Col lg={4} md={4} sm={4} id="bodyBox3" className='infoBox'>
+          <Col lg={4} md={4} sm={4} id="bodyBox3" className="infoBox">
             *Prices are subject to change*
           </Col>
         </Row>

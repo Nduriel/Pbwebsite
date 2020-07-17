@@ -41,7 +41,7 @@ import {
 //   );
 // };
 
-function BodyComponent() {
+function HomePage() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -159,4 +159,4 @@ function BodyComponent() {
     </Jumbotron>
   );
 }
-export default BodyComponent;
+export default HomePage;

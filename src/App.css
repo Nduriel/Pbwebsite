@@ -3,31 +3,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 
 .infoBox {
-  color: #9df5cc;
+  color: white;
   font-weight: bold;
   font-size: 20px;
   border: 7px solid black;
+  border-radius: 1%/1%;
   border-style: groove;
   box-shadow: 10px 10px 10px rgb(31, 29, 29);
   font-family: "Arima Madurai", cursive;
-  text-shadow: 3px 3px 5px #f1069fb4;
+  text-shadow: 3px 3px 5px #2c2128b4;
 }
 
 #bodyBox {
-  background: -webkit-linear-gradient(#9df5cc 1%, #b90a7cc2, rgb(39, 11, 39));
+  background: -webkit-linear-gradient(rgb(3, 235, 243) 30%, #ad0472f3);
   box-shadow: 10px 10px 10px rgb(24, 23, 23);
 }
 
 #bodyBox2 {
   background: -webkit-linear-gradient(
-    rgb(39, 11, 39) 5%,
-    #88075bb4 70%,
-    #9df5ccd0
+    rgb(3, 235, 243), #ad0472f3 
   );
+  color: white;
+  text-shadow: 3px 3px 5px #ad0472f3;
 }
 
 #bodyBox3 {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.87) 10%, #b90a7cc2, #9df5ccd0);
+  background: -webkit-linear-gradient(
+    rgba(0, 0, 0, 0.87) 10%,
+    #b90a7cc2,
+    #9df5ccd0
+  );
   font-size: 20px;
 }
 
@@ -48,8 +53,8 @@
   max-width: 640px;
   width: auto;
   position: relative;
-  border: 15px solid;
-  border-style: groove;
+  border: 13px solid;
+  border-style: inset;
   border-color: rgb(80, 80, 80);
   box-shadow: 5px 5px 10px black;
   box-sizing: border-box;
@@ -145,7 +150,7 @@ body
     #3d0129,
     #3d0129,
     #9df5cc,
-    rgb(3, 235, 243),
+    #9df5cc,
     #9df5cc,
     #9df5cc,
     grey,
@@ -260,8 +265,6 @@ table {
   /* border-radius: 55%; */
 }
 /* </Table> */
-
-
 
 .site-footer {
   border-top: 7px solid #610241;

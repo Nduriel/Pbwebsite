@@ -1,30 +1,27 @@
 import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 import NavbarComponent from "./NavBarComponent";
-import BodyComponent from "./BodyComponent";
+import HomePage from "./HomeComponent";
 import PriceComponent from "./PriceComponent";
 import FooterComponent from "./FooterComponent";
 // import NotFoundPage from "./NotFoundPage";
-import { Switch, Route, Redirect } from "react-router-dom";
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function MainComponent() {
-  const HomePage = () => {
-    return <BodyComponent />;
-  };
+  const Home = () => <HomePage />;
 
-  const Prices = () => {
-    return <PriceComponent />;
-  };
+  const Prices = () => <PriceComponent />;
 
   return (
     <div>
       <NavbarComponent />
       <ToastContainer autoClose={3000} hideProgressBar />
       <Switch>
-        <Route path="/home" component={HomePage} />
-        <Route exact path="/prices" component={Prices} />
-        <Redirect to="home" />
+        <Route exact path="/home" component={Home} />
+        <Route path="/prices" component={Prices} />
+        <Redirect to="/home" />
         {/* <Route component={NotFoundPage} /> */}
       </Switch>
       <FooterComponent />

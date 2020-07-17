@@ -44,8 +44,8 @@ function NavBarComponent() {
   };
 
   const activeStyle = {
-    color: "white",
-    textShadow: "1px 5px 5px pink",
+    color: "rgb(3, 235, 243)",
+    // textShadow: "1px 1px white",
   };
 
   return (
@@ -57,9 +57,10 @@ function NavBarComponent() {
           <Nav className="mr-auto" navbar>
             <NavItem className="glow">
               <NavLink
+                exact
                 className="nav-link"
                 activeStyle={activeStyle}
-                to="/home"
+                to="/"
                 style={{
                   color: "#9df5cc",
                 }}

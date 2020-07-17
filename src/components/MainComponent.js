@@ -4,7 +4,7 @@ import NavbarComponent from "./NavBarComponent";
 import HomePage from "./HomeComponent";
 import PriceComponent from "./PriceComponent";
 import FooterComponent from "./FooterComponent";
-// import NotFoundPage from "./NotFoundPage";
+import NotFoundPage from "./NotFoundPage";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,10 +19,10 @@ function MainComponent() {
       <NavbarComponent />
       <ToastContainer autoClose={3000} hideProgressBar />
       <Switch>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/prices" component={Prices} />
-        <Redirect to="/home" />
-        {/* <Route component={NotFoundPage} /> */}
+        <Redirect to="/" />
+        <Route component={NotFoundPage} />
       </Switch>
       <FooterComponent />
     </div>

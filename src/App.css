@@ -20,9 +20,7 @@
 }
 
 #bodyBox2 {
-  background: -webkit-linear-gradient(
-    rgb(3, 235, 243), #ad0472f3 
-  );
+  background: -webkit-linear-gradient(rgb(3, 235, 243), #ad0472f3);
   color: white;
   text-shadow: 3px 3px 5px #ad0472f3;
 }
@@ -99,7 +97,7 @@
 }
 
 /* Navbar Button */
-body
+/* body
   > div:nth-child(10)
   > div
   > div.modal.fade.show
@@ -109,7 +107,7 @@ body
   > button
   > span {
   color: #9df5cc;
-}
+} */
 /* Nav Social Buton */
 #root > div > div > nav > button {
   border: 1px solid #9df5cc;
@@ -118,6 +116,31 @@ body
   border-radius: 6%;
   background-color: lightgreen;
   background-color: #f1069f;
+}
+
+#navButton {
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 4px 4px 5px lightgreen;
+  text-shadow: 2px 2px 2px black;
+  margin: 10px;
+  border: 1px solid black;
+  border-style: outset;
+  border-radius: 5%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(3, 235, 243),
+    rgb(3, 235, 243),
+    #ad0472f3,
+    #ad0472f3,
+    #ad0472f3,
+    rgb(3, 235, 243),
+    rgb(3, 235, 243)
+  );
+  background-size: 600% 100%;
+  animation-direction: alternate;
+  animation: gradient 16s linear infinite;
+  display: block;
 }
 
 #dropIG {
@@ -165,7 +188,6 @@ body
   display: block;
 }
 body {
- 
   background-image: linear-gradient(
     45deg,
     #3d0129,

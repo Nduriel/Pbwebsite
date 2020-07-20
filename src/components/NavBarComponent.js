@@ -26,15 +26,6 @@ function NavBarComponent() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  const buttonStyle = {
-    fontWeight: "bold",
-    fontSize: "18px",
-    boxShadow: "2px 2px 2px #f1069f",
-    textShadow: "2px 2px 2px #f1069f",
-    margin: "10px",
-    borderRadius: "5%",
-  };
-
   const navbarIcon = {
     color: "#9df5cc",
     background: "black",
@@ -127,7 +118,7 @@ function NavBarComponent() {
               color="primary"
               onClick={toggleModal}
               size="lg"
-              style={buttonStyle}
+             id='navButton'
             >
               Appointments
             </Button>

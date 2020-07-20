@@ -11,6 +11,7 @@ import {
   NavItem,
   DropdownItem,
   DropdownMenu,
+  Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
@@ -36,95 +37,99 @@ function NavBarComponent() {
 
   const activeStyle = {
     color: "rgb(3, 235, 243)",
-    // textShadow: "1px 1px white",
+    textShadow: "1px 1px white",
   };
 
   return (
     <>
       <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
       <Navbar light collapseOnSelect expand="md" classticky="top">
-        <NavbarToggler onClick={toggle} aria-controls="responsive-navbar-nav" />
-        <Collapse isOpen={isOpen} className='text-center' navbar id="responsive-navbar-nav">
-          <Nav className="mr-auto" navbar>
-            <NavItem className="glow">
-              <NavLink
-                exact
-                className="nav-link"
-                activeStyle={activeStyle}
-                to="/"
-                style={{
-                  color: "#9df5cc",
-                }}
-              >
-                Home
-              </NavLink>
-            </NavItem>
-            <NavItem className="glow">
-              <NavLink
-                className="nav-link"
-                activeStyle={activeStyle}
-                to="/prices"
-                style={{
-                  color: "#9df5cc",
-                }}
-              >
-                Prices
-              </NavLink>
-            </NavItem>
-            <UncontrolledDropdown className="glow">
-              <DropdownToggle nav caret style={{ color: "#9df5cc" }}>
-                Social
-              </DropdownToggle>
-              <DropdownMenu
-                right
-                style={{
-                  border: "3px solid purple",
-                  background: "black",
-                  color: "white",
-                }}
-              >
-                <DropdownItem
-                  // {  color: "white", background: "#bc2a8d" }
-                  href="http://instagram.com/polished.bymia/"
-                  id="dropIG"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-hidden="true"
-                >
-                  <i className="fa fa-instagram fa-lg" /> #Instagram
-                </DropdownItem>
-                <DropdownItem
-                  href="http://facebook.com/polishedbymia/"
+        <Container fluid>
+          <NavbarToggler
+            onClick={toggle}
+            aria-controls="responsive-navbar-nav"
+          />
+          <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
+            <Nav className="mr-auto" navbar>
+              <NavItem className="glow">
+                <NavLink
+                  exact
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                  to="/"
                   style={{
-                    color: "white",
-                    background: "#007aff",
+                    color: "#9df5cc",
                   }}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-hidden="true"
                 >
-                  <i className="fa fa-facebook fa-lg" /> @Facebook
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <Nav>
-            <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
-              PBM
-            </NavbarBrand>
-          </Nav>
-          <Nav className="ml-auto">
-            <Button
-              color="primary"
-              onClick={toggleModal}
-              size="lg"
-              id="navButton"
-            >
-              Appointments
-            </Button>
-          </Nav>
-          <Nav></Nav>
-        </Collapse>
+                   <i className="fa fa-home fa-lg" />&nbsp;Home
+                </NavLink>
+              </NavItem>
+              <NavItem className="glow">
+                <NavLink
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                  to="/prices"
+                  style={{
+                    color: "#9df5cc",
+                  }}
+                >
+                 <i className="fa fa-usd fa-lg" />&nbsp; Prices
+                </NavLink>
+              </NavItem>
+              <UncontrolledDropdown className="glow">
+                <DropdownToggle nav caret style={{ color: "#9df5cc" }}>
+                  Social
+                </DropdownToggle>
+                <DropdownMenu
+                  right
+                  style={{
+                    border: "3px solid purple",
+                    background: "black",
+                    color: "white",
+                  }}
+                >
+                  <DropdownItem
+                    // {  color: "white", background: "#bc2a8d" }
+                    href="http://instagram.com/polished.bymia/"
+                    id="dropIG"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-hidden="true"
+                  >
+                    <i className="fa fa-instagram fa-lg" /> #Instagram
+                  </DropdownItem>
+                  <DropdownItem
+                    href="http://facebook.com/polishedbymia/"
+                    style={{
+                      color: "white",
+                      background: "#007aff",
+                    }}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-hidden="true"
+                  >
+                    <i className="fa fa-facebook fa-lg" /> @Facebook
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+            <Nav>
+              <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
+                PBM
+              </NavbarBrand>
+            </Nav>
+            <Nav className="ml-auto"></Nav>
+            <Nav></Nav>
+          </Collapse>
+          <Button
+            color="primary"
+            onClick={toggleModal}
+            size="lg"
+            id="appButton"
+          >
+            Appointments
+          </Button>
+        </Container>
       </Navbar>
     </>
   );

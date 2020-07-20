@@ -121,17 +121,7 @@
   display: block;
 }
 
-#dropIG {
-  color: white;
-  background: -webkit-linear-gradient(
-    left top,
-    #8a3ab9,
-    #e95950,
-    #bc2a8d,
-    #cd486b,
-    #4c68d7
-  );
-}
+
 
 @media only screen and (max-width: 780px) {
   #goneText {
@@ -199,7 +189,7 @@ body
 
 /* Modal */
 
-/*NAVBAR*/
+/*<NAVBAR>*/
 .navbar {
   color: white;
   text-shadow: 2px 2px 2px #f1069f;
@@ -210,6 +200,20 @@ body
   white-space: nowrap;
   text-shadow: 2px 2px 2px #f1069f;
 }
+/* 
+#dropIG {
+  color: white;
+  background: -webkit-linear-gradient(
+    left top,
+    #8a3ab9,
+    #e95950,
+    #bc2a8d,
+    #cd486b,
+    #4c68d7
+  );
+} */
+
+#dropDown { }
 
 /* Navbar Button */
 #root > div > div > nav > div > button > span {
@@ -222,7 +226,7 @@ body
   background-color: #f1069f;
 }
 
-/*NAVBAR*/
+/* </NAVBAR>*/
 
 /* Hover Glow */
 .glow :hover {
@@ -299,7 +303,6 @@ table {
   'https://graph.instagram.com/17841401808795861?fields=id,username&access_token=IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr' */
 
 /* https://instagram.com/oauth/authorize/?client_id=291811261930071&redirect_uri=http://instafeedjs.com&response_type=token */
-
 
 /* body {
   background-image: linear-gradient(

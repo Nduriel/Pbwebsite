@@ -36,7 +36,7 @@ function NavBarComponent() {
   };
 
   const activeStyle = {
-    color: "rgb(3, 235, 243)",
+    color: "#9df5cc",
     textShadow: "1px 1px white",
   };
 
@@ -58,10 +58,11 @@ function NavBarComponent() {
                   activeStyle={activeStyle}
                   to="/"
                   style={{
-                    color: "#9df5cc",
+                    color: "white",
                   }}
                 >
-                   <i className="fa fa-home fa-lg" />&nbsp;Home
+                  <i className="fa fa-home fa-sm" />
+                  &nbsp;Home
                 </NavLink>
               </NavItem>
               <NavItem className="glow">
@@ -70,15 +71,17 @@ function NavBarComponent() {
                   activeStyle={activeStyle}
                   to="/prices"
                   style={{
-                    color: "#9df5cc",
+                    color: "white",
                   }}
                 >
-                 <i className="fa fa-usd fa-lg" />&nbsp; Prices
+                  <i className="fa fa-usd fa-sm" />
+                  &nbsp; Prices
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown className="glow">
-                <DropdownToggle nav caret style={{ color: "#9df5cc" }}>
-                  Social
+                <DropdownToggle nav caret style={{ color: "rgb(3, 235, 243)" }}>
+                  <i className="fa fa-comments fa-sm" />
+                  &nbsp; Social
                 </DropdownToggle>
                 <DropdownMenu
                   right
@@ -89,9 +92,7 @@ function NavBarComponent() {
                   }}
                 >
                   <DropdownItem
-                    // {  color: "white", background: "#bc2a8d" }
                     href="http://instagram.com/polished.bymia/"
-                    id="dropIG"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-hidden="true"

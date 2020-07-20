@@ -21,7 +21,7 @@ function NavBarComponent() {
   const toggleModal = () => {
     setModal(!isModalOpen);
   };
-  
+
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -44,7 +44,7 @@ function NavBarComponent() {
       <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <NavbarToggler onClick={toggle} aria-controls="responsive-navbar-nav" />
-        <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
+        <Collapse isOpen={isOpen} className='text-center' navbar id="responsive-navbar-nav">
           <Nav className="mr-auto" navbar>
             <NavItem className="glow">
               <NavLink
@@ -118,7 +118,7 @@ function NavBarComponent() {
               color="primary"
               onClick={toggleModal}
               size="lg"
-             id='navButton'
+              id="navButton"
             >
               Appointments
             </Button>

@@ -293,7 +293,8 @@ table {
   border-top: 7px solid #610241;
   background-image: linear-gradient(black, black, black);
   padding: 20px;
-  font-family: "Courgette", cursive;
+  font-family: "Arima Madurai", cursive;
+  font-weight: bold;
 }
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/

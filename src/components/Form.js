@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Col, Row, Button, Label } from "reactstrap";
 import { Control, LocalForm, Errors } from "react-redux-form";
 import DatePicker from "react-datepicker";
 import { toast } from "react-toastify";
-import { Col, Row, Button, Label } from "reactstrap";
+import * as emailjs from "emailjs-com";
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !val || val.length <= len;
@@ -49,37 +50,30 @@ function ModalForm(props) {
     },
   });
 
-  const dateChange = (date) => {
-    setState({
-      reserveDate: date,
-    });
-  };
-
   const handleSubmit = (values) => {
     console.log("Current state is: " + JSON.stringify(values));
 
-    const templateId = "template_LxHtPzZx";
-
-    const sendFeedback = (templateId, variables) => {
-      window.emailjs
-        .send("gmail", templateId, variables)
-        .then((res) => {
-          console.log("Email successfully sent!");
-        })
-        // Handle errors here however you like, or use a React error boundary
-        .catch((err) =>
-          console.error(
-            "Oh well, you failed. Here some thoughts on the error that occured:",
-            err
-          )
-        );
+    let templateParams = {
+      from_name: values.email,
+      to_name: "Polished By Mia",
+      subject: "Test Reservation",
+      message_html: JSON.stringify(values),
+      name: `${values.firstName} ${values.lastName}`,
+      firstName: values.firstName,
+      lastName: values.lastName,
+      time: values.time,
+      date: values.reserveDate,
+      phoneNum: values.phoneNum,
+      email: values.email,
+      contactType: values.contactType,
     };
 
-    sendFeedback(templateId, {
-      message_html: "Email Test",
-      from_name: values.name + values.lastName,
-      reply_to: values.email,
-    });
+    emailjs.send(
+      "smtp_server", //Service ID
+      "contact_form",
+      templateParams,
+      "user_9GjxpWZZ0F6izgIeY4tSQ" //User Id
+    );
 
     toast.success(
       `Thankyou ${values.firstName}! I will get back to you as soon as possible!`
@@ -88,13 +82,14 @@ function ModalForm(props) {
   };
 
   const handleChange = ({ target }) => {
-    //const target = event.target *shorter syntax*
-
     setState({ ...state, [target.value]: target.value });
-    //the [] indicate "Computed Property" in this case, not array.
-    //Allows us to set a property, based on a variable.
   };
 
+  const dateChange = (date) => {
+    setState({
+      reserveDate: date,
+    });
+  };
   return (
     <LocalForm
       type="file"
@@ -259,10 +254,8 @@ function ModalForm(props) {
                 className="form-control"
                 model=".reserveDate"
                 selected={state.reserveDate}
-                onDateChange={(date) => {
-                  this.setState({ reserveDate: date });
-                }}
                 onChange={dateChange}
+                minDate={new Date()}
                 component={DatePicker}
                 name="reserveDate"
                 id="reserveDate"

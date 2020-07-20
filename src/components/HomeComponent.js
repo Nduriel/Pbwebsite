@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from 'react-bootstrap/Image'
+import Image from "react-bootstrap/Image";
 import { Col, Row, Container, Jumbotron } from "reactstrap";
 import { carouselPic, jumbotronPic } from "./photos";
 import {
@@ -89,7 +89,7 @@ function HomePage() {
               textAlign: "center",
             }}
           >
-            <div id="bodyBox" className='infoBox'>
+            <div id="bodyBox" className="infoBox">
               <Image
                 id="bodydivpic"
                 style={{
@@ -118,7 +118,7 @@ function HomePage() {
               </p>
             </div>
             <br />
-            <div id="bodyBox2" className='infoBox'>
+            <div id="bodyBox2" className="infoBox">
               <p style={{ margin: "10px" }}>
                 * By Appointment Only *.
                 <br />

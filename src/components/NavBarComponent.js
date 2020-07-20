@@ -18,12 +18,12 @@ import ModalComponent from "./ModalComponent";
 function NavBarComponent() {
   //Modal Toggler
   const [isModalOpen, setModal] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => {
     setModal(!isModalOpen);
   };
-
+  
   //Navbar Toggler
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   const buttonStyle = {

@@ -34,7 +34,7 @@ function PriceComponent() {
           hover
           variant="dark"
         >
-          <thead style={{ color: "pink", fontWeight: "bold" }}>
+          <thead style={{ color: "lightgreen", fontWeight: "bold" }}>
             <tr style={{ textAlign: "center" }}>
               <th>
                 <Image id="thumbnailPic" src={tablePic.tpic} thumbnail fluid />
@@ -106,8 +106,10 @@ function PriceComponent() {
             </tr>
             <tr>
               <td colSpan="4" id="tableD">
-                ** While a Color Acrylic Fill Set is possible, a Full Set Color
-                Acrylic is recommened for, best look.**
+                ** While a&nbsp;
+                <span id="rowTitle">Color Acrylic Fill Set</span> is possible, a
+                &nbsp;<span id="rowTitle">Full Set Color Acrylic</span> is
+                recommened for, best look.**
               </td>
             </tr>
             <tr>
@@ -115,7 +117,7 @@ function PriceComponent() {
                 style={{
                   color: "violet",
                   fontWeight: "bold",
-                  textShadow: "2px 2px 2px #f1069f",
+                  textShadow: "1px 1px 1px #f1069f",
                 }}
               >
                 Add-Ons:
@@ -133,7 +135,7 @@ function PriceComponent() {
                 style={{
                   color: "violet",
                   fontWeight: "bold",
-                  textShadow: "2px 2px 2px #f1069f",
+                  textShadow: "1px 1px 1px #f1069f",
                 }}
               >
                 Toe Color Change:
@@ -147,7 +149,7 @@ function PriceComponent() {
                 style={{
                   color: "violet",
                   fontWeight: "bold",
-                  textShadow: "2px 2px 2px #f1069f",
+                  textShadow: "1px 1px 1px #f1069f",
                 }}
               >
                 Extra Drilling:

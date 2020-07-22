@@ -3,14 +3,7 @@ import { Col, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import ModalForm from "./Form";
 
 const modalFont = {
-  top: {
-    backgroundColor: "black",
-    color: "#9df5cc",
-    borderBottomColor: "purple",
-    fontStyle: "italic",
-    textAlign: "center",
-    textShadow: "2px 2px 2px #f1069f",
-  },
+  top: {},
   bottom: {
     backgroundColor: "black",
     color: "#9df5cc",
@@ -33,14 +26,16 @@ function ModalComponent(props) {
         fade
         autoFocus
       >
-        <ModalHeader toggle={props.toggleModal} style={modalFont.top}>
+        <ModalHeader
+          // toggle={props.toggleModal} modal 'x'
+          id="modalHead"
+        >
           Send me your info and I'll contact you asap!
-          <br />
         </ModalHeader>
         <ModalBody id="modalbody">
           <ModalForm toggleModal={props.toggleModal} />
         </ModalBody>
-        <ModalFooter style={modalFont.bottom}>
+        <ModalFooter id="modalHead">
           <Col>
             **Dates and time submitted are not guaranteed**
             <br />

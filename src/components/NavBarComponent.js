@@ -4,24 +4,26 @@ import {
   Navbar,
   Nav,
   NavbarToggler,
-  UncontrolledDropdown,
   DropdownToggle,
   Collapse,
   NavbarBrand,
   NavItem,
   DropdownItem,
   DropdownMenu,
+  Dropdown,
   Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   //Modal Toggler
   const [isModalOpen, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!isModalOpen);
   };
+  const droptoggle = () => setDropdownOpen((prevState) => !prevState);
 
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
@@ -45,6 +47,9 @@ function NavBarComponent() {
       <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
+          <NavbarBrand style={navbarIcon} id="goneText" href="#home">
+            PBM
+          </NavbarBrand>
           <NavbarToggler
             onClick={toggle}
             aria-controls="responsive-navbar-nav"
@@ -61,8 +66,11 @@ function NavBarComponent() {
                     color: "white",
                   }}
                 >
-                  <i className="fa fa-home fa-sm" />
-                  &nbsp;Home
+                  {/* <i
+                    className="fa fa-home fa-sm"
+                    style={{ color: "rgb(3, 235, 243)" }}
+                  /> */}
+                  Home
                 </NavLink>
               </NavItem>
               <NavItem className="glow">
@@ -74,53 +82,57 @@ function NavBarComponent() {
                     color: "white",
                   }}
                 >
-                  <i className="fa fa-usd fa-sm" />
-                  &nbsp; Prices
+                  Prices
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown className="glow">
-                <DropdownToggle nav caret style={{ color: "rgb(3, 235, 243)" }}>
-                  <i className="fa fa-comments fa-sm" />
-                  &nbsp; Social
+              <Dropdown
+                // className="glow"
+                isOpen={dropdownOpen}
+                toggle={droptoggle}
+                size="sm"
+              >
+                <DropdownToggle nav style={{ color: "white" }}>
+                  <i
+                    className="fa fa-comments fa-sm"
+                    style={{ color: "rgb(3, 235, 243)" }}
+                  />
+                  &nbsp;Social
                 </DropdownToggle>
-                <DropdownMenu
-                  right
-                  style={{
-                    border: "3px solid purple",
-                    background: "black",
-                    color: "white",
-                  }}
-                >
+                <DropdownMenu id="dropDown">
                   <DropdownItem
+                    className="DropDownItem"
                     href="http://instagram.com/polished.bymia/"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-hidden="true"
+                    style={{
+                      color: "white",
+                      textShadow: "2px 2px 2px red",
+                      fontWeight: "bold",
+                    }}
                   >
-                    <i className="fa fa-instagram fa-lg" /> #Instagram
+                    <i className="fa fa-instagram fa-lg" id="dropIg" />
+                    &nbsp;Instagram
                   </DropdownItem>
+                  <DropdownItem divider />
                   <DropdownItem
+                    className="DropDownItem1"
                     href="http://facebook.com/polishedbymia/"
                     style={{
                       color: "white",
-                      background: "#007aff",
+                      textShadow: "2px 2px 2px blue",
+                      fontWeight: "bold",
                     }}
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-hidden="true"
                   >
-                    <i className="fa fa-facebook fa-lg" /> @Facebook
+                    <i className="fa fa-facebook fa-lg" id="dropFb" />
+                    &nbsp; Facebook
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </Dropdown>
             </Nav>
-            <Nav>
-              <NavbarBrand className="mr-5" style={navbarIcon} href="#home">
-                PBM
-              </NavbarBrand>
-            </Nav>
-            <Nav className="ml-auto"></Nav>
-            <Nav></Nav>
           </Collapse>
           <Button
             color="primary"

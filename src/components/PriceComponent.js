@@ -1,8 +1,8 @@
 import React from "react";
 import { Table, Col, Jumbotron, Row, Container } from "reactstrap";
-import { Fade } from "react-animation-components";
+import { Fade, Stagger } from "react-animation-components";
 import Image from "react-bootstrap/Image";
-import { tablePic } from "./photos";
+import { tablePic, priceList } from "./photos";
 
 function PriceComponent() {
   return (
@@ -81,36 +81,17 @@ function PriceComponent() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td id="rowTitle">Acrylic Full Set:</td>
-                <td id="tableD">$ 35</td>
-                <td id="tableD">$ 45</td>
-                <td id="tableD">$ 50</td>
-              </tr>
-              <tr>
-                <td id="rowTitle">Acrylic Fill:</td>
-                <td id="tableD">$ 30</td>
-                <td id="tableD">$ 35</td>
-                <td id="tableD">$ 40</td>
-              </tr>
-              <tr>
-                <td id="rowTitle">Ombre Full Set:</td>
-                <td id="tableD">$ 40</td>
-                <td id="tableD">$ 55</td>
-                <td id="tableD">$ 55</td>
-              </tr>
-              <tr>
-                <td id="rowTitle">Ombre Fill:</td>
-                <td id="tableD">$ 35</td>
-                <td id="tableD">$ 40</td>
-                <td id="tableD">$ 45</td>
-              </tr>
-              <tr>
-                <td id="rowTitle">Color Acrylic Full Set:</td>
-                <td id="tableD">$ 45</td>
-                <td id="tableD">$ 55</td>
-                <td id="tableD">$ 60</td>
-              </tr>
+              {priceList.map((price) => {
+                return (
+                  <tr key={price.id}>
+                    <td id="rowTitle">{price.name}</td>
+                    <td id="tableD">{price.short}</td>
+                    <td id="tableD">{price.med}</td>
+                    <td id="tableD">{price.long}</td>
+                  </tr>
+                );
+              })}
+
               <tr>
                 <td colSpan="4" id="tableD">
                   ** While a&nbsp;

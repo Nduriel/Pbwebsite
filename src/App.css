@@ -124,6 +124,7 @@
 }
 
 .jumbotron {
+  font-family: "Arima Madurai", cursive;
   margin: 0;
   width: 100%;
   /* background-image: url('./images/butterfly1.jpg'); */
@@ -164,29 +165,16 @@
 /* Modal */
 
 #modalHead {
-  background-image: linear-gradient(
-    45deg,
-    rgb(3, 235, 243),
-    rgb(3, 235, 243),
-    #ad0472f3,
-    #ad0472f3,
-    #ad0472f3,
-    rgb(3, 235, 243),
-    rgb(3, 235, 243)
-  );
-  background-size: 600% 100%;
-  animation-direction: alternate;
-  animation: gradient 16s linear infinite;
+  background-color: purple;
   display: block;
-  color: #9df5cc;
+  color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
 }
 
 #modalbody {
-  
   color: #9df5cc;
-  background: black;
+  background: radial-gradient(circle, rebeccapurple, black);
 }
 
 /*Modal Close Button*/
@@ -207,6 +195,7 @@ body
 
 /*<NAVBAR>*/
 .navbar {
+  font-family: "Arima Madurai", cursive;
   color: white;
   text-shadow: 2px 2px 2px #f1069f;
   background: black;
@@ -235,7 +224,7 @@ body
 
 .DropDownItem:hover {
   background-image: linear-gradient(
-    45deg,
+    90deg,
     purple,
     purple,
     purple,
@@ -258,7 +247,7 @@ body
 }
 .DropDownItem1:hover {
   background-image: linear-gradient(
-    45deg,
+    90deg,
     #007aff,
     #007aff,
     #007aff,
@@ -323,7 +312,7 @@ body
 /* <Table> */
 #prices {
   font-family: "Manrope";
-  opacity: .95;
+  opacity: 0.95;
 }
 table {
   width: auto;
@@ -337,7 +326,6 @@ table {
   color: rgb(3, 235, 243);
   text-shadow: 1px 1px 1px blue;
   font-weight: bold;
-
 }
 
 #thumbnailPic {

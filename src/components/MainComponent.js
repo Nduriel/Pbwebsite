@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import NavbarComponent from "./NavBarComponent";
 import HomePage from "./HomeComponent";
 import PriceComponent from "./PriceComponent";
@@ -18,12 +19,16 @@ function MainComponent() {
     <div>
       <NavbarComponent />
       <ToastContainer autoClose={3000} hideProgressBar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/prices" component={Prices} />
-        <Redirect to="/" />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition classNames="page" timeout={300}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/prices" component={Prices} />
+            <Redirect to="/" />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
       <FooterComponent />
     </div>
   );

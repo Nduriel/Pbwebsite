@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FadeTransform } from "react-animation-components";
 import Image from "react-bootstrap/Image";
 import { Col, Row, Container, Jumbotron } from "reactstrap";
 import { carouselPic, jumbotronPic } from "./photos";
@@ -89,45 +90,60 @@ function HomePage() {
               textAlign: "center",
             }}
           >
-            <div id="bodyBox" className="infoBox">
-              <Image
-                id="bodydivpic"
-                style={{
-                  width: "300px",
-                  height: "300px",
-                  margin: "10px",
-                }}
-                src={jumbotronPic.logo}
-                alt="logopic"
-                fluid
-                roundedCircle
-              />
-              <br />
-              <p>
-                Polished By Mia
-                <sub>
-                  <i
-                    className="fa fa-copyright"
-                    aria-hidden="true"
-                    style={{ fontSize: "13px" }}
-                  />
-                </sub>{" "}
-                is an Acrylic service that caters to clients, exclusively, in
-                the Newport News and surrounding Hampton Roads area (757). Check
-                out the gallery here, or Facebook and Instagram for my work!
-              </p>
-            </div>
-            <br />
-            <div id="bodyBox2" className="infoBox">
-              <p style={{ margin: "10px" }}>
-                * By Appointment Only *.
+            <FadeTransform
+              in
+              transformProps={{
+                exitTransform: "scale(0.5) translateY(50%)",
+              }}
+            >
+              <div id="bodyBox" className="infoBox">
+                <Image
+                  id="bodydivpic"
+                  style={{
+                    width: "300px",
+                    height: "300px",
+                    margin: "10px",
+                  }}
+                  src={jumbotronPic.logo}
+                  alt="logopic"
+                  fluid
+                  roundedCircle
+                />
                 <br />
-                Due to the Coronavirus Pandemic, masks are *required* every
-                visit.
-                <br /> No Exceptions! <br />
-              </p>
-            </div>
-            <br />
+                <p>
+                  Polished By Mia
+                  <sub>
+                    <i
+                      className="fa fa-copyright"
+                      aria-hidden="true"
+                      style={{ fontSize: "13px" }}
+                    />
+                  </sub>{" "}
+                  is an Acrylic service that caters to clients, exclusively, in
+                  the Newport News and surrounding Hampton Roads area (757).
+                  Check out the gallery here, or Facebook and Instagram for my
+                  work!
+                </p>
+              </div>
+            </FadeTransform>
+            <FadeTransform
+              in
+              transformProps={{
+                exitTransform: "scale(1.0) translateY(100%)",
+              }}
+            >
+              <br />
+              <div id="bodyBox2" className="infoBox">
+                <p style={{ margin: "10px" }}>
+                  * By Appointment Only *.
+                  <br />
+                  Due to the Coronavirus Pandemic, masks are *required* every
+                  visit.
+                  <br /> No Exceptions! <br />
+                </p>
+              </div>
+              <br />
+            </FadeTransform>
           </Col>
           <Col
             lg={{ size: 5, offset: 1 }}
@@ -135,24 +151,35 @@ function HomePage() {
             sm={{ size: 10, offset: 1 }}
             xs={12}
           >
-            <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-              <CarouselIndicators
-                items={carouselPic}
+            <FadeTransform
+              in
+              transformProps={{
+                exitTransform: "scale(0.9) translateY(0%)",
+              }}
+            >
+              <Carousel
                 activeIndex={activeIndex}
-                onClickHandler={goToIndex}
-              />
-              {slides}
-              <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-              />
-              <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-              />
-            </Carousel>
+                next={next}
+                previous={previous}
+              >
+                <CarouselIndicators
+                  items={carouselPic}
+                  activeIndex={activeIndex}
+                  onClickHandler={goToIndex}
+                />
+                {slides}
+                <CarouselControl
+                  direction="prev"
+                  directionText="Previous"
+                  onClickHandler={previous}
+                />
+                <CarouselControl
+                  direction="next"
+                  directionText="Next"
+                  onClickHandler={next}
+                />
+              </Carousel>
+            </FadeTransform>
           </Col>
         </Row>
       </Container>

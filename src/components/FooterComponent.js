@@ -14,18 +14,15 @@ function FooterComponent() {
     <footer className="site-footer" style={footerFont}>
       <Row>
         <Col
-          lg={4}
-          id="goneText"
           className="text-center"
+          id="goneText"
+          lg={4}
           style={{
             paddingTop: "15px",
             borderRight: "3px double #9df5cc",
           }}
         >
-          <span>
-            <i className="fa fa-copyright" aria-hidden="true" />
-            PolishedByMia
-          </span>
+          "Modern touch, Beautiful feel"
         </Col>
         <Col className="text-center" lg={4} md={12} sm={12}>
           <a
@@ -48,16 +45,20 @@ function FooterComponent() {
             <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
           </a>
         </Col>
+
         <Col
-          className="text-center"
-          id="goneText"
           lg={4}
+          id="goneText"
+          className="text-center"
           style={{
             paddingTop: "15px",
             borderLeft: "3px double #9df5cc",
           }}
         >
-          "Modern touch, Beautiful feel"
+          <span>
+            <i className="fa fa-copyright" aria-hidden="true" />
+            PolishedByMia
+          </span>
         </Col>
       </Row>
     </footer>

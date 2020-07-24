@@ -147,7 +147,7 @@
   );
   background-size: 600% 100%;
   animation-direction: alternate;
-  animation: gradient 16s linear infinite;
+  animation: gradient 16s ease infinite;
   display: block;
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Table, Col, Jumbotron, Row, Container } from "reactstrap";
-import { Fade, Stagger } from "react-animation-components";
+import { Fade } from "react-animation-components";
 import Image from "react-bootstrap/Image";
 import { tablePic, priceList } from "./photos";
 

@@ -129,7 +129,7 @@ function NavBarComponent() {
                     rel="noreferrer noopener"
                     aria-hidden="true"
                   >
-                    <i className="fa fa-facebook fa-lg" id="dropFb" />
+                    <i className="fa fa-facebook-square" id="dropFb" />
                     &nbsp; Facebook
                   </DropdownItem>
                 </DropdownMenu>

@@ -32,7 +32,7 @@ function FooterComponent() {
             rel="noopener noreferrer"
             href="mailto:Mmnuoz214@gmail.com"
           >
-            <i id="socialIcon" className="fa fa-envelope-o" />
+            <i id="socialIcon" className="fa fa-envelope" />
           </a>
           <span id="goneText">Questions? Comments?</span>
           <a

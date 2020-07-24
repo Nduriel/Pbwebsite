@@ -91,7 +91,6 @@ function PriceComponent() {
                   </tr>
                 );
               })}
-
               <tr>
                 <td colSpan="4" id="tableD">
                   ** While a&nbsp;

@@ -54,11 +54,12 @@ function NavBarComponent() {
             onClick={toggle}
             aria-controls="responsive-navbar-nav"
           />
-          <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
+          <Collapse isOpen={isOpen}  navbar id="responsive-navbar-nav">
             <Nav className="mr-auto" navbar>
               <NavItem className="glow">
                 <NavLink
                   exact
+                  onClick={toggle}
                   className="nav-link"
                   activeStyle={activeStyle}
                   to="/"
@@ -75,6 +76,7 @@ function NavBarComponent() {
               </NavItem>
               <NavItem className="glow">
                 <NavLink
+                onClick={toggle}
                   className="nav-link"
                   activeStyle={activeStyle}
                   to="/prices"

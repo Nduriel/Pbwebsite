@@ -19,7 +19,7 @@ function FooterComponent() {
           lg={4}
           style={{
             paddingTop: "15px",
-            borderRight: "3px double #9df5cc",
+            borderRight: "3px outset pink",
           }}
         >
           "Modern touch, Beautiful feel"
@@ -52,12 +52,12 @@ function FooterComponent() {
           className="text-center"
           style={{
             paddingTop: "15px",
-            borderLeft: "3px double #9df5cc",
+            borderLeft: "3px outset pink",
           }}
         >
           <span>
             <i className="fa fa-copyright" aria-hidden="true" />
-            PolishedByMia
+            <i>PolishedByMia</i>
           </span>
         </Col>
       </Row>

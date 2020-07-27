@@ -47,10 +47,10 @@
   max-width: 640px;
   width: auto;
   position: relative;
-  border: 13px solid;
+  border: 10px solid;
   border-style: ridge;
   border-color: rgb(80, 80, 80);
-  box-shadow: 10px 10px 10px rgb(31, 29, 29);
+  box-shadow: 8px 8px 10px rgb(31, 29, 29);
   box-sizing: border-box;
   max-height: 650px;
 }
@@ -88,7 +88,7 @@
 .capText {
   font-weight: bold;
   color: #9df5cc;
-  font-size: 18px;
+  font-size: 19px;
   text-shadow: 2px 2px 2px #f1069f;
 }
 
@@ -312,7 +312,7 @@ body
 /* <Table> */
 #prices {
   font-family: "Manrope";
-  opacity: 0.95;
+  opacity: 0.99;
 }
 table {
   width: auto;

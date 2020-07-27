@@ -11,36 +11,7 @@ import {
   CarouselCaption,
 } from "reactstrap";
 
-// const ImageToggleOnMouseOver = ({ primaryImg, secondaryImg }) => {
-//   const imageRef = useRef(null);
-
-//   return (
-//     <img
-//       id="bodydivpic"
-//       onMouseOver={() => {
-//         imageRef.current.src = secondaryImg;
-//       }}
-//       onMouseOut={() => {
-//         imageRef.current.src = primaryImg;
-//       }}
-//       src={primaryImg}
-//       alt=""
-//       ref={imageRef}
-//     />
-//   );
-// };
-
-// const ImageChangeOnMouseOver = () => {
-//   return (
-//     <div style={{ marginTop: "10px" }}>
-//       <ImageToggleOnMouseOver
-//         primaryImg={jumbotronPic.logo}
-//         secondaryImg={jumbotronPic.logo2}
-//         alt="MainLogo"
-//       />
-//     </div>
-//   );
-// };
+// const Instafeed = require("instafeed.js");
 
 function HomePage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -64,6 +35,21 @@ function HomePage() {
     if (animating) return;
     setActiveIndex(newIndex);
   };
+
+  // let userFeed = new Instafeed({
+  //   get: "user",
+  //   sortBy: "random",
+  //   resolution: "thumbnail",
+  //   tagName: "polishedbymia",
+  //   userId: "375164293",
+  //   clientId: "291811261930071",
+  //   target: "instafeed",
+  //   template:
+  //     '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>',
+  //   accessToken:
+  //     "IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr",
+  // });
+  // userFeed.run();
 
   const slides = carouselPic.map((item) => {
     return (

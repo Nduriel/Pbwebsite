@@ -358,26 +358,3 @@ table {
   'https://graph.instagram.com/17841401808795861?fields=id,username&access_token=IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr' */
 
 /* https://instagram.com/oauth/authorize/?client_id=291811261930071&redirect_uri=http://instafeedjs.com&response_type=token */
-
-/* body {
-  background-image: linear-gradient(
-    45deg,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #9df5cc,
-    #9df5cc,
-    #9df5cc,
-    #9df5cc,
-    grey,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129
-  );
-  background-size: 600% 100%;
-  animation-direction: alternate;
-  animation: gradient 16s linear infinite;
-} */

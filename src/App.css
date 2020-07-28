@@ -6,7 +6,7 @@
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border: 7px solid black;
+  border: 4px solid black;
   border-radius: 1%/1%;
   border-style: groove;
   box-shadow: 10px 10px 10px rgb(31, 29, 29);
@@ -47,7 +47,7 @@
   max-width: 640px;
   width: auto;
   position: relative;
-  border: 10px solid;
+  border: 8px solid;
   border-style: ridge;
   border-color: rgb(80, 80, 80);
   box-shadow: 8px 8px 10px rgb(31, 29, 29);
@@ -331,7 +331,9 @@ table {
 #thumbnailPic {
   max-width: 180px;
   max-height: 180px;
-  border-radius: 55%/55%;
+  border: 3px solid purple;
+  border-style: ridge;
+  border-radius: 5%;
 }
 /* </Table> */
 

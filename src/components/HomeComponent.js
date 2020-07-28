@@ -79,7 +79,8 @@ function HomePage() {
             <FadeTransform
               in
               transformProps={{
-                exitTransform: "scale(0.5) translateY(50%)",
+                enterTransform: "translateX(0px)",
+                exitTransform: "translateX(150px)",
               }}
             >
               <div id="bodyBox" className="infoBox">
@@ -115,7 +116,8 @@ function HomePage() {
             <FadeTransform
               in
               transformProps={{
-                exitTransform: "scale(1.0) translateY(100%)",
+                enterTransform: "translateX(0px)",
+                exitTransform: "translateX(-150px)",
               }}
             >
               <br />
@@ -140,7 +142,8 @@ function HomePage() {
             <FadeTransform
               in
               transformProps={{
-                exitTransform: "scale(0.9) translateY(0%)",
+                enterTransform: "translateY(0px)",
+                exitTransform: "translateY(150px)",
               }}
             >
               <Carousel

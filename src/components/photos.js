@@ -56,33 +56,33 @@ export const tablePic = {
   tpic: require("../images/noticepic.jpg"),
 };
 
-export const priceList = [
-  {
-    id: 0,
-    name: "Acrylic Full Set",
-    short: "$ 35",
-    med: "$ 45",
-    long: "$ 50",
-  },
-  {
-    id: 1,
-    name: "Acrylic Fill",
-    short: "$ 30",
-    med: "$ 35",
-    long: "$ 40",
-  },
-  {
-    id: 1,
-    name: "Ombre Full Set",
-    short: "$ 40",
-    med: "$ 55",
-    long: "$ 55",
-  },
-  {
-    id: 1,
-    name: "Color Acrylic Full Set",
-    short: "$ 45",
-    med: "$ 55",
-    long: "$ 60",
-  },
-];
+// export const manicure = [
+//   {
+//     id: 0,
+//     name: "Acrylic Full Set",
+//     short: "$ 35",
+//     med: "$ 45",
+//     long: "$ 50",
+//   },
+//   {
+//     id: 1,
+//     name: "Acrylic Fill",
+//     short: "$ 30",
+//     med: "$ 35",
+//     long: "$ 40",
+//   },
+//   {
+//     id: 1,
+//     name: "Ombre Full Set",
+//     short: "$ 40",
+//     med: "$ 55",
+//     long: "$ 55",
+//   },
+//   {
+//     id: 1,
+//     name: "Color Acrylic Full Set",
+//     short: "$ 45",
+//     med: "$ 55",
+//     long: "$ 60",
+//   },
+// ];

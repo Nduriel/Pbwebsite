@@ -2,21 +2,6 @@ import React from "react";
 import { Col, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import ModalForm from "./Form";
 
-// const modalFont = {
-//   top: {},
-//   bottom: {
-//     backgroundColor: "black",
-//     color: "#9df5cc",
-//     borderTopColor: "purple",
-//     fontStyle: "italic",
-//     textAlign: "center",
-//     textShadow: "2px 2px 2px #f1069f",
-//   },
-//   errorText: {
-//     color: "white",
-//   },
-// };
-
 function ModalComponent(props) {
   return (
     <>

@@ -1,8 +1,8 @@
 import React from "react";
-import { Table, Col, Jumbotron, Row, Container } from "reactstrap";
+import {  Col, Jumbotron, Row, Container } from "reactstrap";
 import { Fade } from "react-animation-components";
-import Image from "react-bootstrap/Image";
 import * as service from "./priceList";
+// import Image from "react-bootstrap/Image";
 
 function PriceComponent() {
   return (

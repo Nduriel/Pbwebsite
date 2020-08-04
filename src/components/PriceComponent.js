@@ -25,11 +25,9 @@ function PriceComponent() {
         <Container fluid>
           <Fade in>
             <Row>
-              
-              <Col>
+              <Col lg={6} md={12} sm={12}>
                 <Table
                   dark
-                  // id="prices"
                   style={{
                     marginTop: "50px",
                     marginBottom: "20px",
@@ -39,10 +37,9 @@ function PriceComponent() {
                   striped
                   bordered
                   hover
-                  variant="dark"
                 >
                   <thead>
-                    <tr style={{ textAlign: "center" }}>
+                    <tr>
                       <th colSpan="2">Acryilc Fills</th>
                     </tr>
                   </thead>
@@ -62,7 +59,7 @@ function PriceComponent() {
                   </tbody>
                 </Table>
               </Col>
-              <Col>
+              <Col lg={6} md={12} sm={12}>
                 <Table
                   dark
                   // id="prices"
@@ -75,10 +72,9 @@ function PriceComponent() {
                   striped
                   bordered
                   hover
-                  variant="dark"
                 >
                   <thead>
-                    <tr style={{ textAlign: "center" }}>
+                    <tr>
                       <th colSpan="2">Acrylic Full Sets</th>
                     </tr>
                   </thead>
@@ -113,10 +109,9 @@ function PriceComponent() {
                   striped
                   bordered
                   hover
-                  variant="dark"
                 >
                   <thead>
-                    <tr style={{ textAlign: "center" }}>
+                    <tr>
                       <th colSpan="2">Manicure (30 mins)</th>
                     </tr>
                   </thead>
@@ -139,7 +134,6 @@ function PriceComponent() {
               <Col>
                 <Table
                   dark
-                  // id="prices"
                   style={{
                     marginTop: "50px",
                     marginBottom: "20px",
@@ -149,10 +143,9 @@ function PriceComponent() {
                   striped
                   bordered
                   hover
-                  variant="dark"
                 >
                   <thead>
-                    <tr style={{ textAlign: "center" }}>
+                    <tr>
                       <th colSpan="2">Pedicure (45 mins)</th>
                     </tr>
                   </thead>

@@ -256,7 +256,7 @@ export const Addons = () => (
     hover
     variant="dark"
   >
-    <thead style={{ color: "lightgreen", fontWeight: "bold" }}>
+    <thead>
       <tr style={{ textAlign: "center" }}>
         <th colSpan="4">Add On Services</th>
       </tr>
@@ -271,43 +271,43 @@ export const Addons = () => (
       <tr>
         <td colSpan="1" id="rowTitle">Soak Off (60 minutes)</td>
         <td colSpan="1">$ 20</td>
-        <td colSpan="1">French Tips/Half Gel Nail Design</td>
+        <td colSpan="1" id="rowTitle">French Tips/Half Gel Nail Design</td>
         <td colSpan="1">$ 5</td>
       </tr>
       <tr>
-        <td colSpan="1">Total 2/4 Designs</td>
+        <td colSpan="1" id="rowTitle">Total 2/4 Designs</td>
         <td colSpan="1">$ 5/10</td>
-        <td colSpan="1">All Nail Designs (10)</td>
+        <td colSpan="1" id="rowTitle">All Nail Designs (10)</td>
         <td colSpan="1">$ 15</td>
       </tr>
       <tr>
-        <td colSpan="1">Jewel Designs (2/4)</td>
+        <td colSpan="1" id="rowTitle">Jewel Designs (2/4)</td>
         <td colSpan="1">$ 4/8</td>
-        <td colSpan="1">Full Blinged Out Nails</td>
+        <td colSpan="1" id="rowTitle">Full Blinged Out Nails</td>
         <td colSpan="1">$ 6</td>
       </tr>
       <tr>
-        <td colSpan="1">All Blinged Out Nail</td>
+        <td colSpan="1" id="rowTitle">All Blinged Out Nail</td>
         <td colSpan="1">$ 75</td>
-        <td colSpan="1">Acrylic on 2 Big Toes</td>
+        <td colSpan="1" id="rowTitle">Acrylic on 2 Big Toes</td>
         <td colSpan="1">$ 10</td>
       </tr>
       <tr>
-        <td colSpan="1">Encapsulated Nail (2/4)</td>
+        <td colSpan="1" id="rowTitle">Encapsulated Nail (2/4)</td>
         <td colSpan="1">$ 3/6</td>
-        <td colSpan="1">Encapsulated Nails (10)</td>
+        <td colSpan="1" id="rowTitle">Encapsulated Nails (10)</td>
         <td colSpan="1">$ 15</td>
       </tr>
       <tr>
-        <td colSpan="1">Acrylic Fill-In on 2 Big Toes</td>
+        <td colSpan="1" id="rowTitle">Acrylic Fill-In on 2 Big Toes</td>
         <td colSpan="1">$ 6</td>
-        <td colSpan="1">Paraffin Wax H/F</td>
+        <td colSpan="1" id="rowTitle">Paraffin Wax H/F</td>
         <td colSpan="1">$ 5/8</td>
       </tr>
       <tr>
-        <td colSpan="1">Jelly Feet Softener</td>
+        <td colSpan="1" id="rowTitle">Jelly Feet Softener</td>
         <td colSpan="1">$ 5</td>
-        <td colSpan="1">Almond/Ballerina/Stiletto Shape Nails</td>
+        <td colSpan="1" id="rowTitle">Almond/Ballerina/Stiletto Shape Nails</td>
         <td colSpan="1">$ 5</td>
       </tr>
     </tbody>

@@ -315,18 +315,23 @@ body
   /* font-family: "Manrope"; */
   opacity: 0.99;
 }
-table {
+Table {
+  box-shadow: 2px 2px 5px greenyellow;
   width: auto;
 }
+
 
 #cost {
   text-align: center;
 }
 
 thead {
+  text-align: center;
   font-size:25px;
   font-weight: bold;
+  font-style: italic;
 }
+
 
 #rowTitle {
   color: rgb(3, 235, 243);

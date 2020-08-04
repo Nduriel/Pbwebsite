@@ -312,15 +312,20 @@ body
 
 /* <Table> */
 #prices {
-  font-family: "Manrope";
+  /* font-family: "Manrope"; */
   opacity: 0.99;
 }
 table {
   width: auto;
 }
 
-#tableD {
+#cost {
   text-align: center;
+}
+
+thead {
+  font-size:25px;
+  font-weight: bold;
 }
 
 #rowTitle {

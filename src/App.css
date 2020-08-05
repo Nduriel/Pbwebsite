@@ -311,41 +311,38 @@ body
 }
 
 /* <Table> */
-#prices {
-  /* font-family: "Manrope"; */
-  opacity: 0.99;
-}
+
 Table {
-  box-shadow: 2px 2px 5px greenyellow;
+  box-shadow: 3px 3px 5px greenyellow;
   width: auto;
 }
 
-
 #cost {
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px black
 }
 
 thead {
   text-align: center;
-  font-size:25px;
+  font-size: 25px;
   font-weight: bold;
   font-style: italic;
 }
 
-
 #rowTitle {
   color: rgb(3, 235, 243);
-  text-shadow: 1px 1px 1px blue;
+  text-shadow: 1px 1px 2px blue;
   font-weight: bold;
 }
 
-#thumbnailPic {
+/* #thumbnailPic {
   max-width: 180px;
   max-height: 180px;
   border: 3px solid purple;
   border-style: ridge;
   border-radius: 5%;
-}
+} */
 /* </Table> */
 
 .site-footer {
@@ -355,7 +352,6 @@ thead {
   font-family: "Arima Madurai", cursive;
   font-weight: bold;
 }
-
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/
 /* https://api.instagram.com/oauth/authorize

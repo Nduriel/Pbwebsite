@@ -1,6 +1,6 @@
 import React from "react";
 import { Table, Col, Jumbotron, Row, Container } from "reactstrap";
-import { Fade, Stagger, Random } from "react-animation-components";
+import { Fade, Random } from "react-animation-components";
 import * as service from "./priceList";
 
 function PriceComponent() {
@@ -87,10 +87,14 @@ function PriceComponent() {
                     return (
                       <tr>
                         <td key={item.id} id="rowTitle">
-                          {item.name}
+                          <Random minDelay={500} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
                         </td>
                         <td key={item.id} id="cost">
-                          {item.price}
+                          <Random minDelay={500} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
                         </td>
                       </tr>
                     );
@@ -124,10 +128,14 @@ function PriceComponent() {
                     return (
                       <tr>
                         <td colSpan="1" key={item.id} id="rowTitle">
-                          {item.name}
+                          <Random minDelay={500} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
                         </td>
                         <td colSpan="1" key={item.id} id="cost">
-                          {item.price}
+                          <Random minDelay={500} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
                         </td>
                       </tr>
                     );
@@ -158,10 +166,14 @@ function PriceComponent() {
                     return (
                       <tr>
                         <td colSpan="1" key={item.id} id="rowTitle">
-                          {item.name}
+                          <Random minDelay={500} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
                         </td>
                         <td colSpan="1" key={item.id} id="cost">
-                          {item.price}
+                          <Random minDelay={500} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
                         </td>
                       </tr>
                     );
@@ -170,8 +182,9 @@ function PriceComponent() {
               </Table>
             </Col>
           </Row>
-          <service.Addons />
-          {/* </Fade> */}
+          <Fade in>
+            <service.Addons />
+          </Fade>
         </Container>
       </Jumbotron>
     </>

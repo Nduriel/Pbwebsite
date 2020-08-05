@@ -23,7 +23,6 @@ function PriceComponent() {
           </Row>
         </Container>
         <Container fluid>
-          {/* <Fade in> */}
           <Row>
             <Col lg={6} md={12} sm={12}>
               <Table
@@ -38,7 +37,7 @@ function PriceComponent() {
                 bordered
                 hover
               >
-                <thead>
+                <thead id="acrylicFills">
                   <tr>
                     <th colSpan="2">Acryilc Fills</th>
                   </tr>
@@ -77,7 +76,7 @@ function PriceComponent() {
                 bordered
                 hover
               >
-                <thead>
+                <thead id="fullSets">
                   <tr>
                     <th colSpan="2">Acrylic Full Sets</th>
                   </tr>
@@ -107,7 +106,6 @@ function PriceComponent() {
             <Col lg={6} md={6} sm={12} xs={12}>
               <Table
                 dark
-                // id="prices"
                 style={{
                   marginTop: "50px",
                   marginBottom: "20px",
@@ -118,7 +116,7 @@ function PriceComponent() {
                 bordered
                 hover
               >
-                <thead>
+                <thead id="manicure">
                   <tr>
                     <th colSpan="2">Manicure (30 mins)</th>
                   </tr>
@@ -156,7 +154,7 @@ function PriceComponent() {
                 bordered
                 hover
               >
-                <thead>
+                <thead id="pedicure">
                   <tr>
                     <th colSpan="2">Pedicure (45 mins)</th>
                   </tr>
@@ -182,9 +180,46 @@ function PriceComponent() {
               </Table>
             </Col>
           </Row>
-          <Fade in>
-            <service.Addons />
-          </Fade>
+          <Row style={{ justifyContent: "center" }}>
+            <Col lg={6}>
+              <Table
+                dark
+                style={{
+                  marginTop: "50px",
+                  marginBottom: "20px",
+                }}
+                size="md"
+                responsive
+                striped
+                bordered
+                hover
+              >
+                <thead id="addOns">
+                  <tr>
+                    <th colSpan="2">Add Ons</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {service.addOns.map((item) => {
+                    return (
+                      <tr>
+                        <td colSpan="1" key={item.id} id="rowTitle">
+                          <Random minDelay={500} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
+                        </td>
+                        <td colSpan="1" key={item.id} id="cost">
+                          <Random minDelay={500} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
         </Container>
       </Jumbotron>
     </>

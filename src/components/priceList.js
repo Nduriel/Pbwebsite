@@ -1,6 +1,3 @@
-import React from "react";
-import { Table } from "reactstrap";
-
 export const fullSets = [
   {
     id: 0,
@@ -82,88 +79,88 @@ export const fills = [
   },
 ];
 
-// export const addOns = [
-//   {
-//     id: 0,
-//     name: "Soak-Off Gel Polish",
-//     price: "$ 5",
-//   },
-//   {
-//     id: 1,
-//     name: "Soak-Off Nails (60 minutes with Full Set)",
-//     price: "$ 10",
-//   },
-//   {
-//     id: 2,
-//     name: "Soak Off (60 minutes)",
-//     price: "$ 20",
-//   },
-//   {
-//     id: 3,
-//     name: "French Tips/Half Gel Nail Design",
-//     price: "$ 5",
-//   },
-//   {
-//     id: 4,
-//     name: "Total 2/4 Designs",
-//     price: "$ 5/10",
-//   },
-//   {
-//     id: 5,
-//     name: "All Nail Designs(10)",
-//     price: "$ 15",
-//   },
-//   {
-//     id: 6,
-//     name: "Jewel Designs 2/4",
-//     price: "$ 4/8",
-//   },
-//   {
-//     id: 7,
-//     name: "Full Blinged Out Nail",
-//     price: "$ 6",
-//   },
-//   {
-//     id: 8,
-//     name: "All-Blinged-Out Nails",
-//     price: "$ 75",
-//   },
-//   {
-//     id: 9,
-//     name: "Acrylic on 2 Big Toes",
-//     price: "$ 10",
-//   },
-//   {
-//     id: 9,
-//     name: "Encapsulated Nail (2/4)",
-//     price: "$ 3/6",
-//   },
-//   {
-//     id: 10,
-//     name: "Encapsulated Nails (10)",
-//     price: "$ 15",
-//   },
-//   {
-//     id: 11,
-//     name: "Acrylic Fill-In 2 Big Toes",
-//     price: "$ 6",
-//   },
-//   {
-//     id: 12,
-//     name: "Paraffin Wax H/F",
-//     price: "$ 5/8",
-//   },
-//   {
-//     id: 13,
-//     name: "Jelly Feet Softener",
-//     price: "$ 5",
-//   },
-//   {
-//     id: 14,
-//     name: "Almond/Ballerina/Stiletto Shape Nails",
-//     price: "$ 5",
-//   },
-// ];
+export const addOns = [
+  {
+    id: 0,
+    name: "Soak-Off Gel Polish",
+    price: "$ 5",
+  },
+  {
+    id: 1,
+    name: "Soak-Off Nails (60 minutes with Full Set)",
+    price: "$ 10",
+  },
+  {
+    id: 2,
+    name: "Soak Off (60 minutes)",
+    price: "$ 20",
+  },
+  {
+    id: 3,
+    name: "French Tips/Half Gel Nail Design",
+    price: "$ 5",
+  },
+  {
+    id: 4,
+    name: "Total 2/4 Designs",
+    price: "$ 5/10",
+  },
+  {
+    id: 5,
+    name: "All Nail Designs(10)",
+    price: "$ 15",
+  },
+  {
+    id: 6,
+    name: "Jewel Designs 2/4",
+    price: "$ 4/8",
+  },
+  {
+    id: 7,
+    name: "Full Blinged Out Nail",
+    price: "$ 6",
+  },
+  {
+    id: 8,
+    name: "All-Blinged-Out Nails",
+    price: "$ 75",
+  },
+  {
+    id: 9,
+    name: "Acrylic on 2 Big Toes",
+    price: "$ 10",
+  },
+  {
+    id: 9,
+    name: "Encapsulated Nail (2/4)",
+    price: "$ 3/6",
+  },
+  {
+    id: 10,
+    name: "Encapsulated Nails (10)",
+    price: "$ 15",
+  },
+  {
+    id: 11,
+    name: "Acrylic Fill-In 2 Big Toes",
+    price: "$ 6",
+  },
+  {
+    id: 12,
+    name: "Paraffin Wax H/F",
+    price: "$ 5/8",
+  },
+  {
+    id: 13,
+    name: "Jelly Feet Softener",
+    price: "$ 5",
+  },
+  {
+    id: 14,
+    name: "Almond/Ballerina/Stiletto Shape Nails",
+    price: "$ 5",
+  },
+];
 
 export const manicure = [
   {
@@ -240,76 +237,3 @@ export const pedicure = [
     price: "$ 15",
   },
 ];
-
-export const Addons = () => (
-  <Table
-    dark
-    id="prices"
-    style={{
-      marginTop: "50px",
-      marginBottom: "20px",
-    }}
-    size="md"
-    responsive
-    striped
-    bordered
-    hover
-    variant="dark"
-  >
-    <thead>
-      <tr style={{ textAlign: "center" }}>
-        <th colSpan="4">Add On Services</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td colSpan="1" id="rowTitle">Soak off Gel Polish</td>
-        <td colSpan="1">$ 5</td>
-        <td colSpan="1" id="rowTitle">Soak off Nail (60 minutes w/ Full Set)</td>
-        <td colSpan="1">$ 10</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Soak Off (60 minutes)</td>
-        <td colSpan="1">$ 20</td>
-        <td colSpan="1" id="rowTitle">French Tips/Half Gel Nail Design</td>
-        <td colSpan="1">$ 5</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Total 2/4 Designs</td>
-        <td colSpan="1">$ 5/10</td>
-        <td colSpan="1" id="rowTitle">All Nail Designs (10)</td>
-        <td colSpan="1">$ 15</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Jewel Designs (2/4)</td>
-        <td colSpan="1">$ 4/8</td>
-        <td colSpan="1" id="rowTitle">Full Blinged Out Nails</td>
-        <td colSpan="1">$ 6</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">All Blinged Out Nail</td>
-        <td colSpan="1">$ 75</td>
-        <td colSpan="1" id="rowTitle">Acrylic on 2 Big Toes</td>
-        <td colSpan="1">$ 10</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Encapsulated Nail (2/4)</td>
-        <td colSpan="1">$ 3/6</td>
-        <td colSpan="1" id="rowTitle">Encapsulated Nails (10)</td>
-        <td colSpan="1">$ 15</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Acrylic Fill-In on 2 Big Toes</td>
-        <td colSpan="1">$ 6</td>
-        <td colSpan="1" id="rowTitle">Paraffin Wax H/F</td>
-        <td colSpan="1">$ 5/8</td>
-      </tr>
-      <tr>
-        <td colSpan="1" id="rowTitle">Jelly Feet Softener</td>
-        <td colSpan="1">$ 5</td>
-        <td colSpan="1" id="rowTitle">Almond/Ballerina/Stiletto Shape Nails</td>
-        <td colSpan="1">$ 5</td>
-      </tr>
-    </tbody>
-  </Table>
-);

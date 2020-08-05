@@ -316,14 +316,32 @@ Table {
   box-shadow: 3px 3px 5px greenyellow;
   width: auto;
 }
+#acrylicFills {
+  background-image: linear-gradient(90deg, blueviolet, purple, cyan);
+}
+#fullSets {
+  background-image: linear-gradient(90deg, yellow, limegreen, cyan);
+}
+
+#manicure {
+  background-image: linear-gradient(90deg, red, orange, cyan);
+}
+
+#pedicure {
+  background-image: linear-gradient(90deg, pink, purple, cyan);
+}
+#addOns {
+  background-image: linear-gradient(90deg, black, grey, white);
+}
 
 #cost {
   text-align: center;
   color: white;
-  text-shadow: 2px 2px black
+  text-shadow: 2px 2px black;
 }
 
 thead {
+  text-shadow: 2px 2px black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;

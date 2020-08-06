@@ -311,7 +311,6 @@ body
 }
 
 /* <Table> */
-
 Table {
   outline: 3px solid darkgray;
   outline-style: outset;
@@ -366,11 +365,16 @@ thead {
 /* </Table> */
 
 .site-footer {
+  color: #9df5cc;
+  text-shadow: 2px 2px 2px #f1069f;
   border-top: 7px solid #610241;
   background-image: linear-gradient(black, black, black);
   padding: 20px;
   font-family: "Arima Madurai", cursive;
   font-weight: bold;
+  font-size: 18px;
+  flex-direction: row;
+  white-space: nowrap;
 }
 
 /*dark purple #510036, light pink #f1069f, light green #9df5cc*/

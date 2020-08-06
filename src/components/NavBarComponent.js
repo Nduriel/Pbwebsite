@@ -17,6 +17,7 @@ import { NavLink } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
+  
   const [dropdownOpen, setDropdownOpen] = useState(false);
   //Modal Toggler
   const [isModalOpen, setModal] = useState(false);

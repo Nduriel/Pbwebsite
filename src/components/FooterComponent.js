@@ -33,9 +33,14 @@ function FooterComponent() {
                 Prices
               </Badge>
             </li>
+            <li>
+              <Badge href="/about" color="danger">
+                About Mia
+              </Badge>
+            </li>
           </ul>
         </Col>
-        <Col className="text-center" lg={4} md={12} sm={12}>
+        <Col className="text-center" style={{marginTop: '10px'}} lg={4} md={12} sm={12}>
           <a
             role="button"
             className="btn btn-link"
@@ -61,18 +66,23 @@ function FooterComponent() {
           id="goneText"
           className="text-center"
           style={{
-            marginTop: "15px",
             borderLeft: "3px outset pink",
           }}
         >
           <span>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled" style={{ marginTop: "5px" }}>
               <li>
-                <i className="fa fa-copyright" aria-hidden="true" />
-                <i>PolishedByMia</i>
+                <i>Maria Munoz</i>
+                <br />
+                <sub>Liscensed Nail Technician</sub>
               </li>
               <li>
-                <i>Liscensed Nail Technician</i>
+                <i>
+                  <sub>
+                    PolishedByMia{" "}
+                    <i className="fa fa-copyright" aria-hidden="true" />
+                  </sub>
+                </i>
               </li>
             </ul>
           </span>

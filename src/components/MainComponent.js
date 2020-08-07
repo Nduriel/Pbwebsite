@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import NavbarComponent from "./NavBarComponent";
 import HomePage from "./HomeComponent";
 import PriceComponent from "./PriceComponent";
+import AboutMia from './AboutMia';
 import FooterComponent from "./FooterComponent";
 import NotFoundPage from "./NotFoundPage";
 
@@ -15,6 +16,8 @@ function MainComponent() {
 
   const Prices = () => <PriceComponent />;
 
+  const About = () => <AboutMia />;
+
   return (
     <div>
       <NavbarComponent />
@@ -24,6 +27,7 @@ function MainComponent() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/prices" component={Prices} />
+            <Route path="/about" component={About} />
             <Redirect to="/" />
             <Route component={NotFoundPage} />
           </Switch>

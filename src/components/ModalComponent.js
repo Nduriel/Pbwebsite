@@ -11,10 +11,7 @@ function ModalComponent(props) {
         fade
         autoFocus
       >
-        <ModalHeader
-          // toggle={props.toggleModal} modal 'x'
-          id="modalHead"
-        >
+        <ModalHeader toggle={props.toggleModal} id="modalHead">
           Send me your info and I'll contact you asap!
         </ModalHeader>
         <ModalBody id="modalbody">

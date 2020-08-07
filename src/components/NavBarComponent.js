@@ -88,6 +88,19 @@ function NavBarComponent() {
                   Prices
                 </NavLink>
               </NavItem>
+              <NavItem className="glow">
+                <NavLink
+                onClick={toggle}
+                  className="nav-link"
+                  activeStyle={activeStyle}
+                  to="/about"
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  <i>About Mia</i>
+                </NavLink>
+              </NavItem>
               <Dropdown
                 // className="glow"
                 isOpen={dropdownOpen}

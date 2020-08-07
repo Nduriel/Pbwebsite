@@ -47,8 +47,8 @@ export const jumbotronPic = {
   logo2: require("../images/pbmlogo2.png"),
   miaPic11: require("../images/miaPic11.jpg"),
   miaPic12: require("../images/miaPic12.jpg"),
-  aboutMia: require("../images/aboutmia.jpg")
 };
+
 
 export const tablePic = {
   longNails: require("../images/miaPic26.jpg"),

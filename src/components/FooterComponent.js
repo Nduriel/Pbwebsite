@@ -23,7 +23,7 @@ function FooterComponent() {
           >
             Directory
           </span>
-          <div style={{margin: '5px'}}>
+          <div style={{ margin: "5px" }}>
             <ul className="list-unstyled">
               <li>
                 <Badge href="/home" color="info">
@@ -43,20 +43,14 @@ function FooterComponent() {
             </ul>
           </div>
         </Col>
-        <Col
-          className="text-center"
-          xs={6}
-          lg={4}
-          md={12}
-          sm={6}
-        >
+        <Col className="text-center" xs={6} lg={4} md={12} sm={6}>
           <span
             style={{
               borderBottom: "2px #f1069f",
               borderBottomStyle: "outset",
             }}
           >
-            Questions? Comments?
+            Questions?
           </span>
           <br />
           <div style={{ margin: "5px" }}>
@@ -91,9 +85,16 @@ function FooterComponent() {
           <span>
             <ul className="list-unstyled" style={{ marginTop: "5px" }}>
               <li>
-                <i><u>Liscensed Nail Technician</u></i>
+                <i
+                  style={{
+                    borderBottom: "2px #f1069f",
+                    borderBottomStyle: "outset",
+                  }}
+                >
+                  Maria Munoz
+                </i>
                 <br />
-                <sub>Maria Munoz</sub>
+                <sub>Liscensed Nail Technician</sub>
               </li>
               <li>
                 <i>

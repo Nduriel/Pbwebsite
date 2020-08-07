@@ -7,7 +7,8 @@ function FooterComponent() {
       <Row>
         <Col
           className="text-center"
-          id="goneText"
+          // id="goneText"
+          xs={6}
           lg={4}
           style={{
             borderRight: "3px outset pink",
@@ -23,7 +24,7 @@ function FooterComponent() {
             >
               Directory
             </span>
-            <li style={{ paddingTop: "6px" }}>
+            <li style={{ marginTop: "4px" }}>
               <Badge href="/home" color="info">
                 Home
               </Badge>
@@ -40,7 +41,7 @@ function FooterComponent() {
             </li>
           </ul>
         </Col>
-        <Col className="text-center" style={{marginTop: '10px'}} lg={4} md={12} sm={12}>
+        <Col className="text-center" style={{marginTop: '10px'}} xs={6}lg={4} md={12} sm={12}>
           <a
             role="button"
             className="btn btn-link"

@@ -14,53 +14,71 @@ function FooterComponent() {
             borderRight: "3px outset pink",
           }}
         >
-          <ul className="list-unstyled">
-            <span
-              style={{
-                borderBottom: "2px #f1069f",
-                borderBottomStyle: "outset",
-                textShadow: "2px 2px 2px #f1069f",
-              }}
-            >
-              Directory
-            </span>
-            <li style={{ marginTop: "4px" }}>
-              <Badge href="/home" color="info">
-                Home
-              </Badge>
-            </li>
-            <li>
-              <Badge href="/prices" color="primary">
-                Prices
-              </Badge>
-            </li>
-            <li>
-              <Badge href="/about" color="danger">
-                About Mia
-              </Badge>
-            </li>
-          </ul>
+          <span
+            style={{
+              borderBottom: "2px #f1069f",
+              borderBottomStyle: "outset",
+              textShadow: "2px 2px 2px #f1069f",
+            }}
+          >
+            Directory
+          </span>
+          <div style={{margin: '5px'}}>
+            <ul className="list-unstyled">
+              <li>
+                <Badge href="/home" color="info">
+                  Home
+                </Badge>
+              </li>
+              <li>
+                <Badge href="/prices" color="primary">
+                  Prices
+                </Badge>
+              </li>
+              <li>
+                <Badge href="/about" style={{ background: "purple" }}>
+                  About Mia
+                </Badge>
+              </li>
+            </ul>
+          </div>
         </Col>
-        <Col className="text-center" style={{marginTop: '10px'}} xs={6}lg={4} md={12} sm={12}>
-          <a
-            role="button"
-            className="btn btn-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:Mmnuoz214@gmail.com"
+        <Col
+          className="text-center"
+          xs={6}
+          lg={4}
+          md={12}
+          sm={6}
+        >
+          <span
+            style={{
+              borderBottom: "2px #f1069f",
+              borderBottomStyle: "outset",
+            }}
           >
-            <i id="socialIcon" className="fa fa-envelope" />
-          </a>
-          <span id="goneText">Questions? Comments?</span>
-          <a
-            role="button"
-            className="btn btn-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="tel:+17579127833"
-          >
-            <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
-          </a>
+            Questions? Comments?
+          </span>
+          <br />
+          <div style={{ margin: "5px" }}>
+            <a
+              role="button"
+              className="btn btn-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:Mmnuoz214@gmail.com"
+            >
+              <i id="socialIcon" className="fa fa-envelope" />
+            </a>
+            <a
+              role="button"
+              className="btn btn-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="tel:+17579127833"
+            >
+              <i role="button" id="socialIcon" className="fa fa-phone fa-lg" />
+            </a>
+          </div>
         </Col>
         <Col
           lg={4}
@@ -73,9 +91,9 @@ function FooterComponent() {
           <span>
             <ul className="list-unstyled" style={{ marginTop: "5px" }}>
               <li>
-                <i>Maria Munoz</i>
+                <i><u>Liscensed Nail Technician</u></i>
                 <br />
-                <sub>Liscensed Nail Technician</sub>
+                <sub>Maria Munoz</sub>
               </li>
               <li>
                 <i>

@@ -17,7 +17,6 @@ import { NavLink } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
-  
   const [dropdownOpen, setDropdownOpen] = useState(false);
   //Modal Toggler
   const [isModalOpen, setModal] = useState(false);
@@ -55,7 +54,7 @@ function NavBarComponent() {
             onClick={toggle}
             aria-controls="responsive-navbar-nav"
           />
-          <Collapse isOpen={isOpen}  navbar id="responsive-navbar-nav">
+          <Collapse isOpen={isOpen} navbar id="responsive-navbar-nav">
             <Nav className="mr-auto" navbar>
               <NavItem className="glow">
                 <NavLink
@@ -77,7 +76,7 @@ function NavBarComponent() {
               </NavItem>
               <NavItem className="glow">
                 <NavLink
-                onClick={toggle}
+                  onClick={toggle}
                   className="nav-link"
                   activeStyle={activeStyle}
                   to="/prices"
@@ -90,7 +89,7 @@ function NavBarComponent() {
               </NavItem>
               <NavItem className="glow">
                 <NavLink
-                onClick={toggle}
+                  onClick={toggle}
                   className="nav-link"
                   activeStyle={activeStyle}
                   to="/about"
@@ -98,7 +97,7 @@ function NavBarComponent() {
                     color: "white",
                   }}
                 >
-                  <i>About Mia</i>
+                  About Mia
                 </NavLink>
               </NavItem>
               <Dropdown

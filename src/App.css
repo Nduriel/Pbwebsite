@@ -332,7 +332,7 @@ Table {
   background-image: linear-gradient(90deg, pink, purple, cyan);
 }
 #addOns {
-  background-image: linear-gradient(90deg, black, grey, white);
+  background-image: linear-gradient(90deg, blue, grey, white);
 }
 
 #cost {
@@ -350,7 +350,7 @@ thead {
 }
 
 #rowTitle {
-  color: rgb(3, 235, 243);
+  color: white;
   text-shadow: 1px 1px 2px blue;
   font-weight: bold;
 }
@@ -360,13 +360,18 @@ thead {
   font-weight: bold;
 }
 
-/* #thumbnailPic {
-  max-width: 180px;
-  max-height: 180px;
-  border: 3px solid purple;
-  border-style: ridge;
-  border-radius: 5%;
-} */
+#rowTitle2 {
+  color: yellow;
+  text-shadow: 1px 1px 2px limegreen;
+  font-weight: bold;
+}
+
+#rowTitle3 {
+  color: orange;
+  text-shadow: 1px 1px 2px red;
+  font-weight: bold;
+}
+
 /* </Table> */
 
 .site-footer {

@@ -81,7 +81,7 @@ function PriceComponent() {
                 {service.fullSets.map((item) => {
                   return (
                     <tr key={item.id}>
-                     <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                     <td id={item.id % 2 ? "rowTitle2" : "rowTitle"}>
                         <Random minDelay={500} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -121,7 +121,7 @@ function PriceComponent() {
                 {service.manicure.map((item) => {
                   return (
                     <tr key={item.id}>
-                     <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                     <td id={item.id % 2 ? "rowTitle3" : "rowTitle"}>
                         <Random minDelay={500} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -199,7 +199,7 @@ function PriceComponent() {
                 {service.addOns.map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                      <td id='rowTitle'>
                         <Random minDelay={750} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>

@@ -6,7 +6,6 @@ function AboutMia() {
   const aboutPic = require("../images/aboutmiapic.jpg");
 
   return (
-    <>
       <Jumbotron fluid>
         <Container fluid>
           <Row>
@@ -18,8 +17,8 @@ function AboutMia() {
                 style={{ height: "500px", width: "auto" }}
               />
             </Col>
-            <Col >
-              <div style={{alignContent: "flex-end"}}>
+            <Col>
+              <div style={{ alignContent: "flex-end" }}>
                 <p style={{ color: "white" }}>
                   Polished By Mia was start in 2005 by Maria Munoz. Maria is a
                   liscensed nail technician who services <br /> clients
@@ -30,7 +29,6 @@ function AboutMia() {
           </Row>
         </Container>
       </Jumbotron>
-    </>
   );
 }
 

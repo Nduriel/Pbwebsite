@@ -310,8 +310,9 @@ body
   text-shadow: 2px 2px 2px #f1069f;
 }
 
-/* <Table> */
+/* <TABLE> */
 Table {
+  font-weight: bold;
   outline: 3px solid darkgray;
   outline-style: outset;
   box-shadow: 5px 5px 5px greenyellow;
@@ -345,31 +346,26 @@ thead {
   text-shadow: 2px 2px black;
   text-align: center;
   font-size: 25px;
-  font-weight: bold;
   font-style: italic;
 }
 
 #rowTitle {
   color: white;
   text-shadow: 1px 1px 2px blue;
-  font-weight: bold;
 }
 #rowTitle1 {
   color: rgb(252, 82, 243);
   text-shadow: 1px 1px 2px blueviolet;
-  font-weight: bold;
 }
 
 #rowTitle2 {
   color: yellow;
   text-shadow: 1px 1px 2px limegreen;
-  font-weight: bold;
 }
 
 #rowTitle3 {
   color: orange;
   text-shadow: 1px 1px 2px red;
-  font-weight: bold;
 }
 
 /* </Table> */

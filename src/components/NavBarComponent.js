@@ -17,17 +17,20 @@ import { NavLink } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
   //Modal Toggler
   const [isModalOpen, setModal] = useState(false);
   const toggleModal = () => {
-    setModal(!isModalOpen);
+    setModal((isModalOpen) => !isModalOpen);
   };
+  
   const droptoggle = () => setDropdownOpen((prevState) => !prevState);
 
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen((isOpen) => !isOpen);
 
   const navbarIcon = {
     color: "#9df5cc",

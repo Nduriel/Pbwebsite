@@ -34,16 +34,16 @@ function PriceComponent() {
               bordered
               hover
             >
-              <thead id="acrylicFills">
+              <thead id="fullSets">
                 <tr>
-                  <th colSpan="2">Acryilc Fills</th>
+                  <th colSpan="2">Acrylic Full Sets</th>
                 </tr>
               </thead>
               <tbody>
-                {service.fills.map((item) => {
+                {service.fullSets.map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                      <td id={item.id % 2 ? "rowTitle2" : "rowTitle"}>
                         <Random minDelay={500} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -72,16 +72,16 @@ function PriceComponent() {
               bordered
               hover
             >
-              <thead id="fullSets">
+              <thead id="acrylicFills">
                 <tr>
-                  <th colSpan="2">Acrylic Full Sets</th>
+                  <th colSpan="2">Acryilc Fills</th>
                 </tr>
               </thead>
               <tbody>
-                {service.fullSets.map((item) => {
+                {service.fills.map((item) => {
                   return (
                     <tr key={item.id}>
-                     <td id={item.id % 2 ? "rowTitle2" : "rowTitle"}>
+                      <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
                         <Random minDelay={500} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -121,7 +121,7 @@ function PriceComponent() {
                 {service.manicure.map((item) => {
                   return (
                     <tr key={item.id}>
-                     <td id={item.id % 2 ? "rowTitle3" : "rowTitle"}>
+                      <td id={item.id % 2 ? "rowTitle3" : "rowTitle"}>
                         <Random minDelay={500} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -159,7 +159,7 @@ function PriceComponent() {
                 {service.pedicure.map((item) => {
                   return (
                     <tr key={item.id}>
-                     <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                      <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
                         <Random minDelay={750} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>
@@ -199,7 +199,7 @@ function PriceComponent() {
                 {service.addOns.map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td id='rowTitle'>
+                      <td id="rowTitle">
                         <Random minDelay={750} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>

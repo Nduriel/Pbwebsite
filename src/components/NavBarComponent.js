@@ -45,6 +45,16 @@ function NavBarComponent() {
     textShadow: "1px 1px white",
   };
 
+  const activeStyle1 = {
+    color: "#f1069f",
+    textShadow: "1px 1px pink",
+  };
+
+  const activeStyle2 = {
+    color: "skyblue",
+    textShadow: "1px 1px white",
+  };
+
   return (
     <>
       <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
@@ -81,7 +91,7 @@ function NavBarComponent() {
                 <NavLink
                   onClick={toggle}
                   className="nav-link"
-                  activeStyle={activeStyle}
+                  activeStyle={activeStyle2}
                   to="/prices"
                   style={{
                     color: "white",
@@ -94,7 +104,7 @@ function NavBarComponent() {
                 <NavLink
                   onClick={toggle}
                   className="nav-link"
-                  activeStyle={activeStyle}
+                  activeStyle={activeStyle1}
                   to="/about"
                   style={{
                     color: "white",

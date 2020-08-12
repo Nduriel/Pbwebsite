@@ -41,6 +41,11 @@
   margin: 10px;
 }
 
+#bioText {
+  margin: 5px;
+  color: #00ffb3;
+}
+
 .carousel {
   border-radius: 2%;
   background-color: black;
@@ -369,7 +374,6 @@ thead {
 }
 
 /* </Table> */
-
 .site-footer {
   color: #9df5cc;
   text-shadow: 2px 2px 2px #f1069f;

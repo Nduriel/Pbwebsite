@@ -50,6 +50,26 @@ export const carouselPic = [
     src: require("../images/pic9.JPG"),
     caption: `ADD CAPTION"`,
   },
+  {
+    altText: "11",
+    src: require("../images/pic10.JPG"),
+    caption: `ADD CAPTION"`,
+  },
+  {
+    altText: "12",
+    src: require("../images/pic11.JPG"),
+    caption: `ADD CAPTION"`,
+  },
+  {
+    altText: "13",
+    src: require("../images/pic12.JPG"),
+    caption: `ADD CAPTION"`,
+  },
+  {
+    altText: "14",
+    src: require("../images/pic13.JPG"),
+    caption: `ADD CAPTION"`,
+  },
 ];
 
 export const jumbotronPic = {

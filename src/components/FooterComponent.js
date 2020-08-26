@@ -43,7 +43,7 @@ function FooterComponent() {
             </ul>
           </div>
         </Col>
-        <Col className="text-center" xs={6} lg={4} md={12} sm={6}>
+        <Col className="text-center" xs={6} lg={4} md={6} sm={6}>
           <span
             style={{
               borderBottom: "2px #f1069f",

@@ -3,7 +3,7 @@ import { Jumbotron, Container, Row, Col } from "reactstrap";
 import Image from "react-bootstrap/Image";
 
 function AboutMia() {
-  const aboutPic = require("../images/aboutmiapic.JPG");
+  const aboutPic = require("../images/MiaAboutpic.jpg");
 
   return (
     <Jumbotron fluid style={{ color: "white" }}>

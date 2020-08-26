@@ -22,7 +22,7 @@ export const carouselPic = [
   {
     altText: "5",
     src: require("../images/pic4.JPG"),
-    caption: `Katrina - "She is awesome!!! Do not hesitate to hit her up!!"`,
+    caption: `Stacey - I'm super picky with my nails, but she does an amazing job!!!`,
   },
   {
     altText: "6",
@@ -43,32 +43,32 @@ export const carouselPic = [
   {
     altText: "9",
     src: require("../images/pic8.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `Katrina - "She is awesome!!! Do not hesitate to hit her up!!"`,
   },
   {
     altText: "10",
     src: require("../images/pic9.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `Follow on Facebook and Instagram!`,
   },
   {
     altText: "11",
     src: require("../images/pic10.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `#polishedbymia`,
   },
   {
     altText: "12",
     src: require("../images/pic11.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `#nailartlove`,
   },
   {
     altText: "13",
     src: require("../images/pic12.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `#757nails`,
   },
   {
     altText: "14",
     src: require("../images/pic13.JPG"),
-    caption: `ADD CAPTION"`,
+    caption: `#nailsofinstagram`,
   },
 ];
 

@@ -18,7 +18,6 @@ function AboutMia() {
               style={{
                 height: "500px",
                 width: "auto",
-                // marginLeft: "30px",
                 border: "6px solid ",
                 borderStyle: "groove",
                 marginBottom: "10px",

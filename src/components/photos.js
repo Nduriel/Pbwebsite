@@ -79,6 +79,7 @@ export const jumbotronPic = {
   miaPic12: require("../images/miaPic12.jpg"),
 };
 
+export const aboutMia = require("../images//MiaAboutpic.JPG")
 
 export const tablePic = {
   longNails: require("../images/miaPic26.jpg"),

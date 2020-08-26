@@ -1,9 +1,10 @@
 import React from "react";
 import { Jumbotron, Container, Row, Col } from "reactstrap";
 import Image from "react-bootstrap/Image";
+import {aboutMia} from './photos';
 
 function AboutMia() {
-  const aboutPic = require("../images/MiaAboutpic.jpg");
+
 
   return (
     <Jumbotron fluid style={{ color: "white" }}>
@@ -13,7 +14,7 @@ function AboutMia() {
             <Image
               fluid
               roundedCircle
-              src={aboutPic}
+              src={aboutMia}
               style={{
                 height: "500px",
                 width: "auto",

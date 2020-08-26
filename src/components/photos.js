@@ -5,40 +5,50 @@ export const carouselPic = [
   },
   {
     altText: "2",
-    src: require("../images/miaPic5.jpg"),
+    src: require("../images/pic1.jpg"),
     caption: `#goodformnails - "Wow, these are perfect!"`,
   },
   {
     altText: "3",
-    src: require("../images/miaPic6.jpg"),
+    src: require("../images/pic2.JPG"),
     caption:
       "Chelley - She is outstanding! Has patience and does a wonderful job!!",
   },
   {
     altText: "4",
-    src: require("../images/miaPic20.jpg"),
+    src: require("../images/pic3.JPG"),
     caption: `Patti - "Maria does awesome nails"`,
   },
   {
     altText: "5",
-    src: require("../images/miaPic30.jpg"),
+    src: require("../images/pic4.JPG"),
     caption: `Katrina - "She is awesome!!! Do not hesitate to hit her up!!"`,
   },
   {
     altText: "6",
-    src: require("../images/miaPic22.jpg"),
+    src: require("../images/pic5.JPG"),
     caption: `Dianne - "She is absolutely amazing, takes her time and makes
         sure you love it before you leave! She’s definitely my nail tech from here on out!"`,
   },
   {
     altText: "7",
-    src: require("../images/miaPic28.jpg"),
+    src: require("../images/pic6.JPG"),
     caption: `Karen - "She does a wonderful job"`,
   },
   {
     altText: "8",
-    src: require("../images/miaPic1.jpg"),
+    src: require("../images/pic7.JPG"),
     caption: `Chelley - "She is outstanding! Has patience and does a wonderful job!!"`,
+  },
+  {
+    altText: "9",
+    src: require("../images/pic8.JPG"),
+    caption: `ADD CAPTION"`,
+  },
+  {
+    altText: "10",
+    src: require("../images/pic9.JPG"),
+    caption: `ADD CAPTION"`,
   },
 ];
 

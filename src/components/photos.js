@@ -58,7 +58,7 @@ export const carouselPic = [
   {
     altText: "12",
     src: require("../images/pic11.JPG"),
-    caption: `#nailartlove`,
+    caption: ``,
   },
   {
     altText: "13",

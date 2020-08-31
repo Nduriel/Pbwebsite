@@ -42,17 +42,17 @@ function NavBarComponent() {
 
   const activeStyle = {
     color: "#9df5cc",
-    textShadow: "1px 1px white",
+    textShadow: "1px 1px 1px white",
   };
 
   const activeStyle1 = {
     color: "#f1069f",
-    textShadow: "1px 1px pink",
+    textShadow: "1px 1px 1px white",
   };
 
   const activeStyle2 = {
     color: "skyblue",
-    textShadow: "1px 1px white",
+    textShadow: "1px 1px 1px white",
   };
 
   return (

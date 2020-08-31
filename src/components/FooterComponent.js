@@ -36,7 +36,7 @@ function FooterComponent() {
                 </Badge>
               </li>
               <li>
-                <Badge href="/about" style={{ background: "purple" }}>
+                <Badge href="/about" style={{ background: "#f1069f" }}>
                   About Mia
                 </Badge>
               </li>

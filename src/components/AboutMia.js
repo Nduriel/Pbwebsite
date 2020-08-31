@@ -1,30 +1,35 @@
 import React from "react";
 import { Jumbotron, Container, Row, Col } from "reactstrap";
 import Image from "react-bootstrap/Image";
-import {aboutMia} from './photos';
+import { aboutMia } from "./photos";
 
 function AboutMia() {
-
-
   return (
     <Jumbotron fluid style={{ color: "white" }}>
       <Container fluid>
         <Row>
-          <Col lg={5} md={12} sm={12}>
+          <Col
+            className="text-center"
+            lg={{ offset: 1, size: 4 }}
+            md={12}
+            sm={12}
+          >
             <Image
               fluid
-              roundedCircle
+              
               src={aboutMia}
               style={{
                 height: "500px",
                 width: "auto",
-                border: "6px solid ",
-                borderStyle: "groove",
+                borderRadius: "5%",
+                border: "5px solid white",
+                borderStyle: "inset",
+                boxShadow: "2px 4px black",
                 marginBottom: "10px",
               }}
             />
           </Col>
-          <Col lg={6} md={12} sm={12}>
+          <Col lg={5} md={12} sm={12}>
             <h2
               className="text-center"
               style={{ color: "#9df5cc", textShadow: "2px 2px 2px #f1069f" }}

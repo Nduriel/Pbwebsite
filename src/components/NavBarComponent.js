@@ -14,18 +14,17 @@ import {
   Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import ModalComponent from "./ModalComponent";
+// import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
-
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   //Modal Toggler
-  const [isModalOpen, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal((isModalOpen) => !isModalOpen);
-  };
-  
+  // const [isModalOpen, setModal] = useState(false);
+  // const toggleModal = () => {
+  //   setModal((isModalOpen) => !isModalOpen);
+  // };
+
   const droptoggle = () => setDropdownOpen((prevState) => !prevState);
 
   //Navbar Toggler
@@ -57,7 +56,7 @@ function NavBarComponent() {
 
   return (
     <>
-      <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} />
+      {/* <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} /> */}
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
           <NavbarBrand style={navbarIcon} id="goneText" href="#home">
@@ -162,14 +161,21 @@ function NavBarComponent() {
               </Dropdown>
             </Nav>
           </Collapse>
-          <Button
-            color="primary"
-            onClick={toggleModal}
-            size="lg"
-            id="appButton"
+          <a href="https://square.site/book/L65T6T8DQHNTT/polished-by-mia"
+           role="button"
+           className="btn btn-link"
+           target="_blank"
+           rel="noopener noreferrer"
           >
-            Appointments
-          </Button>
+            <Button
+              color="primary"
+              // onClick={toggleModal}
+              size="lg"
+              id="appButton"
+            >
+              Appointments
+            </Button>
+          </a>
         </Container>
       </Navbar>
     </>

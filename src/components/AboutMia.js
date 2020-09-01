@@ -14,63 +14,48 @@ function AboutMia() {
             md={12}
             sm={12}
           >
-            <Image
-              fluid
-              
-              src={aboutMia}
-              style={{
-                height: "500px",
-                width: "auto",
-                borderRadius: "5%",
-                border: "5px solid white",
-                borderStyle: "inset",
-                boxShadow: "2px 4px black",
-                marginBottom: "10px",
-              }}
-            />
+            <Image id="aboutPic" fluid src={aboutMia} />
           </Col>
           <Col lg={5} md={12} sm={12}>
             <h2
               className="text-center"
-              style={{ color: "#9df5cc", textShadow: "2px 2px 2px #f1069f" }}
+              style={{ color: "white",fontWeight: "bold",fontStyle: "italic", textShadow: "2px 2px 2px #f1069f" }}
             >
               Maria Munoz
             </h2>
-            <div
-              style={{
-                border: "2px solid white",
-                background: "black",
-              }}
-            >
-              <p id="bioText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. In
-                nibh mauris cursus mattis molestie a iaculis at. Est ultricies
-                integer quis auctor elit sed. Mauris rhoncus aenean vel elit
-                scelerisque mauris. Enim neque volutpat ac tincidunt. Dolor
-                magna eget est lorem ipsum dolor. Orci dapibus ultrices in
-                iaculis. Sed risus pretium quam vulputate. Duis ut diam quam
-                nulla porttitor massa id neque. Ut pharetra sit amet aliquam.
-                Nunc sed augue lacus viverra vitae..
+            <div id="bioText">
+              <p style={{ margin: "8px" }}>
+                <i style={{ textShadow: "2px 2px 2px #f1069f" }}>
+                  Polished By Mia&nbsp;
+                </i>{" "}
+                was started in 2018. Maria has been in the nail industry for 2
+                years now. She loves getting to know her clients and everyone
+                has a different story, wants a different look and she gets to
+                help them accomplish it. When it comes to nail art her creative
+                mind can get you ready for any occasion from your wedding day to
+                every holiday. Maria is extremely passionate about the services
+                she provides and strives to educate each client about them.{" "}
+                <span style={{ textShadow: "2px 2px 2px #f1069f" }}>
+                  {" "}
+                  Sanitation and quality are her main priorities when it comes
+                  to her work.
+                </span>{" "}
+                Her honesty and reliability allow her to build trusting
+                relationships with her clients.
               </p>
             </div>
             &nbsp; &nbsp;
-            <div
-              style={{
-                border: "2px solid white",
-                background: "black",
-              }}
-            >
-              <p id="bioText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. In
-                nibh mauris cursus mattis molestie a iaculis at. Est ultricies
-                integer quis auctor elit sed. Mauris rhoncus aenean vel elit
-                scelerisque mauris. Enim neque volutpat ac tincidunt. Dolor
-                magna eget est lorem ipsum dolor. Orci dapibus ultrices in
-                iaculis. Sed risus pretium quam vulputate. Duis ut diam quam
-                nulla porttitor massa id neque. Ut pharetra sit amet aliquam.
-                Nunc sed augue lacus viverra vitae..
+            <div id="bioText">
+              <p style={{ margin: "8px" }}>
+                Maria graduated in September 2020 from{" "}
+                <span style={{ textShadow: "2px 2px 2px #f1069f" }}>
+                  Nail Boss Academy&nbsp;
+                </span>{" "}
+                in Newport News, Virginia. She is looking forward to continuing
+                her education with the latest trends and ways to expand her nail
+                business. Currently, she is working full time doing Medical
+                Billing with hopes soon she can make the Nail Industry her Full
+                Time Career.
               </p>
             </div>
           </Col>

@@ -374,6 +374,10 @@ thead {
   color: yellow;
   text-shadow: 1px 1px 2px limegreen;
 }
+#rowTitle5 {
+  color: rgb(209, 165, 207);
+  text-shadow: 1px 1px 2px blueviolet;
+}
 
 #rowTitle3 {
   color: orange;

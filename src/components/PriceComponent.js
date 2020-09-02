@@ -159,7 +159,7 @@ function PriceComponent() {
                 {service.pedicure.map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
+                      <td id={item.id % 2 ? "rowTitle5" : "rowTitle"}>
                         <Random minDelay={750} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>

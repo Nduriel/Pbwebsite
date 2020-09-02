@@ -147,16 +147,6 @@ export const addOns = [
   },
   {
     id: 12,
-    name: "Paraffin Wax H/F",
-    price: "$ 5/8",
-  },
-  {
-    id: 13,
-    name: "Jelly Feet Softener",
-    price: "$ 5",
-  },
-  {
-    id: 14,
     name: "Almond/Ballerina/Stiletto Shape Nails",
     price: "$ 5",
   },

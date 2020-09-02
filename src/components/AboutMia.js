@@ -19,45 +19,54 @@ function AboutMia() {
           <Col lg={5} md={12} sm={12}>
             <h2
               className="text-center"
-              style={{ color: "white",fontWeight: "bold",fontStyle: "italic", textShadow: "2px 2px 2px #f1069f" }}
+              style={{
+                color: "white",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                textShadow: "2px 2px 2px #f1069f",
+              }}
             >
               Maria Munoz
             </h2>
             <div id="bioText">
-              <p style={{ margin: "8px" }}>
-                <i style={{ textShadow: "2px 2px 2px #f1069f" }}>
+              <p style={{ margin: "10px" }}>
+                <i style={{ textShadow: "2px 2px 2px blue" }}>
                   Polished By Mia&nbsp;
                 </i>{" "}
-                was started in 2018. Maria has been in the nail industry for 2
-                years now. She loves getting to know her clients and everyone
-                has a different story, wants a different look and she gets to
-                help them accomplish it. When it comes to nail art her creative
-                mind can get you ready for any occasion from your wedding day to
-                every holiday. Maria is extremely passionate about the services
-                she provides and strives to educate each client about them.{" "}
+                was started in 2018. Mia “Maria” has been in the nail industry
+                for two years now but many more if you count her obsession from
+                childhood. She started by watching YouTube videos painting her
+                friend’s and family’s nails. Later, she leaped and enrolled in
+                Nail Boss Academy in Newport News. Mia graduated in September,
+                licensed, and educated in proper nail techniques and care.
+              </p>
+            </div>
+            &nbsp; &nbsp;
+            <div id="bioText">
+              <p style={{ margin: "10px" }}>
+                <i style={{ textShadow: "2px 2px 2px blue" }}>
+                  Polished By Mia
+                </i>
+                's mission is to know each client and help achieve their goal
+                with the latest and new nail trends. Her honesty and reliability
+                allow her to build trusting relationships with her clients. When
+                it comes to nail art her creative mind can get you ready for any
+                occasion from your wedding day to every holiday. Mia is
+                extremely passionate about the services she provides and strives
+                to educate each client about them.
                 <span style={{ textShadow: "2px 2px 2px #f1069f" }}>
                   {" "}
                   Sanitation and quality are her main priorities when it comes
                   to her work.
                 </span>{" "}
-                Her honesty and reliability allow her to build trusting
-                relationships with her clients.
+              </p>
+              <p style={{ margin: "12px" }}>
+                {" "}
+                Currently, she is working full time in Medical Billing with
+                hopes soon she can make the Nail Industry her Full-Time Career.
               </p>
             </div>
             &nbsp; &nbsp;
-            <div id="bioText">
-              <p style={{ margin: "8px" }}>
-                Maria graduated in September 2020 from{" "}
-                <span style={{ textShadow: "2px 2px 2px #f1069f" }}>
-                  Nail Boss Academy&nbsp;
-                </span>{" "}
-                in Newport News, Virginia. She is looking forward to continuing
-                her education with the latest trends and ways to expand her nail
-                business. Currently, she is working full time doing Medical
-                Billing with hopes soon she can make the Nail Industry her Full
-                Time Career.
-              </p>
-            </div>
           </Col>
         </Row>
       </Container>

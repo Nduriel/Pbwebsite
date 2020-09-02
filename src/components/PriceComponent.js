@@ -199,7 +199,7 @@ function PriceComponent() {
                 {service.addOns.map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td id="rowTitle">
+                      <td id={item.id % 2 ? "rowTitle4" : "rowTitle"}>
                         <Random minDelay={750} maxDelay={1000} in>
                           <Fade>{item.name}</Fade>
                         </Random>

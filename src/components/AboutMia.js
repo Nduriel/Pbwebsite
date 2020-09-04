@@ -1,5 +1,6 @@
 import React from "react";
 import { Jumbotron, Container, Row, Col } from "reactstrap";
+import { FadeTransform } from "react-animation-components";
 import Image from "react-bootstrap/Image";
 import { aboutMia } from "./photos";
 
@@ -7,18 +8,26 @@ function AboutMia() {
   return (
     <Jumbotron fluid style={{ color: "white" }}>
       <Container fluid>
-        <Row>
+        <Row style={{justifyContent: "space-evenly"}}>
           <Col
             className="text-center"
-            lg={{ offset: 1, size: 4 }}
+            lg={4}
             md={12}
             sm={12}
           >
+               <FadeTransform
+              in
+              transformProps={{
+                enterTransform: "translateX(0px)",
+                exitTransform: "translateX(150px)",
+              }}
+            >
             <Image id="aboutPic" fluid src={aboutMia} />
+            </FadeTransform>
           </Col>
-          <Col lg={5} md={12} sm={12}>
+          <Col className="text-center" lg={6} md={12} sm={12}>
             <h2
-              className="text-center"
+              
               style={{
                 color: "white",
                 fontWeight: "bold",
@@ -28,6 +37,13 @@ function AboutMia() {
             >
               Maria Munoz
             </h2>
+            <FadeTransform
+              in
+              transformProps={{
+                enterTransform: "translateX(0px)",
+                exitTransform: "translateX(-150px)",
+              }}
+            >
             <div id="bioText">
               <p style={{ margin: "10px" }}>
                 <i style={{ textShadow: "2px 2px 2px blue" }}>
@@ -66,6 +82,7 @@ function AboutMia() {
                 hopes soon she can make the Nail Industry her Full-Time Career.
               </p>
             </div>
+            </FadeTransform>
             &nbsp; &nbsp;
           </Col>
         </Row>

@@ -94,7 +94,7 @@ function FooterComponent() {
                   Maria Munoz
                 </i>
                 <br />
-                <sub>Liscensed Nail Technician</sub>
+                <sub>Certified Nail Technician</sub>
               </li>
               <li>
                 <i>

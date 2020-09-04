@@ -86,24 +86,21 @@ function HomePage() {
               <div id="bodyBox" className="infoBox">
                 <Image
                   id="bodydivpic"
-                  style={{
-                    width: "300px",
-                    height: "300px",
-                    margin: "10px",
-                  }}
                   src={jumbotronPic.logo}
-                  alt="logopic"
+                  alt="Polished By Mia logo"
                   fluid
                   roundedCircle
                 />
                 <br />
                 <p>
-                  Polished By Mia
+                  <span style={{ textShadow: "2px 2px 2px redorange" }}>
+                    Polished By Mia&nbsp;
+                  </span>
                   <sub>
                     <i
                       className="fa fa-copyright"
                       aria-hidden="true"
-                      style={{ fontSize: "13px" }}
+                      style={{ fontSize: "13px", color: "skyblue" }}
                     />
                   </sub>{" "}
                   is an Acrylic service that caters to clients, exclusively, in
@@ -123,10 +120,12 @@ function HomePage() {
               <br />
               <div id="bodyBox2" className="infoBox">
                 <p style={{ margin: "10px" }}>
-                  * By Appointment Only *.
+                  * By Appointment Only *
                   <br />
-                  Due to the Coronavirus Pandemic, masks are *required* every
-                  visit.
+                  <span style={{ textShadow: "2px 2px 2px green" }}>
+                    Due to the Coronavirus Pandemic, masks are *required* every
+                    visit.
+                  </span>
                   <br /> No Exceptions! <br />
                 </p>
               </div>

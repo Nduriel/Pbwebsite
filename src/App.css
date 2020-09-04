@@ -18,8 +18,8 @@
   height: 500px;
   width: auto;
   border: 5px solid;
-  border-image-slice: 1;
   border-image-source: linear-gradient(to left, #743ad5,rgb(3, 235, 243), #d53a9d);
+  border-image-slice: 1;
   border-width: 8px;
   box-shadow: 2px 4px 4px black;
   margin: 10px;

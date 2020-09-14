@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FadeTransform } from "react-animation-components";
 import Image from "react-bootstrap/Image";
+import { FadeTransform } from "react-animation-components";
 import { Col, Row, Container, Jumbotron } from "reactstrap";
 import { carouselPic, jumbotronPic } from "./photos";
 import {

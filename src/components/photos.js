@@ -79,4 +79,4 @@ export const jumbotronPic = {
 
 export const aboutMia = require("../images//MiaAboutpic.JPG")
 
-
+// export const barbicide = require("../../public/BarbicideCert.pdf");

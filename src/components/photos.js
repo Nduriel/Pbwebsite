@@ -77,6 +77,6 @@ export const jumbotronPic = {
   // logo2: require("../images/pbmlogo2.png"),
 };
 
-export const aboutMia = require("../images//MiaAboutpic.JPG")
+export const aboutMia = require("../images//MiaAboutpic.JPG");
 
-// export const barbicide = require("../../public/BarbicideCert.pdf");
+export const barbicide = require("../images/BarbicideCert.pdf");

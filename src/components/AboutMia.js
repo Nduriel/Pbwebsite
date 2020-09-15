@@ -1,5 +1,4 @@
 import React from "react";
-import { Document, Page } from "react-pdf";
 import { Jumbotron, Container, Row, Col } from "reactstrap";
 import { FadeTransform } from "react-animation-components";
 import Image from "react-bootstrap/Image";
@@ -82,13 +81,6 @@ function AboutMia() {
             </FadeTransform>
             &nbsp; &nbsp;
           </Col>
-        </Row>
-        <Row>
-          <Document
-            file='../../public/BarbicideCert.pdf'
-          >
-            <Page pageNumber={1} />
-          </Document>
         </Row>
       </Container>
     </Jumbotron>

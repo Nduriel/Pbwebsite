@@ -36,21 +36,6 @@ function HomePage() {
     setActiveIndex(newIndex);
   };
 
-  // let userFeed = new Instafeed({
-  //   get: "user",
-  //   sortBy: "random",
-  //   resolution: "thumbnail",
-  //   tagName: "polishedbymia",
-  //   userId: "375164293",
-  //   clientId: "291811261930071",
-  //   target: "instafeed",
-  //   template:
-  //     '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>',
-  //   accessToken:
-  //     "IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr",
-  // });
-  // userFeed.run();
-
   const slides = carouselPic.map((item) => {
     return (
       <CarouselItem

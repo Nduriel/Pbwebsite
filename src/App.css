@@ -17,7 +17,7 @@
 #aboutPic {
   height: 500px;
   width: auto;
-  border: 5px solid;
+  border: 5px solid white;
   border-image-source: linear-gradient(
     to left,
     #743ad5,

@@ -130,13 +130,14 @@ function FooterComponent() {
                         color: "rgb(3, 235, 243)",
                       }}
                     >
-                      Certified Nail Technician
+                      Certified Nail
+                      <br />
+                      Technician
                     </a>
-                  </li>
-                  <li>
-                    <i>
+                    <br />
+                    <i style={{ fontSize: "12px" }}>
+                      PolishedByMia{" "}
                       <sub>
-                        PolishedByMia{" "}
                         <i className="fa fa-copyright" aria-hidden="true" />
                       </sub>
                     </i>

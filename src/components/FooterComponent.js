@@ -62,16 +62,16 @@ function FooterComponent() {
             </div>
           </Col>
           <Col className="text-center" xs={4} lg={4} md={4} sm={4}>
-            <span
-              style={{
-                borderBottom: "2px #f1069f",
-                borderBottomStyle: "outset",
-              }}
-            >
-              Questions?
-            </span>
-            <br />
             <div style={{ margin: "5px" }}>
+              <span
+                style={{
+                  borderBottom: "2px #f1069f",
+                  borderBottomStyle: "outset",
+                }}
+              >
+                Questions?
+              </span>
+              <br />
               <a
                 role="button"
                 className="btn btn-link"

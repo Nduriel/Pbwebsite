@@ -79,10 +79,6 @@ function NavBarComponent() {
                     color: "white",
                   }}
                 >
-                  {/* <i
-                    className="fa fa-home fa-sm"
-                    style={{ color: "rgb(3, 235, 243)" }}
-                  /> */}
                   Home
                 </NavLink>
               </NavItem>

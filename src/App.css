@@ -15,18 +15,14 @@
 }
 
 #aboutPic {
+  box-shadow: 10px 10px 8px black;
   height: 500px;
   width: auto;
-  border: 5px solid white;
-  border-image-source: linear-gradient(
-    to left,
-    #743ad5,
-    rgb(3, 235, 243),
-    #d53a9d
-  );
-  border-image-slice: 1;
+  border: 5px solid rgb(3, 235, 243);
+  border-style: ridge;
+  outline: 5px solid purple;
+  outline-style: groove;
   border-width: 8px;
-  box-shadow: 2px 4px 4px black;
   margin: 10px;
 }
 

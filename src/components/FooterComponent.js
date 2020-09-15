@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Col,
-  Row,
-  Badge,
-  Modal,
-  ModalHeader,
-  ModalBody,
-} from "reactstrap";
+import { Col, Row, Badge, Modal, ModalBody } from "reactstrap";
 import { Image } from "react-bootstrap";
 import { barbicide } from "./photos";
 
@@ -16,8 +9,13 @@ function FooterComponent() {
 
   return (
     <>
-      <Modal isOpen={modal} toggle={toggle} style={{justifyContent: 'center'}}>
-        <ModalHeader  toggle={toggle}>Certifications</ModalHeader>
+      <Modal
+        isOpen={modal}
+        toggle={toggle}
+        style={{ justifyContent: "center" }}
+        id="certs"
+        className="text-center"
+      >
         <ModalBody>
           <Image fluid src={barbicide} />
         </ModalBody>
@@ -28,6 +26,7 @@ function FooterComponent() {
             className="text-center"
             // id="goneText"
             xs={4}
+            sm={4}
             lg={4}
             style={{
               borderRight: "3px outset pink",
@@ -62,7 +61,7 @@ function FooterComponent() {
               </ul>
             </div>
           </Col>
-          <Col className="text-center" xs={4} lg={4} md={6} sm={6}>
+          <Col className="text-center" xs={4} lg={4} md={4} sm={4}>
             <span
               style={{
                 borderBottom: "2px #f1069f",
@@ -98,7 +97,8 @@ function FooterComponent() {
             </div>
           </Col>
           <Col
-          xs={4}
+            xs={4}
+            sm={4}
             lg={4}
             // id="goneText"
             className="text-center"
@@ -107,30 +107,42 @@ function FooterComponent() {
             }}
           >
             <span>
-              <ul className="list-unstyled" style={{ marginTop: "5px" }}>
-                <li>
-                  <i
-                    style={{
-                      borderBottom: "2px #f1069f",
-                      borderBottomStyle: "outset",
-                    }}
-                  >
-                    Maria Munoz
-                  </i>
-                  <br />
-                  <sub>
-                    <Badge onClick={toggle}>Certified Nail Technician</Badge>
-                  </sub>
-                </li>
-                <li>
-                  <i>
-                    <sub>
-                      PolishedByMia{" "}
-                      <i className="fa fa-copyright" aria-hidden="true" />
-                    </sub>
-                  </i>
-                </li>
-              </ul>
+              <div>
+                <ul className="list-unstyled">
+                  <li>
+                    <i
+                      style={{
+                        borderBottom: "2px #f1069f",
+                        borderBottomStyle: "outset",
+                      }}
+                    >
+                      Maria Munoz
+                    </i>
+                  </li>
+                  <li style={{ marginTop: "5px" }}>
+                    <a
+                      data-toggle="modal"
+                      href="#certs"
+                      role="button"
+                      onClick={toggle}
+                      style={{
+                        fontSize: "14px",
+                        color: "rgb(3, 235, 243)",
+                      }}
+                    >
+                      Certified Nail Technician
+                    </a>
+                  </li>
+                  <li>
+                    <i>
+                      <sub>
+                        PolishedByMia{" "}
+                        <i className="fa fa-copyright" aria-hidden="true" />
+                      </sub>
+                    </i>
+                  </li>
+                </ul>
+              </div>
             </span>
           </Col>
         </Row>

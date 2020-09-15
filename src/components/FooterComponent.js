@@ -27,7 +27,7 @@ function FooterComponent() {
           <Col
             className="text-center"
             // id="goneText"
-            xs={6}
+            xs={4}
             lg={4}
             style={{
               borderRight: "3px outset pink",
@@ -62,7 +62,7 @@ function FooterComponent() {
               </ul>
             </div>
           </Col>
-          <Col className="text-center" xs={6} lg={4} md={6} sm={6}>
+          <Col className="text-center" xs={4} lg={4} md={6} sm={6}>
             <span
               style={{
                 borderBottom: "2px #f1069f",
@@ -98,8 +98,9 @@ function FooterComponent() {
             </div>
           </Col>
           <Col
+          xs={4}
             lg={4}
-            id="goneText"
+            // id="goneText"
             className="text-center"
             style={{
               borderLeft: "3px outset pink",

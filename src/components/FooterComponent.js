@@ -62,15 +62,25 @@ function FooterComponent() {
             </div>
           </Col>
           <Col className="text-center" xs={4} lg={4} md={4} sm={4}>
-            <div style={{ margin: "5px" }}>
-              <span
-                style={{
-                  borderBottom: "2px #f1069f",
-                  borderBottomStyle: "outset",
-                }}
+            <div>
+              <a
+                role="button"
+                className="btn btn-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://instagram.com/polished.bymia/"
               >
-                Questions?
-              </span>
+                <i id="socialIcon" className="fa fa-instagram fa-lg" />
+              </a>
+              <a
+                role="button"
+                className="btn btn-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://facebook.com/polishedbymia/"
+              >
+                <i id="socialIcon" className="fa fa-facebook-square fa-lg" />
+              </a>
               <br />
               <a
                 role="button"
@@ -88,11 +98,7 @@ function FooterComponent() {
                 rel="noopener noreferrer"
                 href="tel:+17579127833"
               >
-                <i
-                  role="button"
-                  id="socialIcon"
-                  className="fa fa-phone fa-lg"
-                />
+                <i className="fa fa-phone fa-lg" id="socialIcon" />
               </a>
             </div>
           </Col>
@@ -130,7 +136,7 @@ function FooterComponent() {
                         color: "rgb(3, 235, 243)",
                       }}
                     >
-                      Certified Nail
+                      Nail
                       <br />
                       Technician
                     </a>

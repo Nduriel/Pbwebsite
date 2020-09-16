@@ -4,20 +4,20 @@ import {
   Navbar,
   Nav,
   NavbarToggler,
-  DropdownToggle,
   Collapse,
   NavbarBrand,
   NavItem,
-  DropdownItem,
-  DropdownMenu,
-  Dropdown,
+  // DropdownToggle,
+  // DropdownItem,
+  // DropdownMenu,
+  // Dropdown,
   Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 // import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
   //Modal Toggler
   // const [isModalOpen, setModal] = useState(false);
@@ -25,7 +25,7 @@ function NavBarComponent() {
   //   setModal((isModalOpen) => !isModalOpen);
   // };
 
-  const droptoggle = () => setDropdownOpen((prevState) => !prevState);
+  // const droptoggle = () => setDropdownOpen((prevState) => !prevState);
 
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
@@ -108,7 +108,7 @@ function NavBarComponent() {
                   About Mia
                 </NavLink>
               </NavItem>
-              <Dropdown
+              {/* <Dropdown
                 // className="glow"
                 isOpen={dropdownOpen}
                 toggle={droptoggle}
@@ -140,12 +140,12 @@ function NavBarComponent() {
                   <DropdownItem divider />
                   <DropdownItem
                     className="DropDownItem1"
-                    href="http://facebook.com/polishedbymia/"
                     style={{
                       color: "white",
                       textShadow: "2px 2px 2px blue",
                       fontWeight: "bold",
                     }}
+                    href="http://facebook.com/polishedbymia/"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-hidden="true"
@@ -154,7 +154,7 @@ function NavBarComponent() {
                     &nbsp; Facebook
                   </DropdownItem>
                 </DropdownMenu>
-              </Dropdown>
+              </Dropdown> */}
             </Nav>
           </Collapse>
           <a href="https://square.site/book/L65T6T8DQHNTT/polished-by-mia"

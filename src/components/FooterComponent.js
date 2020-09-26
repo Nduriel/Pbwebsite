@@ -22,13 +22,7 @@ function FooterComponent() {
       </Modal>
       <footer className="site-footer">
         <Row>
-          <Col
-            className="text-center"
-            // id="goneText"
-            xs={4}
-            sm={4}
-            lg={4}
-          >
+          <Col className="text-center" xs={6} sm={4} lg={4}>
             <span
               style={{
                 borderBottom: "2px #f1069f",
@@ -59,7 +53,7 @@ function FooterComponent() {
             </div>
           </Col>
           <Col className="text-center" xs={4} lg={4} md={4} sm={4}>
-            <div style={{ borderLeft: "3px ridge pink", borderRight: "3px ridge pink",}}>
+            <div>
               <a
                 role="button"
                 className="btn btn-link"
@@ -99,12 +93,7 @@ function FooterComponent() {
               </a>
             </div>
           </Col>
-          <Col
-            xs={4}
-            sm={4}
-            lg={4}
-            className="text-center"
-          >
+          <Col xs={6} sm={4} lg={4} className="text-center" id="goneText">
             <span>
               <div>
                 <ul className="list-unstyled">

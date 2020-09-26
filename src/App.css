@@ -320,7 +320,7 @@ body
   background: #007aff;
   color: white;
   padding: 11px;
-  border-radius: 50%;
+  border-radius: 50%/50%;
   text-shadow: 2px 2px 2px #f1069f;
 }
 
@@ -348,6 +348,9 @@ Table {
 }
 #addOns {
   background-image: linear-gradient(90deg, blue, grey, white);
+}
+#kids {
+  background-image: linear-gradient(90deg, green, skyblue, yellow);
 }
 
 #cost {
@@ -389,6 +392,10 @@ thead {
 #rowTitle4 {
   color: lightblue;
   text-shadow: 1px 1px 2px blue;
+}
+#rowTitle5 {
+  color: greenyellow;
+  text-shadow: 1px 1px 2px limegreen;
 }
 
 /* </Table> */

@@ -134,6 +134,12 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
+                <tr id="rowTitle" style={{ textAlign: "center" }}>
+                  <td colSpan="4">
+                    <span id="rowTitle3">Manicure</span> includes: Trim & Shape
+                    (nails and cuticles), lotion massage, and polish.
+                  </td>
+                </tr>
               </tbody>
             </Table>
           </Col>
@@ -172,6 +178,13 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
+                <tr id="rowTitle" style={{ textAlign: "center" }}>
+                  <td colSpan="4">
+                    <span id="rowTitle5">Pedicure</span> includes: Trim & Shape
+                    (nails and cuticles), sugar scrub, callus work, lotion
+                    massage and polish.
+                  </td>
+                </tr>
               </tbody>
             </Table>
           </Col>
@@ -212,6 +225,50 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
+              </tbody>
+            </Table>
+          </Col>
+          <Col lg={6}>
+            <Table
+              dark
+              style={{
+                marginTop: "50px",
+                marginBottom: "20px",
+              }}
+              size="md"
+              responsive
+              striped
+              bordered
+              hover
+            >
+              <thead id="kids">
+                <tr>
+                  <th colSpan="2">For Kids</th>
+                </tr>
+              </thead>
+              <tbody>
+                {service.kids.map((item) => {
+                  return (
+                    <tr key={item.id}>
+                      <td id={item.id % 2 ? "rowTitle5" : "rowTitle"}>
+                        <Random minDelay={750} maxDelay={1000} in>
+                          <Fade>{item.name}</Fade>
+                        </Random>
+                      </td>
+                      <td colSpan="1" id="cost">
+                        <Random minDelay={750} maxDelay={1500} in>
+                          <Fade>{item.price}</Fade>
+                        </Random>
+                      </td>
+                    </tr>
+                  );
+                })}
+                 <tr id="rowTitle" style={{textAlign: 'center'}}>
+                  <td colSpan="4">
+                    <span id="rowTitle5">Manicure & Pedicure</span> includes: Trim & Shape (nails and cuticles), lotion
+                    massage, and polish.
+                  </td>
+                </tr>
               </tbody>
             </Table>
           </Col>

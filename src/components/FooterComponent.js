@@ -28,20 +28,17 @@ function FooterComponent() {
             xs={4}
             sm={4}
             lg={4}
-            style={{
-              borderRight: "3px outset pink",
-            }}
           >
             <span
               style={{
                 borderBottom: "2px #f1069f",
-                borderBottomStyle: "outset",
+                borderBottomStyle: "ridge",
                 textShadow: "2px 2px 2px #f1069f",
               }}
             >
               Directory
             </span>
-            <div style={{ margin: "5px" }}>
+            <div style={{ marginTop: "5px" }}>
               <ul className="list-unstyled">
                 <li>
                   <Badge href="/home" color="info">
@@ -62,7 +59,7 @@ function FooterComponent() {
             </div>
           </Col>
           <Col className="text-center" xs={4} lg={4} md={4} sm={4}>
-            <div>
+            <div style={{ borderLeft: "3px ridge pink", borderRight: "3px ridge pink",}}>
               <a
                 role="button"
                 className="btn btn-link"
@@ -79,7 +76,7 @@ function FooterComponent() {
                 rel="noopener noreferrer"
                 href="http://facebook.com/polishedbymia/"
               >
-                <i id="socialIcon" className="fa fa-facebook-square fa-lg" />
+                <i id="socialIcon" className="fa fa-facebook fa-lg" />
               </a>
               <br />
               <a
@@ -106,11 +103,7 @@ function FooterComponent() {
             xs={4}
             sm={4}
             lg={4}
-            // id="goneText"
             className="text-center"
-            style={{
-              borderLeft: "3px outset pink",
-            }}
           >
             <span>
               <div>
@@ -119,7 +112,7 @@ function FooterComponent() {
                     <i
                       style={{
                         borderBottom: "2px #f1069f",
-                        borderBottomStyle: "outset",
+                        borderBottomStyle: "ridge",
                       }}
                     >
                       Maria Munoz

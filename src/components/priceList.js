@@ -2,27 +2,27 @@ export const fullSets = [
   {
     id: 0,
     name: "Short Nails",
-    price: "$ 35",
+    price: "$ 40",
   },
   {
     id: 1,
     name: "Medium Short Nails",
-    price: "$ 40",
+    price: "$ 45",
   },
   {
     id: 2,
     name: "Medium Long Nails",
-    price: "$ 45",
+    price: "$ 50",
   },
   {
     id: 3,
     name: "Long Nails",
-    price: "$ 50",
+    price: "$ 55",
   },
   {
     id: 4,
     name: "XL Nails",
-    price: "$ 55",
+    price: "$ 60",
   },
   {
     id: 5,
@@ -64,12 +64,12 @@ export const fills = [
   },
   {
     id: 5,
-    name: "Color Acrylic Fill",
+    name: "Color Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
     id: 6,
-    name: "Ombre Acrylic Fill",
+    name: "Ombre Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
@@ -82,71 +82,56 @@ export const fills = [
 export const addOns = [
   {
     id: 0,
-    name: "Soak-Off Gel Polish",
-    price: "$ 5",
+    name: "Soak-Off Gel Polish (Only Service)",
+    price: "Starting at $ 5",
   },
   {
     id: 1,
     name: "Soak-Off Nails (60 minutes with Full Set)",
-    price: "$ 10",
+    price: "Starting at $ 15",
   },
   {
     id: 2,
     name: "Soak Off (60 minutes)",
-    price: "$ 20",
+    price: "Starting at $ 15",
   },
   {
     id: 3,
-    name: "French Tips/Half Gel Nail Design",
-    price: "$ 5",
+    name: "Soak Off (Package for Home)",
+    price: "$ 8",
   },
   {
     id: 4,
-    name: "Total 2/4 Designs",
-    price: "$ 5/10",
+    name: "Jewels (Per Nail)",
+    price: "$ 4",
   },
   {
     id: 5,
-    name: "All Nail Designs(10)",
-    price: "$ 15",
-  },
-  {
-    id: 6,
-    name: "Jewel Designs 2/4",
-    price: "$ 4/8",
-  },
-  {
-    id: 7,
     name: "Full Blinged Out Nail",
-    price: "$ 6",
-  },
-  {
-    id: 8,
-    name: "All-Blinged-Out Nails",
-    price: "$ 75",
-  },
-  {
-    id: 9,
-    name: "Acrylic on 2 Big Toes",
     price: "$ 10",
   },
   {
+    id: 6,
+    name: "All-Blinged-Out Nails",
+    price: "+$ 85",
+  },
+  {
+    id: 7,
+    name: "French Tips Gel Nail Design",
+    price: "$ 8",
+  },
+  {
+    id: 8,
+    name: "Designs (Per Nail)",
+    price: "Starting at $ 1",
+  },
+  {
     id: 9,
-    name: "Encapsulated Nail (2/4)",
-    price: "$ 3/6",
+    name: "Encapsulated Nail (Per Nail)",
+    price: "Starting at $ 10",
   },
   {
     id: 10,
-    name: "Encapsulated Nails (10)",
-    price: "$ 15",
-  },
-  {
-    id: 11,
-    name: "Acrylic Fill-In 2 Big Toes",
-    price: "$ 6",
-  },
-  {
-    id: 12,
     name: "Almond/Ballerina/Stiletto Shape Nails",
     price: "$ 5",
   },
@@ -155,75 +140,73 @@ export const addOns = [
 export const manicure = [
   {
     id: 0,
-    name: "Regular Mani No Polish",
-    price: "$ 12",
+    name: "Regular Manicure",
+    price: "$ 10",
   },
   {
     id: 1,
-    name: "French Manicure",
-    price: "$ 20",
-  },
-  {
-    id: 2,
     name: "Gel Polish Manicure",
     price: "$ 25",
   },
   {
-    id: 3,
-    name: "Gel Polish Manicure + Removal",
+    id: 2,
+    name: "Gel Soak-Off & Manicure",
     price: "$ 30",
   },
   {
-    id: 4,
-    name: "Gel Polish Manicure + Design",
-    price: "$ 35",
-  },
-  {
-    id: 5,
-    name: "Kids Manicure",
-    price: "$ 10",
+    id: 3,
+    name: "Polish Only",
+    price: "$ 5",
   },
 ];
 
 export const pedicure = [
   {
     id: 0,
-    name: "Regular Pedicure No Polish",
-    price: "$ 20",
+    name: "Regular Polish Pedicure",
+    price: "$ 23",
   },
   {
     id: 1,
-    name: "Regular Polish Pedicure",
-    price: "$ 25",
+    name: "Gel Polish Pedicure",
+    price: "Starting at $ 40",
   },
   {
     id: 2,
-    name: "French Pedicure",
-    price: "$ 30",
+    name: "Acrylic on 2 Big Toes",
+    price: "$ 8",
   },
   {
     id: 3,
-    name: "Gel Polish Pedicure",
-    price: "$ 35",
+    name: "Acrylic Fill-In 2 Big Toes",
+    price: "$ 4",
   },
   {
     id: 4,
-    name: "Gel Polish Pedicure + Removal",
-    price: "$ 40",
+    name: "Toe Polish Only",
+    price: "$ 10",
+  },
+];
+
+export const kids = [
+  {
+    id: 0,
+    name: "Hand or Foot",
+    price: "$ 5",
   },
   {
-    id: 5,
-    name: "Gel Polish Pedicure + Design",
-    price: "$ 45",
+    id: 1,
+    name: "Kids Manicure",
+    price: "$ 10",
   },
   {
-    id: 6,
-    name: "Spa Pedicure + Gel Polish",
-    price: "$ 50",
-  },
-  {
-    id: 7,
+    id: 2,
     name: "Kids Pedicure",
     price: "$ 15",
+  },
+  {
+    id: 3,
+    name: "Add Gel Polish",
+    price: "+$ 5",
   },
 ];

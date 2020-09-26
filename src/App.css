@@ -15,9 +15,9 @@
 }
 
 #aboutPic {
-  box-shadow: 10px 10px 8px black;
-  height: 500px;
+  height: auto;
   width: auto;
+  box-shadow: 10px 10px 8px black;
   border: 5px solid rgb(3, 235, 243);
   border-style: ridge;
   outline: 5px solid purple;

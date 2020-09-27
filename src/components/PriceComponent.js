@@ -58,7 +58,7 @@ function PriceComponent() {
                 })}
                 <tr id="rowTitle" style={{ textAlign: "center" }}>
                   <td colSpan="4">
-                    *&nbsp;<span id="rowTitle2">inlcudes gel polish</span>
+                    *&nbsp;<span id="rowTitle2">includes gel polish</span>
                     &nbsp;*
                   </td>
                 </tr>
@@ -102,7 +102,7 @@ function PriceComponent() {
                 })}
                 <tr id="rowTitle" style={{ textAlign: "center" }}>
                   <td colSpan="4">
-                    *&nbsp;<span id="rowTitle1">inlcudes gel polish</span>
+                    *&nbsp;<span id="rowTitle1">includes gel polish</span>
                     &nbsp;*
                   </td>
                 </tr>

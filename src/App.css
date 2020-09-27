@@ -137,6 +137,12 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #goneText1 {
+    display: none;
+  }
+}
+
 .jumbotron {
   font-family: "Arima Madurai", cursive;
   margin: 0;

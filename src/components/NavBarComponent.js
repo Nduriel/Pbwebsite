@@ -59,7 +59,7 @@ function NavBarComponent() {
       {/* <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} /> */}
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
-          <NavbarBrand style={navbarIcon} id="goneText" href="#home">
+          <NavbarBrand style={navbarIcon} id="goneText1" href="#home">
             PBM
           </NavbarBrand>
           <NavbarToggler
@@ -108,60 +108,14 @@ function NavBarComponent() {
                   About Mia
                 </NavLink>
               </NavItem>
-              {/* <Dropdown
-                // className="glow"
-                isOpen={dropdownOpen}
-                toggle={droptoggle}
-                size="sm"
-              >
-                <DropdownToggle nav style={{ color: "white" }}>
-                  <i
-                    className="fa fa-comments fa-sm"
-                    style={{ color: "rgb(3, 235, 243)" }}
-                  />
-                  &nbsp;Social
-                </DropdownToggle>
-                <DropdownMenu id="dropDown">
-                  <DropdownItem
-                    className="DropDownItem"
-                    href="http://instagram.com/polished.bymia/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-hidden="true"
-                    style={{
-                      color: "white",
-                      textShadow: "2px 2px 2px red",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    <i className="fa fa-instagram fa-lg" id="dropIg" />
-                    &nbsp;Instagram
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem
-                    className="DropDownItem1"
-                    style={{
-                      color: "white",
-                      textShadow: "2px 2px 2px blue",
-                      fontWeight: "bold",
-                    }}
-                    href="http://facebook.com/polishedbymia/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-hidden="true"
-                  >
-                    <i className="fa fa-facebook-square" id="dropFb" />
-                    &nbsp; Facebook
-                  </DropdownItem>
-                </DropdownMenu>
-              </Dropdown> */}
             </Nav>
           </Collapse>
-          <a href="https://square.site/book/L65T6T8DQHNTT/polished-by-mia"
-           role="button"
-           className="btn btn-link"
-           target="_blank"
-           rel="noopener noreferrer"
+          <a
+            href="https://square.site/book/L65T6T8DQHNTT/polished-by-mia"
+            role="button"
+            className="btn btn-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Button
               color="primary"

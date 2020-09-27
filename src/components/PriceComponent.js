@@ -56,6 +56,12 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
+                <tr id="rowTitle" style={{ textAlign: "center" }}>
+                  <td colSpan="4">
+                    *&nbsp;<span id="rowTitle2">inlcudes gel polish</span>
+                    &nbsp;*
+                  </td>
+                </tr>
               </tbody>
             </Table>
           </Col>
@@ -94,6 +100,12 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
+                <tr id="rowTitle" style={{ textAlign: "center" }}>
+                  <td colSpan="4">
+                    *&nbsp;<span id="rowTitle1">inlcudes gel polish</span>
+                    &nbsp;*
+                  </td>
+                </tr>
               </tbody>
             </Table>
           </Col>
@@ -243,7 +255,9 @@ function PriceComponent() {
             >
               <thead id="kids">
                 <tr>
-                  <th colSpan="2">For Kids</th>
+                  <th colSpan="2">
+                    Kids <i style={{ fontSize: "15px" }}>13 and under</i>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -263,10 +277,11 @@ function PriceComponent() {
                     </tr>
                   );
                 })}
-                 <tr id="rowTitle" style={{textAlign: 'center'}}>
+                <tr id="rowTitle" style={{ textAlign: "center" }}>
                   <td colSpan="4">
-                    <span id="rowTitle5">Manicure & Pedicure</span> includes: Trim & Shape (nails and cuticles), lotion
-                    massage, and polish.
+                    <span id="rowTitle5">Manicure & Pedicure</span> includes:
+                    Trim & Shape (nails and cuticles), lotion massage, and
+                    polish.
                   </td>
                 </tr>
               </tbody>

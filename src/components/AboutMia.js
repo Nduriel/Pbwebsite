@@ -48,7 +48,7 @@ function AboutMia() {
                   from childhood. She started by watching YouTube videos
                   painting her friend’s and family’s nails. Later, she leaped
                   and enrolled in Nail Boss Academy in Newport News. Mia
-                  graduated in September, licensed, and educated in proper nail
+                  graduated the academy in September, and is educated in proper nail
                   techniques and care.
                 </p>
               </div>

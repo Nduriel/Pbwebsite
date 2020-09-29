@@ -37,7 +37,7 @@ function AboutMia() {
         isOpen={modal1}
         toggle={toggle2}
         style={{ justifyContent: "center" }}
-        className="text-center"
+        className="text-left"
       >
         <ModalBody id="policyCert">{policies}</ModalBody>
         <Button onClick={toggle2} color="danger">

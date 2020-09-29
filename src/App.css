@@ -45,14 +45,24 @@
 
 #policyList {
   border-radius: 1%/5%;
-  background: -webkit-linear-gradient(top, navy ,violet);
   list-style-type: square;
   padding-left: 12px;
   
 }
 
+#policyCert {
+  margin: 1px;
+  background: -webkit-linear-gradient(rgb(71, 38, 94), #9e0669f3);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  border-style: outset;
+  border: 2px solid silver;
+}
+
 .policy {
-  text-shadow: 1px 2px 2px rgb(156, 18, 156);
+  text-shadow: 1px 2px 2px rgb(16, 148, 93);
+  border-bottom: 2px solid white;
 }
 
 #bodyBox {
@@ -96,15 +106,7 @@
   background: -webkit-linear-gradient(rgb(3, 243, 163), #ad0472f3);
 }
 
-#policyCert {
-  margin: 1px;
-  background: -webkit-linear-gradient(rgb(3, 243, 163), #ad0472f3);
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  font-weight: bold;
-  border-style: outset;
-  border: 2px solid silver;
-}
+
 
 .carousel {
   border-radius: 2%;

@@ -1,25 +1,9 @@
-import React, { useState } from "react";
-import { Col, Row, Badge, Modal, ModalBody } from "reactstrap";
-import { Image } from "react-bootstrap";
-import { barbicide } from "./photos";
+import React from "react";
+import { Col, Row, Badge } from "reactstrap";
 
 function FooterComponent() {
-  const [modal, setModal] = useState(false);
-  const toggle = () => setModal(!modal);
-
   return (
     <>
-      <Modal
-        isOpen={modal}
-        toggle={toggle}
-        style={{ justifyContent: "center" }}
-        id="certs"
-        className="text-center"
-      >
-        <ModalBody>
-          <Image fluid src={barbicide} />
-        </ModalBody>
-      </Modal>
       <footer className="site-footer">
         <Row>
           <Col className="text-center" xs={6} sm={4} lg={4}>
@@ -107,22 +91,19 @@ function FooterComponent() {
                       Maria Munoz
                     </i>
                   </li>
-                  <li style={{ marginTop: "5px" }}>
-                    <a
-                      data-toggle="modal"
-                      href="#certs"
-                      role="button"
-                      onClick={toggle}
-                      style={{
-                        fontSize: "14px",
-                        color: "rgb(3, 235, 243)",
-                      }}
-                    >
-                      Nail
-                      <br />
-                      Technician
-                    </a>
+                  <li
+                    style={{
+                      marginTop: "5px",
+                      fontSize: "14px",
+                      color: "skyblue",
+                    }}
+                  >
+                    Nail
                     <br />
+                    Technician
+                    <br />
+                  </li>
+                  <li>
                     <i style={{ fontSize: "12px" }}>
                       PolishedByMia{" "}
                       <sub>

@@ -16,7 +16,7 @@
 
 #aboutPic {
   height: auto;
-  width: auto;
+  width: 95%;
   box-shadow: 10px 10px 8px black;
   border: 5px solid rgb(3, 235, 243);
   border-style: ridge;
@@ -24,6 +24,22 @@
   outline-style: groove;
   border-width: 8px;
   margin: 10px;
+}
+
+#policyButton {
+  background: -webkit-linear-gradient( top, grey, black);
+  border: 2px solid rgba(49, 49, 49, 0.795);
+  border-style: outset;
+  box-shadow: 2px 2px 2px rgb(66, 65, 65);
+  text-shadow: 1px 1px  black;
+}
+
+#policyButton1 {
+  background: -webkit-linear-gradient( bottom, navy, rgb(3, 235, 243));
+  border: 2px solid rgba(49, 49, 49, 0.795);
+  border-style: outset;
+  box-shadow: 2px 2px 2px rgb(66, 65, 65);
+  text-shadow: 1px 1px  black;
 }
 
 #bodyBox {
@@ -65,6 +81,16 @@
   place-items: center;
   box-shadow: 10px 10px 10px rgb(24, 23, 23);
   background: -webkit-linear-gradient(rgb(3, 243, 163), #ad0472f3);
+}
+
+#policyCert {
+  margin: 1px;
+  background: -webkit-linear-gradient(rgb(3, 243, 163), #ad0472f3);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-weight: bold;
+  border-style: outset;
+  border: 2px solid silver
 }
 
 .carousel {

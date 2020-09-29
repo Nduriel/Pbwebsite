@@ -27,19 +27,32 @@
 }
 
 #policyButton {
-  background: -webkit-linear-gradient( top, grey, black);
+  background: -webkit-linear-gradient(top, grey, black);
   border: 2px solid rgba(49, 49, 49, 0.795);
   border-style: outset;
   box-shadow: 2px 2px 2px rgb(66, 65, 65);
-  text-shadow: 1px 1px  black;
+  text-shadow: 1px 1px black;
 }
 
 #policyButton1 {
-  background: -webkit-linear-gradient( bottom, navy, rgb(3, 235, 243));
+  background: -webkit-linear-gradient(bottom, navy, rgb(3, 235, 243));
   border: 2px solid rgba(49, 49, 49, 0.795);
   border-style: outset;
   box-shadow: 2px 2px 2px rgb(66, 65, 65);
-  text-shadow: 1px 1px  black;
+  text-shadow: 1px 1px black;
+}
+
+
+#policyList {
+  border-radius: 1%/5%;
+  background: -webkit-linear-gradient(top, navy ,violet);
+  list-style-type: square;
+  padding-left: 12px;
+  
+}
+
+.policy {
+  text-shadow: 1px 2px 2px rgb(156, 18, 156);
 }
 
 #bodyBox {
@@ -90,7 +103,7 @@
   text-shadow: 1px 1px 2px black;
   font-weight: bold;
   border-style: outset;
-  border: 2px solid silver
+  border: 2px solid silver;
 }
 
 .carousel {

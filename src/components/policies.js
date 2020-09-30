@@ -18,7 +18,7 @@ export const policies = (
     </ul>
     <span className="policy">Payment Methods</span> :
     <span style={{ textShadow: "1px 2px 2px red" }}>
-      Cash, Cash App, Apple Pay and Gift Certificates
+      {" "}Cash, Cash App, Apple Pay and Gift Certificates
     </span>{" "}
     are acceptable tenders for all services and products.
     <br />
@@ -79,7 +79,7 @@ export const policies = (
     <br />
     <br />
     <span className="policy">Refunds</span> : If you are not happy with your
-    nails, please make us aware of it <u>before you pay</u>. We will adjust them
+    nails, please make us aware of it <i style={{ textShadow: "1px 2px 2px red" }}>before you pay</i>. We will adjust them
     to your satisfaction or remove any enhancements or coatings that have been
     applied. No refunds will be given after you have left the salon. <br />
     <br />

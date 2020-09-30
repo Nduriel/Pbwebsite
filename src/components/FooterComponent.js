@@ -84,6 +84,7 @@ function FooterComponent() {
                   <li>
                     <i
                       style={{
+                        color: "pink",
                         borderBottom: "2px #f1069f",
                         borderBottomStyle: "ridge",
                       }}
@@ -93,7 +94,7 @@ function FooterComponent() {
                   </li>
                   <li
                     style={{
-                      marginTop: "5px",
+                      marginTop: "8px",
                       fontSize: "14px",
                       color: "skyblue",
                     }}
@@ -107,7 +108,11 @@ function FooterComponent() {
                     <i style={{ fontSize: "12px" }}>
                       PolishedByMia{" "}
                       <sub>
-                        <i className="fa fa-copyright" aria-hidden="true" />
+                        <i
+                          className="fa fa-copyright"
+                          style={{ color: "skyblue" }}
+                          aria-hidden="true"
+                        />
                       </sub>
                     </i>
                   </li>

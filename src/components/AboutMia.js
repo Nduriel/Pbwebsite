@@ -12,13 +12,12 @@ import { FadeTransform } from "react-animation-components";
 import Image from "react-bootstrap/Image";
 import { aboutMia } from "./photos";
 import { barbicide } from "./photos";
-import { bio1, bio2, policies } from "./policies";
+import { bio1, bio2 } from "./policies";
 
 function AboutMia() {
   const [modal, setModal] = useState(false);
-  const [modal1, setModal1] = useState(false);
   const toggle = () => setModal(!modal);
-  const toggle2 = () => setModal1(!modal1);
+
 
   return (
     <>
@@ -32,17 +31,6 @@ function AboutMia() {
         <ModalBody toggle={toggle}>
           <Image fluid src={barbicide} />
         </ModalBody>
-      </Modal>
-      <Modal
-        isOpen={modal1}
-        toggle={toggle2}
-        style={{ justifyContent: "center" }}
-        className="text-left"
-      >
-        <ModalBody id="policyCert">{policies}</ModalBody>
-        <Button onClick={toggle2} color="danger">
-          X
-        </Button>
       </Modal>
       <Jumbotron fluid style={{ color: "white" }}>
         <Container fluid>
@@ -92,9 +80,6 @@ function AboutMia() {
                 Barbicide Certification
               </Button>
               &nbsp;&nbsp;{" "}
-              <Button id='policyButton' size='sm' onClick={toggle2}>
-                Mia Policies
-              </Button>
             </Col>
           </Row>
         </Container>

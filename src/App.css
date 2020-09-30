@@ -42,12 +42,10 @@
   text-shadow: 1px 1px black;
 }
 
-
 #policyList {
   border-radius: 1%/5%;
   list-style-type: square;
   padding-left: 12px;
-  
 }
 
 #policyCert {
@@ -105,8 +103,6 @@
   box-shadow: 10px 10px 10px rgb(24, 23, 23);
   background: -webkit-linear-gradient(rgb(3, 243, 163), #ad0472f3);
 }
-
-
 
 .carousel {
   border-radius: 2%;
@@ -225,7 +221,6 @@
 }
 
 /* Modal */
-
 #modalHead {
   background-color: purple;
   display: block;
@@ -284,47 +279,7 @@ body
   border-style: outset;
 }
 
-.DropDownItem:hover {
-  background-image: linear-gradient(
-    90deg,
-    purple,
-    purple,
-    purple,
-    red,
-    orange,
-    yellow,
-    white 75%,
-    white 75%,
-    yellow,
-    orange,
-    red,
-    purple,
-    purple,
-    purple
-  );
-  background-size: 600% 100%;
-  animation-direction: alternate;
-  animation: gradient 8s linear infinite;
-  display: block;
-}
-.DropDownItem1:hover {
-  background-image: linear-gradient(
-    90deg,
-    #007aff,
-    #007aff,
-    #007aff,
-    white,
-    white,
-    white,
-    #007aff,
-    #007aff,
-    #007aff
-  );
-  background-size: 600% 100%;
-  animation-direction: alternate;
-  animation: gradient 8s linear infinite;
-  display: block;
-}
+
 
 #dropDown {
   background-image: linear-gradient(purple, lightskyblue, purple);
@@ -460,18 +415,3 @@ thead {
   flex-direction: row;
   white-space: nowrap;
 }
-
-/*dark purple #510036, light pink #f1069f, light green #9df5cc*/
-/* https://api.instagram.com/oauth/authorize
-  ?client_id=2662938407255430
-  &redirect_uri=https://pbmacrylics.netlify.app/home
-  &scope=user_profile,user_media
-  &response_type=code */
-
-/* "access_token": "IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr", 
-  "user_id": 17841401808795861 */
-/* 
-  curl -X GET \
-  'https://graph.instagram.com/17841401808795861?fields=id,username&access_token=IGQVJXV2JpTHd5ZADdkUjRWYW5NQXFaYWxVUmxZAcnVJOEV6TXJXd08wS2JJbS1JQTlmWnhvRjFpNmpUektseTFOY29MUjF1RDZAWb0V0ZA3FPZAFFibmowRW11UmFySTNrbEJ6YzRFVExJbGt5LXpVV1BnSHhHcWVsRHFQTzJr' */
-
-/* https://instagram.com/oauth/authorize/?client_id=291811261930071&redirect_uri=http://instafeedjs.com&response_type=token */

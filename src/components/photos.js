@@ -74,7 +74,6 @@ export const carouselPic = [
 
 export const jumbotronPic = {
   logo: require("../images/pbmlogo1.png"),
-  // logo2: require("../images/pbmlogo2.png"),
 };
 
 export const aboutMia = require("../images//MiaAboutpic.JPG");

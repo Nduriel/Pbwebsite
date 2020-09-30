@@ -26,7 +26,7 @@ function PriceComponent() {
       >
         <ModalBody id="policyCert">{policies}</ModalBody>
         <Button onClick={toggle2} color="danger">
-          X
+          <i>Close</i>
         </Button>
       </Modal>
       <Jumbotron fluid id="prices">

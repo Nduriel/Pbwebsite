@@ -221,32 +221,11 @@
 }
 
 /* Modal */
-#modalHead {
-  background-color: purple;
-  display: block;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 2px black;
-}
 
 #modalbody {
   color: #9df5cc;
   background: radial-gradient(circle, rebeccapurple, black);
 }
-
-/*Modal Close Button*/
-body
-  > div:nth-child(10)
-  > div
-  > div.modal.fade.show
-  > div
-  > div
-  > div.modal-header
-  > button
-  > span {
-  color: black;
-}
-/*Modal Close Button*/
 
 /* Modal */
 
@@ -261,30 +240,6 @@ body
   flex-direction: row;
   white-space: nowrap;
   text-shadow: 2px 2px 2px #f1069f;
-}
-
-#dropIg {
-  background-image: linear-gradient(purple, red, orange, yellow, white 99%);
-  padding: 10px;
-  border-radius: 55%;
-  border: 1px solid grey;
-  border-style: outset;
-}
-
-#dropFb {
-  background: #007aff;
-  padding: 10px;
-  border-radius: 55%;
-  border: 1px solid grey;
-  border-style: outset;
-}
-
-
-
-#dropDown {
-  background-image: linear-gradient(purple, lightskyblue, purple);
-  border: 5px solid rgb(92, 92, 92);
-  border-style: outset;
 }
 
 /* Navbar Button */

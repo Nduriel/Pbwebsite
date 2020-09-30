@@ -11,8 +11,6 @@ import {
   CarouselCaption,
 } from "reactstrap";
 
-// const Instafeed = require("instafeed.js");
-
 function HomePage() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);

@@ -7,26 +7,12 @@ import {
   Collapse,
   NavbarBrand,
   NavItem,
-  // DropdownToggle,
-  // DropdownItem,
-  // DropdownMenu,
-  // Dropdown,
   Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-// import ModalComponent from "./ModalComponent";
 
 function NavBarComponent() {
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  //Modal Toggler
-  // const [isModalOpen, setModal] = useState(false);
-  // const toggleModal = () => {
-  //   setModal((isModalOpen) => !isModalOpen);
-  // };
-
-  // const droptoggle = () => setDropdownOpen((prevState) => !prevState);
-
+  
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
@@ -119,7 +105,6 @@ function NavBarComponent() {
           >
             <Button
               color="primary"
-              // onClick={toggleModal}
               size="lg"
               id="appButton"
             >

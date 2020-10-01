@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Jumbotron } from "reactstrap";
+import { Container, Row, Jumbotron } from "reactstrap";
 import { comingsoonpic } from "./photos";
 import { Image } from "react-bootstrap";
 

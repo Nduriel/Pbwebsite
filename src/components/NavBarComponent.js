@@ -12,7 +12,6 @@ import {
 import { NavLink } from "react-router-dom";
 
 function NavBarComponent() {
-  
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
@@ -40,9 +39,13 @@ function NavBarComponent() {
     textShadow: "1px 1px 1px white",
   };
 
+  const activeStyle3 = {
+    color: "yellow",
+    textShadow: "1px 1px 1px white",
+  };
+
   return (
     <>
-      {/* <ModalComponent toggleModal={toggleModal} isModalOpen={isModalOpen} /> */}
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
           <NavbarBrand style={navbarIcon} id="goneText1" href="#home">
@@ -94,6 +97,19 @@ function NavBarComponent() {
                   About Mia
                 </NavLink>
               </NavItem>
+              <NavItem className="glow">
+                <NavLink
+                  onClick={toggle}
+                  className="nav-link"
+                  activeStyle={activeStyle3}
+                  to="/specials"
+                  style={{
+                    color: "white",
+                  }}
+                >
+                  Specials
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
           <a
@@ -103,11 +119,7 @@ function NavBarComponent() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              color="primary"
-              size="lg"
-              id="appButton"
-            >
+            <Button color="primary" size="lg" id="appButton">
               Appointments
             </Button>
           </a>

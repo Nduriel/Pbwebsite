@@ -6,7 +6,7 @@ import HomePage from "./HomeComponent";
 import PriceComponent from "./PriceComponent";
 import AboutMia from './AboutMia';
 import FooterComponent from "./FooterComponent";
-import NotFoundPage from "./NotFoundPage";
+import Specials from "./Specials";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,8 +28,8 @@ function MainComponent() {
             <Route exact path="/" component={Home} />
             <Route path="/prices" component={Prices} />
             <Route path="/about" component={About} />
+            <Route path="/specials" component={Specials} />
             <Redirect to="/" />
-            <Route component={NotFoundPage} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

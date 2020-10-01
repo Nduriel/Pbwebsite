@@ -12,6 +12,10 @@
   text-shadow: 3px 3px 5px #2c2128b4;
 }
 
+#specials {
+  background: -webkit-linear-gradient(top, grey, black);
+}
+
 #aboutPic {
   height: auto;
   width: 95%;

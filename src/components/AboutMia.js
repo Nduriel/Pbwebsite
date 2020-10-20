@@ -15,6 +15,7 @@ import { barbicide } from "./photos";
 import { bio1, bio2 } from "./policies";
 
 function AboutMia() {
+  
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 

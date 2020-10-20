@@ -20,10 +20,10 @@ function NavBarComponent() {
     color: "black",
     background: "white",
     padding: "10px",
-    border: "3px solid #f1069f",
+    border: "5px solid #c64b7b",
     borderRadius: "55% / 55%",
     fontStyle: 'italic',
-    textShadow: '2px 2px 4px purple',
+    textShadow: '2px 2px 4px #c64b7b',
     fontFamily: 'Allura',
     fontWeight: 'bolder'
   };
@@ -43,10 +43,10 @@ function NavBarComponent() {
     textShadow: "1px 1px 1px white",
   };
 
-  const activeStyle3 = {
-    color: "yellow",
-    textShadow: "1px 1px 1px white",
-  };
+  // const activeStyle3 = {
+  //   color: "yellow",
+  //   textShadow: "1px 1px 1px white",
+  // };
 
   return (
     <>
@@ -101,7 +101,7 @@ function NavBarComponent() {
                   About Mia
                 </NavLink>
               </NavItem>
-              <NavItem className="glow">
+              {/* <NavItem className="glow">
                 <NavLink
                   onClick={toggle}
                   className="nav-link"
@@ -113,7 +113,7 @@ function NavBarComponent() {
                 >
                   Specials
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
           <a

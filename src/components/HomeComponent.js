@@ -63,19 +63,29 @@ function HomePage() {
               in
               transformProps={{
                 enterTransform: "translateX(0px)",
-                exitTransform: "translateX(150px)",
+                exitTransform: "translateX(-150px)",
               }}
             >
-              <div id="bodyBox" className="infoBox">
+              <div id="bodydivpic">
                 <Image
-                  id="bodydivpic"
+                  className="text-center"
+                  rounded
                   src={jumbotronPic.logo}
                   alt="Polished By Mia logo"
                   fluid
-                  roundedCircle
                 />
-                <br />
-                <p>
+              </div>
+            </FadeTransform>
+            <FadeTransform
+              in
+              transformProps={{
+                enterTransform: "translateX(0px)",
+                exitTransform: "translateX(150px)",
+              }}
+            >
+              <br />
+              <div id="bodyBox">
+                <p style={{ margin: "10px" }}>
                   <span style={{ textShadow: "2px 2px 2px redorange" }}>
                     Polished By Mia&nbsp;
                   </span>
@@ -91,17 +101,6 @@ function HomePage() {
                   Check out the gallery here, or Facebook and Instagram for my
                   work!
                 </p>
-              </div>
-            </FadeTransform>
-            <FadeTransform
-              in
-              transformProps={{
-                enterTransform: "translateX(0px)",
-                exitTransform: "translateX(-150px)",
-              }}
-            >
-              <br />
-              <div id="bodyBox2" className="infoBox">
                 <p style={{ margin: "10px" }}>
                   * By Appointment Only *
                   <br />
@@ -112,7 +111,6 @@ function HomePage() {
                   <br /> No Exceptions! <br />
                 </p>
               </div>
-              <br />
             </FadeTransform>
           </Col>
           <Col

@@ -17,11 +17,15 @@ function NavBarComponent() {
   const toggle = () => setIsOpen((isOpen) => !isOpen);
 
   const navbarIcon = {
-    color: "#9df5cc",
-    background: "black",
-    padding: "11px",
+    color: "black",
+    background: "white",
+    padding: "10px",
     border: "3px solid #f1069f",
-    borderRadius: "50% / 50%",
+    borderRadius: "55% / 55%",
+    fontStyle: 'italic',
+    textShadow: '2px 2px 4px purple',
+    fontFamily: 'Allura',
+    fontWeight: 'bolder'
   };
 
   const activeStyle = {

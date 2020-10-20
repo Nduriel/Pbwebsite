@@ -66,15 +66,14 @@ function HomePage() {
                 exitTransform: "translateX(-150px)",
               }}
             >
-              <div id="bodydivpic">
                 <Image
+                 id="bodydivpic"
                   className="text-center"
                   rounded
                   src={jumbotronPic.logo}
                   alt="Polished By Mia logo"
                   fluid
                 />
-              </div>
             </FadeTransform>
             <FadeTransform
               in
@@ -83,17 +82,16 @@ function HomePage() {
                 exitTransform: "translateX(150px)",
               }}
             >
-              <br />
               <div id="bodyBox">
                 <p style={{ margin: "10px" }}>
-                  <span style={{ textShadow: "2px 2px 2px redorange" }}>
+                  <span style={{ textShadow: "2px 2px 2px #c64b7b" }}>
                     Polished By Mia&nbsp;
                   </span>
                   <sub>
                     <i
                       className="fa fa-copyright"
                       aria-hidden="true"
-                      style={{ fontSize: "13px", color: "skyblue" }}
+                      style={{ fontSize: "13px", color: "purple" }}
                     />
                   </sub>{" "}
                   is an Acrylic service that caters to clients, exclusively, in
@@ -104,7 +102,7 @@ function HomePage() {
                 <p style={{ margin: "10px" }}>
                   * By Appointment Only *
                   <br />
-                  <span style={{ textShadow: "2px 2px 2px green" }}>
+                  <span style={{ textShadow: "2px 2px 2px #c64b7b" }}>
                     Due to the Coronavirus Pandemic, masks are *required* every
                     visit.
                   </span>

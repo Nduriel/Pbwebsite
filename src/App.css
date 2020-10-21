@@ -186,29 +186,24 @@
   font-family: "Arima Madurai", cursive;
   margin: 0;
   width: 100%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  background: radial-gradient(circle, rgb(144, 51, 153), black);
-  /* background-image: linear-gradient(
-    45deg,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #9df5cc,
-    #9df5cc,
-    #9df5cc,
-    #9df5cc,
-    grey,
-    #3d0129,
-    #3d0129,
-    #3d0129,
-    #3d0129
-  ); */
+  background: radial-gradient(
+    circle,
+    black,
+    black,
+    black,
+    black,
+    rgb(144, 51, 153),
+    rgb(144, 51, 153),
+    rgb(144, 51, 153),
+    black,
+    black,
+    black,
+    black
+  );
+  animation: gradient 35s ease 1s infinite;
   background-size: 600% 100%;
   animation-direction: alternate;
-  animation: gradient 16s ease infinite;
   display: block;
 }
 

@@ -84,7 +84,7 @@ function HomePage() {
             >
               <div id="bodyBox">
                 <p style={{ margin: "10px" }}>
-                  <span style={{ textShadow: "2px 2px 2px #c64b7b" }}>
+                  <span style={{ textShadow: "2px 2px 2px #c64b7b", color: "white" }}>
                     Polished By Mia&nbsp;
                   </span>
                   <sub>
@@ -102,7 +102,7 @@ function HomePage() {
                 <p style={{ margin: "10px" }}>
                   * By Appointment Only *
                   <br />
-                  <span style={{ textShadow: "2px 2px 2px #c64b7b" }}>
+                  <span style={{ textShadow: "2px 2px 2px #c64b7b", color: "white" }}>
                     Due to the Coronavirus Pandemic, masks are *required* every
                     visit.
                   </span>

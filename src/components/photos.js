@@ -1,8 +1,8 @@
 export const carouselPic = [
-  // {
-  //   altText: "1",
-  //   src: require("../images/bookappt2.jpeg"),
-  // },
+  {
+    altText: "1",
+    src: require("../images/bookappt2.jpeg"),
+  },
   // {
   //   altText: "2",
   //   src: require("../images/pic1.jpg"),

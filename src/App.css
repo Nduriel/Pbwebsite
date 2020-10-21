@@ -12,10 +12,10 @@
   font-family: "Arima Madurai", cursive;
   text-shadow: 3px 3px 5px #2c2128b4;
 }
-
+/* 
 #specials {
   background: -webkit-linear-gradient(top, grey, black);
-}
+} */
 
 #aboutPic {
   height: auto;
@@ -68,8 +68,9 @@
 
 #bodyBox {
   background: -webkit-linear-gradient(rgb(3, 235, 243) 30%, #ad0472f3);
-  box-shadow: 10px 10px 10px rgb(24, 23, 23);
-  color: whitesmoke;
+  box-shadow: 8px 5px 5px rgb(24, 23, 23);
+  color: black;
+  text-shadow: 1px 1px 1px white;
   font-weight: bold;
   font-size: 20px;
   border: 5px solid black;
@@ -77,19 +78,7 @@
   border-style: ridge;
   box-shadow: 10px 10px 10px rgb(46, 44, 44);
   font-family: "Arima Madurai", cursive;
-  text-shadow: 3px 3px 5px #2c2128e0;
   margin: 15px;
-}
-
-#bodyBox2 {
-  background: -webkit-linear-gradient(rgb(3, 235, 243), #ad0472f3);
-  color: white;
-  text-shadow: 3px 3px 5px #ad0472f3;
-}
-
-#bodyBox3 {
-  background: -webkit-linear-gradient(rgb(3, 235, 243), #ad0472f3);
-  font-size: 20px;
 }
 
 #bodydivpic {

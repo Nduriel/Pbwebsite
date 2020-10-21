@@ -37,7 +37,7 @@ function PriceComponent() {
               Mia's Policies
             </Button>
             <br /> <br />
-              <div id="bodyBox3" className="infoBox">
+              <div id="bodyBox" style={{margin: "14px"}}>
                 *Prices are subject to change*
               </div>
             </Col>

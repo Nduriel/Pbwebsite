@@ -21,13 +21,14 @@ function NavBarComponent() {
   const navbarIcon = {
     color: "black",
     background: "white",
-    padding: "10px",
-    border: "5px solid #c64b7b",
+    padding: "8px",
+    border: "4px solid #c64b7b",
     borderRadius: "55% / 55%",
     fontStyle: 'italic',
     textShadow: '2px 2px 4px #c64b7b',
     fontFamily: 'Allura',
-    fontWeight: 'bolder'
+    fontWeight: 'bolder',
+    borderStyle: 'groove',
   };
 
   const activeStyle = {
@@ -54,7 +55,7 @@ function NavBarComponent() {
     <>
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
-          <NavbarBrand style={navbarIcon} id="goneText1" href="#home">
+          <NavbarBrand style={navbarIcon} id="goneText1" href="/home">
             <Image src={icon} style={{width: "28px", height: "25px"}}/>
           </NavbarBrand>
           <NavbarToggler

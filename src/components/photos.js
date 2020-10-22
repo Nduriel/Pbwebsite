@@ -7,10 +7,10 @@ export const carouselPic = [
     altText: "1",
     src: require("../images/pic1.jpg"),
   },
-  {
-    altText: "2",
-    src: require("../images/pic2.jpg"),
-  },
+  // {
+  //   altText: "2",
+  //   src: require("../images/pic2.jpg"),
+  // },
   {
     altText: "3",
     src: require("../images/pic3.jpg"),

@@ -1,110 +1,48 @@
 export const carouselPic = [
   {
-    altText: "1",
+    altText: "bookingPic",
     src: require("../images/bookappt2.jpeg"),
   },
-  // {
-  //   altText: "2",
-  //   src: require("../images/pic1.jpg"),
-  //   caption: `#goodformnails - "Wow, these are perfect!"`,
-  // },
-  // {
-  //   altText: "3",
-  //   src: require("../images/pic2.JPG"),
-  //   caption:
-  //     "Chelley - She is outstanding! Has patience and does a wonderful job!!",
-  // },
-  // {
-  //   altText: "4",
-  //   src: require("../images/pic3.JPG"),
-  //   caption: `Patti - "Maria does awesome nails"`,
-  // },
-  // {
-  //   altText: "5",
-  //   src: require("../images/pic4.JPG"),
-  //   caption: `Stacey - I'm super picky with my nails, but she does an amazing job!!!`,
-  // },
-  // {
-  //   altText: "6",
-  //   src: require("../images/pic5.JPG"),
-  //   caption: `Dianne - "She is absolutely amazing, takes her time and makes
-  //       sure you love it before you leave! She’s definitely my nail tech from here on out!"`,
-  // },
-  // {
-  //   altText: "7",
-  //   src: require("../images/pic6.JPG"),
-  //   caption: `Karen - "She does a wonderful job"`,
-  // },
-  // {
-  //   altText: "8",
-  //   src: require("../images/pic7.JPG"),
-  //   caption: `Chelley - "She is outstanding! Has patience and does a wonderful job!!"`,
-  // },
-  // {
-  //   altText: "9",
-  //   src: require("../images/pic8.JPG"),
-  //   caption: `Katrina - "She is awesome!!! Do not hesitate to hit her up!!"`,
-  // },
-  // {
-  //   altText: "10",
-  //   src: require("../images/pic9.JPG"),
-  //   caption: `Follow on Facebook and Instagram!`,
-  // },
-  // {
-  //   altText: "12",
-  //   src: require("../images/pic11.JPG"),
-  //   caption: ``,
-  // },
-  // {
-  //   altText: "13",
-  //   src: require("../images/pic12.JPG"),
-  //   caption: `#757nails`,
-  // },
-  // {
-  //   altText: "14",
-  //   src: require("../images/pic13.JPG"),
-  //   caption: `#nailsofinstagram`,
-  // },
   {
-    altText: "15",
-    src: require("../images/pic14.jpg"),
+    altText: "1",
+    src: require("../images/pic1.jpg"),
   },
   {
-    altText: "16",
-    src: require("../images/pic15.jpg"),
+    altText: "2",
+    src: require("../images/pic2.jpg"),
   },
   {
-    altText: "17",
-    src: require("../images/pic16.jpg"),
+    altText: "3",
+    src: require("../images/pic3.jpg"),
   },
   {
-    altText: "18",
-    src: require("../images/pic17.jpg"),
+    altText: "4",
+    src: require("../images/pic4.jpg"),
   },
   {
-    altText: "19",
-    src: require("../images/pic18.jpg"),
+    altText: "5",
+    src: require("../images/pic5.jpg"),
   },
   {
-    altText: "20",
-    src: require("../images/pic19.jpg"),
+    altText: "6",
+    src: require("../images/pic6.jpg"),
   },
   {
-    altText: "21",
-    src: require("../images/pic20.jpg"),
+    altText: "7",
+    src: require("../images/pic7.jpg"),
   },
   {
-    altText: "22",
-    src: require("../images/pic21.jpg"),
+    altText: "8",
+    src: require("../images/pic8.jpg"),
   },
   {
-    altText: "23",
-    src: require("../images/pic22.jpg"),
+    altText: "9",
+    src: require("../images/pic9.jpg"),
   },
 ];
 
 export const jumbotronPic = {
-  logo: require("../images/pbmlogo2.jpg"),
+  logo: require("../images/logo2.jpeg"),
 };
 
 export const comingsoonpic = require("../images/comingsoon.jpg");

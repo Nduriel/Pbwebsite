@@ -2,6 +2,7 @@ export const carouselPic = [
   {
     altText: "1",
     src: require("../images/bookappt2.jpeg"),
+    caption: ``,
   },
   {
     altText: "2",
@@ -12,7 +13,7 @@ export const carouselPic = [
     altText: "3",
     src: require("../images/pic2.jpg"),
     caption:
-      "Chelley - She is outstanding! Has patience and does a wonderful job!!",
+      `Chelley - She is outstanding! Has patience and does a wonderful job!!`,
   },
   {
     altText: "4",

@@ -9,12 +9,14 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
+import { Image } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 function NavBarComponent() {
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
+  const icon = require("../images/favicon.png");
 
   const navbarIcon = {
     color: "black",
@@ -53,7 +55,7 @@ function NavBarComponent() {
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
           <NavbarBrand style={navbarIcon} id="goneText1" href="#home">
-            PBM
+            <Image src={icon} style={{width: "28px", height: "25px"}}/>
           </NavbarBrand>
           <NavbarToggler
             onClick={toggle}

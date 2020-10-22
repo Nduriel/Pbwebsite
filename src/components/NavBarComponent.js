@@ -13,9 +13,11 @@ import { Image } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 function NavBarComponent() {
+
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
+  
   const icon = require("../images/favicon.png");
 
   const navbarIcon = {

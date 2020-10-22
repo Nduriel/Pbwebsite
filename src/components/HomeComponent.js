@@ -47,7 +47,7 @@ function HomePage() {
     );
   });
   return (
-    <Jumbotron fluid id="homepage">
+    <Jumbotron fluid>
       <Container fluid>
         <Row>
           <Col

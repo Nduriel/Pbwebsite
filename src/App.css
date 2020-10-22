@@ -1,21 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
-.infoBox {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border: 4px solid black;
-  border-radius: 1%/1%;
-  border-style: groove;
-  box-shadow: 10px 10px 10px rgb(31, 29, 29);
-  font-family: "Arima Madurai", cursive;
-  text-shadow: 3px 3px 5px #2c2128b4;
-}
-/* 
-#specials {
-  background: -webkit-linear-gradient(top, grey, black);
-} */
+
 
 #aboutPic {
   height: auto;
@@ -286,11 +272,9 @@ Table {
 #fullSets {
   background-image: linear-gradient(90deg, yellow, limegreen, cyan);
 }
-
 #manicure {
   background-image: linear-gradient(90deg, red, orange, cyan);
 }
-
 #pedicure {
   background-image: linear-gradient(90deg, pink, purple, cyan);
 }
@@ -322,7 +306,6 @@ thead {
   color: rgb(252, 82, 243);
   text-shadow: 1px 1px 2px blueviolet;
 }
-
 #rowTitle2 {
   color: yellow;
   text-shadow: 1px 1px 2px limegreen;
@@ -331,12 +314,10 @@ thead {
   color: rgb(209, 165, 207);
   text-shadow: 1px 1px 2px blueviolet;
 }
-
 #rowTitle3 {
   color: orange;
   text-shadow: 1px 1px 2px red;
 }
-
 #rowTitle4 {
   color: lightblue;
   text-shadow: 1px 1px 2px blue;
@@ -345,8 +326,9 @@ thead {
   color: greenyellow;
   text-shadow: 1px 1px 2px limegreen;
 }
-
 /* </Table> */
+
+
 .site-footer {
   color: #9df5cc;
   text-shadow: 2px 2px 2px #f1069f;
@@ -359,3 +341,20 @@ thead {
   flex-direction: row;
   white-space: nowrap;
 }
+
+/* 
+#specials {
+  background: -webkit-linear-gradient(top, grey, black);
+} */
+
+/* .infoBox {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 4px solid black;
+  border-radius: 1%/1%;
+  border-style: groove;
+  box-shadow: 10px 10px 10px rgb(31, 29, 29);
+  font-family: "Arima Madurai", cursive;
+  text-shadow: 3px 3px 5px #2c2128b4;
+} */

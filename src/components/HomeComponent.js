@@ -66,14 +66,14 @@ function HomePage() {
                 exitTransform: "translateX(-150px)",
               }}
             >
-                <Image
-                 id="bodydivpic"
-                  className="text-center"
-                  rounded
-                  src={jumbotronPic.logo}
-                  alt="Polished By Mia logo"
-                  fluid
-                />
+              <Image
+                id="bodydivpic"
+                className="text-center"
+                rounded
+                src={jumbotronPic.logo}
+                alt="Polished By Mia logo"
+                fluid
+              />
             </FadeTransform>
             <FadeTransform
               in
@@ -84,7 +84,12 @@ function HomePage() {
             >
               <div id="bodyBox">
                 <p style={{ margin: "10px" }}>
-                  <span style={{ textShadow: "2px 2px 2px #c64b7b", color: "white" }}>
+                  <span
+                    style={{
+                      textShadow: "2px 2px 2px #c64b7b",
+                      color: "white",
+                    }}
+                  >
                     Polished By Mia&nbsp;
                   </span>
                   <sub>
@@ -100,13 +105,20 @@ function HomePage() {
                   work!
                 </p>
                 <p style={{ margin: "10px" }}>
-                  * By Appointment Only *
-                  <br />
-                  <span style={{ textShadow: "2px 2px 2px #c64b7b", color: "white" }}>
+                  <span
+                    style={{
+                      textShadow: "2px 2px 2px #c64b7b",
+                      color: "white",
+                    }}
+                  >
+                    * By Appointment Only *
+                    <br />
+                    <i>
                     Due to the Coronavirus Pandemic, masks are *required* every
+                    </i>
                     visit.
+                    <br /> No Exceptions! <br />
                   </span>
-                  <br /> No Exceptions! <br />
                 </p>
               </div>
             </FadeTransform>

@@ -312,8 +312,8 @@ function PriceComponent() {
               </Table>
             </Col>
           </Row>
-          <Row>
-            <Col lg={6}>
+          <Row style={{justifyContent: "center"}}>
+            <Col lg={8}>
               <Table
                 dark
                 style={{

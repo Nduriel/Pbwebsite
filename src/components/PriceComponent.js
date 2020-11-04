@@ -32,12 +32,12 @@ function PriceComponent() {
       <Jumbotron fluid id="prices">
         <Container fluid>
           <Row style={{ justifyContent: "center" }}>
-            <Col lg={4} md={4} sm={4} className='text-center'>
-            <Button id="policyButton" size="sm" onClick={toggle2}>
-              Mia's Policies
-            </Button>
-            <br /> <br />
-              <div id="bodyBox" style={{margin: "14px"}}>
+            <Col lg={4} md={4} sm={4} className="text-center">
+              <Button id="policyButton" size="sm" onClick={toggle2}>
+                Mia's Policies
+              </Button>
+              <br /> <br />
+              <div id="bodyBox" style={{ margin: "14px" }}>
                 *Prices are subject to change*
               </div>
             </Col>
@@ -239,16 +239,16 @@ function PriceComponent() {
                 bordered
                 hover
               >
-                <thead id="addOns">
+                <thead id="sculpted">
                   <tr>
-                    <th colSpan="2">Add Ons</th>
+                    <th colSpan="2">Sculpted Nails</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {service.addOns.map((item) => {
+                  {service.sculpted.map((item) => {
                     return (
                       <tr key={item.id}>
-                        <td id={item.id % 2 ? "rowTitle4" : "rowTitle"}>
+                        <td id={item.id % 2 ? "rowTitle6" : "rowTitle"}>
                           <Random minDelay={750} maxDelay={1000} in>
                             <Fade>{item.name}</Fade>
                           </Random>
@@ -306,6 +306,53 @@ function PriceComponent() {
                       <span id="rowTitle5">Manicure & Pedicure</span> includes:
                       Trim & Shape (nails and cuticles), lotion massage, and
                       polish.
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6}>
+              <Table
+                dark
+                style={{
+                  marginTop: "50px",
+                  marginBottom: "20px",
+                }}
+                size="md"
+                responsive
+                striped
+                bordered
+                hover
+              >
+                <thead id="addOns">
+                  <tr>
+                    <th colSpan="2">Add Ons</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {service.addOns.map((item) => {
+                    return (
+                      <tr key={item.id}>
+                        <td id={item.id % 2 ? "rowTitle4" : "rowTitle"}>
+                          <Random minDelay={750} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
+                        </td>
+                        <td colSpan="1" id="cost">
+                          <Random minDelay={750} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                  <tr id="rowTitle" style={{ textAlign: "center" }}>
+                    <td colSpan="4">
+                      <span id="rowTitle4">Includes: </span>
+                      Marble, Foil, Lines, Additional colors, Abstract Art,
+                      French, Select Ombre
                     </td>
                   </tr>
                 </tbody>

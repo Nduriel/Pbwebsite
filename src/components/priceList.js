@@ -2,32 +2,32 @@ export const fullSets = [
   {
     id: 0,
     name: "Short Nails",
-    price: "$ 40",
+    price: "$ 45",
   },
   {
     id: 1,
     name: "Medium Short Nails",
-    price: "$ 45",
+    price: "$ 50",
   },
   {
     id: 2,
     name: "Medium Long Nails",
-    price: "$ 50",
+    price: "$ 55",
   },
   {
     id: 3,
     name: "Long Nails",
-    price: "$ 55",
+    price: "$ 60",
   },
   {
     id: 4,
     name: "XL Nails",
-    price: "$ 60",
+    price: "$ 70",
   },
   {
     id: 5,
     name: "Color Acrylic",
-    price: "+$ 10 to length",
+    price: "+$ 15 to length",
   },
   {
     id: 6,
@@ -39,43 +39,33 @@ export const fullSets = [
 export const fills = [
   {
     id: 0,
-    name: "Short Nails",
-    price: "$ 30",
-  },
-  {
-    id: 1,
-    name: "Medium Short Nails",
+    name: "2 Week Fill",
     price: "$ 35",
   },
   {
-    id: 2,
-    name: "Medium Long Nails",
+    id: 1,
+    name: "3 Week Rebalance",
     price: "$ 40",
   },
   {
-    id: 3,
-    name: "Long Nails",
+    id: 2,
+    name: "4-5 Week Rebalance",
     price: "$ 45",
   },
   {
-    id: 4,
-    name: "XL Nails",
-    price: "$ 50",
-  },
-  {
-    id: 5,
+    id: 3,
     name: "Color Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
-    id: 6,
+    id: 4,
     name: "Ombre Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
-    id: 7,
+    id: 5,
     name: "Color Acrylic Change (Extra Drilling)",
-    price: "+$ 10",
+    price: "+$ 15",
   },
 ];
 
@@ -87,53 +77,58 @@ export const addOns = [
   },
   {
     id: 1,
-    name: "Soak-Off Nails (60 minutes with Full Set)",
-    price: "Starting at $ 15",
+    name: "MMA Soak Off",
+    price: "Starting at $ 20",
   },
   {
     id: 2,
-    name: "Soak Off (60 minutes)",
+    name: "EMA Soak Off",
     price: "Starting at $ 15",
   },
   {
     id: 3,
-    name: "Soak Off (Package for Home)",
-    price: "$ 8",
+    name: "Jewels Each/Shapes",
+    price: "$ 0.25/ $ 0.50",
   },
   {
     id: 4,
-    name: "Jewels (Per Nail)",
-    price: "$ 4",
-  },
-  {
-    id: 5,
     name: "Full Blinged Out Nail",
     price: "$ 10",
   },
   {
-    id: 6,
+    id: 5,
     name: "All-Blinged-Out Nails",
     price: "+$ 85",
   },
   {
-    id: 7,
+    id: 6,
     name: "French Tips Gel Nail Design",
     price: "$ 8",
   },
   {
-    id: 8,
+    id: 7,
     name: "Designs (Per Nail)",
     price: "Starting at $ 1",
   },
   {
-    id: 9,
+    id: 8,
     name: "Encapsulated Nail (Per Nail)",
-    price: "Starting at $ 10",
+    price: "$ 10",
+  },
+  {
+    id: 9,
+    name: "Almond/Ballerina/Stiletto Shape Nails",
+    price: "$ 5",
   },
   {
     id: 10,
-    name: "Almond/Ballerina/Stiletto Shape Nails",
-    price: "$ 5",
+    name: "Color Acrylic Design",
+    price: "* varies *",
+  },
+  {
+    id: 11,
+    name: "Reshape Nails (i.e. Coffin to Stiletto)",
+    price: "$ 2 per design/nail",
   },
 ];
 
@@ -164,12 +159,12 @@ export const pedicure = [
   {
     id: 0,
     name: "Regular Polish Pedicure",
-    price: "$ 23",
+    price: "$ 25",
   },
   {
     id: 1,
     name: "Gel Polish Pedicure",
-    price: "Starting at $ 40",
+    price: "$ 40",
   },
   {
     id: 2,
@@ -197,7 +192,7 @@ export const kids = [
   {
     id: 1,
     name: "Kids Manicure",
-    price: "$ 10",
+    price: "$ 15",
   },
   {
     id: 2,
@@ -208,5 +203,33 @@ export const kids = [
     id: 3,
     name: "Add Gel Polish",
     price: "+$ 5",
+  },
+];
+
+export const sculpted = [
+  {
+    id: 0,
+    name: "Short Sculpted",
+    price: "$ 50",
+  },
+  {
+    id: 1,
+    name: "Medium Sculpted",
+    price: "$ 55",
+  },
+  {
+    id: 2,
+    name: "Medium Long Sculpted",
+    price: "$ 60",
+  },
+  {
+    id: 3,
+    name: "Long Sculpted Full Set",
+    price: "$ 70",
+  },
+  {
+    id: 4,
+    name: "XL Sculpted Full Set",
+    price: "$ 80",
   },
 ];

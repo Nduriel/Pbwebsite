@@ -269,10 +269,10 @@ Table {
 #acrylicFills {
   background-image: linear-gradient(90deg, blueviolet, purple, cyan);
 }
-#fullSets {
+#manicure {
   background-image: linear-gradient(90deg, yellow, limegreen, cyan);
 }
-#manicure {
+#fullSets {
   background-image: linear-gradient(90deg, red, orange, cyan);
 }
 #pedicure {
@@ -282,7 +282,10 @@ Table {
   background-image: linear-gradient(90deg, blue, grey, white);
 }
 #kids {
-  background-image: linear-gradient(90deg, green, skyblue, yellow);
+  background-image: linear-gradient(90deg, green, rebeccapurple, yellow);
+}
+#sculpted {
+  background-image: linear-gradient(90deg, black, gold, red);
 }
 
 #cost {
@@ -324,6 +327,10 @@ thead {
 }
 #rowTitle5 {
   color: greenyellow;
+  text-shadow: 1px 1px 2px limegreen;
+}
+#rowTitle6 {
+  color: gold;
   text-shadow: 1px 1px 2px limegreen;
 }
 /* </Table> */

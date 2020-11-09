@@ -134,51 +134,7 @@ function PriceComponent() {
               </Table>
             </Col>
           </Row>
-          <Row>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Table
-                dark
-                style={{
-                  marginTop: "50px",
-                  marginBottom: "20px",
-                }}
-                size="md"
-                responsive
-                striped
-                bordered
-                hover
-              >
-                <thead id="manicure">
-                  <tr>
-                    <th colSpan="2">Manicure (30 mins)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {service.manicure.map((item) => {
-                    return (
-                      <tr key={item.id}>
-                        <td id={item.id % 2 ? "rowTitle3" : "rowTitle"}>
-                          <Random minDelay={500} maxDelay={1000} in>
-                            <Fade>{item.name}</Fade>
-                          </Random>
-                        </td>
-                        <td colSpan="1" id="cost">
-                          <Random minDelay={500} maxDelay={1500} in>
-                            <Fade>{item.price}</Fade>
-                          </Random>
-                        </td>
-                      </tr>
-                    );
-                  })}
-                  <tr id="rowTitle" style={{ textAlign: "center" }}>
-                    <td colSpan="4">
-                      <span id="rowTitle3">Manicure</span> includes: Trim &
-                      Shape (nails and cuticles), lotion massage, and polish.
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Col>
+          <Row style={{ justifyContent: "center" }}>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Table
                 dark
@@ -224,8 +180,6 @@ function PriceComponent() {
                 </tbody>
               </Table>
             </Col>
-          </Row>
-          <Row style={{ justifyContent: "center" }}>
             <Col lg={6}>
               <Table
                 dark
@@ -261,6 +215,52 @@ function PriceComponent() {
                       </tr>
                     );
                   })}
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={6} md={6} sm={12} xs={12}>
+              <Table
+                dark
+                style={{
+                  marginTop: "50px",
+                  marginBottom: "20px",
+                }}
+                size="md"
+                responsive
+                striped
+                bordered
+                hover
+              >
+                <thead id="manicure">
+                  <tr>
+                    <th colSpan="2">Manicure (30 mins)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {service.manicure.map((item) => {
+                    return (
+                      <tr key={item.id}>
+                        <td id={item.id % 2 ? "rowTitle3" : "rowTitle"}>
+                          <Random minDelay={500} maxDelay={1000} in>
+                            <Fade>{item.name}</Fade>
+                          </Random>
+                        </td>
+                        <td colSpan="1" id="cost">
+                          <Random minDelay={500} maxDelay={1500} in>
+                            <Fade>{item.price}</Fade>
+                          </Random>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                  <tr id="rowTitle" style={{ textAlign: "center" }}>
+                    <td colSpan="4">
+                      <span id="rowTitle3">Manicure</span> includes: Trim &
+                      Shape (nails and cuticles), lotion massage, and polish.
+                    </td>
+                  </tr>
                 </tbody>
               </Table>
             </Col>
@@ -312,7 +312,7 @@ function PriceComponent() {
               </Table>
             </Col>
           </Row>
-          <Row style={{justifyContent: "center"}}>
+          <Row style={{ justifyContent: "center" }}>
             <Col lg={8}>
               <Table
                 dark

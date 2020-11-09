@@ -2,27 +2,27 @@ export const fullSets = [
   {
     id: 0,
     name: "Short Nails",
-    price: "$ 45",
+    price: "$ 40",
   },
   {
     id: 1,
-    name: "Medium Short Nails",
-    price: "$ 50",
+    name: "Medium",
+    price: "$ 45",
   },
   {
     id: 2,
     name: "Medium Long Nails",
-    price: "$ 55",
+    price: "$ 50",
   },
   {
     id: 3,
     name: "Long Nails",
-    price: "$ 60",
+    price: "$ 55",
   },
   {
     id: 4,
     name: "XL Nails",
-    price: "$ 70",
+    price: "$ 65",
   },
   {
     id: 5,

@@ -54,16 +54,21 @@ export const fills = [
   },
   {
     id: 3,
+    name: "6 Week Rebalance",
+    price: "$ 50",
+  },
+  {
+    id: 4,
     name: "Color Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
-    id: 4,
+    id: 5,
     name: "Ombre Acrylic Fill (same)",
     price: "+$ 5 to length",
   },
   {
-    id: 5,
+    id: 6,
     name: "Color Acrylic Change (Extra Drilling)",
     price: "+$ 15",
   },
@@ -108,7 +113,7 @@ export const addOns = [
   {
     id: 7,
     name: "Designs (Per Nail)",
-    price: "Starting at $ 1",
+    price: "Starting at $ 2",
   },
   {
     id: 8,
@@ -128,7 +133,7 @@ export const addOns = [
   {
     id: 11,
     name: "Reshape Nails (i.e. Coffin to Stiletto)",
-    price: "$ 2 per design/nail",
+    price: "$ 5 per design/nail",
   },
 ];
 

@@ -82,8 +82,8 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      *&nbsp;<span id="rowTitle2">includes gel polish</span>
-                      &nbsp;*
+                      <span id="rowTitle2">Acryilic Full Sets </span>include:
+                      gel polish.
                     </td>
                   </tr>
                 </tbody>
@@ -126,8 +126,8 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      *&nbsp;<span id="rowTitle1">includes gel polish</span>
-                      &nbsp;*
+                      <span id="rowTitle1">Acryilic Fill&nbsp;</span>includes:
+                      gel polish.
                     </td>
                   </tr>
                 </tbody>
@@ -157,7 +157,7 @@ function PriceComponent() {
                   {service.pedicure.map((item) => {
                     return (
                       <tr key={item.id}>
-                        <td id={item.id % 2 ? "rowTitle6" : "rowTitle"}>
+                        <td id={item.id % 2 ? "rowTitle1" : "rowTitle"}>
                           <Random minDelay={750} maxDelay={1000} in>
                             <Fade>{item.name}</Fade>
                           </Random>
@@ -172,7 +172,7 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle6">Pedicure</span> includes: Trim &
+                      <span id="rowTitle1">Pedicures</span> include: Trim &
                       Shape (nails and cuticles), sugar scrub, callus work,
                       lotion massage and polish.
                     </td>
@@ -215,6 +215,12 @@ function PriceComponent() {
                       </tr>
                     );
                   })}
+                  <tr id="rowTitle" style={{ textAlign: "center" }}>
+                    <td colSpan="4">
+                      <span id="rowTitle6">Sculpted Nails</span> include: Nail
+                      Art Design
+                    </td>
+                  </tr>
                 </tbody>
               </Table>
             </Col>
@@ -257,7 +263,7 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle3">Manicure</span> includes: Trim &
+                      <span id="rowTitle3">Manicures</span> include: Trim &
                       Shape (nails and cuticles), lotion massage, and polish.
                     </td>
                   </tr>

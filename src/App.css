@@ -269,7 +269,7 @@ Table {
 #acrylicFills {
   background-image: linear-gradient(90deg, blueviolet, purple, cyan);
 }
-#manicure {
+#sculpted {
   background-image: linear-gradient(90deg, yellow, limegreen, cyan);
 }
 #fullSets {
@@ -284,7 +284,7 @@ Table {
 #kids {
   background-image: linear-gradient(90deg, green, rebeccapurple, yellow);
 }
-#sculpted {
+#manicure {
   background-image: linear-gradient(90deg, black, gold, red);
 }
 

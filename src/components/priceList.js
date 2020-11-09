@@ -17,12 +17,12 @@ export const fullSets = [
   {
     id: 3,
     name: "Long Nails",
-    price: "$ 55",
+    price: "$ 60",
   },
   {
     id: 4,
     name: "XL Nails",
-    price: "$ 65",
+    price: "$ 70",
   },
   {
     id: 5,
@@ -133,7 +133,7 @@ export const addOns = [
   {
     id: 11,
     name: "Reshape Nails (i.e. Coffin to Stiletto)",
-    price: "$ 5 per design/nail",
+    price: "$ 5",
   },
 ];
 

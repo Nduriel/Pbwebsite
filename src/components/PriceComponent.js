@@ -82,8 +82,8 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle2">Acryilic Full Sets </span>include:
-                      gel polish.
+                      <span id="rowTitle2">Acrylic Full Sets </span>include:
+                      two gel polish colors.
                     </td>
                   </tr>
                 </tbody>
@@ -126,8 +126,8 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle1">Acryilic Fill&nbsp;</span>includes:
-                      gel polish.
+                      <span id="rowTitle1">Acrylic Fill&nbsp;</span>includes:
+                      two gel polish colors.
                     </td>
                   </tr>
                 </tbody>
@@ -217,8 +217,7 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle6">Sculpted Nails</span> include: Nail
-                      Art Design
+                      <span id="rowTitle6">Sculpted Nails</span> include: two gel polish colors.
                     </td>
                   </tr>
                 </tbody>
@@ -356,7 +355,7 @@ function PriceComponent() {
                   })}
                   <tr id="rowTitle" style={{ textAlign: "center" }}>
                     <td colSpan="4">
-                      <span id="rowTitle4">Includes: </span>
+                      <span id="rowTitle4">Nail Art Includes: </span>
                       Marble, Foil, Lines, Additional colors, Abstract Art,
                       French, Select Ombre
                     </td>

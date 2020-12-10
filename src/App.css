@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
-
-
 #aboutPic {
   height: auto;
   width: 95%;
@@ -334,7 +332,6 @@ thead {
   text-shadow: 1px 1px 2px limegreen;
 }
 /* </Table> */
-
 
 .site-footer {
   color: #9df5cc;

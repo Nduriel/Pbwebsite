@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Image from "react-bootstrap/Image";
 import { FadeTransform } from "react-animation-components";
-import { Col, Row, Container, Jumbotron } from "reactstrap";
 import { carouselPic, jumbotronPic } from "./photos";
 import {
+  Col,
+  Row,
+  Container,
+  Jumbotron,
   Carousel,
   CarouselItem,
   CarouselControl,
@@ -114,7 +117,8 @@ function HomePage() {
                     * By Appointment Only *
                     <br />
                     <i>
-                    Due to the Coronavirus Pandemic, masks are *required* every
+                      Due to the Coronavirus Pandemic, masks are *required*
+                      every
                     </i>
                     visit.
                     <br /> No Exceptions! <br />

@@ -52,7 +52,7 @@ export const carouselPic = [
 ];
 
 export const jumbotronPic = {
-  logo: require("../images/logo2.jpeg"),
+  logo: require("../images/logo3.png"),
 };
 
 // export const comingsoonpic = require("../images/comingsoon.jpg");

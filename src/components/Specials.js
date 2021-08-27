@@ -1,22 +1,22 @@
-// import React from "react";
-// import { Container, Row, Jumbotron } from "reactstrap";
-// import { comingsoonpic } from "./photos";
-// import { Image } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Jumbotron } from "reactstrap";
+import { grandopening } from "./photos";
+import { Image } from "react-bootstrap";
 
-// function Specials() {
-//   return (
-//     <Jumbotron id="specials">
-//       <Container>
-//         <Row style={{ justifyContent: "center" }}>
-//           <Image
-//             fluid
-//             src={comingsoonpic}
-//             style={{ height: "auto", width: "600px" }}
-//           />
-//         </Row>
-//       </Container>
-//     </Jumbotron>
-//   );
-// }
+function Specials() {
+  return (
+    <Jumbotron id="specials">
+      <Container>
+        <Row style={{ justifyContent: "center" }}>
+          <Image
+            fluid
+            src={grandopening}
+            style={{ height: "auto", width: "600px" }}
+          />
+        </Row>
+      </Container>
+    </Jumbotron>
+  );
+}
 
-// export default Specials;
+export default Specials;

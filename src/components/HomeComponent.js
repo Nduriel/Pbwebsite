@@ -74,7 +74,7 @@ function HomePage() {
                 className="text-center"
                 rounded
                 src={jumbotronPic.logo}
-                alt="Polished By Mia logo"
+                alt="PolishedCosmetics logo"
                 fluid
               />
             </FadeTransform>
@@ -86,14 +86,14 @@ function HomePage() {
               }}
             >
               <div id="bodyBox">
-                <p style={{ margin: "10px" }}>
-                  <span
+                <p style={{ margin: "10px", fontStyle: "italic" }}>
+                  {/* <span
                     style={{
                       textShadow: "2px 2px 2px #c64b7b",
                       color: "white",
                     }}
                   >
-                    Polished By Mia&nbsp;
+                    PolishedCosmetics&nbsp;
                   </span>
                   <sub>
                     <i
@@ -101,11 +101,11 @@ function HomePage() {
                       aria-hidden="true"
                       style={{ fontSize: "13px", color: "purple" }}
                     />
-                  </sub>{" "}
-                  is an Acrylic service that caters to clients, exclusively, in
-                  the Newport News and surrounding Hampton Roads area (757).
-                  Check out the gallery here, or Facebook and Instagram for my
-                  work!
+                  </sub>{" "} */}
+                  We are located in the Executive Offices. Our Suite is located
+                  3 minutes away from City Center in Newport News. <br />
+                  739 Thimble Shoals Blvd, STE 1004 <br />
+                  Newport News, VA 233606 <br />
                 </p>
                 <p style={{ margin: "10px" }}>
                   <span

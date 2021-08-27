@@ -3,12 +3,12 @@ import React from "react";
 export const policies = (
   <p>
     <span className="policy">
-      <i>Polished by Mia</i>
+      <i>PolishedCosmetics</i>
     </span>{" "}
     Policies: The purpose of this policy is to advise you as our customer, as to
-    the services that can be expected from Polished by Mia, and the steps and
+    the services that can be expected from PolishedCosmetics, and the steps and
     procedure that can be taken if you, the customer are not satisfied with the
-    services you receive from Polished by Mia. <br />
+    services you receive from PolishedCosmetics. <br />
     <br />
     <ul>
       <span className="policy">What we offer</span> :
@@ -18,12 +18,13 @@ export const policies = (
     </ul>
     <span className="policy">Payment Methods</span> :
     <span style={{ textShadow: "1px 2px 2px red" }}>
-      {" "}Cash, Cash App, Apple Pay and Gift Certificates
+      {" "}
+      Cash, Cash App, Apple Pay and Gift Certificates
     </span>{" "}
     are acceptable tenders for all services and products.
     <br />
     <br />
-    <span className="policy"> Deposits</span> : Polished by Mia is primarily a
+    <span className="policy"> Deposits</span> : PolishedCosmetics is primarily a
     “by appointment” business, therefore, last minute cancellations can have a
     great impact to our business and that of our technician. Because of this{" "}
     <i style={{ textShadow: "1px 2px 2px red" }}>
@@ -42,7 +43,7 @@ export const policies = (
     <br />
     <br />
     <span className="policy">Cancelations</span> : Appointments can be cancelled
-    24 hours in advance by calling, texting, or messaging Polished by Mia so
+    24 hours in advance by calling, texting, or messaging PolishedCosmetics so
     that your reserved time can be given to another client on our waiting list.
     We understand that sometimes emergencies happen, and it is not always
     possible to give adequate notice when you cannot make an appointment.
@@ -66,22 +67,24 @@ export const policies = (
     due within 24-hours of your scheduled appointment time via $Cash App
     <i>
       . *** Unforeseen circumstances may be exceptions to this policy! Please
-      speak with Polished by Mia directly to discuss. ***
+      speak with PolishedCosmetics directly to discuss. ***
     </i>
     <br />
     <br />
     <span className="policy">Children and Group Policy</span> : Due to hazardous
     chemicals, products and implements within the salon environment, Polished by
     Mia asks that you please refrain from bringing small children to your
-    appointment! Polished by Mia is a small studio space so please refrain from
-    brining multiple friends/family or group of friends/family to your
+    appointment! PolishedCosmetics is a small studio space so please refrain
+    from brining multiple friends/family or group of friends/family to your
     appointments.
     <br />
     <br />
     <span className="policy">Refunds</span> : If you are not happy with your
-    nails, please make us aware of it <i style={{ textShadow: "1px 2px 2px red" }}>before you pay</i>. We will adjust them
-    to your satisfaction or remove any enhancements or coatings that have been
-    applied. No refunds will be given after you have left the salon. <br />
+    nails, please make us aware of it{" "}
+    <i style={{ textShadow: "1px 2px 2px red" }}>before you pay</i>. We will
+    adjust them to your satisfaction or remove any enhancements or coatings that
+    have been applied. No refunds will be given after you have left the salon.{" "}
+    <br />
     <br />
     <span className="policy">Complimentary Fixes</span> : If you are ever
     dissatisfied with any service in the salon, we will gladly make the
@@ -99,7 +102,7 @@ export const policies = (
     <span className="policy">Quality Guarantee- Regular Polish</span> : Regular
     polish applications may last in duration from 1 to 7-days depending on
     several factors specific to the client, including: client lifestyle, client
-    health and following of maintenance instructions. Polished by Mia does NOT
+    health and following of maintenance instructions. PolishedCosmetics does NOT
     guarantee the longevity of ANY regular polish product once your appointment
     has been completed due to the varying factors explained above, the product
     formulation and manufacturer’s instructions on regular nail polish.
@@ -112,7 +115,7 @@ export const policies = (
     maintenance instructions. However, there may also be additional
     complications in the application process, chemistry of the product and other
     factors that may cause product breakdown (peeling, lifting, fading,
-    wrinkling, etc.) Due to this, Polished by Mia provides a 3-day guarantee
+    wrinkling, etc.) Due to this, PolishedCosmetics provides a 3-day guarantee
     period, in which if you experience any of these issues you may return to the
     salon to have a repair done FREE of charge. However, it is at Polished by
     Mia’s discretion! If we feel that your product breakdown was not caused by
@@ -122,7 +125,7 @@ export const policies = (
     <br />
     <span className="policy">Quality Guarantee- 3D Embellishments</span> : All
     nail art fixtures with raised surfaces such as Jewels, glitter and 3-D
-    embellishments are NOT guaranteed by Polished by Mia due to the
+    embellishments are NOT guaranteed by PolishedCosmetics due to the
     unpredictable nature of the client’s daily activity that may cause loss of
     these items.
     <br />
@@ -168,7 +171,7 @@ export const policies = (
 export const bio1 = (
   <div id="bioText">
     <p style={{ margin: "10px" }}>
-      <i style={{ textShadow: "2px 2px 2px blue" }}>Polished By Mia&nbsp;</i>{" "}
+      <i style={{ textShadow: "2px 2px 2px blue" }}>PolishedCosmetics&nbsp;</i>{" "}
       was started in 2018. Mia “Maria” has been in the nail industry for two
       years now but many more if you count her obsession from childhood. She
       started by watching YouTube videos painting her friend’s and family’s
@@ -182,7 +185,7 @@ export const bio1 = (
 export const bio2 = (
   <div id="bioText">
     <p style={{ margin: "10px" }}>
-      <i style={{ textShadow: "2px 2px 2px blue" }}>Polished By Mia</i>
+      <i style={{ textShadow: "2px 2px 2px blue" }}>PolishedCosmetics</i>
       's mission is to know each client and help achieve their goal with the
       latest and new nail trends. Her honesty and reliability allow her to build
       trusting relationships with her clients. When it comes to nail art her

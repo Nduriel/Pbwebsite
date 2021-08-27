@@ -16,7 +16,7 @@ export const carouselPic = [
   {
     altText: "4",
     src: require("../images/pic16.jpg"),
-    caption: `#polishedbymia`,
+    caption: `#PolishedCosmetics`,
   },
   {
     altText: "5",
@@ -55,7 +55,7 @@ export const jumbotronPic = {
   logo: require("../images/logo3.png"),
 };
 
-// export const comingsoonpic = require("../images/comingsoon.jpg");
+export const grandopening = require("../images/grandopening.jpeg");
 
 export const aboutMia = require("../images//MiaAboutpic.JPG");
 

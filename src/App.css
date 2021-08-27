@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 #aboutPic {
   height: auto;
@@ -61,7 +62,7 @@
   border-radius: 2%/2%;
   border-style: ridge;
   box-shadow: 10px 10px 10px rgb(46, 44, 44);
-  font-family: "Arima Madurai", cursive;
+  /* font-family: "Arima Madurai", cursive; */
   margin: 15px;
 }
 
@@ -174,28 +175,16 @@
 }
 
 .jumbotron {
-  font-family: "Arima Madurai", cursive;
   margin: 0;
   width: 100%;
-  background-attachment: fixed;
-  background: radial-gradient(
-    circle,
-    black,
-    black,
-    black,
-    black,
-    rgb(144, 51, 153),
-    rgb(144, 51, 153),
-    rgb(144, 51, 153),
-    black,
-    black,
-    black,
-    black
-  );
-  animation: gradient 35s ease 1s infinite;
   background-size: 600% 100%;
-  animation-direction: alternate;
+  background-attachment: fixed;
+  background-image: radial-gradient(pink, whitesmoke,whitesmoke, pink);
+  animation-direction: normal;
+  animation: gradient 35s ease 1s infinite;
+  /* font-family: "Comfortaa", cursive; */
   display: block;
+  
 }
 
 @keyframes gradient {

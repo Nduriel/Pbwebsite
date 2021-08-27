@@ -9,15 +9,14 @@ import {
   NavItem,
   Container,
 } from "reactstrap";
-import { Image } from 'react-bootstrap';
+import { Image } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function NavBarComponent() {
-
   //Navbar Toggler
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
-  
+
   const icon = require("../images/favicon.png");
 
   const navbarIcon = {
@@ -26,11 +25,11 @@ function NavBarComponent() {
     padding: "8px",
     border: "4px solid #c64b7b",
     borderRadius: "55% / 55%",
-    fontStyle: 'italic',
-    textShadow: '2px 2px 4px #c64b7b',
-    fontFamily: 'Allura',
-    fontWeight: 'bolder',
-    borderStyle: 'groove',
+    fontStyle: "italic",
+    textShadow: "2px 2px 4px #c64b7b",
+    fontFamily: "Allura",
+    fontWeight: "bolder",
+    borderStyle: "groove",
   };
 
   const activeStyle = {
@@ -47,18 +46,17 @@ function NavBarComponent() {
     color: "skyblue",
     textShadow: "1px 1px 1px white",
   };
-
-  // const activeStyle3 = {
-  //   color: "yellow",
-  //   textShadow: "1px 1px 1px white",
-  // };
+  const activeStyle3 = {
+    color: "yellow",
+    textShadow: "1px 1px 1px white",
+  };
 
   return (
     <>
       <Navbar light collapseOnSelect expand="md" classticky="top">
         <Container fluid>
           <NavbarBrand style={navbarIcon} id="goneText1" href="/home">
-            <Image src={icon} style={{width: "28px", height: "25px"}}/>
+            <Image src={icon} style={{ width: "28px", height: "25px" }} />
           </NavbarBrand>
           <NavbarToggler
             onClick={toggle}
@@ -106,7 +104,7 @@ function NavBarComponent() {
                   About Mia
                 </NavLink>
               </NavItem>
-              {/* <NavItem className="glow">
+              <NavItem className="glow">
                 <NavLink
                   onClick={toggle}
                   className="nav-link"
@@ -116,9 +114,9 @@ function NavBarComponent() {
                     color: "white",
                   }}
                 >
-                  Specials
+                  Grand Opening!
                 </NavLink>
-              </NavItem> */}
+              </NavItem>
             </Nav>
           </Collapse>
           <a

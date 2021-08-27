@@ -9,7 +9,7 @@ function FooterComponent() {
           <Col className="text-center" xs={6} sm={4} lg={4}>
             <span
               style={{
-                borderBottom: "2px #f1069f",
+                borderBottom: "1px #f1069f",
                 borderBottomStyle: "ridge",
                 textShadow: "2px 2px 2px #f1069f",
               }}
@@ -43,7 +43,7 @@ function FooterComponent() {
                 className="btn btn-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://instagram.com/polished.bymia/"
+                href="https://www.instagram.com/polishedcosmeticsva/"
               >
                 <i id="socialIcon" className="fa fa-instagram fa-lg" />
               </a>
@@ -52,12 +52,12 @@ function FooterComponent() {
                 className="btn btn-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://facebook.com/polishedbymia/"
+                href="https://www.facebook.com/PolishedCosmeticsVA/"
               >
                 <i id="socialIcon" className="fa fa-facebook fa-lg" />
               </a>
               <br />
-              <a
+              {/* <a
                 role="button"
                 className="btn btn-link"
                 target="_blank"
@@ -74,7 +74,7 @@ function FooterComponent() {
                 href="tel:+17579127833"
               >
                 <i className="fa fa-phone fa-lg" id="socialIcon" />
-              </a>
+              </a> */}
             </div>
           </Col>
           <Col xs={6} sm={4} lg={4} className="text-center" id="goneText">
@@ -106,7 +106,7 @@ function FooterComponent() {
                   </li>
                   <li>
                     <i style={{ fontSize: "12px" }}>
-                      PolishedByMia{" "}
+                      PolishedCosmetics{" "}
                       <sub>
                         <i
                           className="fa fa-copyright"
